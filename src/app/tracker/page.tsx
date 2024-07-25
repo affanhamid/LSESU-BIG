@@ -67,8 +67,8 @@ const TrackerPage: React.FC = () => {
                             <TableBody>
                                 {data.map((row, rowIndex) => (
                                     <TableRow key={rowIndex}>
-                                        {Object.entries(row).filter(([key]) => key !== 'legend').map(([key, cell], cellIndex) => (
-                                            <TableCell key={cellIndex}>{cell}</TableCell>
+                                        {Object.entries(row).filter(([key]) => key !== 'legend').map(([key, cell]: [string, any]) => (
+                                            <TableCell key={key}>{cell as React.ReactNode}</TableCell>
                                         ))}
                                     </TableRow>
                                 ))}
