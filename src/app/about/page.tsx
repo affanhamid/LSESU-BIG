@@ -1,4 +1,4 @@
-import Person from "../../Components/Person";
+import Person from "../Components/Person";
 
 const AboutUs = () => {
     const teamMembers = [

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Socials from "../Components/Socials";
-import Sponsor from "@/Components/Sponsor";
-import Speaker from "@/Components/Speaker";
+import Socials from "./Components/Socials";
+import Sponsor from "./Components/Sponsor";
+import Speaker from "./Components/Speaker";
 export default function Home() {
   const sponsors = [
     {

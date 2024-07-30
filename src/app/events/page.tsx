@@ -1,4 +1,4 @@
-import Timeline from '@/Components/Timeline';
+import Timeline from '../Components/Timeline';
 import React from 'react'
 
 const Events = () => {
