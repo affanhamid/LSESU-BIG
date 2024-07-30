@@ -1,19 +1,14 @@
-import * as React from 'react';
-import { Container, Typography, Box } from '@mui/material';
+import Timeline from '@/Components/Timeline';
+import React from 'react'
 
-const EventsPage: React.FC = () => {
+const Events = () => {
+
     return (
-        <Container maxWidth="lg">
-            <Box sx={{ my: 4 }}>
-                <Typography variant="h4" component="h1" gutterBottom>
-                    Events
-                </Typography>
-                <Typography variant="body1" component="p">
-                    Information about upcoming events.
-                </Typography>
-            </Box>
-        </Container>
+        <div>
+            <Timeline />
+        </div>
     );
 };
 
-export default EventsPage;
+export default Events;
+

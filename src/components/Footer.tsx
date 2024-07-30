@@ -1,43 +1,41 @@
-import React from 'react';
-import IconButton from '@mui/material/IconButton';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Typography from '@mui/material/Typography';
+import Logo from "./Logo";
+import Socials from "./Socials";
+import Link from "next/link";
+
 
 const Footer = () => {
     return (
-        <footer className="bg-BIGBlue text-white p-4 text-center flex flex-col items-center pt-10">
-            <div className="flex justify-evenly w-full">
+        <footer className="bg-black text-white py-8">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <img src="/logo.jpg" alt="LSESU BIG Logo" width={200} height={100} />
+                    <h3 className="text-lg font-bold mb-4"><Logo /></h3>
+                    <p>Empowering the next generation of finance and investment leaders.</p>
                 </div>
-                <div></div>
-                <div className="flex gap-10">
-                    <div>
-                        <Typography variant="h6" component="h4">Follow Us:</Typography>
-                        <div className="flex space-x-1">
-                            <IconButton color="inherit" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                <InstagramIcon />
-                            </IconButton>
-                            <IconButton color="inherit" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                                <FacebookIcon />
-                            </IconButton>
-                            <IconButton color="inherit" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                                <LinkedInIcon />
-                            </IconButton>
-                        </div>
+                <div>
+                    <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul className="flex flex-col gap-2">
+                        <li><Link href="/" className="hover:underline">Home</Link></li>
+                        <li><Link href="/about" className="hover:underline">About Us</Link></li>
+                        <li><Link href="/events" className="hover:underline">Events</Link></li>
+                        <li><Link href="/resources" className="hover:underline">Resources</Link></li>
+                        <li><Link href="/membership" className="hover:underline">Membership</Link></li>
+                    </ul>
+                </div>
+                <div>
+
+                    <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+                    <div className="mb-5">
+                        <p>LSE Student Union</p>
+                        <p>Houghton Street</p>
+                        <p>London, WC2A 2AE</p>
                     </div>
-                    <div className="flex flex-col text-left">
-                        <Typography variant="body1">LSE Student Union</Typography>
-                        <Typography variant="body1">Houghton Street</Typography>
-                        <Typography variant="body1">London</Typography>
-                        <Typography variant="body1">WC2A 2AE</Typography>
-                    </div>
+                    <p>Email: contact@lsebig.com</p>
+                    <p>Phone: +44 123 456 7890</p>
+                    <Socials />
                 </div>
             </div>
-            <div className="mt-5">
-                <Typography variant="body2">© {new Date().getFullYear()} LSESU Business & Investment Group. All rights reserved.</Typography>
+            <div className="mt-8 border-t border-gray-700 pt-4 text-center">
+                <p>&copy; 2024 LSE BIG. All rights reserved.</p>
             </div>
         </footer>
     );

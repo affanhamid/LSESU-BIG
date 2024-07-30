@@ -1,63 +1,128 @@
-import * as React from 'react';
-import { Container, Typography, Box } from '@mui/material';
-import Slider from '../components/Slider';
+import Link from "next/link";
+import Socials from "../Components/Socials";
+import Sponsor from "@/Components/Sponsor";
+import Speaker from "@/Components/Speaker";
+export default function Home() {
+  const sponsors = [
+    {
+      name: "Goldman Sachs",
+      summary: "A leading global investment bank and financial services company.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/1024px-Goldman_Sachs.svg.png"
+    },
+    {
+      name: "Morgan Stanley",
+      summary: "A multinational investment bank and financial services company.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Red_dot.svg"
+    },
+    {
+      name: "J.P. Morgan",
+      summary: "A multinational investment bank and financial services company.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Red_dot.svg"
+    },
+    {
+      name: "Citigroup",
+      summary: "A multinational investment bank and financial services corporation.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Red_dot.svg"
+    },
+    {
+      name: "Bank of America",
+      summary: "A multinational banking and financial services corporation.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Red_dot.svg"
+    },
+    {
+      name: "UBS",
+      summary: "A Swiss multinational investment bank and financial services company.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Red_dot.svg"
+    }
+  ];
 
-const HomePage: React.FC = () => {
+  const pastSpeakers = [
+    {
+      name: "Speaker 1",
+      topic: "Topic 1",
+      date: "Date 1"
+    },
+    {
+      name: "Speaker 2",
+      topic: "Topic 2",
+      date: "Date 2"
+    },
+    {
+      name: "Speaker 3",
+      topic: "Topic 3",
+      date: "Date 3"
+    },
+    {
+      name: "Speaker 4",
+      topic: "Topic 4",
+      date: "Date 4"
+    },
+    {
+      name: "Speaker 5",
+      topic: "Topic 5",
+      date: "Date 5"
+    },
+    {
+      name: "Speaker 6",
+      topic: "Topic 6",
+      date: "Date 6"
+    },
+    {
+      name: "Speaker 7",
+      topic: "Topic 7",
+      date: "Date 7"
+    },
+    {
+      name: "Speaker 8",
+      topic: "Topic 8",
+      date: "Date 8"
+    },
+    {
+      name: "Speaker 9",
+      topic: "Topic 9",
+      date: "Date 9"
+    },
+    {
+      name: "Speaker 10",
+      topic: "Topic 10",
+      date: "Date 10"
+    }
+  ];
   return (
-    <Box sx={{ mt: 4, textAlign: 'center' }}>
-      <Box sx={{ mt: 4 }}>
-        <div className='w-full left-0 top-40 h-[80vh] px-10'>
-          <div className='bg-gray-300 w-full h-full flex justify-center items-center'>VIDEO</div>
+    <main className="">
+      <header className="p-20 flex pb-40">
+        <div className="flex-[0_0_50%]">
+          <h1 className="text-5xl font-bold flex flex-col">
+            <span className="text-3xl">London School of Economics</span>
+            <span className="text-5xl">Business & Investment Group</span>
+          </h1>
+          <div className="w-3/4">
+            <p className="mt-4 text-2xl">Europe's premier finance and business society</p>
+            <p>We partner with industry giants to provide career insights and connect talented LSE students with opportunities. Our events, including keynotes and panel discussions, equip members with essential skills for their careers.</p>
+            <div className="ml-1">
+              <Socials />
+            </div>
+          </div>
+          <Link href="https://www.lsesu.com/communities/societies/group/big/"><button className="mt-4 px-4 py-2 rounded border-2 border-black">Join Us</button></Link>
         </div>
-        {/* <video width="100%" controls>
-            <source src="/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> */}
-      </Box>
-      <Box sx={{ mt: 10, px: 20, display: 'flex', alignItems: 'center' }}>
-        <Box sx={{ flex: 1 }}>
-          <Typography variant="h3" component="h1" gutterBottom>
-            About Us
-          </Typography>
-          <Typography variant="body1" component="p">
-            The LSESU Business & Investment Group is the premier finance and business society in Europe. It is the largest and most active society at the London School of Economics.
-          </Typography>
-          <Typography variant="body1" component="p">
-            It was established in 2019 through the combination of the LSE's two largest societies, the LSESU Investment Society (founded 2003) and the LSESU Business and Finance Guild (founded 1996). With each society having built a strong reputation, we are committed to maintaining our professionalism, dedication, innovation and creativity.
-          </Typography>
-          <Typography variant="body1" component="p">
-            Actively working with industry giants spanning investment banking, asset management, legal, professional and financial services sectors, we distribute timely career information and work with our industry contacts to help identify and attract talented LSE students.
-          </Typography>
-          <Typography variant="body1" component="p">
-            Our aim is to maximise the potential of our members and committee, equip them with the technical and professional skills needed to succeed in their chosen profession, and develop leaders for the 21st century. Previous members have gone on to secure highly competitive roles across a range of disciplines linked to the sectors which we cover.
-          </Typography>
-
-        </Box>
-        <Box sx={{ flex: 1, textAlign: 'right', ml: 20 }}>
-          {/* <img src="/about-image.jpg" alt="Image" style={{ maxWidth: '100%', height: 'auto' }} /> */}
-          <div className='aspect-[3/4] w-[500px] bg-gray-300 flex justify-center items-center'>Image</div>
-        </Box>
-      </Box>
-      <Box>
-        <div className='w-screen left-0 bg-BIGBlue mt-10 pt-10 pb-20 text-white'>
-          <Typography variant="h3" component="h2" gutterBottom>
-            Past Events
-          </Typography>
-          <div className='w-3/4 mx-auto'>
-            <Slider />
+        <div className="flex-[0_0_50%]">
+        </div>
+      </header>
+      <section className="bg-black text-white py-10">
+        <h1 className="text-5xl text-bold text-center">Past Speakers</h1>
+        <div className="my-20 px-80">
+          <div className="flex overflow-x-scroll gap-10">
+            {pastSpeakers.map((speaker, idx) => <Speaker name={speaker.name} topic={speaker.topic} date={speaker.date} key={idx} />)}
           </div>
         </div>
-      </Box>
-
-      <Box>
-        <div className='w-screen left-0  mt-10 pt-10 pb-20 '>
-          <Typography variant="h3" component="h2" gutterBottom>
-            Our Sponsors
-          </Typography>
+      </section>
+      <section className="py-10">
+        <h1 className="text-5xl text-bold text-center">Top Sponsors</h1>
+        <div className="grid grid-cols-3 px-80 py-10">
+          {sponsors.map((sponsor, idx) => <Sponsor logo={sponsor.logo} summary={sponsor.summary} />)}
         </div>
-      </Box>
-    </Box>
-  );
-};
+      </section>
 
-export default HomePage;
+    </main>
+  );
+}

@@ -1,39 +1,30 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { Container } from '@mui/material';
+import React from 'react'
+import { FaRegUserCircle } from "react-icons/fa";
+import Logo from './Logo';
 import Link from 'next/link';
-import Image from 'next/image';
 
-const NavBar: React.FC = () => {
+const Navbar = () => {
     return (
-        <AppBar position="static" className="bg-BIGBlue py-5">
-            <Container maxWidth="lg">
-                <Toolbar>
-                    <div className="flex-grow">
-                        <Image src="/logo.jpg" alt="LSESU BIG Logo" width={200} height={100} />
-                    </div>
-                    <Link href="/" passHref>
-                        <Button color="inherit" sx={{ mx: 3 }}>Home</Button>
-                    </Link>
-                    <Link href="/about" passHref>
-                        <Button color="inherit" sx={{ mx: 3 }}>About</Button>
-                    </Link>
-                    <Link href="/events" passHref>
-                        <Button color="inherit" sx={{ mx: 3 }}>Events</Button>
-                    </Link>
-                    <Link href="/contact" passHref>
-                        <Button color="inherit" sx={{ mx: 3 }}>Contact US</Button>
-                    </Link>
-                    <Link href="/tracker" passHref>
-                        <Button color="inherit" sx={{ mx: 3 }}>BIG Tracker</Button>
-                    </Link>
-                </Toolbar>
-            </Container>
-        </AppBar>
-    );
-};
+        <div className='sticky top-0 bg-black text-white flex pl-32 pr-20 py-5 items-center z-30'>
+            <div className='flex-1'>
+                <Logo />
+            </div>
+            <div>
+                <ul className='flex gap-12'>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/about">About Us</Link></li>
+                    <li><Link href="/events">Events</Link></li>
+                    <li><Link href="/big-tracker">BIG Tracker</Link></li>
+                    <li><Link href="/resources">Resources</Link></li>
+                </ul>
+            </div>
+            <div className='ml-16'>
+                <div className='text-3xl'>
+                    <span><FaRegUserCircle /></span>
+                </div>
+            </div>
+        </div>
+    )
+}
 
-export default NavBar;
+export default Navbar
