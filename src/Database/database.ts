@@ -1,5 +1,5 @@
 import { db } from './firebaseConfig';
-import { collection, getDocs, doc, getDoc } from 'firebase/firestore';
+import { collection, getDocs, doc, getDoc, orderBy } from 'firebase/firestore';
 
 export async function fetchEvents() {
     const eventsSnapshot = await getDocs(collection(db, 'events'));
@@ -12,6 +12,22 @@ export async function fetchEvents() {
 
     return events;
 };
+
+export async function fetchCollections () {
+    const querySnapshot = await getDocs(collection(db, "list of collections"));
+    const data = querySnapshot.docs.map((doc) => doc.data());
+    return Object.keys(data[0]);
+};
+
+export async function fetchCollectionData(collectionName:string) {
+  const querySnapshot = await getDocs(collection(db, collectionName));
+  const data = querySnapshot.docs.map((doc) => ({
+    ...doc.data(),
+    id: doc.id,
+  }));
+  return data;
+}
+
 
 export async function fetchUpcomingEvents() {
     const upcomingEventsSnapshot = await getDocs(collection(db, 'upcoming events'));

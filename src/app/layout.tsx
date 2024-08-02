@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 export const metadata: Metadata = {
   title: "LSE Business and Investment Group",
@@ -18,10 +18,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" />
       </head>
-      <body className={'font-textFont bg-background'}>
-        {children}
-        <Footer />
-      </body>
+      <UserProvider>
+        <body className={"font-textFont bg-background"}>
+          {children}
+          <Footer />
+        </body>
+      </UserProvider>
     </html>
   );
 }

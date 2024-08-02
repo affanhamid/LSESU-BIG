@@ -35,54 +35,44 @@ const Navbar = () => {
         <Logo />
       </div>
       <div className="flex gap-5 items-center">
-        <div className="fixed right-0 top-0 bottom-0 left-1/2">
-          <div className="relative h-full w-full z-50">
-            <ul
-              className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
-              style={{ width: openMenu ? "50%" : 0 }}
-            >
-              <MenuList href="/" name="Home" setOpenMenu={setOpenMenu} />
-              <MenuList
-                href="/about"
-                name="About Us"
-                setOpenMenu={setOpenMenu}
-              />
-              <MenuList
-                href="/events"
-                name="Events"
-                setOpenMenu={setOpenMenu}
-              />
-              <MenuList
-                href="/sponsorship"
-                name="Sponsors"
-                setOpenMenu={setOpenMenu}
-              />
-              <MenuList
-                href="/mentorship"
-                name="Mentorship"
-                setOpenMenu={setOpenMenu}
-              />
-              <MenuList
-                href="/resources"
-                name="Resources"
-                setOpenMenu={setOpenMenu}
-              />
-              <MenuList
-                href="/tracker"
-                name="BIG Tracker"
-                setOpenMenu={setOpenMenu}
-              />
-            </ul>
+        <div className="fixed right-0 top-0 bottom-0 z-50">
+          <ul
+            className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
+            style={{ width: openMenu ? "25vw" : 0 }}
+          >
+            <MenuList href="/" name="Home" setOpenMenu={setOpenMenu} />
+            <MenuList href="/about" name="About Us" setOpenMenu={setOpenMenu} />
+            <MenuList href="/events" name="Events" setOpenMenu={setOpenMenu} />
+            <MenuList
+              href="/sponsorship"
+              name="Sponsors"
+              setOpenMenu={setOpenMenu}
+            />
+            <MenuList
+              href="/mentorship"
+              name="Mentorship"
+              setOpenMenu={setOpenMenu}
+            />
+            <MenuList
+              href="/resources"
+              name="Resources"
+              setOpenMenu={setOpenMenu}
+            />
+            <MenuList
+              href="/tracker"
+              name="BIG Tracker"
+              setOpenMenu={setOpenMenu}
+            />
+          </ul>
 
-            <div
-              style={{ top: openMenu ? 50 : 120 }}
-              className={`absolute text-5xl right-20 hover:text-background cursor-pointer transition-all duration-200 z-50 ${
-                openMenu ? "text-white" : "text-background"
-              }`}
-              onClick={() => setOpenMenu((openMenu) => !openMenu)}
-            >
-              <BiMenuAltRight />
-            </div>
+          <div
+            style={{ top: openMenu ? 50 : 120 }}
+            className={`absolute text-5xl right-20 hover:text-background cursor-pointer transition-all duration-200 z-50 ${
+              openMenu ? "text-white" : "text-background"
+            }`}
+            onClick={() => setOpenMenu((openMenu) => !openMenu)}
+          >
+            <BiMenuAltRight />
           </div>
         </div>
         <div className="z-[60]">

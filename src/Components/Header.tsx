@@ -37,7 +37,7 @@ const HeaderNavbar = ({
   openMenu,
   setOpenMenu,
 }: {
-  setScroll?: any;
+  setScroll: any;
   openMenu: any;
   setOpenMenu: any;
 }) => {
@@ -52,99 +52,60 @@ const HeaderNavbar = ({
       <div className="flex gap-5 items-center">
         <div className="fixed right-0 top-0 bottom-0 left-1/2">
           <div className="relative h-full w-full z-50">
-            {setScroll ? (
-              <ul
-                className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
-                style={{ width: openMenu ? "50%" : 0 }}
-              >
-                <MenuList
-                  href="/"
-                  name="Home"
-                  setOpenMenu={setOpenMenu}
-                  setScroll={setScroll}
-                  idx={0}
-                />
-                <MenuList
-                  href="/about"
-                  name="About Us"
-                  setOpenMenu={setOpenMenu}
-                  setScroll={setScroll}
-                  idx={1}
-                />
-                <MenuList
-                  href="/events"
-                  name="Events"
-                  setOpenMenu={setOpenMenu}
-                  setScroll={setScroll}
-                  idx={2}
-                />
-                <MenuList
-                  href="/sponsorship"
-                  name="Sponsors"
-                  setOpenMenu={setOpenMenu}
-                  setScroll={setScroll}
-                  idx={3}
-                />
-                <MenuList
-                  href="/mentorship"
-                  name="Mentorship"
-                  setOpenMenu={setOpenMenu}
-                  setScroll={setScroll}
-                  idx={4}
-                />
-                <MenuList
-                  href="/resources"
-                  name="Resources"
-                  setOpenMenu={setOpenMenu}
-                  setScroll={setScroll}
-                  idx={5}
-                />
-                <MenuList
-                  href="/tracker"
-                  name="BIG Tracker"
-                  setOpenMenu={setOpenMenu}
-                  setScroll={setScroll}
-                  idx={6}
-                />
-              </ul>
-            ) : (
-              <ul
-                className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
-                style={{ width: openMenu ? "50%" : 0 }}
-              >
-                <MenuList href="/" name="Home" setOpenMenu={setOpenMenu} />
-                <MenuList
-                  href="/about"
-                  name="About Us"
-                  setOpenMenu={setOpenMenu}
-                />
-                <MenuList
-                  href="/events"
-                  name="Events"
-                  setOpenMenu={setOpenMenu}
-                />
-                <MenuList
-                  href="/sponsorship"
-                  name="Sponsors"
-                  setOpenMenu={setOpenMenu}
-                />
-                <MenuList
-                  href="/mentorship"
-                  name="Mentorship"
-                  setOpenMenu={setOpenMenu}
-                />
-                <MenuList
-                  href="/resources"
-                  name="Resources"
-                  setOpenMenu={setOpenMenu}
-                />
-                <MenuList
-                  href="/tracker"
-                  name="BIG Tracker"
-                  setOpenMenu={setOpenMenu}
-                />
-              </ul>
-            )}
+            <ul
+              className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
+              style={{ width: openMenu ? "50%" : 0 }}
+            >
+              <MenuList
+                href="/"
+                name="Home"
+                setOpenMenu={setOpenMenu}
+                setScroll={setScroll}
+                idx={0}
+              />
+              <MenuList
+                href="/about"
+                name="About Us"
+                setOpenMenu={setOpenMenu}
+                setScroll={setScroll}
+                idx={1}
+              />
+              <MenuList
+                href="/events"
+                name="Events"
+                setOpenMenu={setOpenMenu}
+                setScroll={setScroll}
+                idx={2}
+              />
+              <MenuList
+                href="/sponsorship"
+                name="Sponsors"
+                setOpenMenu={setOpenMenu}
+                setScroll={setScroll}
+                idx={3}
+              />
+              <MenuList
+                href="/mentorship"
+                name="Mentorship"
+                setOpenMenu={setOpenMenu}
+                setScroll={setScroll}
+                idx={4}
+              />
+              <MenuList
+                href="/resources"
+                name="Resources"
+                setOpenMenu={setOpenMenu}
+                setScroll={setScroll}
+                idx={5}
+              />
+              <MenuList
+                href="/tracker"
+                name="BIG Tracker"
+                setOpenMenu={setOpenMenu}
+                setScroll={setScroll}
+                idx={6}
+              />
+            </ul>
 
             <div
               style={{ top: openMenu ? 50 : 90 }}
