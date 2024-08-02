@@ -6,7 +6,6 @@ import { fetchPastSpeakers } from "../Database/database";
 import { fetchSponsors } from "../Database/database";
 import SpeakerShowcase from "@/Components/SpeakerShowcase";
 import Header from "@/Components/Header";
-
 export default async function Home() {
   const { showcaseSpeakers } = await fetchPastSpeakers();
   const sponsors = await fetchSponsors();
