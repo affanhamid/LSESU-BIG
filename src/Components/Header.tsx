@@ -175,6 +175,8 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const divRef = useRef<HTMLDivElement>(null);
   const lastExecutionRef = useRef(0);
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => setIsClient(true), []);
 
   useEffect(() => {
     const now = Date.now();
@@ -197,19 +199,15 @@ const Header = () => {
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
-        <Image
+        <img
           src="/canary_wharf.jpg"
           alt="Image"
-          layout="responsive"
-          width={window?.screen.width}
-          height={window?.screen.height}
+          className="w-screen object-cover"
         />
-        <Image
+        <img
           src="/canary_wharf_3.jpg"
           alt="Image"
-          layout="responsive"
-          width={window?.screen.width}
-          height={window?.screen.height}
+          className="w-screen object-cover"
         />
       </div>
       <header className="relative h-screen w-screen z-20">

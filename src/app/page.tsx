@@ -5,8 +5,7 @@ import Benefit from "../Components/Benefit";
 import { fetchPastSpeakers } from "../Database/database";
 import { fetchSponsors } from "../Database/database";
 import SpeakerShowcase from "@/Components/SpeakerShowcase";
-import dynamic from "next/dynamic";
-const Header = dynamic(() => import("@/Components/Header"), { ssr: false });
+import Header from "@/Components/Header";
 
 export default async function Home() {
   const { showcaseSpeakers } = await fetchPastSpeakers();
