@@ -1,9 +1,5 @@
 import React from 'react'
-
-interface SponsorProps {
-    logo: string;
-    summary: string;
-}
+import { SponsorProps } from '@/Types/types'
 
 const Sponsor: React.FC<SponsorProps> = ({ logo, summary }) => {
     return (

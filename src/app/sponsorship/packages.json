@@ -1,0 +1,250 @@
+{
+    "prices": {
+        "Bronze": "£1,000",
+        "Silver": "£1,250",
+        "Gold": "1,500",
+        "Platinum": "2,000"
+    },
+    "items": [
+        {
+            "name": "Marketing",
+            "is_title_row": true,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": false
+            }
+        },
+        {
+            "name": "Appear on our website with click-through access",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": true,
+                "Silver": true,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Featured on our social media channels",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": true,
+                "Silver": true,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Included in our mailing list",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": true,
+                "Silver": true,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Branded on banners, posters, and merchandise",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": true,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Events",
+            "is_title_row": true,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": false
+            }
+        },
+        {
+            "name": "Company presentations",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": true,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Networking sessions",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Keynote speaker events",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Interactive competitions",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Corporate conferences",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Skills training workshops",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Activities",
+            "is_title_row": true,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": false
+            }
+        },
+        {
+            "name": "Corporate office visits",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Diversity network events",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Themed social events",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Stock pitching sessions",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Anniversary celebration event",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Alumni dinners",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "CV Access",
+            "is_title_row": true,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": false,
+                "Platinum": false
+            }
+        },
+        {
+            "name": "CV booklets for your events",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "CV booklets for all EFS events",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Termly debrief meetings",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        },
+        {
+            "name": "Dedicated campus ambassador",
+            "is_title_row": false,
+            "packages": {
+                "Bronze": false,
+                "Silver": false,
+                "Gold": true,
+                "Platinum": true
+            }
+        }
+    ]
+}

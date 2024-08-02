@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export const metadata: Metadata = {
-  title: "LSE BIG",
+  title: "LSE Business and Investment Group",
   description: "LSE Business and Investment Group",
 };
 
@@ -21,8 +18,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" />
       </head>
-      <body className={inter.className}>
-        <Navbar />
+      <body className={'font-textFont bg-background'}>
         {children}
         <Footer />
       </body>

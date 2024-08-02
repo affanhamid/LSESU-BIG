@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-8">
+        <footer className="bg-background text-fontColor py-8">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                     <h3 className="text-lg font-bold mb-4"><Logo /></h3>
-                    <p>Empowering the next generation of finance and investment leaders.</p>
+                    <p>Empowering the next generation of leaders.</p>
                 </div>
                 <div>
                     <h3 className="text-lg font-bold mb-4">Quick Links</h3>
@@ -27,7 +27,8 @@ const Footer = () => {
                     <div className="mb-5">
                         <p>LSE Student Union</p>
                         <p>Houghton Street</p>
-                        <p>London, WC2A 2AE</p>
+                        <p>London</p>
+                        <p>WC2A 2AE</p>
                     </div>
                     <p>Email: contact@lsebig.com</p>
                     <p>Phone: +44 123 456 7890</p>
