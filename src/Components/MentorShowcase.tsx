@@ -44,16 +44,14 @@ const Carousel: React.FC<CarouselProps> = ({
 
 const MentorShowcase = ({ mentors }: { mentors: any }) => {
   return (
-    <div className="px-80">
-      <div className="px-[250px]">
-        <Carousel
-          gap="gap-1"
-          offset=""
-          paddingY="pt-20 pb-10"
-          items={mentors}
-          Component={Mentor}
-        />
-      </div>
+    <div className="px-4 md:px-10 lg:px-40">
+      <Carousel
+        gap="gap-4 md:gap-10 lg:gap-20"
+        offset="pl-4 md:pl-8 lg:pl-12"
+        paddingY="pt-10 pb-10"
+        items={mentors}
+        Component={Mentor}
+      />
     </div>
   );
 };

@@ -25,7 +25,7 @@ const MenuList = ({
       onClick={() => setTimeout(() => setOpenMenu(false), 400)}
       onMouseEnter={() => setScroll(idx)}
     >
-      <li className="py-6 text-3xl w-full pl-16 hover:bg-white hover:text-background">
+      <li className="py-6 text-xl md:text-3xl w-full pl-8 md:pl-16 hover:bg-white hover:text-background">
         {name}
       </li>
     </Link>
@@ -36,25 +36,27 @@ const HeaderNavbar = ({
   setScroll,
   openMenu,
   setOpenMenu,
+  navBackground
 }: {
   setScroll: any;
   openMenu: any;
   setOpenMenu: any;
+  navBackground: any;
 }) => {
   return (
     <div
-      className="fixed left-0 right-0 top-0 text-fontColor flex pl-32 py-5 items-center z-30 transition-all duration-200"
-      style={{ paddingRight: openMenu ? 500 : 80 }}
+      className={`fixed top-0 w-full text-fontColor bg-${navBackground} flex gap-4 flex-col lg:flex-row xl:pl-32 md:pl-10 pl-5 py-8 items-center z-30 transition-all duration-200 ${openMenu ? "lg:pr-[32rem]" : "pr-10 lg:pr-20"
+        }`}
     >
-      <div className="flex-1">
+      <div className="flex-1 w-max z-[60]">
         <Logo />
       </div>
       <div className="flex gap-5 items-center">
-        <div className="fixed right-0 top-0 bottom-0 left-1/2">
-          <div className="relative h-full w-full z-50">
+        <div className={`fixed right-0 top-0 bottom-0 ${openMenu ? 'left-0 md:left-1/4 lg:left-3/4' : ''}`}>
+          <div className="relative h-full w-full">
             <ul
               className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
-              style={{ width: openMenu ? "50%" : 0 }}
+              style={{ width: openMenu ? "100%" : 0 }}
             >
               <MenuList
                 href="/"
@@ -108,8 +110,8 @@ const HeaderNavbar = ({
             </ul>
 
             <div
-              style={{ top: openMenu ? 50 : 90 }}
-              className="absolute text-5xl right-20 text-white hover:text-background cursor-pointer transition-all duration-200 z-50"
+              className={`absolute text-5xl right-10 md:right-20 text-white hover:text-background cursor-pointer transition-all duration-200 z-50 ${openMenu ? "top-12" : "top-[95px]"
+                }`}
               onClick={() => setOpenMenu((openMenu: boolean) => !openMenu)}
             >
               <BiMenuAltRight />
@@ -119,7 +121,7 @@ const HeaderNavbar = ({
         <div className="z-[60]">
           <Socials />
         </div>
-        <div className="z-[60]">
+        <div className="z-[60] hidden md:block">
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
             <button className="px-4 py-2 rounded border border-white/20 bg-background text-md">
               Join Us
@@ -137,6 +139,7 @@ const Header = () => {
   const divRef = useRef<HTMLDivElement>(null);
   const lastExecutionRef = useRef(0);
   const [isClient, setIsClient] = useState(false);
+  const [navBackground, setNavBackground] = useState('transparent')
   useEffect(() => setIsClient(true), []);
 
   useEffect(() => {
@@ -148,61 +151,73 @@ const Header = () => {
       lastExecutionRef.current = now;
     }
   }, [scroll]);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY >= 750) {
+        setNavBackground('background')
+      } else {
+        setNavBackground('transparent')
+      }
+    };
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
   return (
-    <section>
+    <section className="font-headerFont">
       <HeaderNavbar
         setScroll={setScroll}
         openMenu={openMenu}
         setOpenMenu={setOpenMenu}
+        navBackground={navBackground}
       />
       <div
-        className="absolute w-screen h-screen overflow-y-scroll flex flex-col -z-10 transition-all duration-200 brightness-90"
+        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col -z-10 transition-all duration-200 brightness-75 blur-[2px]"
+
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
         <img
           src="/canary_wharf.jpg"
           alt="Image"
-          className="w-screen object-cover"
+          className="h-full lg:h-[110vh] object-cover"
         />
         <img
           src="/canary_wharf_3.jpg"
           alt="Image"
-          className="w-screen object-cover"
+          className="hidden lg:block lg:h-screen h-full object-cover"
         />
       </div>
-      <header className="relative h-screen w-screen z-20">
+      <header className="relative h-[50vh] lg:h-screen w-full z-20 flex items-center justify-center">
         <div
-          className="absolute top-1/2 transform -translate-y-1/2 p-3 -translate-x-1/2 flex flex-col text-white transition-all duration-200 backdrop-brightness-75 bg-white rounded-lg bg-opacity-30 backdrop-blur-md"
-          style={{ left: openMenu ? "30%" : "50%" }}
+          className="absolute top-1/2 transform -translate-y-1/2 p-4 flex flex-col items-center text-white transition-all duration-200 rounded-lg py-7 px-10"
+          style={{
+            left: openMenu ? "30%" : "50%",
+            transform: "translate(-50%, -50%)",
+          }}
         >
-          <h1 className="text-5xl font-bold flex flex-col text-nowrap">
+          <h1 className="font-bold text-center flex flex-col">
             <span
-              className={`text-5xl mb-1  transition-transform duration-200 text-center ${
-                openMenu ? "-translate-x-[17.7%] " : "translate-x-0"
-              }`}
+              className={`text-lg md:text-5xl mb-1 transition-transform duration-200 ${openMenu ? "-translate-x-[165px]" : "translate-x-0"
+                }`}
             >
               London School of Economics
             </span>
-            <span className="text-7xl p-1 text-background">
+            <span className="text-lg md:text-7xl text-background text-nowrap">
               Business & Investment Group
             </span>
           </h1>
           <p
-            className={`text-2xl mt-3 transition-transform duration-200 text-center ${
-              openMenu ? "-translate-x-[25.5%] " : "translate-x-0"
-            }`}
+            className={`text-base md:text-2xl mt-3 transition-transform duration-200 ${openMenu ? "-translate-x-[242px]" : "translate-x-0"
+              }`}
           >
             Europe's premier finance and business society
           </p>
-          <Link
-            href="https://www.lsesu.com/communities/societies/group/big/"
-            className="w-full flex justify-center z=[60]"
-          >
+          <Link href="https://www.lsesu.com/communities/societies/group/big/">
             <button
-              className={`mt-4 px-4 py-2 rounded border-2 border-white/5 bg-background text-white text-bold text-xl transition-all duration-200 ${
-                openMenu ? "-translate-x-[425%] " : "-translate-x-0"
-              }`}
+              className={`mt-4 px-4 py-2 rounded border-2 border-white/5 bg-background text-white font-bold text-lg md:text-xl transition-all duration-200 ${openMenu ? "-translate-x-[412px]" : "translate-x-0"
+                }`}
             >
               Join Us
             </button>

@@ -6,6 +6,15 @@ const config: Config = {
     "./src/app/**/*.tsx",
   ],
   theme: {
+    screens: {
+      'ms': '320px',
+      'mm': '375px',
+      'ml': '452px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         "fontColor": "#EEEEEE",
@@ -13,7 +22,8 @@ const config: Config = {
         "background": "#0C1A3B"
       },
       fontFamily: {
-        textFont: ["Playfair Display", 'serif'],
+        textFont: ["Lato", 'sans-serif'],
+        headerFont: ["Playfair Display", 'serif'],
       },
     },
   },

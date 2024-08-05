@@ -4,9 +4,9 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 const Socials = () => {
     return (
         <div className="flex gap-3 text-2xl">
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaFacebook /></a>
-            <a href="#"><FaInstagram /></a>
+            <a href="https://uk.linkedin.com/company/lsesubig"><FaLinkedin /></a>
+            <a href="https://www.facebook.com/lsesubig/"><FaFacebook /></a>
+            <a href="https://www.instagram.com/lsesubig/"><FaInstagram /></a>
         </div>
     )
 }

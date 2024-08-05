@@ -44,11 +44,11 @@ const Carousel: React.FC<CarouselProps> = ({
 
 const TestimonialShowcase = ({ testimonials }: { testimonials: any }) => {
   return (
-    <div className="px-[550px]">
+    <div className="px-4 md:px-10 lg:px-40">
       <Carousel
-        gap="gap-40"
-        offset="pl-12"
-        paddingY="pt-20 pb-10"
+        gap="gap-4 md:gap-10 lg:gap-20"
+        offset="pl-4 md:pl-8 lg:pl-12"
+        paddingY="pt-10 pb-10"
         items={testimonials}
         Component={Testimony}
       />

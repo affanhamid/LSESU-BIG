@@ -48,9 +48,11 @@ const Carousel: React.FC<CarouselProps> = ({
 
 const SpeakerShowcase = ({ showcaseSpeakers }: { showcaseSpeakers: any }) => {
   return (
-    <section className="text-white pt-20 pb-10">
-      <h1 className="text-7xl text-bold text-center">Past Speakers</h1>
-      <div className="my-40 px-56">
+    <section className="text-white lg:py-32">
+      <h1 className="text-3xl lg:text-4xl font-bold text-left pl-80 mb-10">
+        Past Speakers
+      </h1>
+      <div className="px-4 md:px-10 lg:px-80">
         <Carousel
           gap="gap-8"
           offset="pl-6"
@@ -60,7 +62,7 @@ const SpeakerShowcase = ({ showcaseSpeakers }: { showcaseSpeakers: any }) => {
           animate={true}
         />
         <Link href="/past-speakers">
-          <p className="mt-5 underline text-lg">See All Speakers</p>
+          <p className="mt-5 underline text-lg text-center lg:text-left">See All Speakers</p>
         </Link>
       </div>
     </section>
