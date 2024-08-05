@@ -16,10 +16,9 @@ const Person: React.FC<PersonProps> = ({
     <div
       className={`overflow-hidden rounded-lg flex ${
         reverse ? "flex-row-reverse" : ""
-      } items-center gap-4 lg:gap-10 my-6 lg:my-10 border border-gray-500 p-4 lg:p-6`}
+      } items-center gap-4 lg:gap-10 my-6 lg:my-10 border border-gray-500 `}
     >
-      {/* Placeholder for image */}
-      <div className="w-24 h-24 lg:w-[350px] lg:h-[250px] bg-gray-500"></div>
+      <img src={image} alt="" className="w-24 lg:w-[250px] object-contain" />
       <div className="flex flex-col text-left gap-2 lg:gap-3">
         <div className="flex items-center">
           <h2 className="text-lg lg:text-xl font-semibold">{name}</h2>

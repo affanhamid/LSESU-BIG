@@ -44,7 +44,7 @@ const AboutUs = async () => {
         </div>
       </header>
       <section>
-        <div className="bg-background text-fontColor flex flex-col lg:flex-row h-auto lg:h-[80vh] py-20 px-5">
+        <div className="bg-background text-fontColor flex flex-col lg:flex-row h-auto lg:h-[80vh] py-20 px-5 sticky top-0">
           <div className="flex-[0_0_100%] lg:flex-[0_0_45%] flex items-center pl-4 lg:pl-40 mb-10 lg:mb-0">
             <h2 className="text-2xl lg:text-3xl font-bold">
               The Executive Team
@@ -57,7 +57,7 @@ const AboutUs = async () => {
                   name={member.name}
                   role={member.role}
                   job={member.job}
-                  image=""
+                  image={member.imageLink}
                   key={idx}
                   email={member.email}
                   linkedin={member.linkedin}
@@ -85,9 +85,7 @@ const AboutUs = async () => {
               ))}
           </div>
           <div className="flex-[0_0_100%] lg:flex-[0_0_45%] flex items-center pl-4 lg:pl-40 mt-10 lg:mt-0">
-            <h2 className="text-2xl lg:text-3xl font-bold">
-              The Heads of Divisions
-            </h2>
+            <h2 className="text-2xl lg:text-3xl font-bold">Division Heads</h2>
           </div>
         </div>
       </section>

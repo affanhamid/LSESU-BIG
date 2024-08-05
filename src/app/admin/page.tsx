@@ -102,7 +102,11 @@ const Admin = () => {
     <main>
       <Navbar />
       <ResourcesDashboard />
-      {user && user?.email !== "affanhamid007@gmail.com" ? (
+      {user &&
+      user.email &&
+      !["snahom24@gmail.com", "affanhamid007@gmail.com"].includes(
+        user.email
+      ) ? (
         <div className="pt-80 bg-white w-full text-center pb-20">
           You are not authorized to this page
         </div>
@@ -146,7 +150,7 @@ const Admin = () => {
                 {collectionData.map((item, idx) => (
                   <tr key={idx}>
                     {headers.map((key, index) => (
-                      <td key={index}>
+                      <td key={index} className="px-2">
                         <input
                           type="text"
                           value={String(item[key])}
