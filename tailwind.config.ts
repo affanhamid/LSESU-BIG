@@ -22,8 +22,8 @@ const config: Config = {
         "background": "#0C1A3B"
       },
       fontFamily: {
-        textFont: ["Lato", 'sans-serif'],
-        headerFont: ["Playfair Display", 'serif'],
+        textFont: ["Nanum Myeongjo", 'serif'],
+        headerFont: ["Nanum Myeongjo", "serif"],
       },
     },
   },

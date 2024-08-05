@@ -114,10 +114,10 @@ const Events = async () => {
   }));
 
   return (
-    <main className="bg-white pt-20">
+    <main className="bg-white pt-32">
       <Navbar />
       <section className="bg-white pt-20 pb-10">
-        <h1 className="text-3xl lg:text-7xl text-center mb-10">
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
           Upcoming Events
         </h1>
         <div className="flex flex-col items-center px-4">
@@ -134,7 +134,9 @@ const Events = async () => {
         </div>
       </section>
       <section className="pt-20 pb-10">
-        <h1 className="text-3xl lg:text-7xl text-center">Past Events</h1>
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+          Past Events
+        </h1>
         <Timeline TimelineEvents={timelineEvents} />
       </section>
     </main>

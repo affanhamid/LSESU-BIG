@@ -13,7 +13,9 @@ const Footer = () => {
           <p>Empowering the next generation of leaders.</p>
         </div>
         <div>
-          <h3 className="text-lg font-bold mb-4 text-center lg:text-left">Quick Links</h3>
+          <h3 className="text-lg font-bold mb-4 text-center lg:text-left">
+            Quick Links
+          </h3>
           <ul className="flex lg:flex-col lg:items-start gap-2 flex-wrap items-center justify-center lg:justify-start">
             <li>
               <Link href="/" className="hover:underline">
@@ -39,6 +41,9 @@ const Footer = () => {
               <Link href="/membership" className="hover:underline">
                 Membership
               </Link>
+            </li>
+            <li>
+              <Link href="tracker">BIG Tracker</Link>
             </li>
           </ul>
         </div>

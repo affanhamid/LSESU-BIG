@@ -1,8 +1,4 @@
 import React from "react";
-import SponsorshipTable from "../../Components/SponsorshipTable";
-import packages from "./packages.json";
-import { fetchPackages } from "../../Database/database";
-import { PackagesInterface } from "@/Types/types";
 import Navbar from "@/Components/Navbar";
 
 const Sponsorship = async () => {
@@ -54,15 +50,6 @@ const Sponsorship = async () => {
           </div>
         </div>
       </header>
-      <section className="bg-background text-white pt-20 pb-10">
-        <h2 className="text-3xl lg:text-6xl font-bold text-center mb-2">
-          Sponsorship Packages
-        </h2>
-        <p className="text-center text-lg">
-          Please contact us for more information
-        </p>
-        <SponsorshipTable packages={packages} />
-      </section>
     </main>
   );
 };

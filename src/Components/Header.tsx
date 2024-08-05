@@ -36,7 +36,7 @@ const HeaderNavbar = ({
   setScroll,
   openMenu,
   setOpenMenu,
-  navBackground
+  navBackground,
 }: {
   setScroll: any;
   openMenu: any;
@@ -45,14 +45,19 @@ const HeaderNavbar = ({
 }) => {
   return (
     <div
-      className={`fixed top-0 w-full text-fontColor bg-${navBackground} flex gap-4 flex-col lg:flex-row xl:pl-32 md:pl-10 pl-5 py-8 items-center z-30 transition-all duration-200 ${openMenu ? "lg:pr-[32rem]" : "pr-10 lg:pr-20"
-        }`}
+      className={`fixed top-0 w-full text-fontColor bg-${navBackground} flex gap-4 flex-col lg:flex-row xl:pl-32 md:pl-10 pl-5 py-8 items-center z-30 transition-all duration-200 ${
+        openMenu ? "lg:pr-[32rem]" : "pr-10 lg:pr-20"
+      }`}
     >
       <div className="flex-1 w-max z-[60]">
         <Logo />
       </div>
       <div className="flex gap-5 items-center">
-        <div className={`fixed right-0 top-0 bottom-0 ${openMenu ? 'left-0 md:left-1/4 lg:left-3/4' : ''}`}>
+        <div
+          className={`fixed right-0 top-0 bottom-0 ${
+            openMenu ? "left-0 md:left-1/4 lg:left-3/4" : ""
+          }`}
+        >
           <div className="relative h-full w-full">
             <ul
               className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
@@ -110,8 +115,9 @@ const HeaderNavbar = ({
             </ul>
 
             <div
-              className={`absolute text-5xl right-10 md:right-20 text-white hover:text-background cursor-pointer transition-all duration-200 z-50 ${openMenu ? "top-12" : "top-[95px]"
-                }`}
+              className={`absolute text-5xl right-10 md:right-20 text-white hover:text-background cursor-pointer transition-all duration-200 z-50 ${
+                openMenu ? "top-12" : "top-[95px]"
+              }`}
               onClick={() => setOpenMenu((openMenu: boolean) => !openMenu)}
             >
               <BiMenuAltRight />
@@ -139,7 +145,7 @@ const Header = () => {
   const divRef = useRef<HTMLDivElement>(null);
   const lastExecutionRef = useRef(0);
   const [isClient, setIsClient] = useState(false);
-  const [navBackground, setNavBackground] = useState('transparent')
+  const [navBackground, setNavBackground] = useState("transparent");
   useEffect(() => setIsClient(true), []);
 
   useEffect(() => {
@@ -155,13 +161,13 @@ const Header = () => {
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY >= 750) {
-        setNavBackground('background')
+        setNavBackground("background");
       } else {
-        setNavBackground('transparent')
+        setNavBackground("transparent");
       }
     };
-    window.addEventListener('scroll', toggleVisibility, { passive: true });
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   return (
@@ -173,8 +179,7 @@ const Header = () => {
         navBackground={navBackground}
       />
       <div
-        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col -z-10 transition-all duration-200 brightness-75 blur-[2px]"
-
+        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] "
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
@@ -189,7 +194,7 @@ const Header = () => {
           className="hidden lg:block lg:h-screen h-full object-cover"
         />
       </div>
-      <header className="relative h-[50vh] lg:h-screen w-full z-20 flex items-center justify-center">
+      <header className="relative h-[50vh] lg:h-screen w-full z-20 flex items-center justify-center bg-background/30 font-bold">
         <div
           className="absolute top-1/2 transform -translate-y-1/2 p-4 flex flex-col items-center text-white transition-all duration-200 rounded-lg py-7 px-10"
           style={{
@@ -199,27 +204,30 @@ const Header = () => {
         >
           <h1 className="font-bold text-center flex flex-col">
             <span
-              className={`text-lg md:text-5xl mb-1 transition-transform duration-200 ${openMenu ? "-translate-x-[165px]" : "translate-x-0"
-                }`}
+              className={`text-lg md:text-5xl mb-1 transition-transform duration-200 ${
+                openMenu ? "-translate-x-[157px]" : "translate-x-0"
+              }`}
             >
               London School of Economics
             </span>
-            <span className="text-lg md:text-7xl text-background text-nowrap">
+            <span className="text-lg md:text-7xl text-nowrap">
               Business & Investment Group
             </span>
           </h1>
           <p
-            className={`text-base md:text-2xl mt-3 transition-transform duration-200 ${openMenu ? "-translate-x-[242px]" : "translate-x-0"
-              }`}
+            className={`text-base md:text-2xl mt-3 transition-transform duration-200 ${
+              openMenu ? "-translate-x-[225px]" : "translate-x-0"
+            }`}
           >
             Europe's premier finance and business society
           </p>
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
             <button
-              className={`mt-4 px-4 py-2 rounded border-2 border-white/5 bg-background text-white font-bold text-lg md:text-xl transition-all duration-200 ${openMenu ? "-translate-x-[412px]" : "translate-x-0"
-                }`}
+              className={`mt-4 px-12 py-6 text-3xl rounded border-2 border-white/5 bg-background text-white font-bold md:text-xl transition-all duration-200 ${
+                openMenu ? "-translate-x-[310px]" : "translate-x-0"
+              }`}
             >
-              Join Us
+              BECOME A MEMBER
             </button>
           </Link>
         </div>

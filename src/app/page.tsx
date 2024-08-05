@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Sponsor from "../Components/Sponsor";
 import Logo from "../Components/Logo";
-import Benefit from "../Components/Benefit";
+import MembershipBenefits from "../Components/MembershipBenefits";
 import { fetchPastSpeakers } from "../Database/database";
 import { fetchSponsors } from "../Database/database";
 import SpeakerShowcase from "@/Components/SpeakerShowcase";
@@ -9,6 +9,7 @@ import Header from "@/Components/Header";
 import "./globals.css";
 import MediaLogo from "@/Components/MediaLogo";
 import Features from "@/Components/Features";
+import Numbers from "@/Components/Numbers";
 
 export default async function Home() {
   const { showcaseSpeakers } = await fetchPastSpeakers();
@@ -18,15 +19,16 @@ export default async function Home() {
     <main>
       <Header />
       <section className="py-32 bg-white">
-        <h1 className="text-3xl lg:text-4xl font-bold text-left mb-10 pl-80">
-          What we do
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+          About Us
         </h1>
+        <Numbers />
         <Features />
       </section>
       <SpeakerShowcase showcaseSpeakers={showcaseSpeakers} />
 
-      <section className="bg-gray-900 py-32 text-white">
-        <h1 className="text-3xl lg:text-4xl font-bold text-left mb-10 pl-80">
+      <section className="py-32 bg-white">
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
           Past Sponsors
         </h1>
         <div className="px-4 md:px-10 lg:px-80">
@@ -39,42 +41,36 @@ export default async function Home() {
               />
             ))}
           </div>
-          <Link href="/sponsors">
-            <p className="mt-5 underline text-xl text-center lg:text-left">
-              See All Sponsors
-            </p>
-          </Link>
-        </div>
-      </section>
-
-      <section className="text-white pt-32 pb-32">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
-          Membership Benefits
-        </h1>
-        <div className="relative w-[90%] md:w-[70%] lg:w-[50%] mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center gap-4">
-          <div className="hidden lg:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <Logo />
+          <div className="text-center text-2xl">
+            <div>
+              Interested in partnering with us?{" "}
+              <Link href="mailto:lse-big@lse.ac.uk" className="text-blue-700 ">
+                business-investment@lsesu.org
+              </Link>
+            </div>
           </div>
-          <Benefit title="Benefit 1" description="Description of Benefit 1" />
-          <Benefit title="Benefit 2" description="Description of Benefit 2" />
-          <Benefit title="Benefit 3" description="Description of Benefit 3" />
-          <Benefit title="Benefit 4" description="Description of Benefit 4" />
-        </div>
-        <div className="text-center mt-20">
-          <p className="text-xl">
-            If you want to learn more about membership benefits, get in touch
-          </p>
-          <button className="mt-4 px-4 py-2 rounded border-2 border-white">
-            Get In Touch
-          </button>
         </div>
       </section>
+      <MembershipBenefits />
       <section className="bg-white pt-32 pb-40">
-        <h1 className="text-3xl lg:text-4xl font-bold text-left mb-10 pl-80">
-          Press Coverage
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+          Alumini Destinations
         </h1>
-        <div className="flex gap-12 justify-center">
-          {['A', 'B', 'C', 'D', 'E'].map((icon, idx) => <MediaLogo icon={icon} key={idx} />)}
+        <div className="w-full">
+          <div className="grid grid-cols-4 justify-center mx-auto w-max">
+            {[
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/2048px-Goldman_Sachs.svg.png",
+              "https://www.mckinsey.com/~/media/Images/Global/SEOImagePlaceholder.ashx",
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Optiver_Logo.svg/1280px-Optiver_Logo.svg.png",
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/BlackRock_wordmark.svg/2560px-BlackRock_wordmark.svg.png",
+              "https://upload.wikimedia.org/wikipedia/commons/f/f3/MS_Standard_Logo_2022_Black.jpg",
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/BCG_Corporate_Logo.svg/440px-BCG_Corporate_Logo.svg.png",
+              "https://upload.wikimedia.org/wikipedia/commons/6/66/Citadel_Securities_logo.jpg",
+              "https://media.licdn.com/dms/image/C4E0BAQHM1mo8m_ecGw/company-logo_200_200/0/1678125020983/blackstonegroup_logo?e=2147483647&v=beta&t=yFgyhUGXP-EopN16ZRohR0Nn9yM3uFoTjxeUVU-6V1I",
+            ].map((icon, idx) => (
+              <MediaLogo icon={icon} key={idx} />
+            ))}
+          </div>
         </div>
       </section>
     </main>

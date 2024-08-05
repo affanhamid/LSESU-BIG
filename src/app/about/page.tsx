@@ -8,7 +8,9 @@ const AboutUs = async () => {
     <main className="text-center bg-white">
       <Navbar />
       <header className="py-10 px-4 md:px-20 lg:px-32 xl:px-48 pt-40 pb-10">
-        <h2 className="text-3xl lg:text-6xl font-bold mb-4">Our Committee</h2>
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+          Our Committee
+        </h1>
         <div className="mt-10">
           <div className="text-left flex flex-col leading-8">
             <h2 className="text-2xl lg:text-3xl font-bold mb-4">
