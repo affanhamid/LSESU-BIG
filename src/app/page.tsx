@@ -18,11 +18,12 @@ export default async function Home() {
   return (
     <main>
       <Header />
-      <section className="py-32 bg-white">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
-          About Us
-        </h1>
+      <section className="pb-32 pt-20 bg-white">
+        å
         <Numbers />
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+          What we do
+        </h1>
         <Features />
       </section>
       <SpeakerShowcase showcaseSpeakers={showcaseSpeakers} />

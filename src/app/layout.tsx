@@ -4,8 +4,8 @@ import Footer from "../Components/Footer";
 import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 export const metadata: Metadata = {
-  title: "LSE Business and Investment Group",
-  description: "LSE Business and Investment Group",
+  title: "LSESU Business and Investment Group",
+  description: "LSESU Business and Investment Group",
 };
 
 export default function RootLayout({
@@ -19,9 +19,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" />
       </head>
       <UserProvider>
-        <body
-          className="bg-background w-screen font-textFont"
-        >
+        <body className="bg-background w-screen font-textFont">
           {children}
           <Footer />
         </body>
