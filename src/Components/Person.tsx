@@ -14,20 +14,35 @@ const Person: React.FC<PersonProps> = ({
 }) => {
   return (
     <div
-      className={`overflow-hidden rounded-lg flex ${
+      className={`overflow-hidden flex ${
         reverse ? "flex-row-reverse" : ""
-      } items-center gap-4 lg:gap-10 my-6 lg:my-10 border border-gray-500 `}
+      } items-center gap-4 lg:gap-10 my-6 lg:my-10 border-b border-white/50 pb-5 `}
     >
-      <img src={image} alt="" className="w-24 lg:w-[250px] object-contain" />
-      <div className="flex flex-col text-left gap-2 lg:gap-3">
-        <div className="flex items-center">
-          <h2 className="text-lg lg:text-xl font-semibold">{name}</h2>
-          <Link href={linkedin}>
-            <FaLinkedin className="ml-2 text-lg lg:text-xl" />
-          </Link>
+      <img
+        src={image}
+        alt=""
+        className="w-24 lg:w-[175px] object-contain rounded-full"
+      />
+      <div
+        className={`flex flex-col ${
+          reverse ? "text-right" : "text-left"
+        } gap-2 lg:gap-3`}
+      >
+        <div className="flex-col">
+          <span className="flex items-center">
+            <h2 className="text-lg lg:text-2xl font-semibold">{name}</h2>
+            <Link href={linkedin}>
+              <FaLinkedin className="ml-2 text-lg lg:text-xl" />
+            </Link>
+          </span>
+          <p
+            className={`text-sm lg:text-base ${
+              reverse ? "text-black" : "text-gray-300"
+            }  pt-2`}
+          >
+            {role}
+          </p>
         </div>
-        <p className="text-sm lg:text-base">{role}</p>
-        <p className="underline text-sm lg:text-base">{email}</p>
       </div>
     </div>
   );

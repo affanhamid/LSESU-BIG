@@ -15,11 +15,7 @@ const MenuList = ({
   setOpenMenu: any;
 }) => {
   return (
-    <Link
-      href={href}
-      onClick={() => setTimeout(() => setOpenMenu(false), 400)}
-      target="_blank"
-    >
+    <Link href={href} onClick={() => setTimeout(() => setOpenMenu(false), 400)}>
       <li className="py-6 text-xl md:text-3xl text-left w-full pl-8 md:pl-16 hover:bg-white hover:text-background">
         {name}
       </li>

@@ -24,7 +24,6 @@ const MenuList = ({
       href={href}
       onClick={() => setTimeout(() => setOpenMenu(false), 400)}
       onMouseEnter={() => setScroll(idx)}
-      target="_blank"
     >
       <li className="py-6 text-xl md:text-3xl w-full pl-8 md:pl-16 hover:bg-white hover:text-background">
         {name}

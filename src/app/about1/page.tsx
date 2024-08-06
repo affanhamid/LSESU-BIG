@@ -43,7 +43,7 @@ const AboutUs = async () => {
           </div>
         </div>
       </header>
-      <section>
+      {/* <section>
         <div className="relative bg-background text-fontColor flex flex-col lg:flex-row h-auto lg:h-[80vh] py-20 px-5">
           <div className="absolute h-full w-1/2 flex items-center justify-center top-0 left-0">
             <h2 className="text-2xl lg:text-3xl font-bold">
@@ -87,6 +87,20 @@ const AboutUs = async () => {
           <div className="absolute h-full w-1/2 flex items-center justify-center top-0 right-0">
             <h2 className="text-2xl lg:text-3xl font-bold">Division Heads</h2>
           </div>
+        </div>
+      </section> */}
+      <section className="flex justify-center w-full">
+        <div className="grid grid-cols-3">
+          {execMembers &&
+            execMembers.map((member) => (
+              <div className="w-64 mx-20 my-5 flex flex-col rounded-lg overflow-hidden border bg-background text-white">
+                <img src={member.imageLink} alt="" />
+                <div className="flex flex-col py-2">
+                  <p className="text-2xl">{member.name}</p>
+                  <p>{member.role}</p>
+                </div>
+              </div>
+            ))}
         </div>
       </section>
     </main>
