@@ -29,6 +29,7 @@ export interface SpeakerProps {
     name: string;
     topic: string;
     date: string;
+    imageLink: string;
 }
 
 export interface BigSpeakerProps {
