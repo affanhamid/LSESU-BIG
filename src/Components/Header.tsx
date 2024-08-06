@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Socials from "./Socials";
 import Logo from "./Logo";
-import { BiMenuAltRight } from "react-icons/bi";
+import { BiMenuAltRight, BiX } from "react-icons/bi";
 
 const MenuList = ({
   href,
@@ -24,6 +24,7 @@ const MenuList = ({
       href={href}
       onClick={() => setTimeout(() => setOpenMenu(false), 400)}
       onMouseEnter={() => setScroll(idx)}
+      target="_blank"
     >
       <li className="py-6 text-xl md:text-3xl w-full pl-8 md:pl-16 hover:bg-white hover:text-background">
         {name}
@@ -115,12 +116,14 @@ const HeaderNavbar = ({
             </ul>
 
             <div
-              className={`absolute text-5xl right-10 md:right-20 text-white hover:text-background cursor-pointer transition-all duration-200 z-50 ${
-                openMenu ? "top-12" : "top-[95px]"
+              className={`absolute text-5xl right-10 md:right-20 cursor-pointer transition-all duration-200 z-50 ${
+                openMenu
+                  ? "top-12 text-red-700"
+                  : "top-[95px] text-white hover:text-white/60"
               }`}
               onClick={() => setOpenMenu((openMenu: boolean) => !openMenu)}
             >
-              <BiMenuAltRight />
+              {openMenu ? <BiX /> : <BiMenuAltRight />}
             </div>
           </div>
         </div>
@@ -179,7 +182,7 @@ const Header = () => {
         navBackground={navBackground}
       />
       <div
-        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] "
+        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[2px]"
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
@@ -223,7 +226,7 @@ const Header = () => {
           </p>
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
             <button
-              className={`mt-4 px-12 py-6 text-3xl rounded border-2 border-white/5 bg-background text-white font-bold md:text-xl transition-all duration-200 ${
+              className={`mt-4 px-8 py-4 text-3xl rounded border-2 border-white/5 bg-background text-white font-bold md:text-xl transition-all duration-200 ${
                 openMenu ? "-translate-x-[310px]" : "translate-x-0"
               }`}
             >

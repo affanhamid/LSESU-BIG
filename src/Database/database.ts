@@ -43,7 +43,7 @@ export async function fetchUpcomingEvents() {
 
 export async function fetchMembers() {
     const execSnapshot = await getDocs(collection(db, 'executive members'));
-    const headsSnapshot = await getDocs(collection(db, 'heads of divisions'));
+    const headsSnapshot = await getDocs(collection(db, 'heads'));
 
     const execMembers = execSnapshot.docs.map(doc => doc.data());
     const heads = headsSnapshot.docs.map(doc => doc.data());

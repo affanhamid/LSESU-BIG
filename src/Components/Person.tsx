@@ -26,7 +26,6 @@ const Person: React.FC<PersonProps> = ({
             <FaLinkedin className="ml-2 text-lg lg:text-xl" />
           </Link>
         </div>
-        <p className="text-sm lg:text-base">{job}</p>
         <p className="text-sm lg:text-base">{role}</p>
         <p className="underline text-sm lg:text-base">{email}</p>
       </div>

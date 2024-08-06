@@ -62,7 +62,9 @@ const SpeakerShowcase = ({ showcaseSpeakers }: { showcaseSpeakers: any }) => {
           animate={true}
         />
         <Link href="/past-speakers">
-          <p className="mt-5 underline text-lg text-center lg:text-left">See All Speakers</p>
+          <p className="mt-5 underline text-lg text-center lg:text-left">
+            See All Speakers
+          </p>
         </Link>
       </div>
     </section>

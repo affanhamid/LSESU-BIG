@@ -34,7 +34,6 @@ export default async function Home() {
     <main>
       <Header />
       <section className="pb-32 pt-20 bg-white">
-        å
         <Numbers />
         <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
           What we do
@@ -45,7 +44,7 @@ export default async function Home() {
 
       <section className="py-32 bg-white">
         <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
-          Past Sponsors
+          Past Sponsors and Partners
         </h1>
         <div className="px-4 md:px-10 lg:px-80">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -79,7 +78,7 @@ export default async function Home() {
               "https://www.mckinsey.com/~/media/Images/Global/SEOImagePlaceholder.ashx",
               "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Optiver_Logo.svg/1280px-Optiver_Logo.svg.png",
               "https://media.licdn.com/dms/image/D4E0BAQG1ssN1ZeOs3A/company-logo_200_200/0/1688681748905/the_carlyle_group_logo?e=2147483647&v=beta&t=JOcMHA6-L9ZDYulH94gy128AOdeHghYCE0a698YqC-k",
-              "https://upload.wikimedia.org/wikipedia/commons/f/f3/MS_Standard_Logo_2022_Black.jpg",
+              "https://upload.wikimedia.org/wikipedia/commons/f/f9/Point72logo.png",
               "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/BCG_Corporate_Logo.svg/440px-BCG_Corporate_Logo.svg.png",
               "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Citi_logo_March_2023.svg/300px-Citi_logo_March_2023.svg.png",
               "https://media.licdn.com/dms/image/C4E0BAQHM1mo8m_ecGw/company-logo_200_200/0/1678125020983/blackstonegroup_logo?e=2147483647&v=beta&t=yFgyhUGXP-EopN16ZRohR0Nn9yM3uFoTjxeUVU-6V1I",

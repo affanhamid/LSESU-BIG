@@ -1,5 +1,12 @@
 "use client";
 import { useState } from "react";
+import {
+  FaUniversity,
+  FaChartLine,
+  FaUsers,
+  FaPodcast,
+  FaHandshake,
+} from "react-icons/fa";
 
 const FeatureItem = ({
   selectedFeature,
@@ -7,23 +14,26 @@ const FeatureItem = ({
   idx,
   title,
   text,
+  icon,
 }: {
   selectedFeature: number;
   setSelectedFeature: (idx: number) => void;
   idx: number;
   title: string;
   text: string;
+  icon: JSX.Element;
 }) => {
   return (
     <div
       className={`bg-background text-white h-[50vh] border ${
-        selectedFeature === idx ? "w-[700px]" : "w-32"
+        selectedFeature === idx ? "w-[570px]" : "w-32"
       } ${
-        selectedFeature !== idx ? "hover:bg-gray-500 cursor-pointer" : ""
-      } transition-all duration-300 ease-in-out overflow-hidden`}
+        selectedFeature !== idx ? "hover:bg-background/80 cursor-pointer" : ""
+      } transition-all duration-300 ease-in-out overflow-hidden rounded-lg shadow-lg`}
       onClick={() => setSelectedFeature(idx)}
     >
       <div className={`${selectedFeature === idx ? "block" : "hidden"} p-10`}>
+        <div className="text-4xl mb-4">{icon}</div>
         <h2 className="text-3xl font-bold mb-5">{title}</h2>
         <p>{text}</p>
       </div>
@@ -43,42 +53,56 @@ const FeatureItem = ({
 const Features = () => {
   const [selectedFeature, setSelectedFeature] = useState(0);
   return (
-    <div className="flex justify-center items-center flex-wrap">
+    <div className="flex justify-center items-center flex-wrap gap-4">
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={0}
-        title={"NETWORKING"}
+        title={"BIG Capital"}
         text={
-          "Members build relationships with firm representatives at networking events, getting to know the firm culture and open opportunities. Moreover, we have strong networks across the membership base, where members support each other in application processes."
+          "We are an exclusive student-run club focused on producing original and meticulous research under 3 key divisions: Equities, Fixed Income, and Macro strategies."
         }
+        icon={<FaUniversity />}
       />
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={1}
-        title={"CAREER GUIDANCE"}
+        title={"M&A Group"}
         text={
-          "At our events previous successful applicants share their experiences of programmes across a wide variety of divisions whilst providing members a comprehensive understanding of the recruitment process, tips, and tricks."
+          "Flagship analyst program (30+ first-year students, rigorously selected. Weekly sessions on accounting, deal rationale, financial metrics and valuation methodologies)"
         }
+        icon={<FaChartLine />}
       />
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={2}
-        title={"INDUSTRY INSIGHTS"}
+        title={"Speaker Events"}
         text={
-          "We give our members insight into a variety of different fields and divisions of finance through technical workshops, insight talks, and panels with alumni and industry professionals."
+          "50+ Speaker events, Averaging 2-3 each week, from September to April, Range of events: solo events to panels, analysts to founders."
         }
+        icon={<FaUsers />}
       />
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={3}
-        title={"RESEARCH GROUP"}
+        title={"LSE Focal Point"}
         text={
-          "The Research Group and its analysts execute thorough research and provide insight into the world of finance through their research reports and articles."
+          "#1 student-run business podcast, 200+ Speakers since inception in, Speakers have included: Founders and Chairmen of Bank of America, Oaktree and Evercore"
         }
+        icon={<FaPodcast />}
+      />
+      <FeatureItem
+        selectedFeature={selectedFeature}
+        setSelectedFeature={setSelectedFeature}
+        idx={4}
+        title={"Networking (BIG Ball, socials)"}
+        text={
+          "BIG Ball will bring together [number] students from across the UK to [event value] for an evening of entertainment and networking, Socials: bowling, ice staking, treasurer hunt (helps first yrs to get to know exec team etc)"
+        }
+        icon={<FaHandshake />}
       />
     </div>
   );

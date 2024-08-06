@@ -8,7 +8,7 @@ const AboutUs = async () => {
     <main className="text-center bg-white">
       <Navbar />
       <header className="py-10 px-4 md:px-20 lg:px-32 xl:px-48 pt-40 pb-10">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center my-10">
           Our Committee
         </h1>
         <div className="mt-10">
@@ -44,13 +44,13 @@ const AboutUs = async () => {
         </div>
       </header>
       <section>
-        <div className="bg-background text-fontColor flex flex-col lg:flex-row h-auto lg:h-[80vh] py-20 px-5 sticky top-0">
-          <div className="flex-[0_0_100%] lg:flex-[0_0_45%] flex items-center pl-4 lg:pl-40 mb-10 lg:mb-0">
+        <div className="relative bg-background text-fontColor flex flex-col lg:flex-row h-auto lg:h-[80vh] py-20 px-5">
+          <div className="absolute h-full w-1/2 flex items-center justify-center top-0 left-0">
             <h2 className="text-2xl lg:text-3xl font-bold">
               The Executive Team
             </h2>
           </div>
-          <div className="flex-[0_0_100%] lg:flex-[0_0_55%] h-full lg:h-auto overflow-y-scroll lg:overflow-y-auto">
+          <div className="w-full h-full lg:h-auto pl-[50%] overflow-y-auto lg:overflow-y-auto z-30">
             {execMembers &&
               execMembers.map((member, idx) => (
                 <Person
@@ -68,15 +68,15 @@ const AboutUs = async () => {
         </div>
       </section>
       <section>
-        <div className="flex flex-col lg:flex-row h-auto lg:h-[80vh] py-20 px-5">
-          <div className="flex-[0_0_100%] lg:flex-[0_0_55%] h-full lg:h-auto overflow-y-scroll lg:overflow-y-auto">
+        <div className="relative flex flex-col lg:flex-row h-auto lg:h-[80vh] py-20 px-5 ">
+          <div className="w-full pr-[50%] h-full lg:h-auto overflow-y-auto lg:overflow-y-auto z-30">
             {heads &&
               heads.map((member, idx) => (
                 <Person
                   name={member.name}
                   role={member.role}
                   job={member.job}
-                  image=""
+                  image={member.imageLink}
                   key={idx}
                   email={member.email}
                   linkedin={member.linkedin}
@@ -84,7 +84,7 @@ const AboutUs = async () => {
                 />
               ))}
           </div>
-          <div className="flex-[0_0_100%] lg:flex-[0_0_45%] flex items-center pl-4 lg:pl-40 mt-10 lg:mt-0">
+          <div className="absolute h-full w-1/2 flex items-center justify-center top-0 right-0">
             <h2 className="text-2xl lg:text-3xl font-bold">Division Heads</h2>
           </div>
         </div>
