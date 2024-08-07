@@ -38,8 +38,8 @@ const Sponsorship = async () => {
           Sponsorship
         </h1>
       </header>
-      <section className="pb-20">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+      <section className="py-32">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center mb-10">
           Packages
         </h1>
         <div className="flex items-center justify-center gap-10 flex-wrap">
@@ -57,8 +57,8 @@ const Sponsorship = async () => {
           </div>
         </div>
       </section>
-      <section className="pb-20">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+      <section className="bg-background py-32 text-white">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center mb-10">
           Sponsored Activities
         </h1>
         <div className="px-4 md:px-10 lg:px-20 flex gap-2 justify-center">
@@ -76,8 +76,8 @@ const Sponsorship = async () => {
           />
         </div>
       </section>
-      <section className=" pb-32 bg-white">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+      <section className="pb-32 bg-white pt-32">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center mb-20">
           Past Sponsors and Partners
         </h1>
         <div className="px-4 md:px-10 lg:px-80">
