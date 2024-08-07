@@ -14,9 +14,7 @@ const Person: React.FC<PersonProps> = ({
 }) => {
   return (
     <div
-      className={`overflow-hidden flex ${
-        reverse ? "flex-row-reverse" : ""
-      } items-center gap-4 lg:gap-10 my-6 lg:my-10 border-b border-white/50 pb-5 `}
+      className={`overflow-hidden flex-col items-center gap-4 lg:gap-10 my-6 lg:my-10 border-b border-white/50 pb-5 `}
     >
       <img
         src={image}

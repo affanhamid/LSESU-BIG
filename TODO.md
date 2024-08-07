@@ -1,10 +1,10 @@
 Work on the landing page done
 Change the fonts done
-Add the photos
+Add the photos done
 Change press coverage done
-Add shorts
-Combine internships into one
-Use company logos instead of names
+Add shorts postponed
+Combine internships into one postponed
+Use company logos instead of names postponed
 Fix mentorship
 Remove sponsorship page
 Add resources

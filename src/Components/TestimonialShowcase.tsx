@@ -18,21 +18,24 @@ const Carousel: React.FC<CarouselProps> = ({
     const carousel = carouselRef.current;
     if (carousel) {
       const startScrolling = () => {
-        carousel.scrollLeft += 1;
+        carousel.scrollLeft += 650;
         if (
           carousel.scrollLeft + carousel.clientWidth >=
           carousel.scrollWidth
         ) {
-          carousel.scrollLeft = 0;
+          carousel.scrollLeft = -100;
         }
       };
-      const scrollInterval = setInterval(startScrolling, 50);
+      const scrollInterval = setInterval(startScrolling, 2000);
       return () => clearInterval(scrollInterval);
     }
   }, []);
 
   return (
-    <div ref={carouselRef} className={`overflow-x-scroll mx-auto no-scrollbar`}>
+    <div
+      ref={carouselRef}
+      className={`overflow-x-scroll mx-auto no-scrollbar scroll-smooth`}
+    >
       <div className={`flex ${gap} w-max ${offset} ${paddingY}`}>
         {items.map((item, idx) => (
           <Component key={idx} {...item} />
@@ -44,11 +47,11 @@ const Carousel: React.FC<CarouselProps> = ({
 
 const TestimonialShowcase = ({ testimonials }: { testimonials: any }) => {
   return (
-    <div className="px-4 md:px-10 lg:px-40">
+    <div className="px-4 md:px-10 lg:px-[600px]">
       <Carousel
         gap="gap-4 md:gap-10 lg:gap-20"
-        offset="pl-4 md:pl-8 lg:pl-12"
-        paddingY="pt-10 pb-10"
+        offset="pl-4 md:pl-8 lg:pl-0"
+        paddingY="pt-20 pb-10"
         items={testimonials}
         Component={Testimony}
       />
