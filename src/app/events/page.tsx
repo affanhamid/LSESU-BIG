@@ -30,8 +30,18 @@ const Events = async () => {
   const upcomingEvents = await fetchUpcomingEvents();
   const events = await fetchGallery();
   return (
-    <main className="bg-gray-50 pt-32">
+    <main className="bg-gray-50 ">
       <Navbar />
+      <header className="relative pb-5">
+        <img
+          src="../3.jpg"
+          className="w-full h-[75vh] object-cover z-0 brightness-50"
+          alt=""
+        />
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl lg:text-5xl font-bold text-center my-10 z-60 text-white">
+          Events
+        </h1>
+      </header>
       <section className="bg-gray-50 pt-20 pb-10">
         <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10 text-gray-900">
           Upcoming Events

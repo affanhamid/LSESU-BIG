@@ -14,7 +14,7 @@ const Number = ({
   description: any;
 }) => {
   return (
-    <div className="rounded-lg bg-background text-white flex flex-col items-center justify-center p-6 transition-transform duration-300 ease-in-out hover:scale-105 group cursor-pointer select-none">
+    <div className="rounded-lg bg-background text-white flex flex-col items-center justify-center p-6 group cursor-pointer select-none">
       <div className="text-6xl mb-4">{icon}</div>
       <div className="text-2xl">{text}</div>
       <div className="h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 mt-2 text-center">
@@ -30,11 +30,18 @@ const Mentorship = async () => {
   return (
     <main>
       <Navbar />
-      <header className="px-4 md:px-10 lg:px-20 xl:px-40 pt-20 lg:pt-40 flex flex-col items-center pb-10 lg:pb-20 bg-white">
-        <h1 className="text-3xl lg:text-6xl font-bold mb-5 lg:mb-10 text-center">
+      <header className="relative">
+        <img
+          src="../5.jpg"
+          className="w-full h-[75vh] object-cover z-0 brightness-50"
+          alt=""
+        />
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl lg:text-5xl font-bold text-center my-10 z-60 text-white">
           MENTORSHIP
         </h1>
-        <h2 className="text-center mb-5">
+      </header>
+      <header className="px-4 md:px-10 lg:px-20 xl:px-40 lg:pt-10 flex flex-col items-center pb-10 lg:pb-20 bg-white">
+        <h2 className="text-center text-xl mb-5">
           Something about BIG's mentorship scheme being really good
         </h2>
         <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">

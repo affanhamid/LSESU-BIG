@@ -151,12 +151,9 @@ const Header = () => {
   useEffect(() => setIsClient(true), []);
 
   useEffect(() => {
-    const now = Date.now();
-    if (now - lastExecutionRef.current >= 200) {
-      if (divRef.current) {
-        divRef.current.scrollTop = window.screen.height * scroll + 50;
-      }
-      lastExecutionRef.current = now;
+    if (divRef.current) {
+      divRef.current.scrollTop =
+        window.screen.height * (scroll * 0.856) + 0.2 * scroll;
     }
   }, [scroll]);
 
@@ -181,17 +178,42 @@ const Header = () => {
         navBackground={navBackground}
       />
       <div
-        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[2px]"
+        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[0px]"
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
         <img
-          src="/canary_wharf.jpg"
+          src="/1.jpg"
           alt="Image"
-          className="h-full lg:h-[110vh] object-cover"
+          className="h-full lg:h-screen object-cover"
         />
         <img
-          src="/canary_wharf_3.jpg"
+          src="/2.jpg"
+          alt="Image"
+          className="hidden lg:block lg:h-screen h-full object-cover"
+        />
+        <img
+          src="/3.jpg"
+          alt="Image"
+          className="hidden lg:block lg:h-screen h-full object-cover"
+        />
+        <img
+          src="/4.webp"
+          alt="Image"
+          className="hidden lg:block lg:h-screen h-full object-cover"
+        />
+        <img
+          src="/5.jpg"
+          alt="Image"
+          className="hidden lg:block lg:h-screen h-full object-cover"
+        />
+        <img
+          src="/6.jpeg"
+          alt="Image"
+          className="hidden lg:block lg:h-screen h-full object-cover"
+        />
+        <img
+          src="/7.jpg"
           alt="Image"
           className="hidden lg:block lg:h-screen h-full object-cover"
         />

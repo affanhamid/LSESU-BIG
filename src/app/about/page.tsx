@@ -44,12 +44,17 @@ const AboutUs = async () => {
   return (
     <main className="bg-white">
       <Navbar />
-      <header className="pt-40 pb-5">
-        <h1 className="text-4xl lg:text-5xl font-bold text-center my-10">
+      <header className="relative pb-5">
+        <img
+          src="../2.jpg"
+          className="w-full h-[75vh] object-cover z-0 brightness-50"
+          alt=""
+        />
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl lg:text-5xl font-bold text-center my-10 z-60 text-white">
           Our Committee
         </h1>
       </header>
-      <section>
+      <section className="pt-10">
         <h2 className="text-3xl lg:text-4xl font-bold text-center my-10">
           Executive Members
         </h2>
