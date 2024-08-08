@@ -85,32 +85,25 @@ const HeaderNavbar = ({
                 idx={2}
               />
               <MenuList
-                href="/sponsorship"
-                name="Sponsors"
-                setOpenMenu={setOpenMenu}
-                setScroll={setScroll}
-                idx={3}
-              />
-              <MenuList
                 href="/mentorship"
                 name="Mentorship"
                 setOpenMenu={setOpenMenu}
                 setScroll={setScroll}
-                idx={4}
+                idx={3}
               />
               <MenuList
                 href="/resources"
                 name="Resources"
                 setOpenMenu={setOpenMenu}
                 setScroll={setScroll}
-                idx={5}
+                idx={4}
               />
               <MenuList
                 href="/tracker"
                 name="BIG Tracker"
                 setOpenMenu={setOpenMenu}
                 setScroll={setScroll}
-                idx={6}
+                idx={5}
               />
             </ul>
 
@@ -170,7 +163,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="font-headerFont">
+    <section className="">
       <HeaderNavbar
         setScroll={setScroll}
         openMenu={openMenu}
@@ -183,7 +176,7 @@ const Header = () => {
         style={{ scrollBehavior: "smooth" }}
       >
         <img
-          src="/1.jpg"
+          src="/1.jpeg"
           alt="Image"
           className="h-full lg:h-screen object-cover"
         />
@@ -198,7 +191,7 @@ const Header = () => {
           className="hidden lg:block lg:h-screen h-full object-cover"
         />
         <img
-          src="/4.webp"
+          src="/4.jpeg"
           alt="Image"
           className="hidden lg:block lg:h-screen h-full object-cover"
         />
@@ -218,7 +211,7 @@ const Header = () => {
           className="hidden lg:block lg:h-screen h-full object-cover"
         />
       </div>
-      <header className="relative h-[50vh] lg:h-screen w-full z-20 flex items-center justify-center bg-background/30 font-bold">
+      <header className="relative h-[50vh] lg:h-screen w-full z-20 flex items-center justify-center bg-background/30">
         <div
           className="absolute top-1/2 transform -translate-y-1/2 p-4 flex flex-col items-center text-white transition-all duration-200 rounded-lg py-7 px-10"
           style={{
@@ -226,7 +219,7 @@ const Header = () => {
             transform: "translate(-50%, -50%)",
           }}
         >
-          <h1 className="font-bold text-center flex flex-col">
+          <h1 className="text-center flex flex-col">
             <span
               className={`text-lg md:text-5xl mb-1 transition-transform duration-200 ${
                 openMenu ? "-translate-x-[157px]" : "translate-x-0"

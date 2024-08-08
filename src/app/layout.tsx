@@ -20,7 +20,7 @@ export default function RootLayout({
       </head>
       <UserProvider>
         <body className="bg-background w-screen font-textFont">
-          {children}
+          <main>{children}</main>
           <Footer />
         </body>
       </UserProvider>

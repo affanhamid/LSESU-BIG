@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   FaUsers,
@@ -5,6 +6,21 @@ import {
   FaUserFriends,
   FaHandshake,
 } from "react-icons/fa";
+import { motion, Variants } from "framer-motion";
+
+const cardVariants: Variants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    y: 50,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 
 const Number = ({
   text,
@@ -16,15 +32,21 @@ const Number = ({
   description: string;
 }) => {
   return (
-    <div className="w-64 rounded-lg aspect-[7/8] bg-background text-white flex flex-col items-center justify-center pb-10 group transition-all duration-200 px-3 cursor-pointer select-none">
-      <div className="flex-1 flex items-center justify-center text-6xl">
-        {icon}
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+    >
+      <div className="w-64 rounded-lg aspect-[7/8] bg-background text-white flex flex-col items-center justify-center pb-10 group transition-all duration-200 px-3 cursor-pointer select-none">
+        <div className="flex-1 flex items-center justify-center text-6xl">
+          {icon}
+        </div>
+        <div className="mt-4 text-2xl">{text}</div>
+        <div className="h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 mt-2">
+          {description}
+        </div>
       </div>
-      <div className="mt-4 text-2xl">{text}</div>
-      <div className="h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 mt-2">
-        {description}
-      </div>
-    </div>
+    </motion.div>
   );
 };
 

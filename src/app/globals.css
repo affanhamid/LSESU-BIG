@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 .no-scrollbar::-webkit-scrollbar {
@@ -13,4 +12,37 @@
 .no-scrollbar {
   -ms-overflow-style: none; /* for Internet Explorer and Edge */
   scrollbar-width: none; /* for Firefox */
+}
+
+@layer components {
+  .hexagon-inner {
+    @apply relative w-full h-full before:block before:absolute before:inset-0;
+    @apply after:block after:absolute after:inset-0;
+
+    before {
+      content: "";
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-bottom: 86.6px solid black;
+      /* Adjust the color */
+      top: -86.6px;
+      width: 0;
+      height: 0;
+    }
+
+    after {
+      content: "";
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-top: 86.6px solid black;
+      /* Adjust the color */
+      bottom: -86.6px;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .hexagon {
+    @apply relative w-[300px] h-[173.21px] bg-black mx-[1px] my-[86.6px];
+  }
 }

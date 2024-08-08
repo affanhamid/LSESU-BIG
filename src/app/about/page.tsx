@@ -1,43 +1,7 @@
 import { fetchMembers } from "../../Database/database";
 import Navbar from "@/Components/Navbar";
-import { FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
-
-const Member = ({
-  imageLink,
-  name,
-  role,
-  linkedin,
-}: {
-  imageLink: string;
-  name: string;
-  role: string;
-  linkedin: string;
-}) => {
-  return (
-    <div className="px-6 my-4 flex flex-col items-center rounded-lg overflow-hidden text-black">
-      <img
-        src={imageLink}
-        alt={name}
-        className="rounded-full w-48 h-48 object-cover shadow-lg"
-      />
-      <div className="flex flex-col py-4 items-center">
-        <p className="text-xl lg:text-2xl flex items-center gap-2 justify-center font-semibold">
-          {name}
-          <Link
-            href={linkedin}
-            passHref
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-black hover:text-gray-700 transition-colors duration-200" />
-          </Link>
-        </p>
-        <p className="text-gray-600">{role}</p>
-      </div>
-    </div>
-  );
-};
+import { Member } from "@/Components/Member";
+import { Sector } from "@/Components/Sector";
 
 const AboutUs = async () => {
   const { execMembers, heads } = await fetchMembers();
@@ -56,7 +20,7 @@ const AboutUs = async () => {
       </header>
       <section className="pt-10">
         <h2 className="text-3xl lg:text-4xl font-bold text-center my-10">
-          Executive Members
+          Executive Comittee
         </h2>
         <hr className="border-gray-300 my-4" />
         <div className="flex-col justify-center flex-wrap gap-10">
@@ -70,18 +34,16 @@ const AboutUs = async () => {
                   linkedin={execMembers[0].linkedin}
                 />
                 <Member
-                  imageLink={execMembers[1].imageLink}
-                  name={execMembers[1].name}
-                  role={execMembers[1].role}
-                  linkedin={execMembers[1].linkedin}
-                />
-              </div>
-              <div className="flex gap-32 justify-center">
-                <Member
                   imageLink={execMembers[2].imageLink}
                   name={execMembers[2].name}
                   role={execMembers[2].role}
                   linkedin={execMembers[2].linkedin}
+                />
+                <Member
+                  imageLink={execMembers[1].imageLink}
+                  name={execMembers[1].name}
+                  role={execMembers[1].role}
+                  linkedin={execMembers[1].linkedin}
                 />
               </div>
               <div className="flex gap-32 justify-center">
@@ -111,11 +73,25 @@ const AboutUs = async () => {
                   role={execMembers[6].role}
                   linkedin={execMembers[6].linkedin}
                 />
+              </div>
+              <div className="flex gap-32 justify-center">
                 <Member
                   imageLink={execMembers[7].imageLink}
                   name={execMembers[7].name}
                   role={execMembers[7].role}
                   linkedin={execMembers[7].linkedin}
+                />
+                <Member
+                  imageLink={execMembers[8].imageLink}
+                  name={execMembers[8].name}
+                  role={execMembers[8].role}
+                  linkedin={execMembers[8].linkedin}
+                />
+                <Member
+                  imageLink={execMembers[9].imageLink}
+                  name={execMembers[9].name}
+                  role={execMembers[9].role}
+                  linkedin={execMembers[9].linkedin}
                 />
               </div>
             </>
@@ -123,21 +99,35 @@ const AboutUs = async () => {
         </div>
       </section>
       <section>
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mt-20">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mt-20 mb-10">
           Division Heads
         </h2>
         <hr className="border-gray-300 my-4" />
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pt-5 pb-20 justify-center">
-          {heads &&
-            heads.map((member, idx) => (
-              <Member
-                key={idx}
-                name={member.name}
-                role={member.role}
-                imageLink={member.imageLink}
-                linkedin={member.linkedin}
+          {heads && (
+            <div className="grid grid-cols-2 w-screen gap-2 px-20">
+              <Sector
+                sectorMembers={[heads[0], heads[1]]}
+                title={heads[0].role}
               />
-            ))}
+              <Sector
+                sectorMembers={[heads[2], heads[3]]}
+                title={heads[2].role}
+              />
+              <Sector
+                sectorMembers={[heads[4], heads[5]]}
+                title={heads[4].role}
+              />
+              <Sector
+                sectorMembers={[heads[6], heads[7], heads[8]]}
+                title={heads[6].role}
+              />{" "}
+              <Sector
+                sectorMembers={[heads[9], heads[10]]}
+                title={heads[9].role}
+              />
+            </div>
+          )}
         </div>
       </section>
     </main>

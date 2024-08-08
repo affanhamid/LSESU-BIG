@@ -30,7 +30,7 @@ const Carousel: React.FC<CarouselProps> = ({
           scrollDirection = -1;
         }
       };
-      const scrollInterval = setInterval(startScrolling, 20);
+      const scrollInterval = setInterval(startScrolling, 10);
       return () => clearInterval(scrollInterval);
     }
   }, []);

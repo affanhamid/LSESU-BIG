@@ -7,6 +7,22 @@ import {
   FaPodcast,
   FaHandshake,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0 },
+};
 
 const FeatureItem = ({
   selectedFeature,
@@ -24,13 +40,14 @@ const FeatureItem = ({
   icon: JSX.Element;
 }) => {
   return (
-    <div
+    <motion.div
       className={`bg-background text-white h-[50vh] border ${
         selectedFeature === idx ? "w-[570px]" : "w-32"
       } ${
         selectedFeature !== idx ? "hover:bg-background/80 cursor-pointer" : ""
       } transition-all duration-300 ease-in-out overflow-hidden rounded-lg shadow-lg`}
       onClick={() => setSelectedFeature(idx)}
+      variants={itemVariants}
     >
       <div className={`${selectedFeature === idx ? "block" : "hidden"} p-10`}>
         <div className="text-4xl mb-4">{icon}</div>
@@ -46,14 +63,20 @@ const FeatureItem = ({
           {title}
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 const Features = () => {
   const [selectedFeature, setSelectedFeature] = useState(0);
+
   return (
-    <div className="flex justify-center items-center flex-wrap gap-4">
+    <motion.div
+      className="flex justify-center items-center flex-wrap gap-4"
+      initial="hidden"
+      whileInView="visible"
+      variants={containerVariants}
+    >
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
@@ -104,7 +127,7 @@ const Features = () => {
         }
         icon={<FaHandshake />}
       />
-    </div>
+    </motion.div>
   );
 };
 

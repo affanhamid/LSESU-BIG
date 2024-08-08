@@ -3,7 +3,7 @@ import Navbar from "@/Components/Navbar";
 
 const Tracker = () => {
   return (
-    <main>
+    <main className="">
       <Navbar />
       <section className="pt-72 bg-white">
         <h1 className="text-3xl text-center pb-20 px-20">

@@ -29,11 +29,7 @@ export async function fetchUpcomingEvents() {
     collection(db, "upcoming events")
   );
 
-  const events = upcomingEventsSnapshot.docs.map((doc) => {
-    const data = doc.data();
-    data.date = new Date(data.date.seconds * 1000).toDateString();
-    return data;
-  });
+  const events = upcomingEventsSnapshot.docs.map((doc) => doc.data());
 
   return events;
 }

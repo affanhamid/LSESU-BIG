@@ -14,7 +14,7 @@ const Number = ({
   description: any;
 }) => {
   return (
-    <div className="rounded-lg bg-background text-white flex flex-col items-center justify-center p-6 group cursor-pointer select-none">
+    <div className="rounded-lg bg-background text-white flex flex-col items-center justify-center p-6 group cursor-pointer select-none h-max">
       <div className="text-6xl mb-4">{icon}</div>
       <div className="text-2xl">{text}</div>
       <div className="h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 mt-2 text-center">
@@ -28,7 +28,7 @@ const Mentorship = async () => {
   const testimonials = await fetchTestimonials();
   const mentors = [{}, {}, {}];
   return (
-    <main>
+    <main className="">
       <Navbar />
       <header className="relative">
         <img
@@ -44,23 +44,28 @@ const Mentorship = async () => {
         <h2 className="text-center text-xl mb-5">
           Something about BIG's mentorship scheme being really good
         </h2>
-        <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
-          Apply Now
-        </button>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+        <div className="flex gap-5">
+          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+            Apply to be a mentee
+          </button>
+          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+            Apply to be a mentor
+          </button>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 max-h-52 h-52">
           <Number
-            text="70+ Spring Week Offers"
+            text="80+ Spring Week Offers"
             icon={<FaChartLine />}
             description="This is a sample description of many words to explain the metric in more detail for potential users so that they understand better."
           />
           <Number
-            text="35 members"
-            icon={<FaUsers />}
+            text="Revamped to mentorship families"
+            icon={<FaCalendarAlt />}
             description="This is a sample description of many words to explain the metric in more detail for potential users so that they understand better."
           />
           <Number
-            text="15 Annual Events"
-            icon={<FaCalendarAlt />}
+            text="35 mentors"
+            icon={<FaUsers />}
             description="This is a sample description of many words to explain the metric in more detail for potential users so that they understand better."
           />
         </div>

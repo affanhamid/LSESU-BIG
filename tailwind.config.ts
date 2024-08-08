@@ -19,17 +19,23 @@ const config: Config = {
         background: "#0C1A3B",
       },
       fontFamily: {
-        textFont: ["Nanum Myeongjo", "serif"],
-        headerFont: ["Nanum Myeongjo", "serif"],
+        textFont: ["Platypi", "serif"],
+        headerFont: ["Platypi", "serif"],
       },
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        fadeIn: {
+          from: { opacity: "0.5" },
+          to: { opacity: "1" },
+        },
       },
       animation: {
         scroll: "scroll 30s linear infinite",
+        fade: "fadeIn 1s ease-in-out",
+        fadeHome: "fadeIn 1.5s ease-in-out",
       },
     },
   },

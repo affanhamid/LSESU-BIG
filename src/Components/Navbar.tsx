@@ -27,7 +27,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <div
-      className={`fixed left-0 right-0 top-0 bg-background text-fontColor flex flex-col lg:flex-row xl:pl-32 md:pl-10 pl-5 py-8 items-center z-40 transition-all duration-200 ${
+      className={`fixed left-0 right-0 top-0 bg-background text-fontColor flex flex-col lg:flex-row xl:pl-32 md:pl-10 pl-5 py-8 items-center z-50 transition-all duration-200 ${
         openMenu ? "lg:pr-[26rem]" : "pr-10 lg:pr-20"
       }`}
     >
@@ -54,11 +54,6 @@ const Navbar = () => {
               <MenuList
                 href="/events"
                 name="Events"
-                setOpenMenu={setOpenMenu}
-              />
-              <MenuList
-                href="/sponsorship"
-                name="Sponsors"
                 setOpenMenu={setOpenMenu}
               />
               <MenuList
