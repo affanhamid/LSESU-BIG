@@ -6,8 +6,8 @@ const config: Config = {
     screens: {
       ms: "320px",
       mm: "375px",
-      ml: "452px",
-      md: "768px",
+      ml: "420px",
+      md: "765px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",

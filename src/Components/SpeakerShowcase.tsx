@@ -48,8 +48,8 @@ const Carousel: React.FC<CarouselProps> = ({
 
 const SpeakerShowcase = ({ showcaseSpeakers }: { showcaseSpeakers: any }) => {
   return (
-    <section className="text-white lg:py-32">
-      <h1 className="text-3xl lg:text-4xl font-bold text-left pl-80 mb-10">
+    <section className="text-white py-32">
+      <h1 className="text-4xl font-bold text-center md:text-left md:pl-20 xl:pl-80 mb-10">
         Past Speakers
       </h1>
       <div className="px-4 md:px-10 lg:px-80">

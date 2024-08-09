@@ -31,7 +31,7 @@ const SectorMember = ({
 }) => {
   return (
     <motion.div
-      className="px-6 my-4 flex flex-col items-center rounded-lg overflow-hidden text-white"
+      className="my-4 flex flex-col items-center rounded-lg overflow-hidden text-white text-center w-48"
       variants={itemVariants}
     >
       <img
@@ -43,7 +43,7 @@ const SectorMember = ({
         <p className="text-xl lg:text-2xl flex items-center gap-2 justify-center font-semibold">
           {name}
           <Link
-            href={linkedin}
+            href={linkedin || ""}
             passHref
             target="_blank"
             rel="noopener noreferrer"
@@ -71,9 +71,9 @@ export const Sector = ({
       variants={containerVariants}
     >
       <h2 className="text-3xl lg:text-3xl font-bold text-left my-10 pl-5">
-        {title.split(" ")[2]}
+        {title}
       </h2>
-      <div className="flex w-full">
+      <div className="flex w-full justify-evenly">
         {sectorMembers.map((member: any, idx: number) => (
           <SectorMember
             key={idx}

@@ -1,6 +1,5 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Socials from "./Socials";
 import Logo from "./Logo";
@@ -25,7 +24,7 @@ const MenuList = ({
       onClick={() => setTimeout(() => setOpenMenu(false), 400)}
       onMouseEnter={() => setScroll(idx)}
     >
-      <li className="py-6 text-xl md:text-3xl w-full pl-8 md:pl-16 hover:bg-white hover:text-background">
+      <li className="mm:py-6 mm:text-3xl mm:w-full mm:pl-16 hover:bg-white hover:text-background">
         {name}
       </li>
     </Link>
@@ -45,22 +44,22 @@ const HeaderNavbar = ({
 }) => {
   return (
     <div
-      className={`fixed top-0 w-full text-fontColor bg-${navBackground} flex gap-4 flex-col lg:flex-row xl:pl-32 md:pl-10 pl-5 py-8 items-center z-30 transition-all duration-200 ${
-        openMenu ? "lg:pr-[32rem]" : "pr-10 lg:pr-20"
+      className={`fixed top-0 text-fontColor w-screen bg-${navBackground} flex gap-4 flex-col md:flex-row mm:pl-20 xl:pl-32 py-8 items-center z-30 transition-all duration-200 ${
+        openMenu ? "mm:pr-[30rem] xl:pr-[32rem]" : "mm:pr-20 xl:pr-32"
       }`}
     >
       <div className="flex-1 w-max z-[60]">
         <Logo />
       </div>
-      <div className="flex gap-5 items-center">
+      <div className="flex mm:gap-5 mm:items-center">
         <div
           className={`fixed right-0 top-0 bottom-0 ${
-            openMenu ? "left-0 md:left-1/4 lg:left-3/4" : ""
+            openMenu ? "mm:left-[60vw] xl:left-3/4" : ""
           }`}
         >
-          <div className="relative h-full w-full">
+          <div className="relative mm:h-full">
             <ul
-              className="absolute right-0 top-0 bottom-0 text-white bg-background flex flex-col text-xl overflow-hidden transition-all duration-200 pt-28"
+              className="absolute right-0 top-0 bottom-0 text-white bg-background flex mm:flex-col mm:text-xl overflow-hidden transition-all duration-200 mm:pt-28"
               style={{ width: openMenu ? "100%" : 0 }}
             >
               <MenuList
@@ -108,10 +107,10 @@ const HeaderNavbar = ({
             </ul>
 
             <div
-              className={`absolute text-5xl right-10 md:right-20 cursor-pointer transition-all duration-200 z-50 ${
+              className={`absolute mm:text-5xl mm:right-20 xl:right-32 cursor-pointer transition-all duration-200 z-50 ${
                 openMenu
-                  ? "top-12 text-red-700"
-                  : "top-[95px] text-white hover:text-white/60"
+                  ? "mm:top-12 text-red-700"
+                  : "mm:top-[95px] text-white hover:text-white/60"
               }`}
               onClick={() => setOpenMenu((openMenu: boolean) => !openMenu)}
             >
@@ -122,9 +121,9 @@ const HeaderNavbar = ({
         <div className="z-[60]">
           <Socials />
         </div>
-        <div className="z-[60] hidden md:block">
+        <div className="z-[60] hidden mm:block">
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
-            <button className="px-4 py-2 rounded border border-white/20 bg-background text-md">
+            <button className="mm:px-4 mm:py-2 rounded border border-white/20 bg-background mm:text-md text-nowrap">
               Join Us
             </button>
           </Link>
@@ -138,10 +137,7 @@ const Header = () => {
   const [scroll, setScroll] = useState<number>(0);
   const [openMenu, setOpenMenu] = useState(false);
   const divRef = useRef<HTMLDivElement>(null);
-  const lastExecutionRef = useRef(0);
-  const [isClient, setIsClient] = useState(false);
   const [navBackground, setNavBackground] = useState("transparent");
-  useEffect(() => setIsClient(true), []);
 
   useEffect(() => {
     if (divRef.current) {
@@ -171,77 +167,70 @@ const Header = () => {
         navBackground={navBackground}
       />
       <div
-        className="relative lg:absolute w-full h-[30vh] lg:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[0px]"
+        className="mm:absolute w-screen h-max xl:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[0px]"
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
-        <img
-          src="/1.jpeg"
-          alt="Image"
-          className="h-full lg:h-screen object-cover"
-        />
+        <img src="/1.jpeg" alt="Image" className="mm:h-screen object-cover" />
         <img
           src="/2.jpg"
           alt="Image"
-          className="hidden lg:block lg:h-screen h-full object-cover"
+          className="hidden xl:block mm:h-screen mm:object-cover"
         />
         <img
           src="/3.jpg"
           alt="Image"
-          className="hidden lg:block lg:h-screen h-full object-cover"
+          className="hidden xl:block mm:h-screen object-cover"
         />
         <img
           src="/4.jpeg"
           alt="Image"
-          className="hidden lg:block lg:h-screen h-full object-cover"
+          className="hidden xl:block mm:h-screen object-cover"
         />
         <img
           src="/5.jpg"
           alt="Image"
-          className="hidden lg:block lg:h-screen h-full object-cover"
+          className="hidden xl:block mm:h-screen object-cover"
         />
         <img
           src="/6.jpeg"
           alt="Image"
-          className="hidden lg:block lg:h-screen h-full object-cover"
+          className="hidden xl:block mm:h-screen object-cover"
         />
         <img
           src="/7.jpg"
           alt="Image"
-          className="hidden lg:block lg:h-screen h-full object-cover"
+          className="hidden xl:block mm:h-screen object-cover"
         />
       </div>
-      <header className="relative h-[50vh] lg:h-screen w-full z-20 flex items-center justify-center bg-background/30">
+      <header className="relative mm:h-screen w-full z-20 flex items-center justify-center bg-background/30">
         <div
-          className="absolute top-1/2 transform -translate-y-1/2 p-4 flex flex-col items-center text-white transition-all duration-200 rounded-lg py-7 px-10"
-          style={{
-            left: openMenu ? "30%" : "50%",
-            transform: "translate(-50%, -50%)",
-          }}
+          className={`mm:absolute top-1/2 left-1/2 transform mm:-translate-y-1/2 mm:-translate-x-1/2 p-4 flex flex-col items-center text-white transition-all duration-200 rounded-lg py-7 px-10
+          ${openMenu ? "xl:left-[30%]" : "xl:left-[50%]"}`}
         >
           <h1 className="text-center flex flex-col">
             <span
-              className={`text-lg md:text-5xl mb-1 transition-transform duration-200 ${
-                openMenu ? "-translate-x-[157px]" : "translate-x-0"
+              className={`text-2xl mm:text-3xl md:text-4xl lg:text-5xl mb-1 transition-transform duration-200 md:text-nowrap ${
+                openMenu ? "xl:-translate-x-[148px]" : "xl:translate-x-0"
               }`}
             >
               London School of Economics
             </span>
-            <span className="text-lg md:text-7xl text-nowrap">
+            <span className="text-2xl mm:text-3xl md:text-6xl lg:text-7xl text-nowrap">
               Business & Investment Group
             </span>
           </h1>
           <p
-            className={`text-base md:text-2xl mt-3 transition-transform duration-200 ${
-              openMenu ? "-translate-x-[225px]" : "translate-x-0"
+            className={`text-p mm:text-2xl mm:mt-3 transition-transform duration-200 text-center ${
+              openMenu ? "xl:-translate-x-[215px]" : "xl:translate-x-0"
             }`}
           >
             Europe's premier finance and business society
           </p>
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
             <button
-              className={`mt-4 px-8 py-4 text-3xl rounded border-2 border-white/5 bg-background text-white font-bold md:text-xl transition-all duration-200 ${
-                openMenu ? "-translate-x-[310px]" : "translate-x-0"
+              className={`mt-4 px-8 py-4 text-lg lg:text-xl rounded border-2 border-white/5 bg-background text-white font-bold transition-all duration-200 ${
+                openMenu ? "xl:-translate-x-[300px]" : "xl:translate-x-0"
               }`}
             >
               BECOME A MEMBER

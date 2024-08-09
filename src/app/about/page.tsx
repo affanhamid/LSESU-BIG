@@ -5,6 +5,17 @@ import { Sector } from "@/Components/Sector";
 
 const AboutUs = async () => {
   const { execMembers, heads } = await fetchMembers();
+  const roles = [
+    "Banking",
+    "Alternatives",
+    "Markets",
+    "Mentorship",
+    "Technology",
+    "Entrepreneurship + Strategy",
+    "Socials",
+    "Marketing",
+    "Consulting",
+  ];
   return (
     <main className="bg-white">
       <Navbar />
@@ -106,26 +117,13 @@ const AboutUs = async () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pt-5 pb-20 justify-center">
           {heads && (
             <div className="grid grid-cols-2 w-screen gap-2 px-20">
-              <Sector
-                sectorMembers={[heads[0], heads[1]]}
-                title={heads[0].role}
-              />
-              <Sector
-                sectorMembers={[heads[2], heads[3]]}
-                title={heads[2].role}
-              />
-              <Sector
-                sectorMembers={[heads[4], heads[5]]}
-                title={heads[4].role}
-              />
-              <Sector
-                sectorMembers={[heads[6], heads[7], heads[8]]}
-                title={heads[6].role}
-              />{" "}
-              <Sector
-                sectorMembers={[heads[9], heads[10]]}
-                title={heads[9].role}
-              />
+              {roles &&
+                roles.map((role, idx) => (
+                  <Sector
+                    sectorMembers={heads.filter((head) => head.role === role)}
+                    title={role}
+                  />
+                ))}
             </div>
           )}
         </div>

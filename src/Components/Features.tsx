@@ -41,8 +41,10 @@ const FeatureItem = ({
 }) => {
   return (
     <motion.div
-      className={`bg-background text-white h-[50vh] border ${
-        selectedFeature === idx ? "w-[570px]" : "w-32"
+      className={`bg-background text-white md:h-[40vh] xl:h-[50vh] border w-full ${
+        selectedFeature === idx
+          ? "md:w-[400px] lg:w-[500px] xl:w-[570px]"
+          : "md:w-[11vw] lg:w-28 xl:w-32"
       } ${
         selectedFeature !== idx ? "hover:bg-background/80 cursor-pointer" : ""
       } transition-all duration-300 ease-in-out overflow-hidden rounded-lg shadow-lg`}
@@ -52,14 +54,14 @@ const FeatureItem = ({
       <div className={`${selectedFeature === idx ? "block" : "hidden"} p-10`}>
         <div className="text-4xl mb-4">{icon}</div>
         <h2 className="text-3xl font-bold mb-5">{title}</h2>
-        <p>{text}</p>
+        <p className="text-xl">{text}</p>
       </div>
       <div
         className={`w-full h-full flex justify-center items-center ${
           selectedFeature === idx ? "hidden" : "block"
         }`}
       >
-        <span className="rotate-90 text-lg font-semibold text-nowrap">
+        <span className="md:rotate-90 text-2xl font-semibold text-nowrap py-10 md:py-0">
           {title}
         </span>
       </div>
@@ -72,7 +74,7 @@ const Features = () => {
 
   return (
     <motion.div
-      className="flex justify-center items-center flex-wrap gap-4"
+      className="flex flex-col md:flex-row justify-center items-center flex-wrap gap-1 xl:gap-4 pb-20 pd:mb-2"
       initial="hidden"
       whileInView="visible"
       variants={containerVariants}

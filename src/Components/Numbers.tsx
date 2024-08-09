@@ -37,12 +37,12 @@ const Number = ({
       whileInView="onscreen"
       variants={cardVariants}
     >
-      <div className="w-64 rounded-lg aspect-[7/8] bg-background text-white flex flex-col items-center justify-center pb-10 group transition-all duration-200 px-3 cursor-pointer select-none">
-        <div className="flex-1 flex items-center justify-center text-6xl">
+      <div className="w-40 lg:w-52 xl:w-64 rounded-lg aspect-square md:aspect-[10/11] lg:aspect-[7/8] bg-background text-white flex flex-col items-center justify-center pb-5 lg:pb-10 group transition-all duration-200 md:px-3 cursor-pointer select-none">
+        <div className="flex-1 flex items-center justify-center text-5xl lg:text-6xl">
           {icon}
         </div>
-        <div className="mt-4 text-2xl">{text}</div>
-        <div className="h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 mt-2">
+        <div className="mt-4 text-xl lg:text-2xl text-nowrap">{text}</div>
+        <div className="hidden md:block md:h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 md:mt-2">
           {description}
         </div>
       </div>
@@ -52,7 +52,7 @@ const Number = ({
 
 const Numbers = () => {
   return (
-    <div className="flex justify-center gap-10 mb-20">
+    <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center gap-1 mm:gap-10 mb-20 w-max  mx-auto">
       <Number
         text="900+ members"
         icon={<FaUsers />}

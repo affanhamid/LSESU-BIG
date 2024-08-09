@@ -36,14 +36,13 @@ export default async function Home() {
   return (
     <main>
       <Header />
-      <section className="py-32 bg-white">
+      <section className="md:py-10 lg:py-20 xl:py-32 bg-white">
         <Numbers />
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
+        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10 mt-32">
           What we do
         </h1>
         <Features />
       </section>
-      x
       <SpeakerShowcase showcaseSpeakers={showcaseSpeakers} />
       <Sponsors sponsors={sponsors} />
       <MembershipBenefits />
@@ -51,8 +50,8 @@ export default async function Home() {
         <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
           Alumni Destinations
         </h1>
-        <div className="w-full">
-          <div className="grid grid-cols-6 justify-center mx-auto w-max">
+        <div className="">
+          <div className="grid mm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-center mx-auto w-max">
             {shuffle(logos["logos"]).map((icon, idx) => (
               <MediaLogo icon={icon} key={idx} />
             ))}
