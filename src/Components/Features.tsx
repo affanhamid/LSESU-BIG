@@ -49,7 +49,7 @@ const FeatureItem = ({
         selectedFeature !== idx ? "hover:bg-background/80 cursor-pointer" : ""
       } transition-all duration-300 ease-in-out overflow-hidden rounded-lg shadow-lg`}
       onClick={() => setSelectedFeature(idx)}
-      variants={itemVariants}
+      // variants={itemVariants}
     >
       <div className={`${selectedFeature === idx ? "block" : "hidden"} p-10`}>
         <div className="text-4xl mb-4">{icon}</div>

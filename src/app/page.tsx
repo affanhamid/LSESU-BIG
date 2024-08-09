@@ -51,7 +51,7 @@ export default async function Home() {
           Alumni Destinations
         </h1>
         <div className="">
-          <div className="grid mm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-center mx-auto w-max">
+          <div className="grid mm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-center mx-auto w-max gap-4">
             {shuffle(logos["logos"]).map((icon, idx) => (
               <MediaLogo icon={icon} key={idx} />
             ))}

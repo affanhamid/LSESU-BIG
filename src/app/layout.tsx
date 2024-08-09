@@ -19,7 +19,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" />
       </head>
       <UserProvider>
-        <body className="bg-background w-screen font-textFont">
+        <body className="bg-background w-screen overflow-x-hidden font-textFont">
           <main>{children}</main>
           <Footer />
         </body>
