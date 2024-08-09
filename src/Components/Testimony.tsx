@@ -4,8 +4,8 @@ import { TestimonyProps } from "@/Types/types";
 
 const Testimony: React.FC<TestimonyProps> = ({ name, description }) => {
   return (
-    <div className="relative flex flex-col border-2 border-white rounded-lg w-[500px] aspect-video px-14 py-14">
-      <p className="text-3xl flex-1">{description}</p>
+    <div className="relative flex flex-col border-2 border-white rounded-lg w-[300px] ml:w-[400px] break:w-[500px] aspect-video px-14 py-14">
+      <p className="text-xl ml:text-3xl flex-1">{description}</p>
       <div className="flex items-center gap-1">
         <h2 className="text-lg text-right">Anonymous</h2>
       </div>

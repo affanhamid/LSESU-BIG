@@ -37,7 +37,7 @@ const AboutUs = async () => {
         <div className="flex-col justify-center flex-wrap gap-10">
           {execMembers && execMembers.length > 0 && (
             <>
-              <div className="flex gap-32 justify-center">
+              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
                 <Member
                   imageLink={execMembers[0].imageLink}
                   name={execMembers[0].name}
@@ -57,7 +57,7 @@ const AboutUs = async () => {
                   linkedin={execMembers[1].linkedin}
                 />
               </div>
-              <div className="flex gap-32 justify-center">
+              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
                 <Member
                   imageLink={execMembers[3].imageLink}
                   name={execMembers[3].name}
@@ -71,7 +71,7 @@ const AboutUs = async () => {
                   linkedin={execMembers[4].linkedin}
                 />
               </div>
-              <div className="flex gap-32 justify-center">
+              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
                 <Member
                   imageLink={execMembers[5].imageLink}
                   name={execMembers[5].name}
@@ -85,7 +85,7 @@ const AboutUs = async () => {
                   linkedin={execMembers[6].linkedin}
                 />
               </div>
-              <div className="flex gap-32 justify-center">
+              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
                 <Member
                   imageLink={execMembers[7].imageLink}
                   name={execMembers[7].name}
@@ -116,12 +116,13 @@ const AboutUs = async () => {
         <hr className="border-gray-300 my-4" />
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pt-5 pb-20 justify-center">
           {heads && (
-            <div className="grid grid-cols-2 w-screen gap-2 px-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-2 px-10 xl:px-20">
               {roles &&
                 roles.map((role, idx) => (
                   <Sector
                     sectorMembers={heads.filter((head) => head.role === role)}
                     title={role}
+                    key={idx}
                   />
                 ))}
             </div>

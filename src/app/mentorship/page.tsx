@@ -41,7 +41,7 @@ const Mentorship = async () => {
         </h1>
       </header>
       <header className="px-4 md:px-10 lg:px-20 xl:px-40 lg:pt-10 flex flex-col items-center pb-10 lg:pb-20 bg-white">
-        <h2 className="text-center text-xl mb-5">
+        <h2 className="text-center text-xl my-5">
           Something about BIG's mentorship scheme being really good
         </h2>
         <div className="flex gap-5">
@@ -52,7 +52,7 @@ const Mentorship = async () => {
             Apply to be a mentor
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 max-h-52 h-52">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 max-h-52 h-52 mb-96 md:mb-20 text-center">
           <Number
             text="80+ Spring Week Offers"
             icon={<FaChartLine />}

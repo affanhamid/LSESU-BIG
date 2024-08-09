@@ -29,10 +29,10 @@ export const Member = ({
       <img
         src={imageLink}
         alt={name}
-        className="rounded-full w-48 h-48 object-cover shadow-lg"
+        className="rounded-full w-48 h-48 md:w-40 md:h-40 xl:w-48 xl:h-48 object-cover shadow-lg"
       />
-      <div className="flex flex-col py-4 items-center">
-        <p className="text-xl lg:text-2xl flex items-center gap-2 justify-center font-semibold">
+      <div className="flex flex-col py-4 items-center text-center">
+        <p className="text-xl lg:text-2xl flex items-center gap-2 justify-center font-semibold break:text-nowrap">
           {name}
           <Link
             href={linkedin}
@@ -40,7 +40,7 @@ export const Member = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-black hover:text-gray-700 transition-colors duration-200" />
+            <FaLinkedin className="text-black hover:text-gray-700 transition-colors duration-200 hidden break:block" />
           </Link>
         </p>
         <p className="text-gray-600">{role}</p>

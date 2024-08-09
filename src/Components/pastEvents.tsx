@@ -17,21 +17,21 @@ const pastEventsTyped: PastEventsType = pastEvents;
 
 const Event = ({ event }: { event: any }) => {
   return (
-    <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden w-full">
-      <div className="w-[250px] aspect-square bg-gray-600 flex-shrink-0">
+    <div className="flex flex-col break:flex-row  border border-gray-300 rounded-lg overflow-hidden w-max break:w-full items-center">
+      <div className="w-[300px] break:w-[175px] md:w-[200px] lg:w-[250px] aspect-square bg-gray-600 flex-shrink-0">
         {event.imageLink ? (
           <img
             src={event.imageLink}
-            alt={event.title}
+            alt={event.name}
             className="w-full h-full object-cover"
           />
         ) : (
           <div className="w-full h-full bg-gray-600"></div>
         )}
       </div>
-      <div className="p-5 flex flex-col">
+      <div className="p-5 flex flex-col flex-grow">
         <div className="text-lg text-gray-500">{`${event.month} ${event.day}`}</div>
-        <div className="text-2xl font-bold mt-2">{event.title}</div>
+        <div className="text-xl md:text-2xl font-bold mt-2">{event.name}</div>
         <div className="text-lg text-gray-700 mt-1">
           Speakers: {event["speakers"].join(", ")}
         </div>
@@ -73,7 +73,7 @@ const PastEvents = () => {
       <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10 text-gray-900">
         Past Events
       </h1>
-      <div className="flex justify-center text-xl mb-10 px-96">
+      <div className="flex justify-center text-xl mb-10 px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96">
         <YearButton
           index={index}
           setIndex={setIndex}
@@ -87,7 +87,7 @@ const PastEvents = () => {
           idx={1}
         />
       </div>
-      <div className="flex flex-col items-center px-96">
+      <div className="flex flex-col items-center px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96">
         {pastEventsTyped[index.toString()].map((event: any) => (
           <Event event={event} />
         ))}

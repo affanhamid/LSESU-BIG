@@ -7,10 +7,11 @@ const config: Config = {
       ms: "320px",
       mm: "375px",
       ml: "420px",
+      break: "550px",
       md: "765px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      "2xl": "1440px",
     },
     extend: {
       colors: {

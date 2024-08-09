@@ -63,7 +63,7 @@ const MembershipBenefits = () => {
         ))}
       </div>
       <div className="text-center mt-20">
-        <p className="text-xl">
+        <p className="text-xl px-5 ml:px-0">
           If you want to learn more about membership benefits, get in touch
         </p>
         <button className="mt-4 px-4 py-2 rounded border-2 border-white">

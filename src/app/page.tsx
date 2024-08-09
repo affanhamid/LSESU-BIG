@@ -36,7 +36,7 @@ export default async function Home() {
   return (
     <main>
       <Header />
-      <section className="md:py-10 lg:py-20 xl:py-32 bg-white">
+      <section className="pt-60 md:py-10 lg:py-20 xl:py-32 bg-white">
         <Numbers />
         <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10 mt-32">
           What we do

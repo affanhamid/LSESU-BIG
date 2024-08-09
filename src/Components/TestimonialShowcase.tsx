@@ -47,10 +47,10 @@ const Carousel: React.FC<CarouselProps> = ({
 
 const TestimonialShowcase = ({ testimonials }: { testimonials: any }) => {
   return (
-    <div className="px-4 md:px-10 lg:px-[600px]">
+    <div className="w-[300px] ml:w-[400px] break:w-[500px] overflow-hidden mx-auto">
       <Carousel
-        gap="gap-4 md:gap-10 lg:gap-20"
-        offset="pl-4 md:pl-8 lg:pl-0"
+        gap="gap-20"
+        offset="pl-0"
         paddingY="pt-20 pb-10"
         items={testimonials}
         Component={Testimony}
