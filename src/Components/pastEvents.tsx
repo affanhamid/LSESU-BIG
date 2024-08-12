@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import pastEvents from "./pastEvents.json";
+import pastEvents from "@/Database/data/pastEvents.json";
+import Link from "next/link";
 
 type PastEventsType = {
   [key: string]: {
@@ -24,20 +25,23 @@ const Event = ({ event }: { event: any }) => {
             src={event.imageLink}
             alt={event.name}
             className="w-full h-full object-cover"
+            crossOrigin="anonymous"
           />
         ) : (
           <div className="w-full h-full bg-gray-600"></div>
         )}
       </div>
       <div className="p-5 flex flex-col flex-grow">
-        <div className="text-lg text-gray-500">{`${event.month} ${event.day}`}</div>
+        <div className="text-lg text-gray-500">{`${event.Month} ${event.Day}`}</div>
         <div className="text-xl md:text-2xl font-bold mt-2">{event.name}</div>
         <div className="text-lg text-gray-700 mt-1">
-          Speakers: {event["speakers"].join(", ")}
+          Speakers: {event["speakers"]}
         </div>
-        <button className="bg-background px-3 py-2 text-white rounded-lg mt-5 self-start">
-          Learn more
-        </button>
+        <Link href={event.postLink || ""}>
+          <button className="bg-background px-3 py-2 text-white rounded-lg mt-5 self-start">
+            Learn more
+          </button>
+        </Link>
       </div>
     </div>
   );
@@ -87,7 +91,7 @@ const PastEvents = () => {
           idx={1}
         />
       </div>
-      <div className="flex flex-col items-center px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96">
+      <div className="flex flex-col items-center px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96 gap-10">
         {pastEventsTyped[index.toString()].map((event: any) => (
           <Event event={event} />
         ))}

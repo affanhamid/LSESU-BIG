@@ -1,5 +1,5 @@
 import Link from "next/link";
-import logos from "./logos.json";
+import logos from "@/Database/data/logos.json";
 import MembershipBenefits from "../Components/MembershipBenefits";
 import { fetchPastSpeakers } from "../Database/database";
 import { fetchSponsors } from "../Database/database";
