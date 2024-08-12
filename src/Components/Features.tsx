@@ -41,7 +41,7 @@ const FeatureItem = ({
 }) => {
   return (
     <motion.div
-      className={`bg-background text-white md:h-[40vh] xl:h-[50vh] border w-full ${
+      className={`bg-background text-white md:h-[44vh] xl:h-[50vh] border w-full ${
         selectedFeature === idx
           ? "md:w-[400px] lg:w-[500px] xl:w-[570px]"
           : "md:w-[11vw] lg:w-28 xl:w-32"
@@ -61,7 +61,7 @@ const FeatureItem = ({
           selectedFeature === idx ? "hidden" : "block"
         }`}
       >
-        <span className="md:rotate-90 text-2xl font-semibold text-nowrap py-10 md:py-0">
+        <span className="md:rotate-90 text-2xl font-semibold text-nowrap py-10 px-10">
           {title}
         </span>
       </div>
@@ -123,7 +123,7 @@ const Features = () => {
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={4}
-        title={"Networking (BIG Ball, socials)"}
+        title={"Networking"}
         text={
           "BIG Ball will bring together [number] students from across the UK to [event value] for an evening of entertainment and networking, Socials: bowling, ice staking, treasurer hunt (helps first yrs to get to know exec team etc)"
         }

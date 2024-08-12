@@ -57,28 +57,28 @@ const Numbers = () => {
         text="900+ members"
         icon={<FaUsers />}
         description={
-          "This is a sample description of many words to explain the metric in more detail for potential users so that they undersatnd better"
+          ""
         }
       />
       <Number
         text="50+ events"
         icon={<FaCalendarAlt />}
         description={
-          "This is a sample description of many words to explain the metric in more detail for potential users so that they undersatnd better"
+          ""
         }
       />
       <Number
         text="7,000+ followers"
         icon={<FaUserFriends />}
         description={
-          "This is a sample description of many words to explain the metric in more detail for potential users so that they undersatnd better"
+          ""
         }
       />
       <Number
         text="10+ sponsors"
         icon={<FaHandshake />}
         description={
-          "This is a sample description of many words to explain the metric in more detail for potential users so that they undersatnd better"
+          ""
         }
       />
     </div>
