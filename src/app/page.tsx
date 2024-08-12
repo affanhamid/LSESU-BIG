@@ -12,14 +12,16 @@ import MediaLogo from "@/Components/MediaLogo";
 import Features from "@/Components/Features";
 import Numbers from "@/Components/Numbers";
 import Gallery from "@/Components/Gallery";
-import { fetchGallery } from "@/Database/database";
+// import { fetchGallery } from "@/Database/database";
+import gallery from "@/Database/data/gallery.json"
 import Sponsors from "@/Components/Sponsors";
 
 export default async function Home() {
   // const { showcaseSpeakers } = await fetchPastSpeakers();
   const showcaseSpeakers = Speakers["images"]
   // const sponsors = await fetchSponsors();
-  const events = await fetchGallery();
+  // const events = await fetchGallery();
+  const events = gallery['events']
 
   const shuffle = (array: Array<string>) => {
     let currentIndex = array.length;

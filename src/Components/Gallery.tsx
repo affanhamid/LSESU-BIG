@@ -16,7 +16,7 @@ const Photo = ({
         <img
           src={imageLink}
           alt={title}
-          crossOrigin="anonymous"
+          // crossOrigin="anonymous"
           className="object-cover group-hover:brightness-75 w-full h-auto max-h-80"
         />
         <p className="hidden group-hover:flex absolute top-0 left-0 right-0 bottom-0 items-center justify-center text-white p-10 text-center bg-black bg-opacity-50">

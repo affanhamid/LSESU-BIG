@@ -7,7 +7,6 @@ export const Speaker: React.FC<SpeakerProps> = ({
   return (
     <div className="rounded-lg overflow-hidden">
       <img
-        crossOrigin="anonymous"
         src={image}
         alt=""
         className="w-[300px]"

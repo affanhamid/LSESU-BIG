@@ -51,7 +51,7 @@ const HeaderNavbar = ({
       <div className="flex-1 w-max">
         <Logo />
       </div>
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-5 items-center right-10 md:right-20 xl:right-32">
         <div
           className={`fixed right-0 top-0 bottom-0 ${
             openMenu ? "left-0 ml:left-[50vw] md:left-[60vw] xl:left-3/4" : ""
@@ -110,7 +110,7 @@ const HeaderNavbar = ({
               className={`absolute text-5xl right-10 md:right-20 xl:right-32 cursor-pointer transition-all duration-200 z-50 ${
                 openMenu
                   ? "top-12 text-red-700"
-                  : "top-[120px] text-white hover:text-white/60"
+                  : "top-[100px] text-white hover:text-white/60"
               }`}
               onClick={() => setOpenMenu((openMenu: boolean) => !openMenu)}
             >
@@ -121,9 +121,9 @@ const HeaderNavbar = ({
         <div className="">
           <Socials />
         </div>
-        <div className="hidden block">
+        <div className="hidden md:block">
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
-            <button className="px-4 py-2 rounded border border-white/20 bg-background text-md text-nowrap">
+            <button className="px-4 py-2 rounded border border-white/20 bg-background text-white text-md text-nowrap">
               Join Us
             </button>
           </Link>
@@ -148,7 +148,7 @@ const Header = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.innerWidth < 500) {
+      if (window.innerWidth < 700) {
         if (window.scrollY >= 200) {
           setNavBackground("background");
         } else {
