@@ -2,35 +2,35 @@
     "sponsors": [
         {
             "name": "Morgan Stanley",
-            "link": ""
+            "imageLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQag118ifLpCEx2fNF5xRNCPOP7ACQIOmk9UQ&s"
         },
         {
             "name": "Jeffries",
-            "link": ""
+            "imageLink": "https://media.licdn.com/dms/image/D4E0BAQFujpA00nxrdg/company-logo_200_200/0/1719866509142/jefferies_logo?e=2147483647&v=beta&t=nSq0BgrFTzOXYqYeeWgKBznGJSwL3a-rq3v3pV96Yes"
         },
         {
             "name": "Lazard",
-            "link": ""
+            "imageLink": "https://media.licdn.com/dms/image/D4E0BAQE7TGT3iHT0Rg/company-logo_200_200/0/1703878635328/lazard_logo?e=2147483647&v=beta&t=khFVvmGTUsISafOxqDxzXYz5GJq5PpxHCs1C-Y1r5MA"
         },
         {
             "name": "Macquarie",
-            "link": ""
+            "imageLink": "https://media.licdn.com/dms/image/C4D0BAQFWxaMqRxHNZQ/company-logo_200_200/0/1630472263203/macquariegroup_logo?e=2147483647&v=beta&t=2S_lWRtJ0wXI8gyh0aU6DbRoScAxMJORjfmqzQxbC-A"
         },
         {
             "name": "Fidelity",
-            "link": ""
+            "imageLink": "https://media.licdn.com/dms/image/C560BAQEp8IZ2oEGxKA/company-logo_200_200/0/1630647223349/fidelity_investments_logo?e=2147483647&v=beta&t=vGkjv2kl6tC8kEHWSckBIYSWo9fpr6TY57G3KPE0a5s"
         },
         {
             "name": "Citadel",
-            "link": ""
+            "imageLink": "https://media.licdn.com/dms/image/D4E0BAQEr0zQ5jE04zA/company-logo_200_200/0/1688575029322/citadel_llc_logo?e=2147483647&v=beta&t=ymdKWHswktNuM5Lv74ikBxu7o83k07wMpE1wa9spvA4"
         },
         {
             "name": "Wall Street Oasis",
-            "link": ""
+            "imageLink": "https://media.licdn.com/dms/image/C560BAQGWrq4BV9TQaw/company-logo_200_200/0/1630585274867/wall_street_oasis_logo?e=2147483647&v=beta&t=zyAWAGbBqbQrxXx33L-wFw9OvrgaCK4JJ1wlWFhXt_Y"
         },
         {
             "name": "Career 26",
-            "link": ""
+            "imageLink": "https://media.licdn.com/dms/image/D4E0BAQFpC6dnDRFD9w/company-logo_200_200/0/1697970866537?e=2147483647&v=beta&t=_atlZkXua1tg7EYJ6LXQzGMvGNe34EKC47q4Qp4Xuuc"
         }
     ]
 }

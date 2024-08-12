@@ -3,7 +3,8 @@ import logos from "@/Database/data/logos.json";
 import MembershipBenefits from "../Components/MembershipBenefits";
 // import { fetchPastSpeakers } from "../Database/database";
 import Speakers from "@/Database/data/speakers.json"
-import { fetchSponsors } from "../Database/database";
+// import { fetchSponsors } from "../Database/database";
+import sponsors from "@/Database/data/sponsors.json"
 import SpeakerShowcase from "@/Components/SpeakerShowcase";
 import Header from "@/Components/Header";
 import "./globals.css";
@@ -17,7 +18,7 @@ import Sponsors from "@/Components/Sponsors";
 export default async function Home() {
   // const { showcaseSpeakers } = await fetchPastSpeakers();
   const showcaseSpeakers = Speakers["images"]
-  const sponsors = await fetchSponsors();
+  // const sponsors = await fetchSponsors();
   const events = await fetchGallery();
 
   const shuffle = (array: Array<string>) => {

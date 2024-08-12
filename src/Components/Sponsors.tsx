@@ -19,14 +19,14 @@ const itemVariants = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Sponsor: React.FC<SponsorProps> = ({ logo, summary }) => {
+const Sponsor: React.FC<SponsorProps> = ({ imageLink }) => {
   return (
     <motion.div
       className="rounded-lg overflow-hidden hover:scale-110 transition-all cursor-pointer w-full"
       variants={itemVariants}
     >
       <img
-        src={logo}
+        src={imageLink}
         alt="Sponsor logo"
         className="object-cover w-full h-full"
       />
@@ -47,8 +47,8 @@ const Sponsors = ({ sponsors }: { sponsors: any }) => {
       </h1>
       <div className="px-4 md:px-10 lg:px-80">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {sponsors.map((sponsor: any, idx: number) => (
-            <Sponsor logo={sponsor.logo} summary={sponsor.summary} key={idx} />
+          {sponsors['sponsors'].map((sponsor: any, idx: number) => (
+            <Sponsor imageLink={sponsor.imageLink} key={idx} />
           ))}
         </div>
         <div className="text-center text-lg mm:text-2xl">

@@ -37,8 +37,7 @@ export interface BigSpeakerProps {
 }
 
 export interface SponsorProps {
-    logo: string;
-    summary: string;
+    imageLink: string;
 }
 
 export interface PackagesInterface {
