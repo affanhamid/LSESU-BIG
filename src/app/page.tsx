@@ -1,7 +1,8 @@
 import Link from "next/link";
 import logos from "@/Database/data/logos.json";
 import MembershipBenefits from "../Components/MembershipBenefits";
-import { fetchPastSpeakers } from "../Database/database";
+// import { fetchPastSpeakers } from "../Database/database";
+import Speakers from "@/Database/data/speakers.json"
 import { fetchSponsors } from "../Database/database";
 import SpeakerShowcase from "@/Components/SpeakerShowcase";
 import Header from "@/Components/Header";
@@ -14,7 +15,8 @@ import { fetchGallery } from "@/Database/database";
 import Sponsors from "@/Components/Sponsors";
 
 export default async function Home() {
-  const { showcaseSpeakers } = await fetchPastSpeakers();
+  // const { showcaseSpeakers } = await fetchPastSpeakers();
+  const showcaseSpeakers = Speakers["images"]
   const sponsors = await fetchSponsors();
   const events = await fetchGallery();
 

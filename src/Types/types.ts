@@ -26,10 +26,7 @@ export interface PersonProps {
 
 
 export interface SpeakerProps {
-    name: string;
-    topic: string;
-    date: string;
-    imageLink: string;
+    image: string;
 }
 
 export interface BigSpeakerProps {

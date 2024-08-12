@@ -2,16 +2,13 @@ import React from "react";
 import { SpeakerProps, BigSpeakerProps } from "@/Types/types";
 
 export const Speaker: React.FC<SpeakerProps> = ({
-  name,
-  topic,
-  date,
-  imageLink,
+  image,
 }) => {
   return (
     <div className="rounded-lg overflow-hidden">
       <img
         crossOrigin="anonymous"
-        src={imageLink}
+        src={image}
         alt=""
         className="w-[300px]"
       />
