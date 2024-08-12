@@ -148,7 +148,7 @@ const Header = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.innerWidth < 700) {
+      if (window.innerWidth < 650) {
         if (window.scrollY >= 200) {
           setNavBackground("background");
         } else {

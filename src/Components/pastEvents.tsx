@@ -5,12 +5,12 @@ import Link from "next/link";
 
 type PastEventsType = {
   [key: string]: {
-    title: string;
-    speakers: string[];
-    imageLink: string;
-    postLink: string;
-    month: string;
-    day: number;
+    title: string | null;
+    speakers: string | null;
+    imageLink: string | null;
+    postLink: string | null;
+    Month: string | null;
+    Day: string | null;
   }[];
 };
 
