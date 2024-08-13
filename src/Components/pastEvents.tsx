@@ -25,7 +25,6 @@ const Event = ({ event }: { event: any }) => {
             src={event.imageLink}
             alt={event.name}
             className="w-full h-full object-cover"
-            crossOrigin="anonymous"
           />
         ) : (
           <div className="w-full h-full bg-gray-600"></div>
