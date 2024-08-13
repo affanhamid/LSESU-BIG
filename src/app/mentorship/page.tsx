@@ -41,9 +41,7 @@ const Mentorship = async () => {
         </h1>
       </header>
       <header className="px-4 md:px-10 lg:px-20 xl:px-40 lg:pt-10 flex flex-col items-center pb-10 lg:pb-20 bg-white">
-        <h2 className="text-center text-xl my-5">
-          Something about BIG's mentorship scheme being really good
-        </h2>
+        <h2 className="text-center text-xl my-5"></h2>
         <div className="flex gap-5">
           <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentee
@@ -85,8 +83,15 @@ const Mentorship = async () => {
           nationalities. They managed to break into the competitive field both
           from economics/ finance degrees and non-finance degrees - with
           experience and offers from 50+ distinguished firms.
-        </p>
-        <MentorShowcase mentors={mentors} />
+        </p> <div className="flex gap-5">
+          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+            Apply to be a mentee
+          </button>
+          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+            Apply to be a mentor
+          </button>
+          </div>
+        {/* <MentorShowcase mentors={mentors} /> */}
       </section>
     </main>
   );

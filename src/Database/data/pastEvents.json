@@ -1,14 +1,6 @@
 {
   "0": [
     {
-      "Day": "7",
-      "Month": "12",
-      "title": "Panel & Discussion",
-      "postLink": null,
-      "imageLink": null,
-      "speakers": "HR + Investors"
-    },
-    {
       "Day": "4",
       "Month": "12",
       "title": "Panel + Networking",
@@ -40,14 +32,6 @@
       "postLink": "https://www.instagram.com/p/Cz_lPuPNWht/?hl=en",
       "imageLink": "https://scontent.cdninstagram.com/v/t51.29350-15/403919692_737358037726323_3090238542454408441_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYyOTM1MCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=103&_nc_ohc=NOZ2Yf-6D8gQ7kNvgFuBWkT&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI0MjQ3NDA2NDg5MDM5MDYzNw%3D%3D.2-ccb7-5&oh=00_AYAVYK3Y6j3fJXJqW9FpYB8JEw2UhCLqcXmbG3KEAMI2Eg&oe=66BCBFE9&_nc_sid=10d13b",
       "speakers": null
-    },
-    {
-      "Day": "21",
-      "Month": "11",
-      "title": "Speaker Panel",
-      "postLink": null,
-      "imageLink": null,
-      "speakers": "Women in Alts Panel"
     },
     {
       "Day": "20",
@@ -82,14 +66,6 @@
       "speakers": "AmplifyME"
     },
     {
-      "Day": "25",
-      "Month": "10",
-      "title": "Introduction to Consulting",
-      "postLink": null,
-      "imageLink": null,
-      "speakers": "Nandini, Neha"
-    },
-    {
       "Day": "20",
       "Month": "10",
       "title": "Spring Week Panel",
@@ -110,7 +86,7 @@
       "Month": "10",
       "title": "Panel Event",
       "postLink": "https://www.instagram.com/p/CxppIMzNzYh/?hl=en",
-      "imageLink": "efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyLmYyOTM1MCJ9&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=2sKs71pqHB0Q7kNvgFNsxDP&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzIwMDI2OTg5MzYzMDM3NTQ1Nw%3D%3D.2-ccb7-5&oh=00_AYA8u-Xvj0NTjtWcqU0ttIncVF0hi6y7jZDA0M-8ArOEHA&oe=66BCD977&_nc_sid=10d13b",
+      "imageLink": "https://scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=2sKs71pqHB0Q7kNvgFNsxDP&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzIwMDI2OTg5MzYzMDM3NTQ1Nw%3D%3D.2-ccb7-5&oh=00_AYA8u-Xvj0NTjtWcqU0ttIncVF0hi6y7jZDA0M-8ArOEHA&oe=66BCD977&_nc_sid=10d13b",
       "speakers": null
     },
     {
@@ -124,12 +100,12 @@
   ],
   "1": [
     {
-      "title": "This is a test event 2",
-      "speakers": "A",
-      "postLink": "dasfas",
+      "title": "",
+      "speakers": "",
+      "postLink": "",
       "imageLink": "",
-      "Month": "Mar",
-      "Day": "20"
+      "Month": "",
+      "Day": ""
     }
   ]
 }

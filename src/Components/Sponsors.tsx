@@ -53,8 +53,8 @@ const Sponsors = ({ sponsors }: { sponsors: any }) => {
         </div>
         <div className="text-center text-lg mm:text-2xl">
           <Link href="mailto:lse-big@lse.ac.uk">
-            <div className="bg-background text-white px-5 py-2 w-max mx-auto rounded-lg mt-10">
-              Interested in partnering with us?
+            <div className="bg-background text-white px-5 py-2 w-max mx-auto rounded-lg mt-10 text-wrap min-w-screen">
+              Partnering with us
             </div>
           </Link>
         </div>
