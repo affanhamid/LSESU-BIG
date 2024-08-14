@@ -16,29 +16,27 @@ const Carousel: React.FC<CarouselProps> = ({
 
   useEffect(() => {
     const carousel = carouselRef.current;
-    let scrollDirection = 1;
+
     if (carousel) {
+      const totalWidth = carousel.scrollWidth;
+
       const startScrolling = () => {
-        carousel.scrollLeft += scrollDirection * 1;
-        if (carousel.scrollLeft <= 30) {
-          scrollDirection = 1;
-        }
-        if (
-          carousel.scrollLeft + carousel.clientWidth >=
-          carousel.scrollWidth
-        ) {
-          scrollDirection = -1;
+        carousel.scrollLeft += 1;
+        // If it has scrolled past the first set of items, move the scroll position to create the loop effect
+        if (carousel.scrollLeft >= totalWidth / 2) {
+          carousel.scrollLeft = 0;
         }
       };
+
       const scrollInterval = setInterval(startScrolling, 10);
       return () => clearInterval(scrollInterval);
     }
-  }, []);
+  }, [items]);
 
   return (
     <div ref={carouselRef} className={`overflow-x-scroll mx-auto no-scrollbar`}>
       <div className={`flex ${gap} w-max ${offset} ${paddingY}`}>
-        {items.map((item, idx) => (
+        {[...items, ...items].map((item, idx) => (
           <Component key={idx} {...item} />
         ))}
       </div>

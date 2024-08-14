@@ -79,25 +79,26 @@ const Features = () => {
       whileInView="visible"
       variants={containerVariants}
     >
+       <FeatureItem
+        selectedFeature={selectedFeature}
+        setSelectedFeature={setSelectedFeature}
+        idx={1}
+        title={"M&A Group"}
+        text={
+          "The M&A Group at the LSE offers an unparalleled experience for first-year students, with over 30 highly-selected analysts engaging in weekly sessions covering accounting, financial analysis, deal rationale, and valuation techniques. Our ‘Deal Snapshots’ series provides in-depth analysis of recent M&A transactions, and our LBO workshops, in collaboration with Financial Edge, offer practical insights from experts who train analysts at top financial institutions, including JPMorgan and Bank of America."
+        }
+        icon={<FaChartLine />}
+      />
+
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={0}
         title={"BIG Capital"}
         text={
-          "We are an exclusive student-run club focused on producing original and meticulous research under 3 key divisions: Equities, Fixed Income, and Macro strategies."
+          "BIG Capital is a premier student-managed investment find at the LSE, known for its rigorous research across Equities, Fixed Income, and Macro strategies. We pride ourselves on delivering thorough and original analysis, guided by a team of highly selective portfolio managers"
         }
         icon={<FaUniversity />}
-      />
-      <FeatureItem
-        selectedFeature={selectedFeature}
-        setSelectedFeature={setSelectedFeature}
-        idx={1}
-        title={"M&A Group"}
-        text={
-          "Flagship analyst program (30+ first-year students, rigorously selected. Weekly sessions on accounting, deal rationale, financial metrics and valuation methodologies)"
-        }
-        icon={<FaChartLine />}
       />
       <FeatureItem
         selectedFeature={selectedFeature}
@@ -105,7 +106,7 @@ const Features = () => {
         idx={2}
         title={"Speaker Events"}
         text={
-          "50+ Speaker events, Averaging 2-3 each week, from September to April, Range of events: solo events to panels, analysts to founders."
+          "Our Speaker Events are a cornerstone of the BIG experience, featuring over 50 high-profile engagements from September to April each year. Averaging 2-3 events per week, we host a diverse range of speakers, from industry-leading analysts to innovative founders. Our spotlight speakers over the past two years include Ken Griffen (Founder and CEO, Citadel Securities) and Stephan Feldgoise (Global Co-Head of M&A, Goldman Sachs.)"
         }
         icon={<FaUsers />}
       />
@@ -115,7 +116,7 @@ const Features = () => {
         idx={3}
         title={"LSE Focal Point"}
         text={
-          "#1 student-run business podcast, 200+ Speakers since inception in, Speakers have included: Founders and Chairmen of Bank of America, Oaktree and Evercore"
+          "LSE Focal Point stands as the leading student-run business podcast, boasting over 200 influential speakers since its inception. Our guest list includes industry titans such as the Founders and Chairmen of Bank of America, Oaktree, and Evercore. The podcast continues to be a platform for thought-provoking discussions, offering exclusive insights into the business world."
         }
         icon={<FaPodcast />}
       />
@@ -125,7 +126,7 @@ const Features = () => {
         idx={4}
         title={"Networking"}
         text={
-          "BIG Ball will bring together [number] students from across the UK to [event value] for an evening of entertainment and networking, Socials: bowling, ice staking, treasurer hunt (helps first yrs to get to know exec team etc)"
+          "The BIG Ball is a highlight of our networking calendar, bringing together students from across the UK for an unforgettable evening of entertainment and professional networking. Our social events over the past year have included bowling, ice skating, and treasure hunts, are designed to help first-year members connect with the executive team and each other, encouraging a strong sense of community from the very start."
         }
         icon={<FaHandshake />}
       />
