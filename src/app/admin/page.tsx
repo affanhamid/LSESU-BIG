@@ -104,7 +104,7 @@ const Admin = () => {
       <ResourcesDashboard />
       {user &&
       user.email &&
-      !["snahom24@gmail.com", "affanhamid007@gmail.com" , "thivagharenvarmisan@gmail.com"].includes(
+      !["snahom24@gmail.com", "affanhamid007@gmail.com" , "thivagharenvarmisan@gmail.com", "varmisan05@hotmail.co.uk"].includes(
         user.email
       ) ? (
         <div className="pt-80 bg-white w-full text-center pb-20">
