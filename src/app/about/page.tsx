@@ -11,10 +11,11 @@ const AboutUs = async () => {
     "Markets",
     "Mentorship",
     "Technology",
-    "Entrepreneurship + Strategy",
+    "Entrepreneurship",
     "Socials",
     "Marketing",
     "Consulting",
+    "Law"
   ];
   return (
     <main className="bg-white">
