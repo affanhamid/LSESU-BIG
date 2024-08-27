@@ -38,7 +38,7 @@ const SectorMember = ({
         className="rounded-full w-32 h-32 lg:w-36 lg:h-36 xl:w-40 xl:h-40 2xl:w-48 2xl:h-48 object-cover shadow-lg"
       />
       <div className="flex flex-col py-4 items-center">
-        <p className="text-xl lg:text-2xl flex items-center gap-2 justify-center font-semibold">
+        <p className="text-xl lg:text-2xl flex items-center gap-2 justify-center font-semibold whitespace-nowrap">
           {name}
           <Link
             href={linkedin || ""}
