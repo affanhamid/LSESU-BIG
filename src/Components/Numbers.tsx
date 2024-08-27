@@ -64,7 +64,7 @@ const Numbers = () => {
         text="50+ events"
         icon={<FaCalendarAlt />}
         description={
-          "Our countless panel events, ensures that there is always something exciting to attend"
+          "Our countless panel events ensures that there is always something exciting to attend"
         }
       />
       <Number
