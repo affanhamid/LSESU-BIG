@@ -43,7 +43,7 @@ const Sponsors = ({ sponsors }: { sponsors: any }) => {
       variants={containerVariants}
     >
       <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8">
-        Past Sponsors and Partners
+        Partner Organisations
       </h1>
       <div className="px-4 md:px-8 lg:px-16 max-w-[1200px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
@@ -54,7 +54,7 @@ const Sponsors = ({ sponsors }: { sponsors: any }) => {
         <div className="text-center text-lg mm:text-2xl mt-8">
           <Link href="mailto:lse-big@lse.ac.uk">
             <div className="bg-background text-white px-5 py-2 w-max mx-auto rounded-lg mt-10 text-wrap min-w-screen">
-              Partnering with us
+              Partner with us
             </div>
           </Link>
         </div>
