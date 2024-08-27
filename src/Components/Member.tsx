@@ -20,8 +20,11 @@ export const Member = ({
   linkedin: string;
 }) => {
   return (
-    <div
+    <motion.div
       className="px-6 my-4 flex flex-col items-center rounded-lg overflow-hidden text-black"
+      initial="hidden"
+      whileInView="visible"
+      variants={itemVariants}
     >
       <img
         src={imageLink}
@@ -42,6 +45,6 @@ export const Member = ({
         </p>
         <p className="text-gray-600">{role}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };

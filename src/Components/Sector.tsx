@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { FaLinkedin } from "react-icons/fa";
 
 const itemVariants = {
@@ -30,9 +29,8 @@ const SectorMember = ({
   linkedin: string;
 }) => {
   return (
-    <motion.div
+    <div
       className="my-4 flex flex-col items-center rounded-lg overflow-hidden text-white text-center w-max break:w-48"
-      variants={itemVariants}
     >
       <img
         src={imageLink}
@@ -52,7 +50,7 @@ const SectorMember = ({
           </Link>
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -64,11 +62,8 @@ export const Sector = ({
   title: string;
 }) => {
   return (
-    <motion.div
+    <div
       className="bg-background text-white px-5 rounded-lg"
-      initial="hidden"
-      whileInView="visible"
-      variants={containerVariants}
     >
       <h2 className="text-3xl lg:text-3xl font-bold text-left my-10 pl-5">
         {title}
@@ -84,6 +79,6 @@ export const Sector = ({
           />
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
