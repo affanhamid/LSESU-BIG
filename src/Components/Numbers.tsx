@@ -57,28 +57,28 @@ const Numbers = () => {
         text="900+ members"
         icon={<FaUsers />}
         description={
-          ""
+          " With the most members in an LSE society, we represent all degree backgrounds."
         }
       />
       <Number
         text="50+ events"
         icon={<FaCalendarAlt />}
         description={
-          ""
+          "Our countless panel events, covering a wide range of industries, ensures that there is always something exciting to attend."
         }
       />
       <Number
         text="7,000+ followers"
         icon={<FaUserFriends />}
         description={
-          ""
+          "Our social media presence ensures our members are always up to date with upcoming events."
         }
       />
       <Number
         text="10+ sponsors"
         icon={<FaHandshake />}
         description={
-          ""
+          "Our sponsors bridge the gap between university and industry by providing exclusive networking sessions and more."
         }
       />
     </div>
