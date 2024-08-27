@@ -85,7 +85,7 @@ const Features = () => {
         idx={1}
         title={"M&A Group"}
         text={
-          "The M&A Group at the LSE offers an unparalleled experience for first-year students, with over 30 highly-selected analysts engaging in weekly sessions covering accounting, financial analysis, deal rationale, and valuation techniques. Our ‘Deal Snapshots’ series provides in-depth analysis of recent M&A transactions, and our LBO workshops, in collaboration with Financial Edge, offer practical insights from experts who train analysts at top financial institutions, including JPMorgan and Bank of America."
+          "The M&A Group at the LSE offers an unparalleled experience for first-year students, with over 30 highly-selected analysts engaging in weekly sessions covering accounting, financial analysis, deal rationale, and valuation techniques. Our ‘Deal Snapshots’ series provides in-depth analysis of recent M&A transactions, and our LBO workshops, in collaboration with Financial Edge, offer practical insights from experts who train analysts at top financial institutions."
         }
         icon={<FaChartLine />}
       />
