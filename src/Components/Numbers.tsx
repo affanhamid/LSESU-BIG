@@ -78,7 +78,7 @@ const Numbers = () => {
         text="10+ sponsors"
         icon={<FaHandshake />}
         description={
-          "Our sponsors bridge the gap between university and industry by providing exclusive networking sessions and more"
+          "Our sponsors bridge the gap between university and industry by providing exclusive networking sessions"
         }
       />
     </div>
