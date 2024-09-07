@@ -31,7 +31,7 @@ const Gallery = ({ events }: { events: any }) => {
   return (
     <main className="">
       <section className="bg-white text-black border-b border-white mb-10">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center">Gallery</h1>
+        <h1>Gallery</h1>
         <div className="flex justify-center">
           <div className="relative h-[75vh] overflow-y-scroll w-full flex flex-wrap justify-center my-20">
             {events.map((event: any, idx: number) => (

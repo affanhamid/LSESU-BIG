@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { SponsorProps } from "@/Types/types";
 import { motion } from "framer-motion";
+import MediaLogo from "./MediaLogo";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -14,26 +14,6 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, scale: 1.2 },
-  visible: { opacity: 1, scale: 1 },
-};
-
-const Sponsor: React.FC<SponsorProps> = ({ imageLink }) => {
-  return (
-    <motion.div
-      className="rounded-lg overflow-hidden hover:scale-105 transition-all cursor-pointer w-full max-w-[120px] md:max-w-[150px] lg:max-w-[180px] mx-auto"
-      variants={itemVariants}
-    >
-      <img
-        src={imageLink}
-        alt="Sponsor logo"
-        className="object-contain w-full h-auto"
-      />
-    </motion.div>
-  );
-};
-
 const Sponsors = ({ sponsors }: { sponsors: any }) => {
   return (
     <motion.section
@@ -42,13 +22,11 @@ const Sponsors = ({ sponsors }: { sponsors: any }) => {
       whileInView="visible"
       variants={containerVariants}
     >
-      <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8">
-        Partner Organisations
-      </h1>
+      <h1>Partner Organisations</h1>
       <div className="px-4 md:px-8 lg:px-16 max-w-[1200px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
           {sponsors["sponsors"].map((sponsor: any, idx: number) => (
-            <Sponsor imageLink={sponsor.imageLink} key={idx} />
+            <MediaLogo icon={sponsor.imageLink} key={idx} />
           ))}
         </div>
         <div className="text-center text-lg mm:text-2xl mt-8">

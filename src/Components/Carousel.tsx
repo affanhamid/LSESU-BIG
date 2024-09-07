@@ -1,34 +1,52 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
-import { CarouselProps } from '@/Types/types';
+import React, { useEffect, useRef } from "react";
 
-const Carousel: React.FC<CarouselProps> = ({ gap, offset, paddingY, items, Component, animate }) => {
-    const carouselRef = useRef<HTMLDivElement>(null);
+type CarouselProps = {
+  gap: string;
+  offset: string;
+  paddingY: string;
+  items: React.FC<any>[];
+  Component: React.FC<any>;
+};
 
-    useEffect(() => {
-        const carousel = carouselRef.current;
-        if (carousel) {
-            const startScrolling = () => {
-                carousel.scrollLeft += 1;
-                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
-                    carousel.scrollLeft = 0;
-                }
-            };
-            const scrollInterval = setInterval(startScrolling, 50);
-            return () => clearInterval(scrollInterval);
+const Carousel = ({
+  gap,
+  offset,
+  paddingY,
+  items,
+  Component,
+}: CarouselProps) => {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+
+    if (carousel) {
+      const totalWidth = carousel.scrollWidth;
+
+      const startScrolling = () => {
+        carousel.scrollLeft += 1;
+        // If it has scrolled past the first set of items, move the scroll position to create the loop effect
+        if (carousel.scrollLeft >= totalWidth / 2) {
+          carousel.scrollLeft = 0;
         }
-    }, []);
+      };
 
-    return (
-        <div ref={carouselRef} className={`overflow-x-scroll mx-auto`}>
-            <div className={`flex ${gap} w-max ${offset} ${paddingY}`}>
-                {items.map((item, idx) => (
-                    <Component key={idx} {...item} />
-                ))}
-            </div>
-        </div>
-    );
+      const scrollInterval = setInterval(startScrolling, 10);
+      return () => clearInterval(scrollInterval);
+    }
+  }, [items]);
+
+  return (
+    <div ref={carouselRef} className={`overflow-x-scroll mx-auto no-scrollbar`}>
+      <div className={`flex ${gap} w-max ${offset} ${paddingY}`}>
+        {[...items, ...items].map((item, idx) => (
+          <Component key={idx} {...item} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Carousel;

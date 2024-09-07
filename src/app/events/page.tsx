@@ -1,6 +1,5 @@
-import { fetchUpcomingEvents } from "../../Database/database";
 import Navbar from "@/Components/Navbar";
-import PastEvents from "@/Components/pastEvents";
+import PastEvents from "@/app/events/PastEvents";
 import Link from "next/link";
 
 const UpcomingEvent = ({ event }: { event: any }) => {
@@ -35,7 +34,7 @@ const UpcomingEvent = ({ event }: { event: any }) => {
 };
 
 const Events = async () => {
-  const upcomingEvents = await fetchUpcomingEvents();
+  const upcomingEvents = [];
   return (
     <main className="">
       <Navbar />

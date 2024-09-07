@@ -1,0 +1,86 @@
+{
+  "executiveMembers": [
+    {
+      "email": "amaankhan07111@gmail.com",
+      "imageLink": "https://media.licdn.com/dms/image/D5603AQHy5B9_VyrgXg/profile-displayphoto-shrink_800_800/0/1719256507174?e=1728518400&v=beta&t=zJniWXadQK5PctXaz7y8Sr__kBWbjMAb_ueWZXtjTt8",
+      "linkedin": "https://www.linkedin.com/in/amaanlkhan/",
+      "name": "Amaan Khan",
+      "role": "Chairmen"
+    },
+    {
+      "email": "M.A.Islam@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQHiMvbwIbi12Q/profile-displayphoto-shrink_800_800/0/1721480478613?e=1728518400&v=beta&t=0yQjDjRckFtULhtRWugy73BxHlJsLh0-KEYKGrL1O5A",
+      "linkedin": "https://www.linkedin.com/in/asifislam1/",
+      "name": "Asif Islam",
+      "role": "Chairman"
+    },
+    {
+      "email": "T.Joy@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQFl5ZlZsS9dOg/profile-displayphoto-shrink_800_800/0/1692531663290?e=1728518400&v=beta&t=JHCQHweMkuMF-dR1xWdjRNWrCjs6bsGmhFXk5CSlstE",
+      "linkedin": "https://www.linkedin.com/in/thomson-joy/",
+      "name": "Thomson Joy",
+      "role": "President"
+    },
+    {
+      "email": "n.solomon1@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQEdc6qEpMJzwA/profile-displayphoto-shrink_800_800/0/1710125400613?e=1728518400&v=beta&t=7EsmFT52MbIcTj56KrLRuB1R3J_cR4KcGKms3O8iEn0",
+      "linkedin": "https://www.linkedin.com/in/nahom-solomon11/",
+      "role": "Vice President",
+      "name": "Nahom Solomon"
+    },
+    {
+      "email": "D.A.Ma@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D5603AQFHle3dIFpErA/profile-displayphoto-shrink_800_800/0/1714150735753?e=1728518400&v=beta&t=8N4fwtcHCngNMfmkqaltKzZvHimcFQM3SkYPQq9jpfY",
+      "linkedin": "https://www.linkedin.com/in/dma6/",
+      "role": "Vice President",
+      "name": "Dean Ma"
+    },
+    {
+      "email": "a.simionato@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQGF_WUqgbxdAQ/profile-displayphoto-shrink_800_800/0/1721079619573?e=1728518400&v=beta&t=G_AjEMiKsvZ1mKT_MS7RIDS2Sb7uo8W-ZRkEPCLB6ck",
+      "linkedin": "https://www.linkedin.com/in/allegra-simionato-908475289/",
+      "role": "Secretary",
+      "name": "Allegra Simionato"
+    },
+    {
+      "email": "r.a.chawla@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQEgNAOOQGsqTQ/profile-displayphoto-shrink_800_800/0/1697918310072?e=1728518400&v=beta&t=M20cOjNr1c83KtZDQW-YlllN8gsysSVJg-AoxCdHlRY",
+      "linkedin": "https://www.linkedin.com/in/ruhaan-chawla-a8647921a/",
+      "role": "Treasurer",
+      "name": "Ruhaan Chawla"
+    },
+    {
+      "email": "a.majeed1@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQFlM3p2GFVrZw/profile-displayphoto-shrink_800_800/0/1710093465801?e=1728518400&v=beta&t=WMPume4H7tdU1W51Bd26PQcHDPdbtFXuqpTlbhdu1Ds",
+      "linkedin": "https://www.linkedin.com/in/alimajeed1/",
+      "role": "Head of External Relations",
+      "name": "Ali Majeed"
+    },
+    {
+      "email": "r.pearlman@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQFIaQNymcOBOw/profile-displayphoto-shrink_800_800/0/1709675718952?e=1728518400&v=beta&t=zAPE5f3s4OjlA-k9jQH83n5CjBFT_Zz4uSqT2QdKBfA",
+      "linkedin": "https://www.linkedin.com/in/rachel-pearlman-a4050b216/",
+      "role": "Head of Corporate Relations",
+      "name": "Rachel Pearlman"
+    },
+    {
+      "email": "j.choe2@lse.ac.uk",
+      "imageLink": "https://media.licdn.com/dms/image/D4E03AQGOVl1zFwfkNg/profile-displayphoto-shrink_800_800/0/1687846930327?e=1728518400&v=beta&t=a-cTwJrxLzkqTLRdJWT0pcA5K92jEMUNgCejNtMUnHs",
+      "linkedin": "https://www.linkedin.com/in/jay-choe1/",
+      "role": "Head of BIG Conversations",
+      "name": "Jay Choe"
+    }
+  ],
+  "heads": {
+    "Banking": [],
+    "Alternatives": [],
+    "Markets": [],
+    "Mentorship": [],
+    "Technology": [],
+    "Entrepreneurship": [],
+    "Socials": [],
+    "Marketing": [],
+    "Consulting": [],
+    "Law": []
+  }
+}

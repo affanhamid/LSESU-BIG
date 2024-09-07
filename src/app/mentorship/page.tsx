@@ -1,6 +1,5 @@
-import { fetchTestimonials } from "../../Database/database";
-import TestimonialShowcase from "@/Components/TestimonialShowcase";
-import MentorShowcase from "@/Components/MentorShowcase";
+import TestimonialShowcase from "@/app/mentorship/TestimonialShowcase";
+import MentorShowcase from "@/app/mentorship/MentorShowcase";
 import Navbar from "@/Components/Navbar";
 import { FaChartLine, FaUsers, FaCalendarAlt } from "react-icons/fa";
 
@@ -25,7 +24,7 @@ const Number = ({
 };
 
 const Mentorship = async () => {
-  const testimonials = await fetchTestimonials();
+  const testimonials = [];
   const mentors = [{}, {}, {}];
   return (
     <main className="">
@@ -83,15 +82,16 @@ const Mentorship = async () => {
           nationalities. They managed to break into the competitive field both
           from economics/ finance degrees and non-finance degrees - with
           experience and offers from 50+ distinguished firms.
-        </p> <div className="flex gap-5">
+        </p>{" "}
+        <div className="flex gap-5">
           <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentee
           </button>
           <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentor
           </button>
-          </div>
-        {/* <MentorShowcase mentors={mentors} /> */}
+        </div>
+        <MentorShowcase mentors={mentors} />
       </section>
     </main>
   );

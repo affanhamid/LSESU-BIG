@@ -1,63 +1,68 @@
 import Link from "next/link";
-import logos from "@/Database/data/logos.json";
-import MembershipBenefits from "../Components/MembershipBenefits";
-// import { fetchPastSpeakers } from "../Database/database";
-import Speakers from "@/Database/data/speakers.json"
-// import { fetchSponsors } from "../Database/database";
-import sponsors from "@/Database/data/sponsors.json"
-import SpeakerShowcase from "@/Components/SpeakerShowcase";
-import Header from "@/Components/Header";
 import "./globals.css";
-import MediaLogo from "@/Components/MediaLogo";
-import Features from "@/Components/Features";
-import Numbers from "@/Components/Numbers";
-import Gallery from "@/Components/Gallery";
-// import { fetchGallery } from "@/Database/database";
-import gallery from "@/Database/data/gallery.json"
-import Sponsors from "@/Components/Sponsors";
+import { speakers, sponsors, gallery, logos } from "@/Database";
+
+import {
+  SpeakerShowcase,
+  MediaLogo,
+  Features,
+  Numbers,
+  Gallery,
+  Sponsors,
+  MembershipBenefits,
+} from "@/Components";
 
 export default async function Home() {
-  // const { showcaseSpeakers } = await fetchPastSpeakers();
-  const showcaseSpeakers = Speakers["images"]
-  // const sponsors = await fetchSponsors();
-  // const events = await fetchGallery();
-  const events = gallery['events']
-
-  const shuffle = (array: Array<string>) => {
-    let currentIndex = array.length;
-
-    while (currentIndex != 0) {
-      let randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex],
-        array[currentIndex],
-      ];
-    }
-    return array;
-  };
+  const showcaseSpeakers = speakers["images"];
+  const events = gallery["events"];
 
   return (
     <main>
-      <Header />
-      <section className="pt-60 md:py-10 lg:py-20 xl:py-32 bg-white">
+      <div className="absolute ml:pt-0 w-screen h-max xl:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[0px]">
+        <img
+          src="/1.jpeg"
+          alt="Image"
+          className="w-screen ml:w-auto ml:h-screen object-cover"
+        />
+      </div>
+      <header className="relative hidden ml:h-screen w-full z-20 ml:flex items-center justify-center bg-background/30">
+        <div
+          className={`absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 p-4 flex flex-col items-center text-white transition-all duration-200 rounded-lg py-7 px-10 xl:left-[50%]`}
+        >
+          <h1 className="text-center flex flex-col">
+            <span
+              className={`text-2xl md:text-4xl lg:text-5xl mb-1 transition-transform duration-200 md:text-nowrap xl:translate-x-0`}
+            >
+              London School of Economics
+            </span>
+            <span className="text-2xl md:text-6xl lg:text-7xl text-nowrap">
+              Business & Investment Group
+            </span>
+          </h1>
+          <p
+            className={`text-p text-2xl mt-3 transition-transform duration-200 text-center xl:translate-x-0`}
+          >
+            Europe's premier finance and business society
+          </p>
+          <Link href="https://www.lsesu.com/communities/societies/group/big/">
+            <button className="px-5 py-4 text-xl mt-3">BECOME A MEMBER</button>
+          </Link>
+        </div>
+      </header>
+      <section className="bg-white">
+        <h1>Who we are</h1>
         <Numbers />
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10 mt-32">
-          What we do
-        </h1>
+        <h1>What we do</h1>
         <Features />
       </section>
       <SpeakerShowcase showcaseSpeakers={showcaseSpeakers} />
       <Sponsors sponsors={sponsors} />
       <MembershipBenefits />
       <section className="bg-white pt-32 pb-40">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
-          Alumni Destinations
-        </h1>
+        <h1>Alumni Destinations</h1>
         <div className="">
           <div className="grid mm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-center mx-auto w-max gap-4">
-            {shuffle(logos["logos"]).map((icon, idx) => (
+            {logos["logos"].map((icon, idx) => (
               <MediaLogo icon={icon} key={idx} />
             ))}
           </div>

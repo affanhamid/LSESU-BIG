@@ -14,35 +14,11 @@
   scrollbar-width: none; /* for Firefox */
 }
 
-@layer components {
-  .hexagon-inner {
-    @apply relative w-full h-full before:block before:absolute before:inset-0;
-    @apply after:block after:absolute after:inset-0;
-
-    before {
-      content: "";
-      border-left: 150px solid transparent;
-      border-right: 150px solid transparent;
-      border-bottom: 86.6px solid black;
-      /* Adjust the color */
-      top: -86.6px;
-      width: 0;
-      height: 0;
-    }
-
-    after {
-      content: "";
-      border-left: 150px solid transparent;
-      border-right: 150px solid transparent;
-      border-top: 86.6px solid black;
-      /* Adjust the color */
-      bottom: -86.6px;
-      width: 0;
-      height: 0;
-    }
+@layer base {
+  h1 {
+    @apply mb-10 text-4xl font-bold text-center;
   }
-
-  .hexagon {
-    @apply relative w-[300px] h-[173.21px] bg-black mx-[1px] my-[86.6px];
+  button {
+    @apply rounded border-2 border-white/5 bg-background text-white font-bold transition-all duration-200;
   }
 }

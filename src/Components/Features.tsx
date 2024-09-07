@@ -19,11 +19,6 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0 },
-};
-
 const FeatureItem = ({
   selectedFeature,
   setSelectedFeature,
@@ -79,7 +74,7 @@ const Features = () => {
       whileInView="visible"
       variants={containerVariants}
     >
-       <FeatureItem
+      <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={1}

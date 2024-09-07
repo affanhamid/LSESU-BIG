@@ -1,5 +1,4 @@
 import React from "react";
-import { BenefitProps } from "@/Types/types";
 import {
   FaNetworkWired,
   FaBriefcase,
@@ -7,7 +6,15 @@ import {
   FaChalkboardTeacher,
 } from "react-icons/fa";
 
-const Benefit: React.FC<BenefitProps> = ({ title, description, icon }) => {
+const Benefit = ({
+  title,
+  description,
+  icon,
+}: {
+  title: string;
+  description: string;
+  icon: JSX.Element;
+}) => {
   return (
     <div className="p-8 rounded-lg flex flex-col items-center text-center shadow-[0_0_15px_rgba(0,0,0,0.1)] border border-transparent hover:shadow-[0_0_15px_rgba(255,255,255,0.8)] hover:border-white transition-all duration-300 ease-in-out px-4">
       <div className="text-4xl mb-4">{icon}</div>
@@ -49,9 +56,7 @@ const MembershipBenefits = () => {
 
   return (
     <section className="text-white pt-32 pb-32">
-      <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10">
-        Membership Benefits
-      </h1>
+      <h1>Membership Benefits</h1>
       <div className="relative w-[90%] md:w-[70%] lg:w-[50%] mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center gap-16">
         {benefits.map((benefit, i) => (
           <Benefit

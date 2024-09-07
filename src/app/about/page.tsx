@@ -1,22 +1,15 @@
-import { fetchMembers } from "../../Database/database";
 import Navbar from "@/Components/Navbar";
-import { Member } from "@/Components/Member";
-import { Sector } from "@/Components/Sector";
+import { Member } from "@/app/about/Member";
+import { Sector } from "@/app/about/Sector";
+import { team } from "@/Database";
+
+type Heads = {
+  [key: string]: any;
+};
 
 const AboutUs = async () => {
-  const { execMembers, heads } = await fetchMembers();
-  const roles = [
-    "Banking",
-    "Alternatives",
-    "Markets",
-    "Mentorship",
-    "Technology",
-    "Entrepreneurship",
-    "Socials",
-    "Marketing",
-    "Consulting",
-    "Law"
-  ];
+  const execMembers = team["executiveMembers"];
+  const heads: Heads = team["heads"];
   return (
     <main className="bg-white">
       <Navbar />
@@ -116,18 +109,11 @@ const AboutUs = async () => {
         </h2>
         <hr className="border-gray-300 my-4" />
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pt-5 pb-20 justify-center">
-          {heads && (
-            <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-2 px-10 xl:px-20">
-              {roles &&
-                roles.map((role, idx) => (
-                  <Sector
-                    sectorMembers={heads.filter((head) => head.role === role)}
-                    title={role}
-                    key={idx}
-                  />
-                ))}
-            </div>
-          )}
+          <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-2 px-10 xl:px-20">
+            {Object.keys(heads).map((role, idx: number) => (
+              <Sector sectorMembers={heads[role]} title={role} key={idx} />
+            ))}
+          </div>
         </div>
       </section>
     </main>
