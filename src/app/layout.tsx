@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "../Components/Footer";
-import Navbar from "@/Components/Navbar";
+import { Footer, Navbar } from "@/Components";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "LSESU Business and Investment Group",
@@ -23,6 +23,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
       </body>
+      <Analytics />
     </html>
   );
 }
