@@ -1,5 +1,3 @@
-import LoginForm from "@/Components/LoginForm";
-import Logo from "@/Components/Logo";
 import Navbar from "@/Components/Navbar";
 import React from "react";
 
@@ -12,7 +10,6 @@ const Login = () => {
           Welcome back to BIG
         </h1>
         <h2 className="">Login to access the resources</h2>
-        <LoginForm />
       </section>
     </main>
   );
