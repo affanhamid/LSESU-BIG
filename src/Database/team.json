@@ -72,15 +72,223 @@
     }
   ],
   "heads": {
-    "Banking": [],
-    "Alternatives": [],
-    "Markets": [],
-    "Mentorship": [],
-    "Technology": [],
-    "Entrepreneurship": [],
-    "Socials": [],
-    "Marketing": [],
-    "Consulting": [],
-    "Law": []
+    "Banking": [
+      {
+        "email": "",
+        "id": "3GV1Wz4yeIvSgHlx4lN2",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEKK-0pSywchQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723222335534?e=1729123200&v=beta&t=fnjj9-86HLqcp7RSdI62e50rIck8KbCseN62kyccQqM",
+        "job": "2025 Morgan Stanley Capital Markets",
+        "linkedin": "https://www.linkedin.com/in/emilie-kim-58a4b8262/",
+        "name": "Emilie Kim",
+        "role": "Banking"
+      },
+      {
+        "email": "",
+        "id": "new_1722905249739",
+        "imageLink": "https://github.com/affanhamid/LSESU-BIG/blob/main/src/Database/data/images/Favour.jpg?raw=true",
+        "job": "2025 Lazard Investment Banking",
+        "linkedin": "https://www.linkedin.com/in/favour-oluwanusin/",
+        "name": "God'sFavour O.",
+        "role": "Banking"
+      }
+    ],
+    "Alternatives": [
+      {
+        "email": "",
+        "id": "new_1722905269455",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQEQAq4rlBoHow/profile-displayphoto-shrink_800_800/0/1703520107338?e=1728518400&v=beta&t=woPG9OyUWw2A26rQCIlG4E_3hvqClJU6uVb-wlUKaAc",
+        "job": "2025 Morgan Stanley Investment Banking",
+        "linkedin": "https://www.linkedin.com/in/emilia-ord-5748b1291/",
+        "name": "Emilia Ord",
+        "role": "Alternatives"
+      },
+      {
+        "email": "",
+        "id": "new_1723168156328",
+        "imageLink": "https://github.com/affanhamid/LSESU-BIG/blob/main/src/Database/data/images/Henry.jpg?raw=true",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/henryroscher/",
+        "name": "Henry Roscher",
+        "role": "Alternatives"
+      },
+      {
+        "email": "",
+        "id": "new_1723168256761",
+        "imageLink": "https://media.licdn.com/dms/image/D5603AQGw-Vmz_jNusg/profile-displayphoto-shrink_800_800/0/1723661796933?e=1729123200&v=beta&t=7ud-cw6pv1QIAz9YupaZN7urg2Ts4neb_0V2k03B9fU",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/oscarfeingold/",
+        "name": "Oscar Feingold",
+        "role": "Alternatives"
+      }
+    ],
+    "Markets": [
+      {
+        "email": "",
+        "id": "new_1722905270288",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQGPqsuXM4M1CQ/profile-displayphoto-shrink_800_800/0/1718255149050?e=1728518400&v=beta&t=zOuF7MJJkjdiFVeKOFGHr9NsITgU17HsIyQEb-dReyE",
+        "job": "2025 Morgan Stanley S&T",
+        "linkedin": "https://www.linkedin.com/in/dilraj-shergill-0373a2291/",
+        "name": "Dilraj Shergill",
+        "role": "Markets"
+      },
+      {
+        "email": "",
+        "id": "new_1722905271055",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQETVwyOyo90xw/profile-displayphoto-shrink_800_800/0/1706540161431?e=1728518400&v=beta&t=cSHmFYsTIOkAvwxs0X2-A-7cWmg2jCiABWbrZya25vI",
+        "job": "2024 Goldman Sachs Women’s Trader Academy",
+        "linkedin": "https://www.linkedin.com/in/celestegrateau/",
+        "name": "Celeste C.",
+        "role": "Markets"
+      }
+    ],
+    "Mentorship": [
+      {
+        "email": "",
+        "id": "new_1722905271471",
+        "imageLink": "https://github.com/affanhamid/LSESU-BIG/blob/main/src/Database/data/images/Jaden.jpg?raw=true",
+        "job": "2024 Scotiabank Investment Banking",
+        "linkedin": "https://www.linkedin.com/in/jadenmighten/",
+        "name": "Jaden Mighten",
+        "role": "Mentorship"
+      },
+      {
+        "email": "",
+        "id": "new_1722905271838",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQE2yvmudlRxWw/profile-displayphoto-shrink_800_800/0/1713270073469?e=1728518400&v=beta&t=EZPq5wFACOP0u7JkUNsY9asPNToMzhFQy0qMJynXLBo",
+        "job": "2025 Lazard Investment Banking",
+        "linkedin": "https://www.linkedin.com/in/marvin-camara/",
+        "name": "Marvin C.",
+        "role": "Mentorship"
+      },
+      {
+        "email": "",
+        "id": "new_1722905272254",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQHO_wYtrolFtQ/profile-displayphoto-shrink_800_800/0/1708363331377?e=1728518400&v=beta&t=_JIKK0pvAa4JvvNOLeOA9gbH2DJ7iLy369qm14ZP7eQ",
+        "job": "2024 Spring Intern @ Citi, PWP, Evercore",
+        "linkedin": "https://www.linkedin.com/in/leowang-/",
+        "name": "Leo Wang",
+        "role": "Mentorship"
+      }
+    ],
+    "Technology": [
+      {
+        "email": "",
+        "id": "new_1722905272588",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQENMxfQ011rUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689782231637?e=1729123200&v=beta&t=y0iijaL4F_U87dV3sWhCAEGsj1bRHRvp83_w09i8t9U",
+        "job": "2024 Machine Learning Intern @ Corizo",
+        "linkedin": "https://www.linkedin.com/in/affan-hamid/",
+        "name": "Affan Hamid",
+        "role": "Technology"
+      },
+      {
+        "email": "",
+        "id": "new_1722905273039",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGIEUNdFNJ4Vg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723508982989?e=1729123200&v=beta&t=jYwQGxLGzSPApgBn8IpJH3svNzIsjEln88Pc7c5dfkQ",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/varmisan-thivagharen/",
+        "name": "Varmisan T.",
+        "role": "Technology"
+      }
+    ],
+    "Entrepreneurship": [
+      {
+        "email": "",
+        "id": "new_1723168584130",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQH5Dl2YdRNw3A/profile-displayphoto-shrink_800_800/0/1700946876019?e=1728518400&v=beta&t=HyKTj7VZJPeieAz7d9BY4Orsa5MNbaAqMHZ5nPMvYys",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/aryann-shori/",
+        "name": "Aaryan Shori",
+        "role": "Entrepreneurship"
+      },
+      {
+        "email": "",
+        "id": "new_1723168584433",
+        "imageLink": "https://media.licdn.com/dms/image/D4D03AQHOlL2XgTwd3Q/profile-displayphoto-shrink_800_800/0/1699465742989?e=1728518400&v=beta&t=ANID3qaIe7NCr4794js2b8iS6VDRwR8awi5I9S4bs8Q",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/pranayyenumula/",
+        "name": "Pranay Y.",
+        "role": "Entrepreneurship"
+      }
+    ],
+    "Socials": [
+      {
+        "email": "",
+        "id": "new_1723168362128",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEc6OrznH-rwA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693839930072?e=1728518400&v=beta&t=xKN3g4TeEuTIOlOsoOJphza9eDGPpglk0fWKPODX7eM",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/dia-deepak-732219221/",
+        "name": "Dia Deepak",
+        "role": "Socials"
+      },
+      {
+        "email": "",
+        "id": "new_1723168362779",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQHHj7gyQK41qQ/profile-displayphoto-shrink_800_800/0/1694010672165?e=1728518400&v=beta&t=b9zkeCv0gwqU7FcL38kmazKkyjW3zL58oNtm7UpAXRg",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/vaniajawa/",
+        "name": "Vania Jawa",
+        "role": "Socials"
+      }
+    ],
+    "Marketing": [
+      {
+        "email": "",
+        "id": "new_1723168364212",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQHpefz2-0FuIw/profile-displayphoto-shrink_800_800/0/1709228965242?e=1728518400&v=beta&t=UNNTtNZIxAvSkYa9ABQyRBa_Jpty8mmXPTWbGOcp3uo",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/aristotleferrer/",
+        "name": "Aris Ferrer",
+        "role": "Marketing"
+      },
+      {
+        "email": "",
+        "id": "new_1723168364646",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQEGmH7q_j9aLQ/profile-displayphoto-shrink_800_800/0/1708818990951?e=1728518400&v=beta&t=wbRZ1sk1wBAZ4BpsvpimAL3D_4x_ksDqoiONDSTaQ1g",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/vania-tewari-7669ba201/",
+        "name": "Vania Tewari",
+        "role": "Marketing"
+      }
+    ],
+    "Consulting": [
+      {
+        "email": "",
+        "id": "new_1723168588280",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQHsL_5YUnQxmA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696288824524?e=1730332800&v=beta&t=ZhQljCH6aM8Rfnrc6VS7gjafMW4Z-sHrva_oiRr7zT8",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/ameya-kakade-4431521aa/",
+        "name": "Ameya Kakade",
+        "role": "Consulting"
+      },
+      {
+        "email": "",
+        "id": "new_1724718430763",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHVtqu6vOeHzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711319980115?e=1730332800&v=beta&t=lciM9_sKOVebpBFqhlJWmUOJ2PH6AYk7L3JSOTdk5yk",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/dina-taher-580197229/",
+        "name": "Dina Taher",
+        "role": "Consulting"
+      }
+    ],
+    "Law": [
+      {
+        "email": "",
+        "id": "new_1724718234979",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQGo_ti3o619Yg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701204486627?e=1730332800&v=beta&t=4jyI1qb3DlDkahswZpm1OMOVDdoFaBQlKkd9zvkIYYA",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/iliana-fragkiadaki-b9288a224/?originalSubdomain=uk",
+        "name": "Iliana F. ",
+        "role": "Law"
+      },
+      {
+        "email": "",
+        "id": "new_1724718288643",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHhZhIFUQsjnw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690375121125?e=1730332800&v=beta&t=lnjviSbMqGONnXXC_9ghyEsW8PQciPgjsB25p7cMoas",
+        "job": "N/A",
+        "linkedin": "https://www.linkedin.com/in/vyoma-upadhyaya-75601024a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk",
+        "name": "Vyoma U.",
+        "role": "Law"
+      }
+    ]
   }
 }
