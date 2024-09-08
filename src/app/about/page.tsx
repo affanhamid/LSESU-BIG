@@ -2,14 +2,11 @@ import Navbar from "@/Components/Navbar";
 import { Member } from "@/app/about/Member";
 import { Sector } from "@/app/about/Sector";
 import { team } from "@/Database";
-
-type Heads = {
-  [key: string]: any;
-};
+import { HeadsType, RoleType, ExecutiveMembersType } from "@/Types";
 
 const AboutUs = async () => {
-  const execMembers = team["executiveMembers"];
-  const heads: Heads = team["heads"];
+  const execMembers: ExecutiveMembersType = team["executiveMembers"];
+  const heads: HeadsType = team["heads"];
   return (
     <main className="bg-white">
       <Navbar />
@@ -111,7 +108,11 @@ const AboutUs = async () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pt-5 pb-20 justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-2 px-10 xl:px-20">
             {Object.keys(heads).map((role, idx: number) => (
-              <Sector sectorMembers={heads[role]} title={role} key={idx} />
+              <Sector
+                sectorMembers={heads[role as RoleType]}
+                title={role}
+                key={idx}
+              />
             ))}
           </div>
         </div>

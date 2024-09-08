@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import MediaLogo from "./MediaLogo";
+import { SponsorInterface } from "@/Types";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -14,7 +15,7 @@ const containerVariants = {
   },
 };
 
-const Sponsors = ({ sponsors }: { sponsors: any }) => {
+const Sponsors = ({ sponsors }: { sponsors: SponsorInterface[] }) => {
   return (
     <motion.section
       className="py-16 bg-white"
@@ -25,7 +26,7 @@ const Sponsors = ({ sponsors }: { sponsors: any }) => {
       <h1>Partner Organisations</h1>
       <div className="px-4 md:px-8 lg:px-16 max-w-[1200px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-          {sponsors["sponsors"].map((sponsor: any, idx: number) => (
+          {sponsors.map((sponsor: SponsorInterface, idx: number) => (
             <MediaLogo icon={sponsor.imageLink} key={idx} />
           ))}
         </div>

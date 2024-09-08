@@ -1,7 +1,7 @@
 import Carousel from "./Carousel";
 import Logo from "./Logo";
 import MediaLogo from "./MediaLogo";
-import Numbers from "./Numbers";
+import Number from "./Number";
 import Socials from "./Socials";
 import Features from "./Features";
 import Gallery from "./Gallery";
@@ -15,7 +15,7 @@ export {
   Carousel,
   Logo,
   MediaLogo,
-  Numbers,
+  Number,
   Socials,
   Features,
   Gallery,

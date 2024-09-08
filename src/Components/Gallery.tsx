@@ -1,15 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import { GalleryEventInterface, GalleryPhotoInterface } from "@/Types";
 
-const Photo = ({
-  imageLink,
-  title,
-  link,
-}: {
-  imageLink: string;
-  title: string;
-  link: string;
-}) => {
+const Photo = ({ imageLink, title, link }: GalleryPhotoInterface) => {
   return (
     <Link href={link}>
       <div className="group cursor-pointer transform transition-transform duration-200 mr-4 mb-4 border-b-2 border-white relative">
@@ -27,14 +20,14 @@ const Photo = ({
   );
 };
 
-const Gallery = ({ events }: { events: any }) => {
+const Gallery = ({ events }: { events: GalleryEventInterface[] }) => {
   return (
     <main className="">
       <section className="bg-white text-black border-b border-white mb-10">
         <h1>Gallery</h1>
         <div className="flex justify-center">
           <div className="relative h-[75vh] overflow-y-scroll w-full flex flex-wrap justify-center my-20">
-            {events.map((event: any, idx: number) => (
+            {events.map((event: GalleryEventInterface, idx: number) => (
               <div className="flex-initial" key={idx}>
                 <Photo
                   imageLink={event.imageLink}

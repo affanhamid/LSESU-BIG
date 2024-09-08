@@ -1,26 +1,29 @@
 import Link from "next/link";
 import "./globals.css";
 import { speakers, sponsors, gallery, logos } from "@/Database";
+import {
+  FaUsers,
+  FaCalendarAlt,
+  FaUserFriends,
+  FaHandshake,
+} from "react-icons/fa";
 
 import {
   SpeakerShowcase,
   MediaLogo,
   Features,
-  Numbers,
+  Number,
   Gallery,
   Sponsors,
   MembershipBenefits,
 } from "@/Components";
 
 export default async function Home() {
-  const showcaseSpeakers = speakers["images"];
-  const events = gallery["events"];
-
   return (
     <main>
       <div className="absolute ml:pt-0 w-screen h-max xl:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[0px]">
         <img
-          src="/1.jpeg"
+          src="https://utfs.io/f/af9f2fdb-cae0-4888-87bf-18ad9a67710b-1d.jpeg"
           alt="Image"
           className="w-screen ml:w-auto ml:h-screen object-cover"
         />
@@ -51,12 +54,41 @@ export default async function Home() {
       </header>
       <section className="bg-white">
         <h1>Who we are</h1>
-        <Numbers />
+        <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center gap-1 mm:gap-10 mb-20 w-max  mx-auto">
+          <Number
+            text="900+ members"
+            icon={<FaUsers />}
+            description={
+              " With the most members in an LSE society, we represent all degree subjects and backgrounds"
+            }
+          />
+          <Number
+            text="50+ events"
+            icon={<FaCalendarAlt />}
+            description={
+              "Our countless panel events ensures that there is always something exciting to attend"
+            }
+          />
+          <Number
+            text="7,000+ followers"
+            icon={<FaUserFriends />}
+            description={
+              "Our social media presence ensures our members are always up to date with upcoming events"
+            }
+          />
+          <Number
+            text="10+ sponsors"
+            icon={<FaHandshake />}
+            description={
+              "Our sponsors bridge the gap between university and industry by providing exclusive networking sessions"
+            }
+          />
+        </div>
         <h1>What we do</h1>
         <Features />
       </section>
-      <SpeakerShowcase showcaseSpeakers={showcaseSpeakers} />
-      <Sponsors sponsors={sponsors} />
+      <SpeakerShowcase showcaseSpeakers={speakers.images} />
+      <Sponsors sponsors={sponsors.sponsors} />
       <MembershipBenefits />
       <section className="bg-white pt-32 pb-40">
         <h1>Alumni Destinations</h1>
@@ -68,7 +100,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <Gallery events={events} />
+      <Gallery events={gallery.events} />
     </main>
   );
 }

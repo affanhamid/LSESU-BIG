@@ -2,28 +2,16 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { pastEvents } from "@/Database";
+import { PastEventInterface } from "@/Types";
 
-type PastEventsType = {
-  [key: string]: {
-    title: string | null;
-    speakers: string | null;
-    imageLink: string | null;
-    postLink: string | null;
-    Month: string | null;
-    Day: string | null;
-  }[];
-};
-
-const pastEventsTyped: PastEventsType = pastEvents;
-
-const Event = ({ event }: { event: any }) => {
+const Event = ({ event }: { event: PastEventInterface }) => {
   return (
     <div className="flex flex-col break:flex-row  border border-gray-300 rounded-lg overflow-hidden w-max break:w-full items-center">
       <div className="w-[300px] break:w-[175px] md:w-[200px] lg:w-[250px] aspect-square bg-gray-600 flex-shrink-0">
         {event.imageLink ? (
           <img
             src={event.imageLink}
-            alt={event.name}
+            alt={event.title}
             className="w-full h-full object-cover"
           />
         ) : (
@@ -32,7 +20,7 @@ const Event = ({ event }: { event: any }) => {
       </div>
       <div className="p-5 flex flex-col flex-grow">
         <div className="text-lg text-gray-500">{`${event.Month} ${event.Day}`}</div>
-        <div className="text-xl md:text-2xl font-bold mt-2">{event.name}</div>
+        <div className="text-xl md:text-2xl font-bold mt-2">{event.title}</div>
         <div className="text-lg text-gray-700 mt-1">
           Speakers: {event["speakers"]}
         </div>
@@ -53,7 +41,7 @@ const YearButton = ({
   idx,
 }: {
   index: number;
-  setIndex: any;
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
   text: string;
   idx: number;
 }) => {
@@ -91,9 +79,11 @@ const PastEvents = () => {
         />
       </div>
       <div className="flex flex-col items-center px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96 gap-10">
-        {pastEventsTyped[index.toString()].map((event: any) => (
-          <Event event={event} />
-        ))}
+        {pastEvents[index.toString() as "0" | "1"].map(
+          (event: PastEventInterface) => (
+            <Event event={event} />
+          )
+        )}
       </div>
     </section>
   );

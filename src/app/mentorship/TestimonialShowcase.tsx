@@ -1,9 +1,9 @@
 "use client";
-import Carousel from "../../Components/Carousel";
 import React from "react";
 import { FaQuoteRight } from "react-icons/fa";
+import { TestimonialInterface } from "@/Types";
 
-const Testimony = ({ description }: { description: string }) => {
+const Testimony = ({ description }: TestimonialInterface) => {
   return (
     <div className="relative flex flex-col border-2 border-white rounded-lg w-[300px] ml:w-[400px] break:w-[500px] aspect-video px-14 py-14">
       <p className="text-xl ml:text-3xl flex-1">{description}</p>
@@ -17,16 +17,17 @@ const Testimony = ({ description }: { description: string }) => {
   );
 };
 
-const TestimonialShowcase = ({ testimonials }: { testimonials: any }) => {
+const TestimonialShowcase = ({
+  testimonials,
+}: {
+  testimonials: TestimonialInterface[];
+}) => {
   return (
     <div className="w-[300px] ml:w-[400px] break:w-[500px] overflow-hidden mx-auto">
-      <Carousel
-        gap="gap-20"
-        offset="pl-0"
-        paddingY="pt-20 pb-10"
-        items={testimonials}
-        Component={Testimony}
-      />
+      {testimonials.length > 0 &&
+        testimonials.map((testimonial: TestimonialInterface, idx: number) => (
+          <Testimony key={idx} description={testimonial.description} />
+        ))}
     </div>
   );
 };

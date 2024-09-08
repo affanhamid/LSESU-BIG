@@ -2,16 +2,10 @@ import TestimonialShowcase from "@/app/mentorship/TestimonialShowcase";
 import MentorShowcase from "@/app/mentorship/MentorShowcase";
 import Navbar from "@/Components/Navbar";
 import { FaChartLine, FaUsers, FaCalendarAlt } from "react-icons/fa";
+import { TestimonialInterface } from "@/Types";
+import { NumberInterface } from "@/Types";
 
-const Number = ({
-  text,
-  icon,
-  description,
-}: {
-  text: any;
-  icon: any;
-  description: any;
-}) => {
+const Number = ({ text, icon, description }: NumberInterface) => {
   return (
     <div className="rounded-lg bg-background text-white flex flex-col items-center justify-center p-6 group cursor-pointer select-none h-max">
       <div className="text-6xl mb-4">{icon}</div>
@@ -24,7 +18,9 @@ const Number = ({
 };
 
 const Mentorship = async () => {
-  const testimonials = [];
+  const testimonials: TestimonialInterface[] = [
+    { description: "This is a test description" },
+  ];
   const mentors = [{}, {}, {}];
   return (
     <main className="">
@@ -91,7 +87,7 @@ const Mentorship = async () => {
             Apply to be a mentor
           </button>
         </div>
-        <MentorShowcase mentors={mentors} />
+        {/* <MentorShowcase mentors={mentors} /> */}
       </section>
     </main>
   );

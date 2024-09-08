@@ -1,11 +1,12 @@
 "use client";
 import Carousel from "../../Components/Carousel";
+import { MentorInterface } from "@/Types";
 
 const Mentor = () => {
   return <div className="w-[600px] aspect-[4/3] bg-black"></div>;
 };
 
-const MentorShowcase = ({ mentors }: { mentors: any }) => {
+const MentorShowcase = ({ mentors }: { mentors: MentorInterface[] }) => {
   return (
     <div className="px-4 md:px-10 lg:px-[550px]">
       <Carousel

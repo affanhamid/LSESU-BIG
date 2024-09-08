@@ -1,8 +1,9 @@
 import Navbar from "@/Components/Navbar";
 import PastEvents from "@/app/events/PastEvents";
 import Link from "next/link";
+import { EventInterface } from "@/Types";
 
-const UpcomingEvent = ({ event }: { event: any }) => {
+const UpcomingEvent = ({ event }: { event: EventInterface }) => {
   return (
     <div className="flex flex-col break:flex-row  border border-gray-300 rounded-lg overflow-hidden w-max break:w-full items-center">
       <div className="w-[300px] break:w-[175px] md:w-[200px] lg:w-[250px] aspect-square bg-gray-600 flex-shrink-0">
@@ -34,7 +35,7 @@ const UpcomingEvent = ({ event }: { event: any }) => {
 };
 
 const Events = async () => {
-  const upcomingEvents = [];
+  const upcomingEvents: EventInterface[] = [];
   return (
     <main className="">
       <Navbar />

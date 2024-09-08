@@ -1,22 +1,15 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import { CarouselProps } from "@/Types";
 
-type CarouselProps = {
-  gap: string;
-  offset: string;
-  paddingY: string;
-  items: React.FC<any>[];
-  Component: React.FC<any>;
-};
-
-const Carousel = ({
+const Carousel = <T,>({
   gap,
   offset,
   paddingY,
   items,
   Component,
-}: CarouselProps) => {
+}: CarouselProps<T>) => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

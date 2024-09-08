@@ -1,28 +1,9 @@
 "use client";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
+import { MemberType, SectorInterface } from "@/Types";
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const SectorMember = ({
-  imageLink,
-  name,
-  role,
-  linkedin,
-}: {
-  imageLink: string;
-  name: string;
-  role: string;
-  linkedin: string;
-}) => {
+const SectorMember = ({ imageLink, name, role, linkedin }: MemberType) => {
   return (
     <div className="my-4 flex flex-col items-center rounded-lg overflow-hidden text-white text-center w-max break:w-48">
       <img
@@ -47,22 +28,17 @@ const SectorMember = ({
   );
 };
 
-export const Sector = ({
-  sectorMembers,
-  title,
-}: {
-  sectorMembers: any[];
-  title: string;
-}) => {
+export const Sector = ({ sectorMembers, title }: SectorInterface) => {
   return (
     <div className="bg-background text-white px-5 rounded-lg">
       <h2 className="text-3xl lg:text-3xl font-bold text-left my-10 pl-5">
         {title}
       </h2>
       <div className="flex flex-col break:flex-row items-center text-nowrap break:text-wrap w-full justify-evenly">
-        {sectorMembers.map((member: any, idx: number) => (
+        {sectorMembers.map((member: MemberType, idx: number) => (
           <SectorMember
             key={idx}
+            email={member.email}
             name={member.name}
             role={member.role}
             imageLink={member.imageLink}

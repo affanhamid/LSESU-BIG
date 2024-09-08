@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Carousel from "./Carousel";
+import { SpeakerInterface } from "@/Types";
 
 const Speaker = ({ image }: { image: string }) => {
   return (
@@ -10,7 +11,7 @@ const Speaker = ({ image }: { image: string }) => {
   );
 };
 
-const SpeakerShowcase = ({ showcaseSpeakers }: { showcaseSpeakers: any }) => {
+const SpeakerShowcase = ({ showcaseSpeakers }: { showcaseSpeakers: SpeakerInterface[] }) => {
   return (
     <section className="text-white py-32">
       <h1 className="text-left pl-80">Past Speakers</h1>
