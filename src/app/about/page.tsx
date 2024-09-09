@@ -1,4 +1,3 @@
-import Navbar from "@/Components/Navbar";
 import { Member } from "@/app/about/Member";
 import { Sector } from "@/app/about/Sector";
 import { team } from "@/Database";
@@ -9,7 +8,6 @@ const AboutUs = async () => {
   const heads: HeadsType = team["heads"];
   return (
     <main className="bg-white">
-      <Navbar />
       <header className="relative pb-5">
         <img
           src="../2.jpg"

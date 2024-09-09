@@ -2,4 +2,7 @@
 
 ### Todo
 
-- Clean up the types
+- Change the alumni destinations
+- Mobile app
+- Past 2 years exec team
+- Past events

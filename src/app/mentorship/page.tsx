@@ -1,6 +1,5 @@
 import TestimonialShowcase from "@/app/mentorship/TestimonialShowcase";
 import MentorShowcase from "@/app/mentorship/MentorShowcase";
-import Navbar from "@/Components/Navbar";
 import { FaChartLine, FaUsers, FaCalendarAlt } from "react-icons/fa";
 import { TestimonialInterface } from "@/Types";
 import { NumberInterface } from "@/Types";
@@ -24,7 +23,6 @@ const Mentorship = async () => {
   const mentors = [{}, {}, {}];
   return (
     <main className="">
-      <Navbar />
       <header className="relative">
         <img
           src="../5.jpg"

@@ -18,33 +18,20 @@ import {
   MembershipBenefits,
 } from "@/Components";
 
-export default async function Home() {
+const Header = () => {
   return (
-    <main>
-      <div className="absolute ml:pt-0 w-screen h-max xl:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%] blur-[0px]">
-        <img
-          src="https://utfs.io/f/af9f2fdb-cae0-4888-87bf-18ad9a67710b-1d.jpeg"
-          alt="Image"
-          className="w-screen ml:w-auto ml:h-screen object-cover"
-        />
-      </div>
-      <header className="relative hidden ml:h-screen w-full z-20 ml:flex items-center justify-center bg-background/30">
-        <div
-          className={`absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 p-4 flex flex-col items-center text-white transition-all duration-200 rounded-lg py-7 px-10 xl:left-[50%]`}
-        >
+    <>
+      <header className="ms:h-52 mm:h-64 md:h-screen w-full z-20 flex items-center justify-center bg-hero bg-cover bg-center bg-blend-darken bg-black bg-opacity-30">
+        <div className="hidden md:flex flex-col items-center text-white rounded-lg py-7 px-10">
           <h1 className="text-center flex flex-col">
-            <span
-              className={`text-2xl md:text-4xl lg:text-5xl mb-1 transition-transform duration-200 md:text-nowrap xl:translate-x-0`}
-            >
+            <span className="text-4xl lg:text-5xl mb-1 transition-transform duration-200 md:text-nowrap">
               London School of Economics
             </span>
-            <span className="text-2xl md:text-6xl lg:text-7xl text-nowrap">
+            <span className="md:text-6xl lg:text-7xl text-nowrap">
               Business & Investment Group
             </span>
           </h1>
-          <p
-            className={`text-p text-2xl mt-3 transition-transform duration-200 text-center xl:translate-x-0`}
-          >
+          <p className="text-2xl mt-3">
             Europe's premier finance and business society
           </p>
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
@@ -52,9 +39,42 @@ export default async function Home() {
           </Link>
         </div>
       </header>
+      <div className="md:hidden flex flex-col items-center text-background rounded-t-lg py-7 px-10 bg-white">
+        <h1 className="text-center flex flex-col mb-5">
+          <span className="text-xl mm:text-2xl ml:text-4xl lg:text-5xl mb-1 ">
+            London School of Economics
+          </span>
+          <span className="text-xl mm:text-3xl ml:text-5xl">
+            Business & Investment Group
+          </span>
+        </h1>
+        <p className="text-center text-lg mm:text-2xl mm:mt-3">
+          Europe's premier finance and business society
+        </p>
+        <Link href="https://www.lsesu.com/communities/societies/group/big/">
+          <button className="px-3 py-2 text-lg mm:px-5 mm:py-4 mm:text-xl mt-3">
+            BECOME A MEMBER
+          </button>
+        </Link>
+      </div>
+    </>
+  );
+};
+
+export default function Home() {
+  return (
+    <main>
+      <Header />
       <section className="bg-white">
         <h1>Who we are</h1>
-        <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center gap-1 mm:gap-10 mb-20 w-max  mx-auto">
+        <p className="ml:text-lg md:text-xl px-10 md:px-32 lg:px-80">
+          LSESU BIG is a student-run society that aims to bring together
+          students from all backgrounds and disciplines to provide guidance into
+          the latest career opportunities in finance and business. Our mission
+          is to provide a platform for students to learn, grow, and network with
+          like-minded individuals.
+        </p>
+        <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center gap-1 mm:gap-10 mb-32 w-max mx-auto">
           <Number
             text="900+ members"
             icon={<FaUsers />}
@@ -90,7 +110,7 @@ export default async function Home() {
       <SpeakerShowcase showcaseSpeakers={speakers.images} />
       <Sponsors sponsors={sponsors.sponsors} />
       <MembershipBenefits />
-      <section className="bg-white pt-32 pb-40">
+      <section className="bg-white">
         <h1>Alumni Destinations</h1>
         <div className="">
           <div className="grid mm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-center mx-auto w-max gap-4">

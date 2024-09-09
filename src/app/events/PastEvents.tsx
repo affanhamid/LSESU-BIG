@@ -21,9 +21,13 @@ const Event = ({ event }: { event: PastEventInterface }) => {
       <div className="p-5 flex flex-col flex-grow">
         <div className="text-lg text-gray-500">{`${event.Month} ${event.Day}`}</div>
         <div className="text-xl md:text-2xl font-bold mt-2">{event.title}</div>
-        <div className="text-lg text-gray-700 mt-1">
-          Speakers: {event["speakers"]}
-        </div>
+        {event["speakers"] ? (
+          <div className="text-lg text-gray-700 mt-1">
+            Speakers: {event["speakers"]}
+          </div>
+        ) : (
+          <></>
+        )}
         <Link href={event.postLink || ""}>
           <button className="bg-background px-3 py-2 text-white rounded-lg mt-5 self-start">
             Learn more

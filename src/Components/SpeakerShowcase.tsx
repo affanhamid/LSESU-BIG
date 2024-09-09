@@ -11,10 +11,14 @@ const Speaker = ({ image }: { image: string }) => {
   );
 };
 
-const SpeakerShowcase = ({ showcaseSpeakers }: { showcaseSpeakers: SpeakerInterface[] }) => {
+const SpeakerShowcase = ({
+  showcaseSpeakers,
+}: {
+  showcaseSpeakers: SpeakerInterface[];
+}) => {
   return (
-    <section className="text-white py-32">
-      <h1 className="text-left pl-80">Past Speakers</h1>
+    <section className="text-white pb-32">
+      <h1 className="text-center lg:text-left lg:pl-80">Past Speakers</h1>
       <div className="px-4 md:px-10 lg:px-80">
         <Carousel
           gap="gap-8"

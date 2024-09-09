@@ -20,8 +20,10 @@ const config: Config = {
         background: "#0C1A3B",
       },
       fontFamily: {
-        textFont: ["Platypi", "serif"],
-        headerFont: ["Platypi", "serif"],
+        textFont: ["Nanum Myeongjo", "serif"],
+      },
+      backgroundImage: {
+        hero: "url(https://utfs.io/f/af9f2fdb-cae0-4888-87bf-18ad9a67710b-1d.jpeg)",
       },
       keyframes: {
         scroll: {

@@ -1,4 +1,3 @@
-import Navbar from "@/Components/Navbar";
 import PastEvents from "@/app/events/PastEvents";
 import Link from "next/link";
 import { EventInterface } from "@/Types";
@@ -38,7 +37,6 @@ const Events = async () => {
   const upcomingEvents: EventInterface[] = [];
   return (
     <main className="">
-      <Navbar />
       <header className="relative">
         <img
           src="../3.jpg"
