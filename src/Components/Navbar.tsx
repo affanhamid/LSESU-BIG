@@ -97,7 +97,7 @@ const Navbar = () => {
 
         <button className="px-3 py-2 text-base hidden md:block">
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
-            JOIN US
+            Join Us
           </Link>
         </button>
         <Menu />
