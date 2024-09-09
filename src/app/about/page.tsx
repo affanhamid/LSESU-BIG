@@ -2,10 +2,13 @@ import { Member } from "@/app/about/Member";
 import { Sector } from "@/app/about/Sector";
 import { team } from "@/Database";
 import { HeadsType, RoleType, ExecutiveMembersType } from "@/Types";
+import YearDropdown from "@/Components/YearDropdown"; // Import the YearDropdown component
+
 
 const AboutUs = async () => {
   const execMembers: ExecutiveMembersType = team["executiveMembers"];
   const heads: HeadsType = team["heads"];
+
   return (
     <main className="bg-white">
       <header className="relative pb-5">
@@ -18,10 +21,18 @@ const AboutUs = async () => {
           Our Committee
         </h1>
       </header>
+
       <section className="pt-10">
+      <div className="max-w-7xl mx-auto relative flex justify-center items-center">
         <h2 className="text-3xl lg:text-4xl font-bold text-center my-10">
-          Executive Comittee
+          Executive Committee
         </h2>
+        <div className="absolute right-0">
+          <YearDropdown />
+        </div>
+      </div>
+        
+        
         <hr className="border-gray-300 my-4" />
         <div className="flex-col justify-center flex-wrap gap-10">
           {execMembers && execMembers.length > 0 && (
