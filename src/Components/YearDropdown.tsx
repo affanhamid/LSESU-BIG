@@ -5,19 +5,25 @@ import React, { useState } from "react";
 const DropDownLi = ({
   setYear,
   liYear,
+  setOpen,
 }: {
   setYear: React.Dispatch<React.SetStateAction<string>>;
   liYear: string;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
     <li
       className="py-4 px-5 text-xl hover:bg-gray-200 cursor-pointer"
-      onClick={() => setYear(liYear)}
+      onClick={() => {
+        setYear(liYear);
+        setOpen(false); // Close the dropdown after selecting
+      }}
     >
       {liYear}
     </li>
   );
 };
+
 const YearDropdown = ({
   year,
   setYear,
@@ -32,7 +38,7 @@ const YearDropdown = ({
         className="inline-flex items-center gap-2 rounded-md bg-background text-white px-6 py-3 text-lg font-semibold shadow-lg focus:outline-none"
         onClick={() => setOpen(!open)}
       >
-        Year: {year}
+        {year}
         <FaChevronDown className="w-6 h-6 text-white" />
       </button>
 
@@ -41,9 +47,9 @@ const YearDropdown = ({
           open ? "h-[180px]" : "h-0"
         }`}
       >
-        <DropDownLi setYear={setYear} liYear="2022/23" />
-        <DropDownLi setYear={setYear} liYear="2023/24" />
-        <DropDownLi setYear={setYear} liYear="2024/25" />
+        <DropDownLi setYear={setYear} liYear="2022/23" setOpen={setOpen} />
+        <DropDownLi setYear={setYear} liYear="2023/24" setOpen={setOpen} />
+        <DropDownLi setYear={setYear} liYear="2024/25" setOpen={setOpen} />
       </ul>
     </div>
   );
