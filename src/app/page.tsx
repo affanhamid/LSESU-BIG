@@ -1,4 +1,3 @@
-import Link from "next/link";
 import "./globals.css";
 import { speakers, sponsors, gallery, logos } from "@/Database";
 import {
@@ -7,6 +6,7 @@ import {
   FaUserFriends,
   FaHandshake,
 } from "react-icons/fa";
+import Header from "@/Components/Header";
 
 import {
   SpeakerShowcase,
@@ -17,49 +17,6 @@ import {
   Sponsors,
   MembershipBenefits,
 } from "@/Components";
-
-const Header = () => {
-  return (
-    <>
-      <header className="ms:h-52 mm:h-64 md:h-screen w-full z-20 flex items-center justify-center bg-hero bg-cover bg-center bg-blend-darken bg-black bg-opacity-30">
-        <div className="hidden md:flex flex-col items-center text-white rounded-lg py-7 px-10">
-          <h1 className="text-center flex flex-col">
-            <span className="text-4xl lg:text-5xl mb-1 transition-transform duration-200 md:text-nowrap">
-              London School of Economics
-            </span>
-            <span className="md:text-6xl lg:text-7xl text-nowrap">
-              Business & Investment Group
-            </span>
-          </h1>
-          <p className="text-2xl mt-3">
-            Europe's premier finance and business society
-          </p>
-          <Link href="https://www.lsesu.com/communities/societies/group/big/">
-            <button className="px-5 py-4 text-xl mt-3">BECOME A MEMBER</button>
-          </Link>
-        </div>
-      </header>
-      <div className="md:hidden flex flex-col items-center text-background rounded-t-lg py-7 px-10 bg-white">
-        <h1 className="text-center flex flex-col mb-5">
-          <span className="text-xl mm:text-2xl ml:text-4xl lg:text-5xl mb-1 ">
-            London School of Economics
-          </span>
-          <span className="text-xl mm:text-3xl ml:text-5xl">
-            Business & Investment Group
-          </span>
-        </h1>
-        <p className="text-center text-lg mm:text-2xl mm:mt-3">
-          Europe's premier finance and business society
-        </p>
-        <Link href="https://www.lsesu.com/communities/societies/group/big/">
-          <button className="px-3 py-2 text-lg mm:px-5 mm:py-4 mm:text-xl mt-3">
-            BECOME A MEMBER
-          </button>
-        </Link>
-      </div>
-    </>
-  );
-};
 
 export default function Home() {
   return (

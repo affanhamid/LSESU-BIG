@@ -1,5 +1,5 @@
 import React from "react";
-import { Member } from "@/app/about/Member";
+import { Member } from "./Member";
 import { MemberType } from "@/Types";
 
 const Football = ({
