@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import { MemberType, SectorInterface } from "@/Types";
