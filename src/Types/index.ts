@@ -83,7 +83,7 @@ export type RoleType =
   | "Law";
 
 export type MemberType = {
-  email: string;
+  email?: string;
   imageLink: string;
   linkedin: string;
   name: string;

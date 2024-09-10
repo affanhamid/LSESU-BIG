@@ -1,250 +1,477 @@
 {
-  "executiveMembers": [
-    {
-      "email": "amaankhan07111@gmail.com",
-      "imageLink": "https://media.licdn.com/dms/image/D5603AQHy5B9_VyrgXg/profile-displayphoto-shrink_800_800/0/1719256507174?e=1728518400&v=beta&t=zJniWXadQK5PctXaz7y8Sr__kBWbjMAb_ueWZXtjTt8",
-      "linkedin": "https://www.linkedin.com/in/amaanlkhan/",
-      "name": "Amaan Khan",
-      "role": "Chairmen"
-    },
-    {
-      "email": "M.A.Islam@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D4E03AQHiMvbwIbi12Q/profile-displayphoto-shrink_800_800/0/1721480478613?e=1728518400&v=beta&t=0yQjDjRckFtULhtRWugy73BxHlJsLh0-KEYKGrL1O5A",
-      "linkedin": "https://www.linkedin.com/in/asifislam1/",
-      "name": "Asif Islam",
-      "role": "Chairman"
-    },
-    {
-      "email": "T.Joy@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D4E03AQFl5ZlZsS9dOg/profile-displayphoto-shrink_800_800/0/1692531663290?e=1728518400&v=beta&t=JHCQHweMkuMF-dR1xWdjRNWrCjs6bsGmhFXk5CSlstE",
-      "linkedin": "https://www.linkedin.com/in/thomson-joy/",
-      "name": "Thomson Joy",
-      "role": "President"
-    },
-    {
-      "email": "n.solomon1@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D4E03AQEdc6qEpMJzwA/profile-displayphoto-shrink_800_800/0/1710125400613?e=1728518400&v=beta&t=7EsmFT52MbIcTj56KrLRuB1R3J_cR4KcGKms3O8iEn0",
-      "linkedin": "https://www.linkedin.com/in/nahom-solomon11/",
-      "role": "Vice President",
-      "name": "Nahom Solomon"
-    },
-    {
-      "email": "D.A.Ma@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D5603AQFHle3dIFpErA/profile-displayphoto-shrink_800_800/0/1714150735753?e=1728518400&v=beta&t=8N4fwtcHCngNMfmkqaltKzZvHimcFQM3SkYPQq9jpfY",
-      "linkedin": "https://www.linkedin.com/in/dma6/",
-      "role": "Vice President",
-      "name": "Dean Ma"
-    },
-    {
-      "email": "a.simionato@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D4E03AQGF_WUqgbxdAQ/profile-displayphoto-shrink_800_800/0/1721079619573?e=1728518400&v=beta&t=G_AjEMiKsvZ1mKT_MS7RIDS2Sb7uo8W-ZRkEPCLB6ck",
-      "linkedin": "https://www.linkedin.com/in/allegra-simionato-908475289/",
-      "role": "Secretary",
-      "name": "Allegra Simionato"
-    },
-    {
-      "email": "r.a.chawla@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/v2/D4D03AQG8MUwJkI6USA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725456891948?e=1731542400&v=beta&t=AhyYhZrCY49gOe3A07PgOcq8glWIVmSPf6g_kLY9VKE",
-      "linkedin": "https://www.linkedin.com/in/ruhaan-chawla-a8647921a/",
-      "role": "Treasurer",
-      "name": "Ruhaan Chawla"
-    },
-    {
-      "email": "a.majeed1@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D4E03AQFlM3p2GFVrZw/profile-displayphoto-shrink_800_800/0/1710093465801?e=1728518400&v=beta&t=WMPume4H7tdU1W51Bd26PQcHDPdbtFXuqpTlbhdu1Ds",
-      "linkedin": "https://www.linkedin.com/in/alimajeed1/",
-      "role": "Head of External Relations",
-      "name": "Ali Majeed"
-    },
-    {
-      "email": "r.pearlman@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D4E03AQFIaQNymcOBOw/profile-displayphoto-shrink_800_800/0/1709675718952?e=1728518400&v=beta&t=zAPE5f3s4OjlA-k9jQH83n5CjBFT_Zz4uSqT2QdKBfA",
-      "linkedin": "https://www.linkedin.com/in/rachel-pearlman-a4050b216/",
-      "role": "Head of Corporate Relations",
-      "name": "Rachel Pearlman"
-    },
-    {
-      "email": "j.choe2@lse.ac.uk",
-      "imageLink": "https://media.licdn.com/dms/image/D4E03AQGOVl1zFwfkNg/profile-displayphoto-shrink_800_800/0/1687846930327?e=1728518400&v=beta&t=a-cTwJrxLzkqTLRdJWT0pcA5K92jEMUNgCejNtMUnHs",
-      "linkedin": "https://www.linkedin.com/in/jay-choe1/",
-      "role": "Head of BIG Conversations",
-      "name": "Jay Choe"
+  "2022/23": {
+    "pattern": [3, 2, 2, 2],
+    "executiveMembers": [],
+    "heads": {
+      "Banking": [],
+      "Alternatives": [],
+      "Markets": [],
+      "Mentorship": [],
+      "Technology": [],
+      "Entrepreneurship": [],
+      "Socials": [],
+      "Marketing": [],
+      "Consulting": [],
+      "Law": []
     }
-  ],
-  "heads": {
-    "Banking": [
+  },
+  "2023/24": {
+    "pattern": [3, 3, 2, 2],
+    "executiveMembers": [
       {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEKK-0pSywchQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723222335534?e=1729123200&v=beta&t=fnjj9-86HLqcp7RSdI62e50rIck8KbCseN62kyccQqM",
-        "linkedin": "https://www.linkedin.com/in/emilie-kim-58a4b8262/",
-        "name": "Emilie Kim",
-        "role": "Banking"
+        "name": "Asif Islam",
+        "role": "President",
+        "linkedin": "https://www.linkedin.com/in/asifislam1/",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHiMvbwIbi12Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721480478613?e=1731542400&v=beta&t=iN3kKjisMhHgvr5jAXXb91qJoqkG-AsGbcELQpvM3ks"
       },
       {
-        "email": "",
-        "imageLink": "https://utfs.io/f/e8ba4cc7-6c7f-42a5-9415-f81ebd845794-yonasx.jpg",
-        "linkedin": "https://www.linkedin.com/in/favour-oluwanusin/",
-        "name": "God'sFavour O.",
-        "role": "Banking"
+        "name": "Amaan Khan",
+        "role": "Vice President",
+        "linkedin": "https://www.linkedin.com/in/amaanlkhan/?originalSubdomain=uk",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQHy5B9_VyrgXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719256507174?e=1730937600&v=beta&t=7gviqpFcQf-0KDPPFyUNn6syIBbeC_F5uiQQLSB3cWs"
+      },
+      {
+        "name": "Matthieu Farrel-Braga",
+        "role": "Secretary",
+        "linkedin": "https://www.linkedin.com/in/matthieu-f-195714190/",
+        "imageLink": "/images/committee-22-23/alex_johnson.jpg"
+      },
+      {
+        "name": "Husnaa Dada",
+        "role": "Treasurer",
+        "linkedin": "https://www.linkedin.com/in/husnaa-dada-49936a235/",
+        "imageLink": "https://media.licdn.com/dms/image/v2/C4E03AQF4cRnCOTSyDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1661880586468?e=1730937600&v=beta&t=4Y1JwF9ImkXwWKjfeLeGavd0EdiGdLPtiSF0tZX4aw8"
+      },
+      {
+        "name": "Amandeep Nagra",
+        "role": "Chair",
+        "linkedin": "https://www.linkedin.com/in/amandeepnagra/",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEa5QRWHv9AOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712436545847?e=1731542400&v=beta&t=Qxyn6FQJdMRMlEJjgpfZCkdX4vRH35Z1B6BN4FSjyg0"
+      },
+      {
+        "name": "Daniyal Mirza",
+        "role": "Chair",
+        "linkedin": "https://www.linkedin.com/in/daniyal-mirza1/",
+        "imageLink": "/images/committee-22-23/daniyal_murza.jpg"
+      },
+      {
+        "name": "Sarah Baek",
+        "role": "Head of Mentorship",
+        "linkedin": "https://www.linkedin.com/in/sarah-sy-baek/",
+        "imageLink": "/images/committee-22-23/sarah_williams.jpg"
+      },
+      {
+        "name": "Ismail Abdi",
+        "role": "Head of Investments",
+        "linkedin": "https://www.linkedin.com/in/ismail1261/",
+        "imageLink": "/images/committee-22-23/david_clark.jpg"
+      },
+      {
+        "name": "Simona Vrantsalieva",
+        "role": "Head of External Relations",
+        "linkedin": "https://www.linkedin.com/in/simona-vrantsalieva-649506201/",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQFJwsdUi7r5TA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722411937936?e=1731542400&v=beta&t=3Gxt-iAy55dVsmgwWxyDMUDAaLHMbeB9x_y7UlxhKqY"
+      },
+      {
+        "name": "Dean Ma",
+        "role": "Head of Corporate Relations",
+        "linkedin": "https://www.linkedin.com/in/dma6/?originalSubdomain=ca",
+        "imageLink": "/images/committee-22-23/david_clark.jpg"
+      },
+      {
+        "name": "Sabrina Daniel",
+        "role": "Head of Welfare",
+        "linkedin": "https://www.linkedin.com/in/sabrina-daniel-97243719a/",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHX2koG-nL8aw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721908410794?e=1731542400&v=beta&t=z80dJiA1X7qdVnM7l5vBWeTPjtKrarS4Hbt5ofZOfo0"
       }
     ],
-    "Alternatives": [
+    "heads": {
+      "Banking": [
+        {
+          "name": "Stephanie Zhou",
+          "role": "Banking",
+          "linkedin": "https://www.linkedin.com/in/stephaniezhou-/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEQZMyVFyRIFg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681047369829?e=1731542400&v=beta&t=5iUIOJdsMkTbOHivlP5dRTSJK7esd-gKWv8LWlBhm84"
+        }
+      ],
+      "Alternatives": [
+        {
+          "name": "Anna McFadzean",
+          "role": "Alternatives",
+          "linkedin": "https://www.linkedin.com/in/anna-mcfadzean-492aa11a3/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEZRrDJ_IQeMg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725437021123?e=1731542400&v=beta&t=JbK8nJBBKIXpnhgpGIiJKKeqpkRSLrRKnYJTOsOMdBw"
+        },
+        {
+          "name": "Kofi Coleman",
+          "role": "Alternatives",
+          "linkedin": "https://www.linkedin.com/in/kofi-coleman/",
+          "imageLink": ""
+        }
+      ],
+      "Markets": [
+        {
+          "name": "Hunter Pang",
+          "role": "Markets",
+          "linkedin": "https://www.linkedin.com/in/hunter-pang-681621206/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHT9LDpXGtAOg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1678965818718?e=1731542400&v=beta&t=OwVGVTWtR80cEfgWpGKGgevAa24UJbp3AM1tObcesD8"
+        },
+        {
+          "name": "Bhavik Mohanlal",
+          "role": "Markets",
+          "linkedin": "https://www.linkedin.com/in/bhavik-mohanlal/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQE4ekTzGTSmxQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707743085407?e=1731542400&v=beta&t=BeQuXd0SK79oMhvpR_ZlaFaMIKGKSAd5ULQfGOUJ6v8"
+        }
+      ],
+      "Mentorship": [
+        {
+          "name": "Manav Sood",
+          "role": "Mentorship",
+          "linkedin": "https://www.linkedin.com/in/soodmanav890/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGqfBPpCXe6Wg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693078116625?e=1731542400&v=beta&t=xGWS8Z48EZWCnUsfV6ccc02TECdoPPXIqedF9-XFcb4"
+        },
+        {
+          "name": "Maraleis Sinton",
+          "role": "Mentorship",
+          "linkedin": "https://www.linkedin.com/in/maraleis-sinton/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQH95c-8nmT04g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699293275506?e=1731542400&v=beta&t=whr299LIX48VIncp-zWi3fC71zz7CuaddQzEjfUQ_hA"
+        }
+      ],
+      "Law": [
+        {
+          "name": "Anees Mumtaz",
+          "role": "Law",
+          "linkedin": "https://www.linkedin.com/in/anees-mumtaz-804310217/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGE7iDrSArbCA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721435663704?e=1731542400&v=beta&t=sjatWDrAs7552wAV48kk3q9_9AxJxulaUY66hlmm3zY"
+        },
+        {
+          "name": "Yusuf Mahmood",
+          "role": "Law",
+          "linkedin": "https://www.linkedin.com/in/yusuf-mahmood-a3628b1a0/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEYg19DlSqpGg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721755945216?e=1731542400&v=beta&t=En3VscvimJvR7kQrKxHGGkBa-dh1T56tZS4xIYZHLXY"
+        }
+      ],
+      "Consulting": [
+        {
+          "name": "Neha Talla",
+          "role": "Consulting",
+          "linkedin": "https://www.linkedin.com/in/neha-talla-7034495a/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHYvDcIiG7z9A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1710773476635?e=1731542400&v=beta&t=7ob1FDSVT903sgmQ39iKlID5qQ6-G3FBZJQGDixvsyY"
+        },
+        {
+          "name": "Nandini Agarwal",
+          "role": "Consulting",
+          "linkedin": "https://www.linkedin.com/in/nandini-agarwal-121263209/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHhu7Lmb72kBQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721603348790?e=1731542400&v=beta&t=fPpTGlP6k5nrWI_xblgWZNanSi7zW_G4TPVhtI-Wfl4"
+        }
+      ],
+      "Entrepreneurship": [
+        {
+          "name": "Hashim Arshad",
+          "role": "Entrepreneurship",
+          "linkedin": "https://www.linkedin.com/in/hashim-arshad-249410236/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQFTj1E1bXxE8A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1664631450215?e=1731542400&v=beta&t=tGMiTDvDOc0GtJhI5qS8jlr1bUIfnDVUHP-WPZ5QR0Y"
+        },
+        {
+          "name": "Colin Qu",
+          "role": "Entrepreneurship",
+          "linkedin": "https://www.linkedin.com/in/colinqu04/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHojEuVxPCoYw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701129285083?e=1731542400&v=beta&t=nxxT4RGB0zVlvR8CxaM2zw1Kkf7UCCPkCSCAUJuJ5cw"
+        }
+      ],
+      "Socials": [
+        {
+          "name": "Anna Jin",
+          "role": "Socials",
+          "linkedin": "https://www.linkedin.com/in/annajin1/",
+          "imageLink": ""
+        },
+        {
+          "name": "Lili Jing",
+          "role": "Socials",
+          "linkedin": "https://www.linkedin.com/in/lili-jing/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHQyBAF7-Dq_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693857338833?e=1731542400&v=beta&t=xBXQypgs10J_ywFFdD57MeVzw8FvZqLr5g2lTl8D-PY"
+        }
+      ],
+      "Marketing": [
+        {
+          "name": "Felicia Qian",
+          "role": "Marketing",
+          "linkedin": "https://www.linkedin.com/in/felicialenaqian/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHdSXYNG-Q75Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718330728245?e=1731542400&v=beta&t=lpIk_73XMG8m3WqS7O5OPVUXBHPsxdkaF4xPNcPBeR8"
+        },
+        {
+          "name": "Sudha J",
+          "role": "Marketing",
+          "linkedin": "https://www.linkedin.com/in/sudhajjayanand/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4D03AQFshEX-vNjbhg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709979508687?e=1731542400&v=beta&t=wRsG-R6-NJTkialRXxN5Yybrhc1NH_djVp0o-rAtUWs"
+        }
+      ],
+      "Strategy": [
+        {
+          "name": "Riccardo V. Perego",
+          "role": "Strategy",
+          "linkedin": "https://www.linkedin.com/in/riccardovittorioperego/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEodoT08mQOvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703013997448?e=1731542400&v=beta&t=DywLKvmQElDVpxvgy1Apb3p6hiF9Am7lRazCmNdmKnI"
+        },
+        {
+          "name": "Michele Silvestri",
+          "role": "Strategy",
+          "linkedin": "https://www.linkedin.com/in/michelesilvestri-lse/",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGMoaoDoidVLA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1692188896209?e=1731542400&v=beta&t=8lMuTgWke2hahbVgK6V1z5djdJaYZeZX5eUMSxkZA24"
+        }
+      ],
+      "Technology": []
+    }
+  },
+  "2024/25": {
+    "pattern": [3, 2, 2, 2],
+    "executiveMembers": [
       {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQEQAq4rlBoHow/profile-displayphoto-shrink_800_800/0/1703520107338?e=1728518400&v=beta&t=woPG9OyUWw2A26rQCIlG4E_3hvqClJU6uVb-wlUKaAc",
-        "linkedin": "https://www.linkedin.com/in/emilia-ord-5748b1291/",
-        "name": "Emilia Ord",
-        "role": "Alternatives"
+        "email": "amaankhan07111@gmail.com",
+        "imageLink": "https://media.licdn.com/dms/image/D5603AQHy5B9_VyrgXg/profile-displayphoto-shrink_800_800/0/1719256507174?e=1728518400&v=beta&t=zJniWXadQK5PctXaz7y8Sr__kBWbjMAb_ueWZXtjTt8",
+        "linkedin": "https://www.linkedin.com/in/amaanlkhan/",
+        "name": "Amaan Khan",
+        "role": "Chairmen"
       },
       {
-        "email": "",
-        "imageLink": "https://utfs.io/f/12d57b2e-8aaf-4dba-8028-f3736a95c056-15g0s8.jpg",
-        "linkedin": "https://www.linkedin.com/in/henryroscher/",
-        "name": "Henry Roscher",
-        "role": "Alternatives"
+        "email": "M.A.Islam@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQHiMvbwIbi12Q/profile-displayphoto-shrink_800_800/0/1721480478613?e=1728518400&v=beta&t=0yQjDjRckFtULhtRWugy73BxHlJsLh0-KEYKGrL1O5A",
+        "linkedin": "https://www.linkedin.com/in/asifislam1/",
+        "name": "Asif Islam",
+        "role": "Chairman"
       },
       {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D5603AQGw-Vmz_jNusg/profile-displayphoto-shrink_800_800/0/1723661796933?e=1729123200&v=beta&t=7ud-cw6pv1QIAz9YupaZN7urg2Ts4neb_0V2k03B9fU",
-        "linkedin": "https://www.linkedin.com/in/oscarfeingold/",
-        "name": "Oscar Feingold",
-        "role": "Alternatives"
+        "email": "T.Joy@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQFl5ZlZsS9dOg/profile-displayphoto-shrink_800_800/0/1692531663290?e=1728518400&v=beta&t=JHCQHweMkuMF-dR1xWdjRNWrCjs6bsGmhFXk5CSlstE",
+        "linkedin": "https://www.linkedin.com/in/thomson-joy/",
+        "name": "Thomson Joy",
+        "role": "President"
+      },
+      {
+        "email": "n.solomon1@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQEdc6qEpMJzwA/profile-displayphoto-shrink_800_800/0/1710125400613?e=1728518400&v=beta&t=7EsmFT52MbIcTj56KrLRuB1R3J_cR4KcGKms3O8iEn0",
+        "linkedin": "https://www.linkedin.com/in/nahom-solomon11/",
+        "role": "Vice President",
+        "name": "Nahom Solomon"
+      },
+      {
+        "email": "D.A.Ma@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D5603AQFHle3dIFpErA/profile-displayphoto-shrink_800_800/0/1714150735753?e=1728518400&v=beta&t=8N4fwtcHCngNMfmkqaltKzZvHimcFQM3SkYPQq9jpfY",
+        "linkedin": "https://www.linkedin.com/in/dma6/",
+        "role": "Vice President",
+        "name": "Dean Ma"
+      },
+      {
+        "email": "a.simionato@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQGF_WUqgbxdAQ/profile-displayphoto-shrink_800_800/0/1721079619573?e=1728518400&v=beta&t=G_AjEMiKsvZ1mKT_MS7RIDS2Sb7uo8W-ZRkEPCLB6ck",
+        "linkedin": "https://www.linkedin.com/in/allegra-simionato-908475289/",
+        "role": "Secretary",
+        "name": "Allegra Simionato"
+      },
+      {
+        "email": "r.a.chawla@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4D03AQG8MUwJkI6USA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725456891948?e=1731542400&v=beta&t=AhyYhZrCY49gOe3A07PgOcq8glWIVmSPf6g_kLY9VKE",
+        "linkedin": "https://www.linkedin.com/in/ruhaan-chawla-a8647921a/",
+        "role": "Treasurer",
+        "name": "Ruhaan Chawla"
+      },
+      {
+        "email": "a.majeed1@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQFlM3p2GFVrZw/profile-displayphoto-shrink_800_800/0/1710093465801?e=1728518400&v=beta&t=WMPume4H7tdU1W51Bd26PQcHDPdbtFXuqpTlbhdu1Ds",
+        "linkedin": "https://www.linkedin.com/in/alimajeed1/",
+        "role": "Head of External Relations",
+        "name": "Ali Majeed"
+      },
+      {
+        "email": "r.pearlman@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQFIaQNymcOBOw/profile-displayphoto-shrink_800_800/0/1709675718952?e=1728518400&v=beta&t=zAPE5f3s4OjlA-k9jQH83n5CjBFT_Zz4uSqT2QdKBfA",
+        "linkedin": "https://www.linkedin.com/in/rachel-pearlman-a4050b216/",
+        "role": "Head of Corporate Relations",
+        "name": "Rachel Pearlman"
+      },
+      {
+        "email": "j.choe2@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQGOVl1zFwfkNg/profile-displayphoto-shrink_800_800/0/1687846930327?e=1728518400&v=beta&t=a-cTwJrxLzkqTLRdJWT0pcA5K92jEMUNgCejNtMUnHs",
+        "linkedin": "https://www.linkedin.com/in/jay-choe1/",
+        "role": "Head of BIG Conversations",
+        "name": "Jay Choe"
       }
     ],
-    "Markets": [
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQGPqsuXM4M1CQ/profile-displayphoto-shrink_800_800/0/1718255149050?e=1728518400&v=beta&t=zOuF7MJJkjdiFVeKOFGHr9NsITgU17HsIyQEb-dReyE",
-        "linkedin": "https://www.linkedin.com/in/dilraj-shergill-0373a2291/",
-        "name": "Dilraj Shergill",
-        "role": "Markets"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQETVwyOyo90xw/profile-displayphoto-shrink_800_800/0/1706540161431?e=1728518400&v=beta&t=cSHmFYsTIOkAvwxs0X2-A-7cWmg2jCiABWbrZya25vI",
-        "linkedin": "https://www.linkedin.com/in/celestegrateau/",
-        "name": "Celeste C.",
-        "role": "Markets"
-      }
-    ],
-    "Mentorship": [
-      {
-        "email": "",
-        "imageLink": "https://utfs.io/f/eff7c250-237f-40da-a2e9-7ba865e7dc68-16guae.jpg",
-        "linkedin": "https://www.linkedin.com/in/jadenmighten/",
-        "name": "Jaden Mighten",
-        "role": "Mentorship"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQE2yvmudlRxWw/profile-displayphoto-shrink_800_800/0/1713270073469?e=1728518400&v=beta&t=EZPq5wFACOP0u7JkUNsY9asPNToMzhFQy0qMJynXLBo",
-        "linkedin": "https://www.linkedin.com/in/marvin-camara/",
-        "name": "Marvin C.",
-        "role": "Mentorship"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQHO_wYtrolFtQ/profile-displayphoto-shrink_800_800/0/1708363331377?e=1728518400&v=beta&t=_JIKK0pvAa4JvvNOLeOA9gbH2DJ7iLy369qm14ZP7eQ",
-        "linkedin": "https://www.linkedin.com/in/leowang-/",
-        "name": "Leo Wang",
-        "role": "Mentorship"
-      }
-    ],
-    "Technology": [
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQENMxfQ011rUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689782231637?e=1729123200&v=beta&t=y0iijaL4F_U87dV3sWhCAEGsj1bRHRvp83_w09i8t9U",
-        "linkedin": "https://www.linkedin.com/in/affan-hamid/",
-        "name": "Affan Hamid",
-        "role": "Technology"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGIEUNdFNJ4Vg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723508982989?e=1729123200&v=beta&t=jYwQGxLGzSPApgBn8IpJH3svNzIsjEln88Pc7c5dfkQ",
-        "linkedin": "https://www.linkedin.com/in/varmisan-thivagharen/",
-        "name": "Varmisan T.",
-        "role": "Technology"
-      }
-    ],
-    "Entrepreneurship": [
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQH5Dl2YdRNw3A/profile-displayphoto-shrink_800_800/0/1700946876019?e=1728518400&v=beta&t=HyKTj7VZJPeieAz7d9BY4Orsa5MNbaAqMHZ5nPMvYys",
-        "linkedin": "https://www.linkedin.com/in/aryann-shori/",
-        "name": "Aaryan Shori",
-        "role": "Entrepreneurship"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4D03AQHOlL2XgTwd3Q/profile-displayphoto-shrink_800_800/0/1699465742989?e=1728518400&v=beta&t=ANID3qaIe7NCr4794js2b8iS6VDRwR8awi5I9S4bs8Q",
-        "linkedin": "https://www.linkedin.com/in/pranayyenumula/",
-        "name": "Pranay Y.",
-        "role": "Entrepreneurship"
-      }
-    ],
-    "Socials": [
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEc6OrznH-rwA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693839930072?e=1728518400&v=beta&t=xKN3g4TeEuTIOlOsoOJphza9eDGPpglk0fWKPODX7eM",
-        "linkedin": "https://www.linkedin.com/in/dia-deepak-732219221/",
-        "name": "Dia Deepak",
-        "role": "Socials"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQHHj7gyQK41qQ/profile-displayphoto-shrink_800_800/0/1694010672165?e=1728518400&v=beta&t=b9zkeCv0gwqU7FcL38kmazKkyjW3zL58oNtm7UpAXRg",
-        "linkedin": "https://www.linkedin.com/in/vaniajawa/",
-        "name": "Vania Jawa",
-        "role": "Socials"
-      }
-    ],
-    "Marketing": [
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQHpefz2-0FuIw/profile-displayphoto-shrink_800_800/0/1709228965242?e=1728518400&v=beta&t=UNNTtNZIxAvSkYa9ABQyRBa_Jpty8mmXPTWbGOcp3uo",
-        "linkedin": "https://www.linkedin.com/in/aristotleferrer/",
-        "name": "Aris Ferrer",
-        "role": "Marketing"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQEGmH7q_j9aLQ/profile-displayphoto-shrink_800_800/0/1708818990951?e=1728518400&v=beta&t=wbRZ1sk1wBAZ4BpsvpimAL3D_4x_ksDqoiONDSTaQ1g",
-        "linkedin": "https://www.linkedin.com/in/vania-tewari-7669ba201/",
-        "name": "Vania Tewari",
-        "role": "Marketing"
-      }
-    ],
-    "Consulting": [
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQHsL_5YUnQxmA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696288824524?e=1730332800&v=beta&t=ZhQljCH6aM8Rfnrc6VS7gjafMW4Z-sHrva_oiRr7zT8",
-        "linkedin": "https://www.linkedin.com/in/ameya-kakade-4431521aa/",
-        "name": "Ameya Kakade",
-        "role": "Consulting"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHVtqu6vOeHzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711319980115?e=1730332800&v=beta&t=lciM9_sKOVebpBFqhlJWmUOJ2PH6AYk7L3JSOTdk5yk",
-        "linkedin": "https://www.linkedin.com/in/dina-taher-580197229/",
-        "name": "Dina Taher",
-        "role": "Consulting"
-      }
-    ],
-    "Law": [
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQGo_ti3o619Yg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701204486627?e=1730332800&v=beta&t=4jyI1qb3DlDkahswZpm1OMOVDdoFaBQlKkd9zvkIYYA",
-        "linkedin": "https://www.linkedin.com/in/iliana-fragkiadaki-b9288a224/?originalSubdomain=uk",
-        "name": "Iliana F. ",
-        "role": "Law"
-      },
-      {
-        "email": "",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHhZhIFUQsjnw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690375121125?e=1730332800&v=beta&t=lnjviSbMqGONnXXC_9ghyEsW8PQciPgjsB25p7cMoas",
-        "linkedin": "https://www.linkedin.com/in/vyoma-upadhyaya-75601024a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk",
-        "name": "Vyoma U.",
-        "role": "Law"
-      }
-    ]
+    "heads": {
+      "Banking": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEKK-0pSywchQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723222335534?e=1729123200&v=beta&t=fnjj9-86HLqcp7RSdI62e50rIck8KbCseN62kyccQqM",
+          "linkedin": "https://www.linkedin.com/in/emilie-kim-58a4b8262/",
+          "name": "Emilie Kim",
+          "role": "Banking"
+        },
+        {
+          "email": "",
+          "imageLink": "https://utfs.io/f/e8ba4cc7-6c7f-42a5-9415-f81ebd845794-yonasx.jpg",
+          "linkedin": "https://www.linkedin.com/in/favour-oluwanusin/",
+          "name": "God'sFavour O.",
+          "role": "Banking"
+        }
+      ],
+      "Alternatives": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQEQAq4rlBoHow/profile-displayphoto-shrink_800_800/0/1703520107338?e=1728518400&v=beta&t=woPG9OyUWw2A26rQCIlG4E_3hvqClJU6uVb-wlUKaAc",
+          "linkedin": "https://www.linkedin.com/in/emilia-ord-5748b1291/",
+          "name": "Emilia Ord",
+          "role": "Alternatives"
+        },
+        {
+          "email": "",
+          "imageLink": "https://utfs.io/f/12d57b2e-8aaf-4dba-8028-f3736a95c056-15g0s8.jpg",
+          "linkedin": "https://www.linkedin.com/in/henryroscher/",
+          "name": "Henry Roscher",
+          "role": "Alternatives"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D5603AQGw-Vmz_jNusg/profile-displayphoto-shrink_800_800/0/1723661796933?e=1729123200&v=beta&t=7ud-cw6pv1QIAz9YupaZN7urg2Ts4neb_0V2k03B9fU",
+          "linkedin": "https://www.linkedin.com/in/oscarfeingold/",
+          "name": "Oscar Feingold",
+          "role": "Alternatives"
+        }
+      ],
+      "Markets": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQGPqsuXM4M1CQ/profile-displayphoto-shrink_800_800/0/1718255149050?e=1728518400&v=beta&t=zOuF7MJJkjdiFVeKOFGHr9NsITgU17HsIyQEb-dReyE",
+          "linkedin": "https://www.linkedin.com/in/dilraj-shergill-0373a2291/",
+          "name": "Dilraj Shergill",
+          "role": "Markets"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQETVwyOyo90xw/profile-displayphoto-shrink_800_800/0/1706540161431?e=1728518400&v=beta&t=cSHmFYsTIOkAvwxs0X2-A-7cWmg2jCiABWbrZya25vI",
+          "linkedin": "https://www.linkedin.com/in/celestegrateau/",
+          "name": "Celeste C.",
+          "role": "Markets"
+        }
+      ],
+      "Mentorship": [
+        {
+          "email": "",
+          "imageLink": "https://utfs.io/f/eff7c250-237f-40da-a2e9-7ba865e7dc68-16guae.jpg",
+          "linkedin": "https://www.linkedin.com/in/jadenmighten/",
+          "name": "Jaden Mighten",
+          "role": "Mentorship"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQE2yvmudlRxWw/profile-displayphoto-shrink_800_800/0/1713270073469?e=1728518400&v=beta&t=EZPq5wFACOP0u7JkUNsY9asPNToMzhFQy0qMJynXLBo",
+          "linkedin": "https://www.linkedin.com/in/marvin-camara/",
+          "name": "Marvin C.",
+          "role": "Mentorship"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQHO_wYtrolFtQ/profile-displayphoto-shrink_800_800/0/1708363331377?e=1728518400&v=beta&t=_JIKK0pvAa4JvvNOLeOA9gbH2DJ7iLy369qm14ZP7eQ",
+          "linkedin": "https://www.linkedin.com/in/leowang-/",
+          "name": "Leo Wang",
+          "role": "Mentorship"
+        }
+      ],
+      "Technology": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQENMxfQ011rUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1689782231637?e=1729123200&v=beta&t=y0iijaL4F_U87dV3sWhCAEGsj1bRHRvp83_w09i8t9U",
+          "linkedin": "https://www.linkedin.com/in/affan-hamid/",
+          "name": "Affan Hamid",
+          "role": "Technology"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGIEUNdFNJ4Vg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723508982989?e=1729123200&v=beta&t=jYwQGxLGzSPApgBn8IpJH3svNzIsjEln88Pc7c5dfkQ",
+          "linkedin": "https://www.linkedin.com/in/varmisan-thivagharen/",
+          "name": "Varmisan T.",
+          "role": "Technology"
+        }
+      ],
+      "Entrepreneurship": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQH5Dl2YdRNw3A/profile-displayphoto-shrink_800_800/0/1700946876019?e=1728518400&v=beta&t=HyKTj7VZJPeieAz7d9BY4Orsa5MNbaAqMHZ5nPMvYys",
+          "linkedin": "https://www.linkedin.com/in/aryann-shori/",
+          "name": "Aaryan Shori",
+          "role": "Entrepreneurship"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4D03AQHOlL2XgTwd3Q/profile-displayphoto-shrink_800_800/0/1699465742989?e=1728518400&v=beta&t=ANID3qaIe7NCr4794js2b8iS6VDRwR8awi5I9S4bs8Q",
+          "linkedin": "https://www.linkedin.com/in/pranayyenumula/",
+          "name": "Pranay Y.",
+          "role": "Entrepreneurship"
+        }
+      ],
+      "Socials": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEc6OrznH-rwA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693839930072?e=1728518400&v=beta&t=xKN3g4TeEuTIOlOsoOJphza9eDGPpglk0fWKPODX7eM",
+          "linkedin": "https://www.linkedin.com/in/dia-deepak-732219221/",
+          "name": "Dia Deepak",
+          "role": "Socials"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQHHj7gyQK41qQ/profile-displayphoto-shrink_800_800/0/1694010672165?e=1728518400&v=beta&t=b9zkeCv0gwqU7FcL38kmazKkyjW3zL58oNtm7UpAXRg",
+          "linkedin": "https://www.linkedin.com/in/vaniajawa/",
+          "name": "Vania Jawa",
+          "role": "Socials"
+        }
+      ],
+      "Marketing": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQHpefz2-0FuIw/profile-displayphoto-shrink_800_800/0/1709228965242?e=1728518400&v=beta&t=UNNTtNZIxAvSkYa9ABQyRBa_Jpty8mmXPTWbGOcp3uo",
+          "linkedin": "https://www.linkedin.com/in/aristotleferrer/",
+          "name": "Aris Ferrer",
+          "role": "Marketing"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/D4E03AQEGmH7q_j9aLQ/profile-displayphoto-shrink_800_800/0/1708818990951?e=1728518400&v=beta&t=wbRZ1sk1wBAZ4BpsvpimAL3D_4x_ksDqoiONDSTaQ1g",
+          "linkedin": "https://www.linkedin.com/in/vania-tewari-7669ba201/",
+          "name": "Vania Tewari",
+          "role": "Marketing"
+        }
+      ],
+      "Consulting": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQHsL_5YUnQxmA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696288824524?e=1730332800&v=beta&t=ZhQljCH6aM8Rfnrc6VS7gjafMW4Z-sHrva_oiRr7zT8",
+          "linkedin": "https://www.linkedin.com/in/ameya-kakade-4431521aa/",
+          "name": "Ameya Kakade",
+          "role": "Consulting"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHVtqu6vOeHzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711319980115?e=1730332800&v=beta&t=lciM9_sKOVebpBFqhlJWmUOJ2PH6AYk7L3JSOTdk5yk",
+          "linkedin": "https://www.linkedin.com/in/dina-taher-580197229/",
+          "name": "Dina Taher",
+          "role": "Consulting"
+        }
+      ],
+      "Law": [
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQGo_ti3o619Yg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701204486627?e=1730332800&v=beta&t=4jyI1qb3DlDkahswZpm1OMOVDdoFaBQlKkd9zvkIYYA",
+          "linkedin": "https://www.linkedin.com/in/iliana-fragkiadaki-b9288a224/?originalSubdomain=uk",
+          "name": "Iliana F. ",
+          "role": "Law"
+        },
+        {
+          "email": "",
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHhZhIFUQsjnw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690375121125?e=1730332800&v=beta&t=lnjviSbMqGONnXXC_9ghyEsW8PQciPgjsB25p7cMoas",
+          "linkedin": "https://www.linkedin.com/in/vyoma-upadhyaya-75601024a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk",
+          "name": "Vyoma U.",
+          "role": "Law"
+        }
+      ]
+    }
   }
 }

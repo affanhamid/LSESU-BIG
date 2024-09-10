@@ -1,13 +1,13 @@
-import { Member } from "@/app/about/Member";
+"use client";
 import { Sector } from "@/app/about/Sector";
 import { team } from "@/Database";
 import { HeadsType, RoleType, ExecutiveMembersType } from "@/Types";
-import YearDropdown from "@/Components/YearDropdown"; // Import the YearDropdown component
+import YearDropdown from "@/Components/YearDropdown";
+import Football from "@/Components/Football";
+import { useState } from "react";
 
-
-const AboutUs = async () => {
-  const execMembers: ExecutiveMembersType = team["executiveMembers"];
-  const heads: HeadsType = team["heads"];
+const AboutUs = () => {
+  const [year, setYear] = useState("2024/25");
 
   return (
     <main className="bg-white">
@@ -23,106 +23,47 @@ const AboutUs = async () => {
       </header>
 
       <section className="pt-10">
-      <div className="max-w-7xl mx-auto relative flex justify-center items-center">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center my-10">
-          Executive Committee
-        </h2>
-        <div className="absolute right-0">
-          <YearDropdown />
+        <div className="max-w-7xl mx-auto relative flex justify-center items-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center my-10">
+            Executive Committee
+          </h2>
+          <div className="absolute right-0">
+            <YearDropdown year={year} setYear={setYear} />
+          </div>
         </div>
-      </div>
-        
-        
+
         <hr className="border-gray-300 my-4" />
-        <div className="flex-col justify-center flex-wrap gap-10">
-          {execMembers && execMembers.length > 0 && (
-            <>
-              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
-                <Member
-                  imageLink={execMembers[0].imageLink}
-                  name={execMembers[0].name}
-                  role={execMembers[0].role}
-                  linkedin={execMembers[0].linkedin}
-                />
-                <Member
-                  imageLink={execMembers[2].imageLink}
-                  name={execMembers[2].name}
-                  role={execMembers[2].role}
-                  linkedin={execMembers[2].linkedin}
-                />
-                <Member
-                  imageLink={execMembers[1].imageLink}
-                  name={execMembers[1].name}
-                  role={execMembers[1].role}
-                  linkedin={execMembers[1].linkedin}
-                />
-              </div>
-              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
-                <Member
-                  imageLink={execMembers[3].imageLink}
-                  name={execMembers[3].name}
-                  role={execMembers[3].role}
-                  linkedin={execMembers[3].linkedin}
-                />
-                <Member
-                  imageLink={execMembers[4].imageLink}
-                  name={execMembers[4].name}
-                  role={execMembers[4].role}
-                  linkedin={execMembers[4].linkedin}
-                />
-              </div>
-              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
-                <Member
-                  imageLink={execMembers[5].imageLink}
-                  name={execMembers[5].name}
-                  role={execMembers[5].role}
-                  linkedin={execMembers[5].linkedin}
-                />
-                <Member
-                  imageLink={execMembers[6].imageLink}
-                  name={execMembers[6].name}
-                  role={execMembers[6].role}
-                  linkedin={execMembers[6].linkedin}
-                />
-              </div>
-              <div className="flex flex-col break:flex-row md:gap-20 lg:gap-28 xl:gap-32 justify-center">
-                <Member
-                  imageLink={execMembers[7].imageLink}
-                  name={execMembers[7].name}
-                  role={execMembers[7].role}
-                  linkedin={execMembers[7].linkedin}
-                />
-                <Member
-                  imageLink={execMembers[8].imageLink}
-                  name={execMembers[8].name}
-                  role={execMembers[8].role}
-                  linkedin={execMembers[8].linkedin}
-                />
-                <Member
-                  imageLink={execMembers[9].imageLink}
-                  name={execMembers[9].name}
-                  role={execMembers[9].role}
-                  linkedin={execMembers[9].linkedin}
-                />
-              </div>
-            </>
-          )}
-        </div>
+        <Football
+          members={
+            team[year as keyof typeof team][
+              "executiveMembers"
+            ] as ExecutiveMembersType
+          }
+          pattern={team[year as keyof typeof team]["pattern"] as number[]}
+        />
       </section>
       <section>
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mt-20 mb-10">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mt-10 mb-10">
           Division Heads
         </h2>
         <hr className="border-gray-300 my-4" />
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pt-5 pb-20 justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 w-screen gap-2 px-10 xl:px-20">
-            {Object.keys(heads).map((role, idx: number) => (
-              <Sector
-                sectorMembers={heads[role as RoleType]}
-                title={role}
-                key={idx}
-              />
-            ))}
+            {Object.keys(
+              team[year as keyof typeof team]["heads"] as HeadsType
+            ).map(
+              (role, idx: number) =>
+                team[year as keyof typeof team]["heads"][role as RoleType]
+                  .length > 0 && (
+                  <Sector
+                    sectorMembers={
+                      team[year as keyof typeof team]["heads"][role as RoleType]
+                    }
+                    title={role}
+                    key={idx}
+                  />
+                )
+            )}
           </div>
         </div>
       </section>

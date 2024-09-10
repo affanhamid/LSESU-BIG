@@ -1,62 +1,50 @@
-"use client"; // Ensure it's a client component since it handles UI interactions
+"use client";
+import { FaChevronDown } from "react-icons/fa";
+import React, { useState } from "react";
 
-import { Menu } from "@headlessui/react";
-import { FaChevronDown } from "react-icons/fa"; // Import the Chevron Down icon from FontAwesome
-import React from "react";
-import Link from "next/link"; // Use Next.js Link for client-side navigation
-
-const YearDropdown: React.FC = () => {
+const DropDownLi = ({
+  setYear,
+  liYear,
+}: {
+  setYear: React.Dispatch<React.SetStateAction<string>>;
+  liYear: string;
+}) => {
   return (
-    <div className="relative inline-block text-left">
-      <Menu>
-        {/* Button: Solid blue background with white text */}
-        <Menu.Button className="inline-flex items-center gap-2 rounded-md bg-[#0C1A3B] text-white px-6 py-3 text-lg font-semibold shadow-lg focus:outline-none">
-          Select Year
-          <FaChevronDown className="w-6 h-6 text-white" /> {/* FontAwesome ChevronDown in white */}
-        </Menu.Button>
-        
-        {/* Menu Items: Smooth opening, modern look */}
-        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-64 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-200 ease-out transform scale-95">
-          <div className="py-2">
-            <Menu.Item>
-              {({ active }) => (
-                <Link
-                  href="/about/2022-2023"
-                  className={`${
-                    active ? "bg-gray-100" : ""
-                  } block px-6 py-3 text-lg text-gray-800 hover:bg-gray-100 rounded-lg transition ease-in-out duration-200`}
-                >
-                  22/23
-                </Link>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <Link
-                  href="/about-23-24"
-                  className={`${
-                    active ? "bg-gray-100" : ""
-                  } block px-6 py-3 text-lg text-gray-800 hover:bg-gray-100 rounded-lg transition ease-in-out duration-200`}
-                >
-                  23/24
-                </Link>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <Link
-                  href="/about"
-                  className={`${
-                    active ? "bg-gray-100" : ""
-                  } block px-6 py-3 text-lg text-gray-800 hover:bg-gray-100 rounded-lg transition ease-in-out duration-200`}
-                >
-                  24/25
-                </Link>
-              )}
-            </Menu.Item>
-          </div>
-        </Menu.Items>
-      </Menu>
+    <li
+      className="py-4 px-5 text-xl hover:bg-gray-200 cursor-pointer"
+      onClick={() => setYear(liYear)}
+    >
+      {liYear}
+    </li>
+  );
+};
+const YearDropdown = ({
+  year,
+  setYear,
+}: {
+  year: string;
+  setYear: React.Dispatch<React.SetStateAction<string>>;
+}) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <button
+        className="inline-flex items-center gap-2 rounded-md bg-background text-white px-6 py-3 text-lg font-semibold shadow-lg focus:outline-none"
+        onClick={() => setOpen(!open)}
+      >
+        Year: {year}
+        <FaChevronDown className="w-6 h-6 text-white" />
+      </button>
+
+      <ul
+        className={`origin-top-right absolute top-full right-0 mt-2 w-full rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none transition-all duration-200 ease-out overflow-hidden ${
+          open ? "h-[180px]" : "h-0"
+        }`}
+      >
+        <DropDownLi setYear={setYear} liYear="2022/23" />
+        <DropDownLi setYear={setYear} liYear="2023/24" />
+        <DropDownLi setYear={setYear} liYear="2024/25" />
+      </ul>
     </div>
   );
 };
