@@ -2,7 +2,7 @@ import TestimonialShowcase from "@/app/mentorship/TestimonialShowcase";
 import { FaChartLine, FaUsers, FaCalendarAlt } from "react-icons/fa";
 import { TestimonialInterface } from "@/Types";
 import { NumberInterface } from "@/Types";
-import mentorShipImage from "../../../public/images/mentorship.png";
+import mentorShipImage from "../../../public/images/mentorship.jpg";
 import Image from "next/image";
 
 const Number = ({ text, icon, description }: NumberInterface) => {
