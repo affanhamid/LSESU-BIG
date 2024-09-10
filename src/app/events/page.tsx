@@ -1,6 +1,8 @@
 import PastEvents from "@/app/events/PastEvents";
 import Link from "next/link";
 import { EventInterface } from "@/Types";
+import Image from "next/image";
+import eventsImage from "../../../public/images/events.png";
 
 const UpcomingEvent = ({ event }: { event: EventInterface }) => {
   return (
@@ -38,8 +40,8 @@ const Events = async () => {
   return (
     <main className="">
       <header className="relative">
-        <img
-          src="../3.jpg"
+        <Image
+          src={eventsImage}
           className="w-full h-[75vh] object-cover z-0 brightness-50"
           alt=""
         />

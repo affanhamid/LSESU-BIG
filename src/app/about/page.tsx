@@ -5,6 +5,8 @@ import { HeadsType, RoleType, ExecutiveMembersType } from "@/Types";
 import YearDropdown from "@/Components/YearDropdown";
 import Football from "@/Components/Football";
 import { useState } from "react";
+import Image from "next/image";
+import aboutUsImage from "../../../public/about_us.jpg";
 
 const AboutUs = () => {
   const [year, setYear] = useState("2024/25");
@@ -12,8 +14,8 @@ const AboutUs = () => {
   return (
     <main className="bg-white">
       <header className="relative pb-5">
-        <img
-          src="../2.jpg"
+        <Image
+          src={aboutUsImage}
           className="w-full h-[75vh] object-cover z-0 brightness-50"
           alt=""
         />

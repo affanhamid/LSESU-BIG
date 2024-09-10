@@ -19,7 +19,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" />
       </head>
       <body className="bg-background w-screen overflow-x-hidden font-textFont">
-        <Navbar />
+        {/* <Navbar /> */}
         <main>{children}</main>
         <Footer />
       </body>

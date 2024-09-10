@@ -1,8 +1,9 @@
 import TestimonialShowcase from "@/app/mentorship/TestimonialShowcase";
-import MentorShowcase from "@/app/mentorship/MentorShowcase";
 import { FaChartLine, FaUsers, FaCalendarAlt } from "react-icons/fa";
 import { TestimonialInterface } from "@/Types";
 import { NumberInterface } from "@/Types";
+import mentorShipImage from "../../../public/images/mentorship.png";
+import Image from "next/image";
 
 const Number = ({ text, icon, description }: NumberInterface) => {
   return (
@@ -24,8 +25,8 @@ const Mentorship = async () => {
   return (
     <main className="">
       <header className="relative">
-        <img
-          src="../5.jpg"
+        <Image
+          src={mentorShipImage}
           className="w-full h-[75vh] object-cover z-0 brightness-50"
           alt=""
         />
