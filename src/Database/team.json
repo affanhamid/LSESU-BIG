@@ -409,11 +409,18 @@
     "pattern": [3, 2, 2, 2],
     "executiveMembers": [
       {
+        "email": "T.Joy@lse.ac.uk",
+        "imageLink": "https://media.licdn.com/dms/image/D4E03AQFl5ZlZsS9dOg/profile-displayphoto-shrink_800_800/0/1692531663290?e=1728518400&v=beta&t=JHCQHweMkuMF-dR1xWdjRNWrCjs6bsGmhFXk5CSlstE",
+        "linkedin": "https://www.linkedin.com/in/thomson-joy/",
+        "name": "Thomson Joy",
+        "role": "President"
+      },
+      {
         "email": "amaankhan07111@gmail.com",
         "imageLink": "https://media.licdn.com/dms/image/D5603AQHy5B9_VyrgXg/profile-displayphoto-shrink_800_800/0/1719256507174?e=1728518400&v=beta&t=zJniWXadQK5PctXaz7y8Sr__kBWbjMAb_ueWZXtjTt8",
         "linkedin": "https://www.linkedin.com/in/amaanlkhan/",
         "name": "Amaan Khan",
-        "role": "Chairmen"
+        "role": "Chairman"
       },
       {
         "email": "M.A.Islam@lse.ac.uk",
@@ -421,13 +428,6 @@
         "linkedin": "https://www.linkedin.com/in/asifislam1/",
         "name": "Asif Islam",
         "role": "Chairman"
-      },
-      {
-        "email": "T.Joy@lse.ac.uk",
-        "imageLink": "https://media.licdn.com/dms/image/D4E03AQFl5ZlZsS9dOg/profile-displayphoto-shrink_800_800/0/1692531663290?e=1728518400&v=beta&t=JHCQHweMkuMF-dR1xWdjRNWrCjs6bsGmhFXk5CSlstE",
-        "linkedin": "https://www.linkedin.com/in/thomson-joy/",
-        "name": "Thomson Joy",
-        "role": "President"
       },
       {
         "email": "n.solomon1@lse.ac.uk",
