@@ -47,9 +47,9 @@ const YearDropdown = ({
           open ? "h-[180px]" : "h-0"
         }`}
       >
-        <DropDownLi setYear={setYear} liYear="2022/23" setOpen={setOpen} />
-        <DropDownLi setYear={setYear} liYear="2023/24" setOpen={setOpen} />
         <DropDownLi setYear={setYear} liYear="2024/25" setOpen={setOpen} />
+        <DropDownLi setYear={setYear} liYear="2023/24" setOpen={setOpen} />
+        <DropDownLi setYear={setYear} liYear="2022/23" setOpen={setOpen} />
       </ul>
     </div>
   );
