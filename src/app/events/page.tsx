@@ -2,7 +2,8 @@ import PastEvents from "@/app/events/PastEvents";
 import Link from "next/link";
 import { EventInterface } from "@/Types";
 import Image from "next/image";
-import eventsImage from "/public/events.jpg";
+import eventsImage from "../../../public/events.jpg";
+import { Navbar } from "@/Components";
 
 const UpcomingEvent = ({ event }: { event: EventInterface }) => {
   return (
@@ -40,6 +41,7 @@ const Events = async () => {
   return (
     <main className="">
       <header className="relative">
+        <Navbar />
         <Image
           src={eventsImage}
           className="w-full h-[75vh] object-cover z-0 brightness-50"

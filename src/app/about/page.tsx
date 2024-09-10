@@ -7,13 +7,16 @@ import Football from "@/Components/Football";
 import { useState } from "react";
 import Image from "next/image";
 import aboutUsImage from "../../../public/about_us.jpg";
+import { Navbar } from "@/Components";
 
 const AboutUs = () => {
   const [year, setYear] = useState("2024/25");
 
   return (
     <main className="bg-white">
+
       <header className="relative pb-5">
+        <Navbar />
         <Image
           src={aboutUsImage}
           className="w-full h-[75vh] object-cover z-0 brightness-50"
