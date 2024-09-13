@@ -4,7 +4,7 @@ import { Navbar } from "@/Components";
 const Resources = () => {
   return (
     <main>
-      <Navbar />
+      <Navbar isBlueBackground={true} />
       <section className="pt-72 bg-white">
         <h1 className="text-3xl text-center pb-20">
           This part of the website is currently under development. In the
