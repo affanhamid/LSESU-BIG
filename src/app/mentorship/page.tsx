@@ -11,7 +11,7 @@ const Number = ({ text, icon, description }: NumberInterface) => {
     <div className="rounded-lg bg-background text-white flex flex-col items-center justify-center p-6 group cursor-pointer select-none h-max">
       <div className="text-6xl mb-4">{icon}</div>
       <div className="text-2xl">{text}</div>
-      <div className="h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 mt-2 text-center">
+      <div className="h-0 overflow-hidden group-hover:h-[100px] transition-all duration-200 mt-4 text-center text-xl">
         {description}
       </div>
     </div>
@@ -20,9 +20,18 @@ const Number = ({ text, icon, description }: NumberInterface) => {
 
 const Mentorship = async () => {
   const testimonials: TestimonialInterface[] = [
-    { description: "Mentorship at BIG provided me with the guidance and support I needed to take full advantage of all the experiences my first year at university had to offer." },
-    {description: "Learning from a mentor who had successfully navigated the financial industry was crucial in helping me secure early career opportunities."},
-    {description:"This program helped me form valuable relationships with other students who share similar goals and interests."},
+    {
+      description:
+        "Mentorship at BIG provided me with the guidance and support I needed to take full advantage of all the experiences my first year at university had to offer.",
+    },
+    {
+      description:
+        "Learning from a mentor who had successfully navigated the financial industry was crucial in helping me secure early career opportunities.",
+    },
+    {
+      description:
+        "This program helped me form valuable relationships with other students who share similar goals and interests.",
+    },
   ];
   const mentors = [{}, {}, {}];
   return (
@@ -77,11 +86,12 @@ const Mentorship = async () => {
           Mentors
         </h1>
         <p className="text-2xl text-center font-bold px-4 lg:px-96 mb-10">
-        Our team of over 30 mentors comes from diverse backgrounds and nationalities. 
-        They have successfully secured highly competitive roles within the financial industry, 
-        drawing from diverse academic backgrounds, including economics, STEM, and non-finance disciplines. 
-        With offers from more than 50 firms, they bring a wealth of knowledge and insight to support others 
-        in navigating this industry.
+          Our team of over 30 mentors comes from diverse backgrounds and
+          nationalities. They have successfully secured highly competitive roles
+          within the financial industry, drawing from diverse academic
+          backgrounds, including economics, STEM, and non-finance disciplines.
+          With offers from more than 50 firms, they bring a wealth of knowledge
+          and insight to support others in navigating this industry.
         </p>{" "}
         <div className="flex gap-5">
           <button className="mt-6 px-6 py-4 w-max rounded border-2 border-black mx-auto">

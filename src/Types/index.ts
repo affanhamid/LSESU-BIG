@@ -12,12 +12,15 @@ export interface EventInterface {
 }
 
 export interface PastEventInterface {
-  title: string;
-  speakers: string | null;
-  postLink: string;
-  imageLink: string;
+  Title: string;
+  Speakers: string | null;
+  Firm: string | null;
+  Position: string | null;
+  Link: string | null;
+  ImageLink?: string;
   Month: string;
-  Day: string;
+  Day: number;
+  "Industry/Field": string | null;
 }
 
 export type PastEventsType = {
