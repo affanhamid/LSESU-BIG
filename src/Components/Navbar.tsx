@@ -64,37 +64,43 @@ const Menu = () => {
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ isBlueBackground }: { isBlueBackground?: boolean }) => {
   const [navBackground, setNavBackground] = useState("transparent");
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.innerWidth < 700) {
-        if (window.scrollY >= 200) {
-          setNavBackground("background");
+    if (!isBlueBackground) {
+      const toggleVisibility = () => {
+        if (window.innerWidth < 700) {
+          if (window.scrollY >= 200) {
+            setNavBackground("background");
+          } else {
+            setNavBackground("transparent");
+          }
         } else {
-          setNavBackground("transparent");
+          if (window.scrollY >= 750) {
+            setNavBackground("background");
+          } else {
+            setNavBackground("transparent");
+          }
         }
-      } else {
-        if (window.scrollY >= 750) {
-          setNavBackground("background");
-        } else {
-          setNavBackground("transparent");
-        }
-      }
-    };
-    window.addEventListener("scroll", toggleVisibility, { passive: true });
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
+      };
+      window.addEventListener("scroll", toggleVisibility, { passive: true });
+      return () => window.removeEventListener("scroll", toggleVisibility);
+    } else {
+      // Setting permanent blue background for the Tracker page
+      setNavBackground("background");
+    }
+  }, [isBlueBackground]);
 
   return (
     <div
-      className={`w-full fixed justify-between top-0 text-fontColor bg-${navBackground} flex flex-col md:flex-row py-10 px-20 items-center z-30`}
+      className={`w-full fixed justify-between top-0 text-fontColor ${
+        isBlueBackground ? "bg-background" : `bg-${navBackground}`
+      } flex flex-col md:flex-row py-10 px-20 items-center z-30`}
     >
       <Logo />
       <div className="flex gap-4 items-center text-4xl">
         <Socials />
-
         <button className="px-3 py-2 text-base hidden md:block">
           <Link href="https://www.lsesu.com/communities/societies/group/big/">
             Join Us

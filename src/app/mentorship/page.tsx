@@ -20,7 +20,9 @@ const Number = ({ text, icon, description }: NumberInterface) => {
 
 const Mentorship = async () => {
   const testimonials: TestimonialInterface[] = [
-    { description: "This is a test description" },
+    { description: "Mentorship at BIG provided me with the guidance and support I needed to take full advantage of all the experiences my first year at university had to offer." },
+    {description: "Learning from a mentor who had successfully navigated the financial industry was crucial in helping me secure early career opportunities."},
+    {description:"This program helped me form valuable relationships with other students who share similar goals and interests."},
   ];
   const mentors = [{}, {}, {}];
   return (
@@ -39,10 +41,10 @@ const Mentorship = async () => {
       <header className="px-4 md:px-10 lg:px-20 xl:px-40 lg:pt-10 flex flex-col items-center pb-10 lg:pb-20 bg-white">
         <h2 className="text-center text-xl my-5"></h2>
         <div className="flex gap-5">
-          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+          <button className="mt-4 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentee
           </button>
-          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+          <button className="mt-4 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentor
           </button>
         </div>
@@ -50,17 +52,17 @@ const Mentorship = async () => {
           <Number
             text="80+ Spring Week Offers"
             icon={<FaChartLine />}
-            description="This is a sample description of many words to explain the metric in more detail for potential users so that they understand better."
+            description="BIG has a mentor for each possible spring week."
           />
           <Number
             text="Revamped to mentorship families"
             icon={<FaCalendarAlt />}
-            description="This is a sample description of many words to explain the metric in more detail for potential users so that they understand better."
+            description="A new approach to strengthen connections and build deeper mentor-mentee partnerships."
           />
           <Number
             text="35 mentors"
             icon={<FaUsers />}
-            description="This is a sample description of many words to explain the metric in more detail for potential users so that they understand better."
+            description="Our 30+ mentors are second and third year LSE students from a range of disciplines."
           />
         </div>
       </header>
@@ -74,17 +76,18 @@ const Mentorship = async () => {
         <h1 className="text-3xl lg:text-6xl font-bold text-center mb-4">
           Mentors
         </h1>
-        <p className="text-center px-4 lg:px-96 mb-10">
-          Our 40+ mentors/buddies are from diverse backgrounds and
-          nationalities. They managed to break into the competitive field both
-          from economics/ finance degrees and non-finance degrees - with
-          experience and offers from 50+ distinguished firms.
+        <p className="text-2xl text-center font-bold px-4 lg:px-96 mb-10">
+        Our team of over 30 mentors comes from diverse backgrounds and nationalities. 
+        They have successfully secured highly competitive roles within the financial industry, 
+        drawing from diverse academic backgrounds, including economics, STEM, and non-finance disciplines. 
+        With offers from more than 50 firms, they bring a wealth of knowledge and insight to support others 
+        in navigating this industry.
         </p>{" "}
         <div className="flex gap-5">
-          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+          <button className="mt-6 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentee
           </button>
-          <button className="mt-4 px-4 py-2 w-max rounded border-2 border-black mx-auto">
+          <button className="mt-6 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentor
           </button>
         </div>
