@@ -61,7 +61,7 @@ export default function Home() {
             }
           />
         </div>
-        <h1>What we do</h1>
+        <h1>Our Ventures</h1>
         <Features />
       </section>
       <SpeakerShowcase showcaseSpeakers={speakers.images} />

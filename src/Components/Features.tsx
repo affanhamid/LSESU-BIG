@@ -78,9 +78,9 @@ const Features = () => {
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={0}
-        title={"BIG Capital"}
+        title={"BIG Conversations"}
         text={
-          "BIG Capital is a premier student-managed investment find at the LSE, known for its rigorous research across Equities, Fixed Income, and Macro strategies. We pride ourselves on delivering thorough and original analysis, guided by a team of highly selective portfolio managers"
+          "Our flagship event series, regularly brings high-profile guests to LSE, including CEOs, entrepreneurs, politicians, and executives. Our Corporate Relations team organise an array of exciting year-round keynotes, corporate presentations, panel discussions, and hands-on workshops. Past event topics have included public finance, the hedge fund and private equity industries, and micro-finance."
         }
         icon={<FaUniversity />}
       />
@@ -90,7 +90,7 @@ const Features = () => {
         idx={1}
         title={"M&A Group"}
         text={
-          "The M&A Group at the LSE offers an unparalleled experience for first-year students, with over 30 highly-selected analysts engaging in weekly sessions covering accounting, financial analysis, deal rationale, and valuation techniques. Our ‘Deal Snapshots’ series provides in-depth analysis of recent M&A transactions, and our LBO workshops, in collaboration with Financial Edge, offer practical insights from experts who train analysts at top financial institutions."
+          "The LSE M&A Group is the UK’s first student-run educational club which teaches the fundamentals of mergers and acquisitions. As a subgroup of LSE's largest finance society, the LSE Business and Investment Group (BIG), it offers weekly interactive lessons taught by a passionate and experienced executive team. The 2024/25 executive team is comprised of former LSE M&A Group analysts and will closely mentor our select class of new analysts to succeed in their spring week and internship applications - last year's class achieved a society record by securing 38 spring week offers."
         }
         icon={<FaChartLine />}
       />
@@ -99,9 +99,9 @@ const Features = () => {
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={2}
-        title={"Speaker Events"}
+        title={"BIG Capital"}
         text={
-          "Our Speaker Events are a cornerstone of the BIG experience, featuring over 50 high-profile engagements from September to April each year. Averaging 2-3 events per week, we host a diverse range of speakers, from industry-leading analysts to innovative founders. Our spotlight speakers over the past two years include Ken Griffen (Founder and CEO, Citadel Securities) and Stephan Feldgoise (Global Co-Head of M&A, Goldman Sachs.)"
+          "Our real-money investment fund was launched in 2023. It is a student-run club focused on nurturing LSE talent in research and stock pitching. BIG Capital is split into several teams investing in equities and fixed-income products. This year, we are introducing our flagship BIG Capital Analyst programme, in which a select number of first-year undergraduates will have the opportunity to be trained by seniors who have interned at Goldman Sachs, Morgan Stanley and Deutsche Bank."
         }
         icon={<FaUsers />}
       />
@@ -109,21 +109,21 @@ const Features = () => {
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={3}
-        title={"LSE Focal Point"}
+        title={"London Strategy Group"}
         text={
-          "LSE Focal Point stands as the leading student-run business podcast, boasting over 200 influential speakers since its inception. Our guest list includes industry titans such as the Founders and Chairmen of Bank of America, Oaktree, and Evercore. The podcast continues to be a platform for thought-provoking discussions, offering exclusive insights into the business world."
+          "Founded in 2017, the London Strategy Group (LSG) is a premier pro-bono strategy consultancy at the London School of Economics and Political Science (LSE). We are proud to be one of the UK’s largest strategy-focused student consultancies, serving clients ranging from FTSE 100 firms to start-ups and NGOs. Being part of LSG is an excellent opportunity to gain practical first-hand experience in consulting and receive exclusive training for our official partners."
         }
-        icon={<FaPodcast />}
+        icon={<FaHandshake />}
       />
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
         idx={4}
-        title={"Networking"}
+        title={"LSE Focal Point"}
         text={
-          "The BIG Ball is a highlight of our networking calendar, bringing together students from across the UK for an unforgettable evening of entertainment and professional networking. Our social events over the past year have included bowling, ice skating, and treasure hunts, are designed to help first-year members connect with the executive team and each other, encouraging a strong sense of community from the very start."
+          "LSE Focal Point stands as the leading student-run business podcast, boasting over 200 influential speakers since its inception. Our guest list includes industry titans such as the Founders and Chairmen of Bank of America, Oaktree, and Evercore. The podcast continues to be a platform for thought-provoking discussions, offering exclusive insights into the business world."
         }
-        icon={<FaHandshake />}
+        icon={<FaPodcast />}
       />
     </motion.div>
   );
