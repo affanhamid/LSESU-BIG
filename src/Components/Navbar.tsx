@@ -64,39 +64,32 @@ const Menu = () => {
   );
 };
 
-const Navbar = ({ isBlueBackground }: { isBlueBackground?: boolean }) => {
+const Navbar = () => {
   const [navBackground, setNavBackground] = useState("transparent");
 
   useEffect(() => {
-    if (!isBlueBackground) {
-      const toggleVisibility = () => {
-        if (window.innerWidth < 700) {
-          if (window.scrollY >= 200) {
-            setNavBackground("background");
-          } else {
-            setNavBackground("transparent");
-          }
+    const toggleVisibility = () => {
+      if (window.innerWidth < 700) {
+        if (window.scrollY >= 200) {
+          setNavBackground("background");
         } else {
-          if (window.scrollY >= 750) {
-            setNavBackground("background");
-          } else {
-            setNavBackground("transparent");
-          }
+          setNavBackground("transparent");
         }
-      };
-      window.addEventListener("scroll", toggleVisibility, { passive: true });
-      return () => window.removeEventListener("scroll", toggleVisibility);
-    } else {
-      // Setting permanent blue background for the Tracker page
-      setNavBackground("background");
-    }
-  }, [isBlueBackground]);
+      } else {
+        if (window.scrollY >= 750) {
+          setNavBackground("background");
+        } else {
+          setNavBackground("transparent");
+        }
+      }
+    };
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   return (
     <div
-      className={`w-full fixed justify-between top-0 text-fontColor ${
-        isBlueBackground ? "bg-background" : `bg-${navBackground}`
-      } flex flex-col md:flex-row py-10 px-20 items-center z-30`}
+      className={`w-full fixed justify-between top-0 text-fontColor ${`bg-${navBackground}`} flex flex-col md:flex-row py-10 px-20 items-center z-30`}
     >
       <Logo />
       <div className="flex gap-4 items-center text-4xl">

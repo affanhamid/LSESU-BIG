@@ -1,17 +1,25 @@
 import React from "react";
 import Navbar from "@/Components/Navbar";
+import Image from "next/image";
+import trackerImage from "../../../public/trackerImage.jpg";
+import Sheet from "./Sheet";
 
-const Tracker = () => {
+const Tracker = async () => {
   return (
     <main className="">
-      <Navbar isBlueBackground={true} />
-      <section className="pt-72 bg-white">
-        <h1 className="text-3xl text-center pb-20 px-20">
-          This part of the website is currently under development. In the future
-          it will have an automated tracker of openings and closings of all
-          major applications
+      <Navbar />
+      <header className="relative">
+        <Navbar />
+        <Image
+          src={trackerImage}
+          className="w-full h-[75vh] object-cover z-0 brightness-50"
+          alt=""
+        />
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl lg:text-5xl font-bold text-center my-10 z-60 text-white">
+          BIG Tracker
         </h1>
-      </section>
+      </header>
+      <Sheet />
     </main>
   );
 };

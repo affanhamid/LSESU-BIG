@@ -77,6 +77,16 @@ const Features = () => {
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}
+        idx={0}
+        title={"BIG Capital"}
+        text={
+          "BIG Capital is a premier student-managed investment find at the LSE, known for its rigorous research across Equities, Fixed Income, and Macro strategies. We pride ourselves on delivering thorough and original analysis, guided by a team of highly selective portfolio managers"
+        }
+        icon={<FaUniversity />}
+      />
+      <FeatureItem
+        selectedFeature={selectedFeature}
+        setSelectedFeature={setSelectedFeature}
         idx={1}
         title={"M&A Group"}
         text={
@@ -85,16 +95,6 @@ const Features = () => {
         icon={<FaChartLine />}
       />
 
-      <FeatureItem
-        selectedFeature={selectedFeature}
-        setSelectedFeature={setSelectedFeature}
-        idx={0}
-        title={"BIG Capital"}
-        text={
-          "BIG Capital is a premier student-managed investment find at the LSE, known for its rigorous research across Equities, Fixed Income, and Macro strategies. We pride ourselves on delivering thorough and original analysis, guided by a team of highly selective portfolio managers"
-        }
-        icon={<FaUniversity />}
-      />
       <FeatureItem
         selectedFeature={selectedFeature}
         setSelectedFeature={setSelectedFeature}

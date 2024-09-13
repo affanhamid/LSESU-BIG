@@ -9,6 +9,8 @@ import {
   aboutUsImage,
   eventsImage,
   mentorshipImage,
+  resourcesImage,
+  trackerImage,
 } from "../../public";
 import Image from "next/image";
 
@@ -71,6 +73,7 @@ const Menu = ({
               setOpenMenu={setOpenMenu}
               setScroll={setScroll}
               idx={idx}
+              key={idx}
             />
           ))}
         </ul>
@@ -132,7 +135,6 @@ const Header = () => {
   const divRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log(window.screen.height);
     if (divRef.current) {
       divRef.current.scrollTop = window.innerHeight * scroll;
     }
@@ -146,20 +148,25 @@ const Header = () => {
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
-        {[homeImage, aboutUsImage, eventsImage, mentorshipImage].map(
-          (image, idx) => (
-            <Image
-              key={idx}
-              src={image}
-              alt="Image"
-              className={`${
-                idx !== 0 ? "hidden md:block" : ""
-              } w-screen h-52 md:h-screen object-cover flex-shrink-0`}
-              width={1280}
-              height={720}
-            />
-          )
-        )}
+        {[
+          homeImage,
+          aboutUsImage,
+          eventsImage,
+          mentorshipImage,
+          resourcesImage,
+          trackerImage,
+        ].map((image, idx) => (
+          <Image
+            key={idx}
+            src={image}
+            alt="Image"
+            className={`${
+              idx !== 0 ? "hidden md:block" : ""
+            } w-screen h-52 md:h-screen object-cover flex-shrink-0`}
+            width={1280}
+            height={720}
+          />
+        ))}
       </div>
       <header className="relative h-max md:h-screen w-full z-30 flex items-center justify-center bg-background/30">
         <div className="hidden md:flex flex-col items-center text-white rounded-t-lg py-7 px-10 ">
