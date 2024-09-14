@@ -43,7 +43,7 @@ const Sheet = () => {
   return (
     <section className="p-5 bg-white">
       <iframe
-        className="w-screen h-screen mt-40"
+        className="w-screen h-screen"
         src="https://docs.google.com/spreadsheets/d/1Zk13bgREvD2Fev2XKJasyyx-BV2SYimA/edit?gid=1255704633#gid=1255704633"
       ></iframe>
     </section>
