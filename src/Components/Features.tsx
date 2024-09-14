@@ -82,7 +82,7 @@ const Features = () => {
         text={
           "Our flagship event series, regularly brings high-profile guests to LSE, including CEOs, entrepreneurs, politicians, and executives. Our Corporate Relations team organise an array of exciting year-round keynotes, corporate presentations, panel discussions, and hands-on workshops. Past event topics have included public finance, the hedge fund and private equity industries, and micro-finance."
         }
-        icon={<FaUniversity />}
+        icon={<FaUsers />}
       />
       <FeatureItem
         selectedFeature={selectedFeature}
@@ -92,7 +92,7 @@ const Features = () => {
         text={
           "The LSE M&A Group is the UK’s first student-run educational club which teaches the fundamentals of mergers and acquisitions. We offer weekly interactive lessons taught by a passionate and experienced executive team. The 2024/25 executive team is comprised of former LSE M&A Group analysts and will closely mentor our select class of new analysts to succeed in their spring week and internship applications."
         }
-        icon={<FaChartLine />}
+        icon={<FaUniversity />}
       />
 
       <FeatureItem
@@ -103,7 +103,7 @@ const Features = () => {
         text={
           "Our investment fund was launched in 2023. BIG Capital is split into several teams investing in equities and fixed-income securities. This year, we are introducing our flagship BIG Capital Analyst programme, in which a select number of first-year undergraduates will have the opportunity to be trained by seniors who have interned at Goldman Sachs, Morgan Stanley and Deutsche Bank."
         }
-        icon={<FaUsers />}
+        icon={<FaChartLine />}
       />
       <FeatureItem
         selectedFeature={selectedFeature}
