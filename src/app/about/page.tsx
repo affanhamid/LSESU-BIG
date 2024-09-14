@@ -27,20 +27,18 @@ const AboutUs = () => {
       </header>
 
       <section className="pt-10">
-        <div className="max-w-7xl mx-auto relative flex justify-center items-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center my-10">
+        <div className="max-w-7xl mx-auto relative flex flex-col md:flex-row px-10 justify-center items-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center my-10 flex-1">
             Executive Committee
           </h2>
-          <div className="absolute right-0">
+          <div className="">
             <YearDropdown year={year} setYear={setYear} />
           </div>
         </div>
 
         <hr className="border-gray-300 my-4" />
         <Football
-          members={
-            team[year as keyof typeof team]["executiveMembers"]
-          }
+          members={team[year as keyof typeof team]["executiveMembers"]}
           pattern={team[year as keyof typeof team]["pattern"]}
         />
       </section>

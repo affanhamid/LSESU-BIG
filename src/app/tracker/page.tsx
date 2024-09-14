@@ -9,8 +9,8 @@ const Tracker = async () => {
     <main className="">
       <header className="pt-5 fixed top-0 bg-background w-full">
         <Navbar />
-        <h1 className="text-4xl lg:text-5xl font-bold text-center my-10 z-60 text-white">
-          BIG Tracker
+        <h1 className="text-4xl lg:text-5xl h-[7.5rem] md:h-max font-bold text-center my-10 z-60 text-white">
+          <span className="hidden md:inline">BIG Tracker</span>
         </h1>
       </header>
       <Sheet />

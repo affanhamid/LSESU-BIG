@@ -4,13 +4,9 @@ import Link from "next/link";
 import { pastEvents } from "@/Database";
 import { PastEventInterface } from "@/Types";
 
-// {
-//   "Industry/Field": "Private Equity"
-// }
-
 const Event = ({ event }: { event: PastEventInterface }) => {
   return (
-    <div className="flex flex-col break:flex-row  border border-gray-300 rounded-lg overflow-hidden w-max break:w-full items-center">
+    <div className="flex flex-col break:flex-row  border border-gray-300 rounded-lg overflow-hidden break:w-full items-center">
       <div className="w-[300px] break:w-[175px] md:w-[200px] lg:w-[250px] aspect-square bg-gray-600 flex-shrink-0">
         {event.ImageLink ? (
           <img
@@ -24,19 +20,12 @@ const Event = ({ event }: { event: PastEventInterface }) => {
       </div>
       <div className="p-5 flex flex-col flex-grow">
         <div className="text-lg text-gray-500">{`${event.Month} ${event.Day}`}</div>
-        <div className="text-xl md:text-2xl mt-2 flex gap-4 items-center">
-          <span className="font-bold">{event.Firm}</span>
-          <span>{event.Title}</span>
+        <div className="text-xl md:text-2xl mt-2 flex flex-col">
+          <span className="font-bold">{event.Speakers}</span>
+          <span className="text-lg">{event.Title}</span>
         </div>
-        {event.Speakers ? (
-          <div className="text-gray-700 mt-1 flex gap-2 items-center">
-            <span className="text-lg">{event.Speakers},</span>
-            <span className="text-sm">{event.Position}</span>
-          </div>
-        ) : (
-          <></>
-        )}
-        <div>{event["Industry/Field"]}</div>
+
+        <span className="text-base">{event.Position}</span>
         <Link href={event.Link || ""}>
           <button className="bg-background px-3 py-2 text-white rounded-lg mt-5 self-start">
             Learn more
