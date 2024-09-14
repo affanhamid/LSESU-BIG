@@ -27,11 +27,11 @@ const SpeakerShowcase = ({
           items={showcaseSpeakers}
           Component={Speaker}
         />
-        <Link href="/past-speakers">
+        {/* <Link href="/past-speakers">
           <p className="mt-5 underline text-lg text-center lg:text-left">
             See All Speakers
           </p>
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
