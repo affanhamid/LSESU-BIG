@@ -90,7 +90,7 @@ const Features = () => {
         idx={1}
         title={"M&A Group"}
         text={
-          "The LSE M&A Group is the UK’s first student-run educational club which teaches the fundamentals of mergers and acquisitions. As a subgroup of LSE's largest finance society, the LSE Business and Investment Group (BIG), it offers weekly interactive lessons taught by a passionate and experienced executive team. The 2024/25 executive team is comprised of former LSE M&A Group analysts and will closely mentor our select class of new analysts to succeed in their spring week and internship applications - last year's class achieved a society record by securing 38 spring week offers."
+          "The LSE M&A Group is the UK’s first student-run educational club which teaches the fundamentals of mergers and acquisitions. We offer weekly interactive lessons taught by a passionate and experienced executive team. The 2024/25 executive team is comprised of former LSE M&A Group analysts and will closely mentor our select class of new analysts to succeed in their spring week and internship applications."
         }
         icon={<FaChartLine />}
       />
@@ -101,7 +101,7 @@ const Features = () => {
         idx={2}
         title={"BIG Capital"}
         text={
-          "Our real-money investment fund was launched in 2023. It is a student-run club focused on nurturing LSE talent in research and stock pitching. BIG Capital is split into several teams investing in equities and fixed-income products. This year, we are introducing our flagship BIG Capital Analyst programme, in which a select number of first-year undergraduates will have the opportunity to be trained by seniors who have interned at Goldman Sachs, Morgan Stanley and Deutsche Bank."
+          "Our investment fund was launched in 2023. BIG Capital is split into several teams investing in equities and fixed-income securities. This year, we are introducing our flagship BIG Capital Analyst programme, in which a select number of first-year undergraduates will have the opportunity to be trained by seniors who have interned at Goldman Sachs, Morgan Stanley and Deutsche Bank."
         }
         icon={<FaUsers />}
       />
@@ -111,7 +111,7 @@ const Features = () => {
         idx={3}
         title={"London Strategy Group"}
         text={
-          "Founded in 2017, the London Strategy Group (LSG) is a premier pro-bono strategy consultancy at the London School of Economics and Political Science (LSE). We are proud to be one of the UK’s largest strategy-focused student consultancies, serving clients ranging from FTSE 100 firms to start-ups and NGOs. Being part of LSG is an excellent opportunity to gain practical first-hand experience in consulting and receive exclusive training for our official partners."
+          "Founded in 2017, the London Strategy Group (LSG) is a premier pro-bono strategy consultancy at the LSE. We are proud to be one of the UK’s largest strategy-focused student consultancies, serving clients ranging from FTSE 100 firms to start-ups and NGOs. Being part of LSG is an excellent opportunity to gain practical first-hand experience in consulting and receive exclusive training for our official partners."
         }
         icon={<FaHandshake />}
       />

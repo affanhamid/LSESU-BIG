@@ -1,7 +1,5 @@
 import React from "react";
 import Navbar from "@/Components/Navbar";
-import Image from "next/image";
-import trackerImage from "../../../public/trackerImage.jpg";
 import Sheet from "./Sheet";
 
 const Tracker = async () => {

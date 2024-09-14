@@ -24,7 +24,7 @@ export default function Home() {
       <Header />
       <section className="bg-white">
         <h1>Who we are</h1>
-        <p className="ml:text-lg md:text-xl px-10 md:px-32 lg:px-80">
+        <p className="ml:text-lg md:text-xl px-10 md:px-32 lg:px-80 text-center">
           LSESU BIG is a student-run society that aims to bring together
           students from all backgrounds and disciplines to provide guidance into
           the latest career opportunities in finance and business. Our mission
