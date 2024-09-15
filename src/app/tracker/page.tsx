@@ -13,7 +13,7 @@ const Tracker = async () => {
       </header>
       <div className="mt-56 md:mt-40">
         <h1 className="text-background text-lg mb-0 bg-white ml:hidden">
-          For the best veiwing experience for the tracker, please use a desktop
+          For the best viewing experience for the tracker, please use a desktop
           browser.
         </h1>
         <Sheet />
