@@ -66,12 +66,12 @@ const Mentorship = async () => {
           <Number
             text="Revamped to mentorship families"
             icon={<FaCalendarAlt />}
-            description="A new approach to strengthen connections and build deeper mentor-mentee partnerships."
+            description="A new approach to strengthen connections and build deeper mentor-mentee partnerships"
           />
           <Number
             text="35 mentors"
             icon={<FaUsers />}
-            description="Our 30+ mentors are second and third year LSE students from a range of disciplines."
+            description="Our 30+ mentors are second and third year LSE students from a range of disciplines"
           />
         </div>
       </header>
@@ -85,7 +85,7 @@ const Mentorship = async () => {
         <h1 className="text-3xl lg:text-6xl font-bold text-center mb-4">
           Mentors
         </h1>
-        <p className="text-2xl text-center font-bold px-4 lg:px-96 mb-10">
+        <p className="ml:text-lg md:text-xl px-10 md:px-32 lg:px-80 py-10 text-center">
           Our team of over 30 mentors comes from diverse backgrounds and
           nationalities. They have successfully secured highly competitive roles
           within the financial industry, drawing from diverse academic

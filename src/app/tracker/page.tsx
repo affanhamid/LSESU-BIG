@@ -11,8 +11,8 @@ const Tracker = async () => {
           <span className="hidden md:inline">BIG Tracker</span>
         </h1>
       </header>
-      <div>
-        <h1 className="text-background text-lg mt-56 mb-0 bg-white ml:hidden">
+      <div className="mt-56 md:mt-40">
+        <h1 className="text-background text-lg mb-0 bg-white ml:hidden">
           For the best veiwing experience for the tracker, please use a desktop
           browser.
         </h1>

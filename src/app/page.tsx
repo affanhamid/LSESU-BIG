@@ -26,14 +26,13 @@ export default function Home() {
         <h1>Who we are</h1>
         <p className="ml:text-lg md:text-xl px-10 md:px-32 lg:px-72 text-center">
           The LSESU Business & Investment Group (BIG) is the largest and most
-          active society at the LSE, offering students from all backgrounds
-          guidance and support in pursuing careers in finance and business.
-          Formed in 2019 from two of LSE’s most influential societies, BIG
-          provides access to essential career resources, networking
-          opportunities, and skill development across sectors like banking,
-          consulting, technology, and more. With tools like the Application
-          Tracker and a strong community of mentorship, BIG helps members secure
-          highly competitive roles and thrive in their professional journeys.
+          active society at the LSE, offering students support in pursuing
+          careers in finance. Formed in 2019, as a merger of LSE’s two most
+          influential societies, BIG provides access to essential career
+          resources, networking opportunities, and skill development. With tools
+          such as the Application Tracker and a strong community of mentorship,
+          BIG helps its members secure highly competitive roles and thrive in
+          their professional journeys.
         </p>
         <div className="grid grid-cols-2 lg:flex lg:flex-row justify-center gap-1 mm:gap-10 mb-32 w-max mx-auto">
           <Number

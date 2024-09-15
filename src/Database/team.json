@@ -63,13 +63,13 @@
           "name": "Ella Cheong",
           "role": "",
           "linkedin": "",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOvljPJTuJgST140kaB5oVEtr2hdUZXwF6pjKx"
         },
         {
           "name": "Jahanzeb Sayed",
           "role": "",
           "linkedin": "https://www.linkedin.com/in/jahanzebsayed/",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOia69O9V7xtphfmWEJqD8XcyTORSIMlswN5YF"
         }
       ],
       "Alternatives": [
@@ -194,7 +194,7 @@
     }
   },
   "2023/24": {
-    "pattern": [3, 3, 3, 2],
+    "pattern": [3, 3, 2, 2],
     "executiveMembers": [
       {
         "name": "Asif Islam",
@@ -255,12 +255,6 @@
         "role": "Head of Corporate Relations",
         "linkedin": "https://www.linkedin.com/in/dma6/?originalSubdomain=ca",
         "imageLink": "https://media.licdn.com/dms/image/D5603AQFHle3dIFpErA/profile-displayphoto-shrink_800_800/0/1714150735753?e=1728518400&v=beta&t=8N4fwtcHCngNMfmkqaltKzZvHimcFQM3SkYPQq9jpfY"
-      },
-      {
-        "name": "Ismail Abdi",
-        "role": "Head of Investments",
-        "linkedin": "https://www.linkedin.com/in/ismail1261/",
-        "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
       }
     ],
     "heads": {
