@@ -40,14 +40,14 @@ const Sheet = () => {
   //   getSheet();
   // }, [selected]);
 
-  return (
-    <section className="p-5 bg-white">
-      <iframe
-        className="w-full h-[80vh] outline-none"
-        src="https://docs.google.com/spreadsheets/d/1Zk13bgREvD2Fev2XKJasyyx-BV2SYimA/edit?gid=1922076053#gid=1922076053"
-      ></iframe>
-    </section>
-  );
-};
+    return (
+      <section className="p-5 bg-white">
+        <iframe
+          className="w-full h-[80vh] outline-none"
+          src="https://docs.google.com/spreadsheets/d/1Zk13bgREvD2Fev2XKJasyyx-BV2SYimA/preview?gid=1922076053#gid=1922076053"
+        ></iframe>
+      </section>
+    );
+  };  
 
 export default Sheet;
