@@ -55,8 +55,7 @@ const Footer = () => {
             <p>London</p>
             <p>WC2A 2AE</p>
           </div>
-          <p>Email: contact@lsebig.com</p>
-          <p className="mb-4">Phone: +44 123 456 7890</p>
+          <p>Email: business-investment@lsesu.org</p>
           <Socials />
         </div>
       </div>

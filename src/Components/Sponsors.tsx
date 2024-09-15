@@ -31,7 +31,7 @@ const Sponsors = ({ sponsors }: { sponsors: SponsorInterface[] }) => {
           ))}
         </div>
         <div className="text-center text-lg mm:text-2xl mt-8">
-          <Link href="mailto:lse-big@lse.ac.uk">
+          <Link href="mailto:business-investment@lsesu.org">
             <div className="bg-background text-white px-5 py-2 w-max mx-auto rounded-lg mt-10 text-wrap min-w-screen">
               Partner with us
             </div>

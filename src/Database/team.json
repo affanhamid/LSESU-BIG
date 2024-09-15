@@ -1,6 +1,6 @@
 {
   "2022/23": {
-    "pattern": [3, 2, 2, 2],
+    "pattern": [3, 3, 2],
     "executiveMembers": [
       {
         "name": "Daniyal Mirza",
@@ -15,10 +15,10 @@
         "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHQs3zzQb8nXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720959740959?e=1731542400&v=beta&t=3LluTOKd9DvpuQ6mk9bbw_xnIBPf1ugQapAOejIdkJs"
       },
       {
-        "name": "Amandeep N.",
-        "role": "Secretary",
-        "linkedin": "https://www.linkedin.com/in/amandeepnagra/",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEa5QRWHv9AOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712436545847?e=1731542400&v=beta&t=Qxyn6FQJdMRMlEJjgpfZCkdX4vRH35Z1B6BN4FSjyg0"
+        "name": "Rory Conway",
+        "role": "Chair",
+        "linkedin": "https://www.linkedin.com/in/rorypc/",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOZ6Qccrgz3nRSOaGuBPKFxYAfVrme0oHj1El4"
       },
       {
         "name": "Arnav Kulkarni",
@@ -27,10 +27,10 @@
         "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQGJdf6CZ298Pw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722537796625?e=1731542400&v=beta&t=vFGABAQic_zNzdRaw6DwO7zihb-2Ecw60IsOWtJ6_fQ"
       },
       {
-        "name": "Nikhil Mittal",
-        "role": "Head of External Relations",
-        "linkedin": "https://www.linkedin.com/in/nikhil-m-396025199/",
-        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQE0YycXTaJD0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718638208507?e=1731542400&v=beta&t=0eB9ag1xnaPuDSRZR3qARfv691cFmNghJoeh_1sGVNo"
+        "name": "Amandeep N.",
+        "role": "Secretary",
+        "linkedin": "https://www.linkedin.com/in/amandeepnagra/",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQEa5QRWHv9AOw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712436545847?e=1731542400&v=beta&t=Qxyn6FQJdMRMlEJjgpfZCkdX4vRH35Z1B6BN4FSjyg0"
       },
       {
         "name": "William Dinsdale",
@@ -39,22 +39,17 @@
         "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHwJh4ZIjzCHQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721591559347?e=1731542400&v=beta&t=85Axx88_xbwKoXBbO64X0od6ihW6grzRZ3LizbV0XcA"
       },
       {
+        "name": "Nikhil Mittal",
+        "role": "Head of External Relations",
+        "linkedin": "https://www.linkedin.com/in/nikhil-m-396025199/",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQE0YycXTaJD0g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718638208507?e=1731542400&v=beta&t=0eB9ag1xnaPuDSRZR3qARfv691cFmNghJoeh_1sGVNo"
+      },
+
+      {
         "name": "Aurideep Nayak",
         "role": "Head of Corporate Relations",
         "linkedin": "https://www.linkedin.com/in/aurideep/",
         "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
-      },
-      {
-        "name": "Emre Ozaydin",
-        "role": "Chair",
-        "linkedin": "",
-        "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
-      },
-      {
-        "name": "Rory Conway",
-        "role": "Chair",
-        "linkedin": "https://www.linkedin.com/in/rorypc/",
-        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOZ6Qccrgz3nRSOaGuBPKFxYAfVrme0oHj1El4"
       }
     ],
     "heads": {
@@ -97,13 +92,13 @@
           "name": "Parth Patel",
           "role": "",
           "linkedin": "https://www.linkedin.com/in/parth-patel-733b84197/",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOOrFRVeSxHY34lzXkNIJDaoEqw6cpStLMr7VK"
         },
         {
           "name": "Tasneem Rahman",
           "role": "",
           "linkedin": "https://www.linkedin.com/in/tasneem-r/",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOXHGno2OMC5JqFHiSmfWRKG8p0eoBcDkOVvdb"
         }
       ],
       "Consulting": [
@@ -111,13 +106,13 @@
           "name": "Matthieu F. Braga",
           "role": "",
           "linkedin": "https://www.linkedin.com/in/matthieu-f-195714190/",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOOWBZy5SxHY34lzXkNIJDaoEqw6cpStLMr7VK"
         },
         {
           "name": "Samiullah Khan",
           "role": "",
           "linkedin": "https://www.linkedin.com/in/samiullah-khan/",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOSTPfJNFhANyE89sF37WrzQPRvtKicldmHDZw"
         }
       ],
       "Law": [
@@ -131,7 +126,7 @@
           "name": "Michael Lam",
           "role": "",
           "linkedin": "https://www.linkedin.com/in/michael-l-000a28151/",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOYRuvMVfDMGw3c5Am96nRfkLEvpthyDzHWloB"
         }
       ],
       "Alumni Relations": [
@@ -153,7 +148,7 @@
           "name": "Danyaal Dada",
           "role": "",
           "linkedin": "",
-          "imageLink": "https://utfs.io/f/564c4449-6eee-4756-a53e-abebe19e06eb-d36f4d.png"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOdq8gDPIBf9UYRZADzI2ikCu4qEb8MonNSXeJ"
         },
         {
           "name": "Danish Handa",
