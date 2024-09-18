@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { CarouselProps } from "@/Types";
 
 const Carousel = <T,>({
@@ -9,8 +9,10 @@ const Carousel = <T,>({
   paddingY,
   items,
   Component,
+  speed = 1,
 }: CarouselProps<T>) => {
   const carouselRef = useRef<HTMLDivElement>(null);
+  const [mouseHover, setMouseHover] = useState(false);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -19,20 +21,28 @@ const Carousel = <T,>({
       const totalWidth = carousel.scrollWidth;
 
       const startScrolling = () => {
-        carousel.scrollLeft += 1;
-        // If it has scrolled past the first set of items, move the scroll position to create the loop effect
+        if (!mouseHover) {
+          carousel.scrollLeft += speed * 1;
+        }
+      };
+      carousel.addEventListener("scroll", () => {
         if (carousel.scrollLeft >= totalWidth / 2) {
           carousel.scrollLeft = 0;
         }
-      };
+      });
 
       const scrollInterval = setInterval(startScrolling, 10);
       return () => clearInterval(scrollInterval);
     }
-  }, [items]);
+  }, [items, mouseHover]);
 
   return (
-    <div ref={carouselRef} className={`overflow-x-scroll mx-auto no-scrollbar`}>
+    <div
+      ref={carouselRef}
+      className={`overflow-x-scroll mx-auto no-scrollbar`}
+      onMouseEnter={() => setMouseHover(true)}
+      onMouseLeave={() => setMouseHover(false)}
+    >
       <div className={`flex ${gap} w-max ${offset} ${paddingY}`}>
         {[...items, ...items].map((item, idx) => (
           <Component key={idx} {...item} />

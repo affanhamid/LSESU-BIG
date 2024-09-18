@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import { useState, useEffect } from "react";
 import { GalleryEventInterface, GalleryPhotoInterface } from "@/Types";
 
 const Photo = ({ imageLink, title, link }: GalleryPhotoInterface) => {
@@ -21,12 +22,28 @@ const Photo = ({ imageLink, title, link }: GalleryPhotoInterface) => {
 };
 
 const Gallery = ({ events }: { events: GalleryEventInterface[] }) => {
+  const [scrollable, setScrollable] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+      const scroll = window.scrollY;
+      if (scroll > 5200) {
+        setScrollable(true);
+      } else {
+        setScrollable(false);
+      }
+    });
+  }, []);
   return (
     <main className="">
       <section className="bg-white text-black border-b border-white mb-10">
         <h1>Gallery</h1>
         <div className="flex justify-center">
-          <div className="relative h-[75vh] overflow-y-scroll w-full flex flex-wrap justify-center my-20">
+          <div
+            className={`relative h-[75vh] ${
+              scrollable ? "overflow-y-scroll" : "overflow-y-hidden"
+            } w-full flex flex-wrap justify-center my-20`}
+          >
             {events.map((event: GalleryEventInterface, idx: number) => (
               <div className="flex-initial" key={idx}>
                 <Photo

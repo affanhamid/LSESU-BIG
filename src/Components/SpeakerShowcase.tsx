@@ -6,7 +6,7 @@ import { SpeakerInterface } from "@/Types";
 const Speaker = ({ image }: { image: string }) => {
   return (
     <div className="rounded-lg overflow-hidden">
-      <img src={image} alt="" className="w-[300px]" />
+      <img src={image} alt="" className="w-[300px] h-[300px]" />
     </div>
   );
 };
@@ -26,6 +26,7 @@ const SpeakerShowcase = ({
           paddingY={""}
           items={showcaseSpeakers}
           Component={Speaker}
+          speed={2}
         />
         {/* <Link href="/past-speakers">
           <p className="mt-5 underline text-lg text-center lg:text-left">

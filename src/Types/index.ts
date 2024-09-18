@@ -43,6 +43,7 @@ export type CarouselProps<T> = {
   paddingY: string;
   items: T[];
   Component: React.FC<any>;
+  speed?: number;
 };
 
 export interface MentorInterface {
