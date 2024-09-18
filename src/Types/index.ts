@@ -20,6 +20,7 @@ export interface PastEventInterface {
   ImageLink?: string;
   Month: string;
   Day: number;
+  Year: number;
   "Industry/Field": string | null;
 }
 

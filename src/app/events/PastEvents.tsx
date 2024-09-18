@@ -19,7 +19,7 @@ const Event = ({ event }: { event: PastEventInterface }) => {
         )}
       </div>
       <div className="p-5 flex flex-col flex-grow">
-        <div className="text-lg text-gray-500">{`${event.Month} ${event.Day}`}</div>
+        <div className="text-lg text-gray-500">{`${event.Month} ${event.Day} ${event.Year}`}</div>
         <div className="text-xl md:text-2xl mt-2 flex flex-col">
           <span className="font-bold">{event.Speakers}</span>
           <span className="text-lg">{event.Title}</span>
@@ -70,13 +70,13 @@ const PastEvents = () => {
         <YearButton
           index={index}
           setIndex={setIndex}
-          text="2023-2024"
+          text="2022-202"
           idx={"2023"}
         />
         <YearButton
           index={index}
           setIndex={setIndex}
-          text="2022-2023"
+          text="2023-2024"
           idx={"2024"}
         />
       </div>
