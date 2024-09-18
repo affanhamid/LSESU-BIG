@@ -70,7 +70,7 @@ const PastEvents = () => {
         <YearButton
           index={index}
           setIndex={setIndex}
-          text="2022-202"
+          text="2022-2023"
           idx={"2023"}
         />
         <YearButton
