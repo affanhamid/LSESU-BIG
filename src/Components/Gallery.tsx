@@ -25,7 +25,6 @@ const Gallery = ({ events }: { events: GalleryEventInterface[] }) => {
   const [scrollable, setScrollable] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
       const scroll = window.scrollY;
       if (scroll > 5200) {
         setScrollable(true);

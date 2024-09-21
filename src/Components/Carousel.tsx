@@ -20,22 +20,22 @@ const Carousel = <T,>({
     if (carousel) {
       const totalWidth = carousel.scrollWidth;
 
-      // const startScrolling = () => {
-      //   if (!mouseHover) {
-      //     carousel.scrollLeft += speed * 1;
-      //   }
-      // };
+      const startScrolling = () => {
+        if (!mouseHover) {
+          carousel.scrollLeft += speed * 1;
+        }
+      };
       carousel.addEventListener("scroll", () => {
-        console.log(carousel.scrollLeft);
         if (carousel.scrollLeft === 0) {
-          carousel.scrollLeft = totalWidth / 2;
-        } else if (carousel.scrollLeft === totalWidth / 2) {
-          carousel.scrollLeft = 0;
+          carousel.scrollLeft = totalWidth / 2 - 1;
+        }
+        if (carousel.scrollLeft >= totalWidth / 2) {
+          carousel.scrollLeft = 1;
         }
       });
 
-      // const scrollInterval = setInterval(startScrolling, 10);
-      // return () => clearInterval(scrollInterval);
+      const scrollInterval = setInterval(startScrolling, 10);
+      return () => clearInterval(scrollInterval);
     }
   }, [items, mouseHover]);
 
