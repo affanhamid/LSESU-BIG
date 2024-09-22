@@ -333,7 +333,7 @@
       "ImageLink": "https://utfs.io/f/P5zDMjQIG1bOeZotsPQ4sD4j8cb6gMHrZSqBewiPpVEtXzhU",
       "Speakers": "Julia Hawkins",
       "Firm": "Local Globe & Latitude",
-      "Position": "General Partner",
+      "Position": "General Partner at Local Globe & Latitude",
       "Industry/Field": null
     }
   ],
@@ -347,19 +347,19 @@
       "ImageLink": "https://utfs.io/f/cc5f992d-62ce-43d4-906a-c1f7523bc9bd-qfemt3.jpg",
       "Speakers": "Ken Griffin",
       "Firm": "Citadel",
-      "Position": "Founder",
+      "Position": "Founder and CEO of Citadel LLC",
       "Industry/Field": "Hedge Funds"
     },
     {
       "Month": "Oct",
       "Day": 6,
       "Year": 2023,
-      "Title": "Panel Event",
+      "Title": "Evercore Panel Event",
       "Link": "https://www.instagram.com/p/CxppIMzNzYh/?hl=en",
       "ImageLink": "https://utfs.io/f/7791636f-b01f-4ce7-814b-aa84570acad2-4nhpdp.jpg",
       "Speakers": null,
       "Firm": "Evercore Partners",
-      "Position": "Different Divisions",
+      "Position": "Investment Banking",
       "Industry/Field": "Investment Banking"
     },
     {
@@ -383,7 +383,7 @@
       "ImageLink": "https://utfs.io/f/06b3d9e9-2b34-4b2f-b0e3-099527800ee9-cxt5g9.jpg",
       "Speakers": null,
       "Firm": "LSE",
-      "Position": "LSE Students + External",
+      "Position": "",
       "Industry/Field": "Mentorship"
     },
     {
@@ -395,7 +395,7 @@
       "ImageLink": "https://utfs.io/f/9b247c08-39ab-4f58-aea5-a01987308d03-cnmyck.jpg",
       "Speakers": "AmplifyME",
       "Firm": "AmplifyME",
-      "Position": "Range",
+      "Position": "Morgan Stanley",
       "Industry/Field": "Markets"
     },
     {
@@ -414,12 +414,12 @@
       "Month": "Nov",
       "Day": 14,
       "Year": 2023,
-      "Title": "Oliver Wyman Case Study Workshop",
+      "Title": "Consultants",
       "Link": "https://www.instagram.com/p/CzZKDIYNOga/",
       "ImageLink": "https://utfs.io/f/P5zDMjQIG1bOMfxl7a3JeDV0ZtBTKWrvm9H527QsGL6kw1cq",
-      "Speakers": "Nikita Nikitin, Ojasvi Goel, Alice Winsor, Seongyun Hong, Jackson Kerr",
+      "Speakers": "Oliver Wyman Event",
       "Firm": "Oliver Wyman",
-      "Position": "Consultants and Principal",
+      "Position": "",
       "Industry/Field": ""
     },
     {
@@ -431,7 +431,7 @@
       "ImageLink": "https://utfs.io/f/fa4dae7d-3f5d-4d5b-b56d-2c51f269cb49-nv7x79.png",
       "Speakers": "Hadleigh Beals",
       "Firm": "Centerview Partners",
-      "Position": "Partner",
+      "Position": "Partner at Centreview",
       "Industry/Field": "Investment Banking"
     },
     {
@@ -489,9 +489,9 @@
       "Title": "Speaker Panel",
       "Link": "https://www.instagram.com/p/CzEJClat9_t/?hl=en",
       "ImageLink": "https://utfs.io/f/c1b45d4a-7176-412e-a3a9-ec067dc45452-icoupe.jpg",
-      "Speakers": "Lazard Panel",
+      "Speakers": "Lazard Panel Event",
       "Firm": "Lazard",
-      "Position": "Range including head of UK mining",
+      "Position": "Head of Global Natural Resources",
       "Industry/Field": "Investment Banking"
     },
     {
@@ -561,8 +561,8 @@
       "Title": "Private Equity Workshop",
       "Link": "https://www.instagram.com/p/C2NRLV0N0b0/?hl=en",
       "ImageLink": "https://utfs.io/f/4573bb33-fbf4-4b54-8498-3c2b8b62570f-lrdff7.png",
-      "Speakers": "Carmen Alonso, Faheem Sheikh, Eduardo Domichelli, Louis Witham",
-      "Firm": "Tikehau Capital",
+      "Speakers": "Tikehau Capital Office Visit",
+      "Firm": "Carmen Alonso, Faheem Sheikh, Eduardo Domichelli, Louis Witham",
       "Position": "Tikehau Capital",
       "Industry/Field": "Private Equity"
     },
@@ -750,10 +750,10 @@
       "Month": "Mar",
       "Day": 5,
       "Year": 2024,
-      "Title": "Speaker Panel",
+      "Title": "Kira Eaton, Rishil Patel, Gabrielle Betancourt, Jose Miguel Idigoras, Akvile Suslaviciut",
       "Link": "https://www.instagram.com/p/C4Doi73NKkj/",
       "ImageLink": "https://utfs.io/f/P5zDMjQIG1bO1Kdp7rlNWot4aFuMXi6EYs3Gbw5SRrex8nK9",
-      "Speakers": "Kira Eaton, Rishil Patel, Gabrielle Betancourt, Jose Miguel Idigoras, Akvile Suslaviciute",
+      "Speakers": "Macquarie Panel Event",
       "Firm": "Macquarie",
       "Position": "",
       "Industry/Field": ""

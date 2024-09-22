@@ -50,12 +50,26 @@ const Mentorship = async () => {
       <header className="px-4 md:px-10 lg:px-20 xl:px-40 lg:pt-10 flex flex-col items-center pb-10 lg:pb-20 bg-white">
         <h2 className="text-center text-xl my-5"></h2>
         <div className="flex gap-5">
+          <a
+            href = "https://forms.gle/8cPVdGQuLdW4xPbY6"
+            target="_blank"
+            rel = "noopener noreferrer"
+            className ="w-max mx-auto"
+           >
           <button className="mt-4 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentee
           </button>
+          </a>
+          <a
+            href = "https://forms.gle/S376x3JaD6XwaSJB8"
+            target="_blank"
+            rel = "noopener noreferrer"
+            className ="w-max mx-auto"
+           >
           <button className="mt-4 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentor
           </button>
+          </a>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 max-h-52 h-52 mb-96 md:mb-20 text-center">
           <Number
@@ -94,12 +108,26 @@ const Mentorship = async () => {
           and insight to support others in navigating this industry.
         </p>{" "}
         <div className="flex gap-5">
+        <a
+            href = "https://forms.gle/8cPVdGQuLdW4xPbY6"
+            target="_blank"
+            rel = "noopener noreferrer"
+            className ="w-max mx-auto"
+        >
           <button className="mt-6 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentee
           </button>
+        </a>
+        <a
+            href = "https://forms.gle/S376x3JaD6XwaSJB8"
+            target="_blank"
+            rel = "noopener noreferrer"
+            className ="w-max mx-auto"
+        >
           <button className="mt-6 px-6 py-4 w-max rounded border-2 border-black mx-auto">
             Apply to be a mentor
           </button>
+        </a>
         </div>
         {/* <MentorShowcase mentors={mentors} /> */}
       </section>
