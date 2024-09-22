@@ -21,8 +21,8 @@ const Event = ({ event }: { event: PastEventInterface }) => {
       <div className="p-5 flex flex-col flex-grow">
         <div className="text-lg text-gray-500">{`${event.Month} ${event.Day} ${event.Year}`}</div>
         <div className="text-xl md:text-2xl mt-2 flex flex-col">
-          <span className="font-bold">{event.Speakers}</span>
-          <span className="text-lg">{event.Title}</span>
+          <span className="font-bold">{event.Title}</span>
+          <span className="text-lg">{event.Speakers}</span>
         </div>
 
         <span className="text-base">{event.Position}</span>

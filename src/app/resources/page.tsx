@@ -41,8 +41,6 @@ const Resources = () => {
             }
             thumbnail="https://utfs.io/f/2JsPsN0kG4dUE6WK3wR2ENeIDxX4bQRMCta3qGyfKuPJj09g"
           />
-          <Resource link={"#"} />
-          <Resource link={"#"} />
         </div>
       </section>
     </main>
