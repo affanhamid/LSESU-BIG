@@ -120,8 +120,10 @@ const HeaderNavbar = ({
         <Socials />
 
         <button className="px-3 py-2 text-base hidden md:block">
-          <Link href="https://www.lsesu.com/communities/societies/group/big/">
+          <Link href="https://www.lsesu.com/communities/societies/group/big/" legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer">
             Join Us
+            </a>
           </Link>
         </button>
         <Menu setScroll={setScroll} />
