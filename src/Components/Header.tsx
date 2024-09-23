@@ -119,12 +119,17 @@ const HeaderNavbar = ({
       <div className="flex gap-4 items-center text-4xl">
         <Socials />
 
-        <button className="px-3 py-2 text-base hidden md:block">
-          <Link href="https://www.lsesu.com/communities/societies/group/big/" legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer">
-            Join Us
-            </a>
-          </Link>
+        <button
+          className="px-3 py-2 text-base hidden md:block"
+          onClick={() =>
+            window.open(
+              "https://www.lsesu.com/communities/societies/group/big/",
+              "_blank",
+              "noopener,noreferrer"
+            )
+          }
+        >
+          Join Us
         </button>
         <Menu setScroll={setScroll} />
       </div>
@@ -179,9 +184,18 @@ const Header = () => {
           <p className="text-center text-lg mm:text-2xl mm:mt-3">
             Europe's premier finance and business society
           </p>
-          <Link href="https://www.lsesu.com/communities/societies/group/big/">
-            <button className="px-8 py-4 text-xl mt-3">BECOME A MEMBER</button>
-          </Link>
+          <button
+            className="px-8 py-4 text-xl mt-3"
+            onClick={() =>
+              window.open(
+                "https://www.lsesu.com/communities/societies/group/big/",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            BECOME A MEMBER
+          </button>
         </div>
       </header>
       <div className="mt-52 md:hidden flex flex-col items-center text-background rounded-t-lg py-7 px-10 bg-white">
@@ -196,11 +210,18 @@ const Header = () => {
         <p className="text-center text-lg mm:text-2xl mm:mt-3">
           Europe's premier finance and business society
         </p>
-        <Link href="https://www.lsesu.com/communities/societies/group/big/">
-          <button className="px-3 py-2 text-lg mm:px-5 mm:py-4 mm:text-xl mt-3">
-            BECOME A MEMBER
-          </button>
-        </Link>
+        <button
+          className="px-3 py-2 text-lg mm:px-5 mm:py-4 mm:text-xl mt-3"
+          onClick={() =>
+            window.open(
+              "https://www.lsesu.com/communities/societies/group/big/",
+              "_blank",
+              "noopener,noreferrer"
+            )
+          }
+        >
+          BECOME A MEMBER
+        </button>
       </div>
     </>
   );
