@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import MediaLogo from "./MediaLogo";
 import { SponsorInterface } from "@/Types";
@@ -31,11 +30,14 @@ const Sponsors = ({ sponsors }: { sponsors: SponsorInterface[] }) => {
           ))}
         </div>
         <div className="text-center text-lg mm:text-2xl mt-8">
-          <Link href="mailto:business-investment@lsesu.org">
-            <div className="bg-background text-white px-5 py-2 w-max mx-auto rounded-lg mt-10 text-wrap min-w-screen">
-              Partner with us
-            </div>
-          </Link>
+          <a
+            href="https://forms.gle/4JEGKmTsBruYHAP86"
+            className="bg-background text-white px-5 py-2 w-max mx-auto rounded-lg mt-10 text-wrap min-w-screen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Partner with us
+          </a>
         </div>
       </div>
     </motion.section>
