@@ -6,7 +6,7 @@ import YearDropdown from "@/Components/YearDropdown";
 import Football from "@/Components/Football";
 import { useState } from "react";
 import Image from "next/image";
-import aboutUsImage from "../../../public/about_us.jpg";
+import aboutUsImage from "../../../public/about_us.jpeg";
 import { Navbar } from "@/Components";
 
 const AboutUs = () => {
