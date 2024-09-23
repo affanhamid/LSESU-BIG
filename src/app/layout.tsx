@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="w-screen overflow-x-hidden">
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.jpeg" />
       </head>
       <body className="bg-background w-screen overflow-x-hidden font-textFont">
         {/* <Navbar /> */}
