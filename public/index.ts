@@ -4,6 +4,7 @@ import eventsImage from "./events.jpg";
 import mentorshipImage from "./mentorship.jpg";
 import resourcesImage from "./resources.jpeg";
 import trackerImage from "./trackerImage.jpg";
+import loginImage from "./login.svg";
 
 export {
   homeImage,
@@ -12,4 +13,5 @@ export {
   mentorshipImage,
   resourcesImage,
   trackerImage,
+  loginImage,
 };

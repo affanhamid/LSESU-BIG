@@ -16,6 +16,7 @@ import {
   Gallery,
   Sponsors,
   MembershipBenefits,
+  Footer,
 } from "@/Components";
 
 export default function Home() {
@@ -81,6 +82,7 @@ export default function Home() {
         </div>
       </section>
       <Gallery events={gallery.events} />
+      <Footer />
     </main>
   );
 }

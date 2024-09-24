@@ -3,7 +3,7 @@ import Link from "next/link";
 import { EventInterface } from "@/Types";
 import Image from "next/image";
 import eventsImage from "../../../public/events.jpg";
-import { Navbar } from "@/Components";
+import { Footer, Navbar } from "@/Components";
 
 const UpcomingEvent = ({ event }: { event: EventInterface }) => {
   return (
@@ -62,6 +62,7 @@ const Events = async () => {
         </div>
       </section>
       <PastEvents />
+      <Footer />
     </main>
   );
 };

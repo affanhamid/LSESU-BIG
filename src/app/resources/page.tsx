@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "@/Components";
+import { Footer, Navbar } from "@/Components";
 import Image from "next/image";
 import resourcesImage from "../../../public/resources.jpeg";
 import Resource from "./Resource";
@@ -29,9 +29,9 @@ const Resources = () => {
             }
             thumbnail="https://utfs.io/f/2JsPsN0kG4dU9VQdwcA3W7i1mOzhEvuNlAg2w3qUxLCXodBa"
           />
-          <Resource 
-            link={"https://lyrical-twig-2ac.notion.site/I-Got-Nine-Spring-Week-Internship-Offers-Here-s-How-You-Can-Too-ab6d515020dc4a14818c6f6cc2e827b8"
-
+          <Resource
+            link={
+              "https://lyrical-twig-2ac.notion.site/I-Got-Nine-Spring-Week-Internship-Offers-Here-s-How-You-Can-Too-ab6d515020dc4a14818c6f6cc2e827b8"
             }
             thumbnail="https://utfs.io/f/2JsPsN0kG4dUvh2OR6AwRUnV7IM5Wq9YxNftpyAX36QdlHzL"
           />
@@ -43,6 +43,7 @@ const Resources = () => {
           />
         </div>
       </section>
+      <Footer />
     </main>
   );
 };

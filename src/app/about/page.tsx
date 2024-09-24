@@ -7,7 +7,7 @@ import Football from "@/Components/Football";
 import { useState } from "react";
 import Image from "next/image";
 import aboutUsImage from "../../../public/about_us.jpeg";
-import { Navbar } from "@/Components";
+import { Footer, Navbar } from "@/Components";
 
 const AboutUs = () => {
   const [year, setYear] = useState("2024/25");
@@ -64,6 +64,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };
