@@ -1,4 +1,166 @@
 {
+  "2021/22": {
+    "pattern": [3, 3, 2],
+    "executiveMembers": [
+      {
+        "name": "David Summers",
+        "role": "President",
+        "linkedin": "https://www.linkedin.com/in/david-summers-",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOrfIEOCwUNoCes8KPRvQXOdAxagIk7nbHDpFZ"
+      },
+      {
+        "name": "Charlotte Yan",
+        "role": "Secretary",
+        "linkedin": "https://www.linkedin.com/in/charlottesiyuanyan/",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOFbgzimepW5TLtmXbG7zPRfwsxalQJ4Hie23o"
+      },
+      {
+        "name": "Joshua Mosh",
+        "role": "Chair",
+        "linkedin": "https://www.linkedin.com/in/josh-moss/",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOr2vV5BwUNoCes8KPRvQXOdAxagIk7nbHDpFZ"
+      },
+      {
+        "name": "Viraj Mehta",
+        "role": "Treasurer",
+        "linkedin": "https://www.linkedin.com/in/virajm1",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bO4DLeZcqNfzoruY6JnyphD8O9UGcj3Q051sbX"
+      },
+      {
+        "name": "Luke Han",
+        "role": "Chair",
+        "linkedin": "https://www.linkedin.com/in/luke-han-03/",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOvvoFxguJgST140kaB5oVEtr2hdUZXwF6pjKx"
+      },
+      {
+        "name": "Archie Bowman",
+        "role": "Head of BIG Conversations",
+        "linkedin": "https://www.linkedin.com/in/archie-bowman-14b36a134",
+        "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQHwJh4ZIjzCHQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721591559347?e=1731542400&v=beta&t=85Axx88_xbwKoXBbO64X0od6ihW6grzRZ3LizbV0XcA"
+      },
+      {
+        "name": " Giulia Tesoro",
+        "role": "Head of External Relations",
+        "linkedin": "https://www.linkedin.com/in/giulia-tesoro-860395199/",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOlTeNklXRST2pd9YfwZzgEcDomVOjJrhMbHku"
+      },
+
+      {
+        "name": "Maggie Ma",
+        "role": "Head of Corporate Relations",
+        "linkedin": "https://www.linkedin.com/in/maggie-ma-312a021ba",
+        "imageLink": "https://utfs.io/f/P5zDMjQIG1bOZGZYXxgz3nRSOaGuBPKFxYAfVrme0oHj1El4"
+      }
+    ],
+    "heads": {
+      "Banking & Markets": [
+        {
+          "name": "Eden Yang Yu Hao",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/edenyang",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bO85GNO2xcF7fmolIDbU4Viph1k2tEgvyRd3Sn"
+        },
+        {
+          "name": "Aisha Kainarbekova",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/aisha-kainarbekova",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOq7diKLZsYHQ1zJnyhLWSNMwUEptBGugam4Z3"
+        }
+      ],
+      "Alternatives": [
+        {
+          "name": "Aarushi Rath ",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/aarushirath",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOzZEX6AMsWySeZ3Gmq5azwT9E4b7UY2R1VHBt"
+        },
+        {
+          "name": "Yash Tibrewal",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/yashtibrewall",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOXFG0jR4OMC5JqFHiSmfWRKG8p0eoBcDkOVvd"
+        }
+      ],
+      "Mentorship": [
+        {
+          "name": "Derome Robinson",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/deromerobinson",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOl5mPVQXRST2pd9YfwZzgEcDomVOjJrhMbHku"
+        },
+        {
+          "name": "Fardeen Iqbal",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/fardeen-iqbal",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOzows5jnMsWySeZ3Gmq5azwT9E4b7UY2R1VHB"
+        }
+      ],
+      "Consulting": [
+        {
+          "name": "Manas Goyal",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/goyalmanas",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOtTQmSaPX2k70YWZ1PTE5rsyiFaxIubVJpfjl"
+        },
+        {
+          "name": "Vanalika Talati",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/vanalika-talati",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOVk7ZV49LjxeMVXn2OUhPQms5oYzRafidNpEA"
+        }
+      ],
+      "Entrepreneurship & Tech": [
+        {
+          "name": "Akber Tahir",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/akber-tahir-pharmovo",
+          "imageLink": ""
+        },
+        {
+          "name": "Andrei Vizreanu",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/andrei-vizireanu",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOOpzbMPYSxHY34lzXkNIJDaoEqw6cpStLMr7V"
+        }
+      ],
+      "Marketing": [
+        {
+          "name": "Carmen Lau",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/carmen-lau12",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bO9TpoeR8EvAH2BwEhlOxqdaf4T9RtXc3k0VzU"
+        },
+        {
+          "name": "Twinkle Bhawani",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/twinkle-bhawani-b90232198",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOxzpLDutwvElYhFzANWOZ9q570oPSjQyRX1uV"
+        }
+      ],
+      "Advanced Comittee": [
+        {
+          "name": "Zina Samawi",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/zinasamawi",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bODHuuLp7N3iD8LEYCHRVIqenXKdSh05QfNWOa"
+        },
+        {
+          "name": "Alexandra Kovachka",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/alexandra-k-5795851a5",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOUgiAAHnncWl0yFRQJYDkea9vBqKMxLV3izgX"
+        }
+      ],
+      "Technology": [
+        {
+          "name": "Jayan Menezes-Jackson",
+          "role": "",
+          "linkedin": "https://www.linkedin.com/in/jayan-m-jackson",
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOSR7KRoFhANyE89sF37WrzQPRvtKicldmHDZw"
+        }
+      ]
+    }
+  },
   "2022/23": {
     "pattern": [3, 3, 2],
     "executiveMembers": [
@@ -543,20 +705,20 @@
           "role": "Mentorship"
         }
       ],
-      "Technology": [
+      "Law": [
         {
           "email": "",
-          "imageLink": "https://utfs.io/f/2JsPsN0kG4dUu9i4U0IekT9dDA7vcl2KR8N6ZGbLjUizs3By",
-          "linkedin": "https://www.linkedin.com/in/affan-hamid/",
-          "name": "Affan Hamid",
-          "role": "Technology"
+          "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQGo_ti3o619Yg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701204486627?e=1730332800&v=beta&t=4jyI1qb3DlDkahswZpm1OMOVDdoFaBQlKkd9zvkIYYA",
+          "linkedin": "https://www.linkedin.com/in/iliana-fragkiadaki-b9288a224/?originalSubdomain=uk",
+          "name": "Iliana F. ",
+          "role": "Law"
         },
         {
           "email": "",
-          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGIEUNdFNJ4Vg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723508982989?e=1729123200&v=beta&t=jYwQGxLGzSPApgBn8IpJH3svNzIsjEln88Pc7c5dfkQ",
-          "linkedin": "https://www.linkedin.com/in/varmisan-thivagharen/",
-          "name": "Varmisan T.",
-          "role": "Technology"
+          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOF9SfSKpW5TLtmXbG7zPRfwsxalQJ4Hie23oB",
+          "linkedin": "https://www.linkedin.com/in/vyoma-upadhyaya-75601024a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk",
+          "name": "Vyoma U.",
+          "role": "Law"
         }
       ],
       "Entrepreneurship": [
@@ -623,20 +785,20 @@
           "role": "Consulting"
         }
       ],
-      "Law": [
+      "Technology": [
         {
           "email": "",
-          "imageLink": "https://media.licdn.com/dms/image/v2/D5603AQGo_ti3o619Yg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701204486627?e=1730332800&v=beta&t=4jyI1qb3DlDkahswZpm1OMOVDdoFaBQlKkd9zvkIYYA",
-          "linkedin": "https://www.linkedin.com/in/iliana-fragkiadaki-b9288a224/?originalSubdomain=uk",
-          "name": "Iliana F. ",
-          "role": "Law"
+          "imageLink": "https://utfs.io/f/2JsPsN0kG4dUu9i4U0IekT9dDA7vcl2KR8N6ZGbLjUizs3By",
+          "linkedin": "https://www.linkedin.com/in/affan-hamid/",
+          "name": "Affan Hamid",
+          "role": "Technology"
         },
         {
           "email": "",
-          "imageLink": "https://utfs.io/f/P5zDMjQIG1bOF9SfSKpW5TLtmXbG7zPRfwsxalQJ4Hie23oB",
-          "linkedin": "https://www.linkedin.com/in/vyoma-upadhyaya-75601024a/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk",
-          "name": "Vyoma U.",
-          "role": "Law"
+          "imageLink": "https://media.licdn.com/dms/image/v2/D4E03AQGIEUNdFNJ4Vg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723508982989?e=1729123200&v=beta&t=jYwQGxLGzSPApgBn8IpJH3svNzIsjEln88Pc7c5dfkQ",
+          "linkedin": "https://www.linkedin.com/in/varmisan-thivagharen/",
+          "name": "Varmisan T.",
+          "role": "Technology"
         }
       ]
     }

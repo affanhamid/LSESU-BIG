@@ -44,12 +44,13 @@ const YearDropdown = ({
 
       <ul
         className={`origin-top-right absolute top-full right-0 mt-2 w-full rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none transition-all duration-200 ease-out overflow-hidden ${
-          open ? "h-[180px]" : "h-0"
+          open ? "h-[240px]" : "h-0"
         }`}
       >
         <DropDownLi setYear={setYear} liYear="2024/25" setOpen={setOpen} />
         <DropDownLi setYear={setYear} liYear="2023/24" setOpen={setOpen} />
         <DropDownLi setYear={setYear} liYear="2022/23" setOpen={setOpen} />
+        <DropDownLi setYear={setYear} liYear="2021/22" setOpen={setOpen} />
       </ul>
     </div>
   );

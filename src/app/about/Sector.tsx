@@ -1,11 +1,11 @@
-  "use client";
+"use client";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 import { MemberType, SectorInterface } from "@/Types";
 
 const SectorMember = ({ imageLink, name, role, linkedin }: MemberType) => {
   return (
-    <div className="my-4 flex flex-col items-center rounded-lg overflow-hidden text-white text-center w-max break:w-48">
+    <div className="my-4 flex flex-col items-center rounded-lg text-white text-center w-max break:w-48">
       <img
         src={imageLink}
         alt={name}
