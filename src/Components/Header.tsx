@@ -94,7 +94,9 @@ const HeaderNavbar = ({
   const [navBackground, setNavBackground] = useState("transparent");
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.innerWidth < 700) {
+      if (window.innerWidth < 500) {
+        setNavBackground("background");
+      } else if (window.innerWidth < 700) {
         if (window.scrollY >= 200) {
           setNavBackground("background");
         } else {
@@ -151,7 +153,7 @@ const Header = () => {
     <>
       <HeaderNavbar setScroll={setScroll} />
       <div
-        className="absolute pt-0 w-screen h-max md:h-screen overflow-y-hidden flex flex-col transition-all duration-200 brightness-[70%]"
+        className="absolute pt-0 w-screen h-max md:h-screen overflow-y-hidden hidden break:flex flex-col transition-all duration-200 brightness-[70%]"
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >

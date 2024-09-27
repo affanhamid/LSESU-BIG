@@ -5,6 +5,7 @@ import { NumberInterface } from "@/Types";
 import mentorShipImage from "../../../public/mentorship.jpg";
 import Image from "next/image";
 import { Footer, Navbar } from "@/Components";
+import Link from "next/link";
 
 const Number = ({ text, icon, description }: NumberInterface) => {
   return (
@@ -47,29 +48,22 @@ const Mentorship = async () => {
           MENTORSHIP
         </h1>
       </header>
-      <header className="px-4 md:px-10 lg:px-20 xl:px-40 lg:pt-10 flex flex-col items-center pb-10 lg:pb-20 bg-white">
-        <h2 className="text-center text-xl my-5"></h2>
-        <div className="flex gap-5">
-          <a
+      <header className="px-4 md:px-10 lg:px-20 xl:px-40 lg:pt-10 flex flex-col items-center py-10 lg:pb-20 bg-white">
+        <div className="flex flex-col md:flex-row gap-5 ">
+          <Link
             href="https://forms.gle/8cPVdGQuLdW4xPbY6"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-max mx-auto"
           >
-            <button className="mt-4 px-6 py-4 w-max rounded border-2 border-black mx-auto">
-              Apply to be a mentee
-            </button>
-          </a>
-          <a
+            <button className="px-6 py-4">Apply to be a mentee</button>
+          </Link>
+          <Link
             href="https://forms.gle/S376x3JaD6XwaSJB8"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-max mx-auto"
           >
-            <button className="mt-4 px-6 py-4 w-max rounded border-2 border-black mx-auto">
-              Apply to be a mentor
-            </button>
-          </a>
+            <button className="px-6 py-4 ">Apply to be a mentor</button>
+          </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20 max-h-52 h-52 mb-96 md:mb-20 text-center">
           <Number
@@ -107,27 +101,21 @@ const Mentorship = async () => {
           With offers from more than 50 firms, they bring a wealth of knowledge
           and insight to support others in navigating this industry.
         </p>{" "}
-        <div className="flex gap-5">
-          <a
+        <div className="flex flex-col md:flex-row gap-5 items-center justify-center">
+          <Link
             href="https://forms.gle/8cPVdGQuLdW4xPbY6"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-max mx-auto"
           >
-            <button className="mt-6 px-6 py-4 w-max rounded border-2 border-black mx-auto">
-              Apply to be a mentee
-            </button>
-          </a>
-          <a
+            <button className="px-6 py-4">Apply to be a mentee</button>
+          </Link>
+          <Link
             href="https://forms.gle/S376x3JaD6XwaSJB8"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-max mx-auto"
           >
-            <button className="mt-6 px-6 py-4 w-max rounded border-2 border-black mx-auto">
-              Apply to be a mentor
-            </button>
-          </a>
+            <button className="px-6 py-4 ">Apply to be a mentor</button>
+          </Link>
         </div>
         {/* <MentorShowcase mentors={mentors} /> */}
       </section>

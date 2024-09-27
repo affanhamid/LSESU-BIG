@@ -68,8 +68,12 @@ const Navbar = () => {
   const [navBackground, setNavBackground] = useState("transparent");
 
   useEffect(() => {
+    if (window.innerWidth < 500) {
+      setNavBackground("background");
+    }
     const toggleVisibility = () => {
-      if (window.innerWidth < 700) {
+      if (window.innerWidth < 500) {
+      } else if (window.innerWidth < 700) {
         if (window.scrollY >= 200) {
           setNavBackground("background");
         } else {

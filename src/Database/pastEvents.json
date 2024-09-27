@@ -206,18 +206,6 @@
     },
     {
       "Month": "Mar",
-      "Day": 7,
-      "Year": 2023,
-      "Title": "Head Economist, Goldman Sachs",
-      "Link": "https://www.instagram.com/p/C3vb-C9Nx1p/?hl=en",
-      "ImageLink": "https://utfs.io/f/828b990d-fc26-4c02-9149-22998ded6001-19l2he.jpg",
-      "Speakers": "Peter Oppenheimer",
-      "Firm": "Goldman Sachs",
-      "Position": "",
-      "Industry/Field": null
-    },
-    {
-      "Month": "Mar",
       "Day": 14,
       "Year": 2023,
       "Title": "Global Head of ESG Capital Markets & Advisory, Deutsche Bank",
@@ -757,6 +745,18 @@
       "Firm": "Macquarie",
       "Position": "",
       "Industry/Field": ""
+    },
+    {
+      "Month": "Mar",
+      "Day": 7,
+      "Year": 2024,
+      "Title": "Head Economist, Goldman Sachs",
+      "Link": "https://www.instagram.com/p/C3vb-C9Nx1p/?hl=en",
+      "ImageLink": "https://utfs.io/f/828b990d-fc26-4c02-9149-22998ded6001-19l2he.jpg",
+      "Speakers": "Peter Oppenheimer",
+      "Firm": "Goldman Sachs",
+      "Position": "",
+      "Industry/Field": null
     },
     {
       "Month": "Mar",

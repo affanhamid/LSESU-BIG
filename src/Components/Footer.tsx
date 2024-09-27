@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="text-center lg:text-left">
           <h3 className="text-lg font-bold mb-4">Contact Us</h3>
           <div className="mb-5">
-            <p>LSE Student Union</p>
+            <p>LSE Students' Union</p>
             <p>Houghton Street</p>
             <p>London</p>
             <p>WC2A 2AE</p>
