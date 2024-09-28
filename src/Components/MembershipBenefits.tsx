@@ -6,6 +6,7 @@ import {
   FaChalkboardTeacher,
 } from "react-icons/fa";
 import { BenefitInterface } from "@/Types";
+import Link from "next/link";
 
 const Benefit = ({ title, description, icon }: BenefitInterface) => {
   return (
@@ -64,9 +65,11 @@ const MembershipBenefits = () => {
         <p className="text-xl px-5 ml:px-0">
           If you want to learn more about membership benefits, get in touch
         </p>
-        <button className="mt-4 px-4 py-2 rounded border-2 border-white">
-          Get In Touch
-        </button>
+        <Link href="mailto:business-investment@lsesu.org">
+          <button className="mt-4 px-4 py-2 rounded border-2 border-white">
+            Get In Touch
+          </button>
+        </Link>
       </div>
     </section>
   );
