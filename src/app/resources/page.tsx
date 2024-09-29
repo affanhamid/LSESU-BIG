@@ -20,20 +20,14 @@ const Resources = () => {
       </header>
       <section className="py-16 bg-white flex flex-col items-center justify-center">
         <p className="text-2xl mb-10 px-96 text-center">
-          Find our industry-leading resource packs below
+          Find our industry-leading resource packs below ( More to come soon! )
         </p>
         <div className="grid grid-cols-3">
           <Resource
             link={
-              "https://drive.google.com/file/d/1jRi64iy4rxNJGVBr14gOYgQYJG_Lc3jq/view"
+              "https://utfs.io/f/2JsPsN0kG4dUOi59vnh5ZHjPUWw0N97KzyleQfmGRcCFEvXr"
             }
-            thumbnail="https://utfs.io/f/2JsPsN0kG4dU9VQdwcA3W7i1mOzhEvuNlAg2w3qUxLCXodBa"
-          />
-          <Resource
-            link={
-              "https://lyrical-twig-2ac.notion.site/I-Got-Nine-Spring-Week-Internship-Offers-Here-s-How-You-Can-Too-ab6d515020dc4a14818c6f6cc2e827b8"
-            }
-            thumbnail="https://utfs.io/f/2JsPsN0kG4dUvh2OR6AwRUnV7IM5Wq9YxNftpyAX36QdlHzL"
+            thumbnail="https://utfs.io/f/2JsPsN0kG4dUNk99Rjoy9s7WdzcfkhqYZ6iSbgAPtL1FlMUa"
           />
           <Resource
             link={
