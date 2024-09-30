@@ -13,9 +13,13 @@ const Resource = ({ link, thumbnail }: ResourceInterface) => {
         <div className="flex flex-col items-center justify-center w-max rounded-xl overflow-hidden border-4 border-black gap-4 mx-10 my-10 hover:scale-105 transition-all duration-100">
           <div>
             {thumbnail ? (
-              <img src={thumbnail} className="w-[400px] aspect-[4/5]" alt="Resource Thumbnail" />
+              <img
+                src={thumbnail}
+                className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"
+                alt="Resource Thumbnail"
+              />
             ) : (
-              <div className="bg-gray-700 w-[400px] aspect-[4/5]"></div>
+              <div className="bg-gray-700 w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"></div>
             )}
           </div>
         </div>

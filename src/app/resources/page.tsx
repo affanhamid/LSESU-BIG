@@ -20,20 +20,16 @@ const Resources = () => {
       </header>
       <section className="py-16 bg-white flex flex-col items-center justify-center">
         <p className="text-2xl mb-10 px-4 sm:px-96 text-center">
-          Find our industry-leading resource packs below ( More to come soon! )
+          Find our industry-leading resource packs below (More to come soon!)
         </p>
-        <div className="w-full overflow-x-scroll sm:overflow-auto">
-          <div className="flex sm:grid sm:grid-cols-3 gap-4 sm:gap-0 whitespace-nowrap sm:whitespace-normal">
+        <div className="w-full flex justify-center">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <Resource
-              link={
-                "https://utfs.io/f/2JsPsN0kG4dUOi59vnh5ZHjPUWw0N97KzyleQfmGRcCFEvXr"
-              }
+              link="https://utfs.io/f/2JsPsN0kG4dUOi59vnh5ZHjPUWw0N97KzyleQfmGRcCFEvXr"
               thumbnail="https://utfs.io/f/2JsPsN0kG4dUNk99Rjoy9s7WdzcfkhqYZ6iSbgAPtL1FlMUa"
             />
             <Resource
-              link={
-                "https://drive.google.com/file/d/1JW-xAENoNT0THhmuP-SyW4CLAIi--is0/view"
-              }
+              link="https://drive.google.com/file/d/1JW-xAENoNT0THhmuP-SyW4CLAIi--is0/view"
               thumbnail="https://utfs.io/f/2JsPsN0kG4dUE6WK3wR2ENeIDxX4bQRMCta3qGyfKuPJj09g"
             />
           </div>
