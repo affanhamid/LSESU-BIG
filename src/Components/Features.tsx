@@ -36,7 +36,7 @@ const FeatureItem = ({
 }) => {
   return (
     <motion.div
-      className={`bg-background text-white md:h-[44vh] xl:h-[50vh] border w-full ${
+      className={`bg-background text-white md:h-[65vh] lg:h-[55vh] xl:h-[50vh] border w-full ${
         selectedFeature === idx
           ? "md:w-[400px] lg:w-[500px] xl:w-[570px]"
           : "md:w-[11vw] lg:w-28 xl:w-32"
@@ -49,7 +49,7 @@ const FeatureItem = ({
       <div className={`${selectedFeature === idx ? "block" : "hidden"} p-10`}>
         <div className="text-4xl mb-4">{icon}</div>
         <h2 className="text-3xl font-bold mb-5">{title}</h2>
-        <p className="text-xl">{text}</p>
+        <p className="text-base ml:text-lg md:text-xl">{text}</p>
       </div>
       <div
         className={`w-full h-full flex justify-center items-center ${
