@@ -27,7 +27,7 @@ const Menu = () => {
   return (
     <aside>
       <div
-        className={`absolute overflow-hidden bg-background top-0 h-screen right-0 transition-all duration-200 py-32 ${
+        className={`absolute overflow-hidden bg-background top-0 h-screen right-0 transition-all duration-200 pt-32 ${
           openMenu ? "w-screen lg:w-[500px]" : "w-0"
         }`}
       >
@@ -35,7 +35,7 @@ const Menu = () => {
           onClick={() => setOpenMenu(false)}
           className="absolute right-20 top-16 text-5xl text-red-700 cursor-pointer"
         />
-        <ul className="text-white flex flex-col justify-center text-m duration-200 ">
+        <ul className="text-white grid grid-rows-6 w-full h-full duration-200 ">
           <MenuList href="/" name="Home" setOpenMenu={setOpenMenu} />
           <MenuList href="/about" name="About Us" setOpenMenu={setOpenMenu} />
           <MenuList href="/events" name="Events" setOpenMenu={setOpenMenu} />
