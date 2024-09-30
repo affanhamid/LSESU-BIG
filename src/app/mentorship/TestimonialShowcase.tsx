@@ -10,7 +10,7 @@ const Testimony = ({ description }: TestimonialInterface) => {
       
       {/* Testimonial author */}
       <div className="flex items-center gap-1 mt-4">
-        <h2 className="text-lg text-right">Anonymous</h2>
+        <h2 className="text-lg text-right"></h2>
       </div>
       
       {/* Quote icon */}
