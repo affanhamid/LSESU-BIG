@@ -33,7 +33,7 @@ const MenuList = ({
     <Link
       href={href}
       onClick={() => setTimeout(() => setOpenMenu(false), 400)}
-      className="px-20 py-7 md:py-10 hover:bg-white hover:text-background font-bold"
+      className="px-20 py-10 hover:bg-white hover:text-background font-bold"
       onMouseEnter={() => setScroll(idx)}
     >
       {name}
@@ -50,7 +50,7 @@ const Menu = ({
   return (
     <aside>
       <div
-        className={`absolute overflow-hidden bg-background top-0 h-screen right-0 transition-all duration-200 py-32 ${
+        className={`absolute overflow-x-hidden overflow-y-scroll bg-background top-0 h-screen right-0 transition-all duration-200 py-32 ${
           openMenu ? "w-screen lg:w-[500px]" : "w-0"
         }`}
       >
@@ -58,7 +58,7 @@ const Menu = ({
           onClick={() => setOpenMenu(false)}
           className="absolute right-20 top-16 text-5xl text-red-700 cursor-pointer"
         />
-        <ul className="text-white flex flex-col justify-center text-m duration-200 ">
+        <ul className="text-white flex flex-col justify-between text-m duration-200 ">
           {[
             ["/", "Home"],
             ["/about", "About Us"],
@@ -115,7 +115,7 @@ const HeaderNavbar = ({
   }, []);
   return (
     <div
-      className={`w-full z-40 fixed justify-between top-0 text-fontColor bg-${navBackground} flex flex-col md:flex-row py-10 px-20 items-center z-30`}
+      className={`w-full z-40 fixed justify-between top-0 text-fontColor bg-${navBackground} flex flex-col md:flex-row py-7 xl:py-10 px-20 items-center z-30`}
     >
       <Logo />
       <div className="flex gap-4 items-center text-4xl">
