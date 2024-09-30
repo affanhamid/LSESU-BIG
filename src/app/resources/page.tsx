@@ -22,7 +22,7 @@ const Resources = () => {
       </header>
       <section className="py-16 bg-white flex flex-col items-center justify-center">
         <p className="text-2xl mb-10 px-4 sm:px-96 text-center">
-          Find our industry-leading resource packs below ( More to come soon! )
+          Find our industry-leading resource packs below (More to come soon!)
         </p>
         <div className="w-full overflow-x-scroll sm:overflow-auto">
           <div className="flex flex-col items-center md:grid-cols-2 md:grid lg:grid-cols-3 md:gap-4 whitespace-nowrap sm:whitespace-normal">
