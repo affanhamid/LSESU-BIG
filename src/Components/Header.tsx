@@ -33,7 +33,7 @@ const MenuList = ({
     <Link
       href={href}
       onClick={() => setTimeout(() => setOpenMenu(false), 400)}
-      className="px-20 py-10 hover:bg-white hover:text-background font-bold"
+      className="px-20 py-5 lg:py-7 xl:py-10 hover:bg-white hover:text-background font-bold text-4xl 2xl:text-4xl"
       onMouseEnter={() => setScroll(idx)}
     >
       {name}
