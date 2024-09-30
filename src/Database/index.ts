@@ -5,5 +5,15 @@ import speakers from "./speakers.json";
 import sponsors from "./sponsors.json";
 import team from "./team.json";
 import testimonials from "./testimonials.json";
+import resources from "./resources.json";
 
-export { gallery, logos, pastEvents, speakers, sponsors, team, testimonials };
+export {
+  gallery,
+  logos,
+  pastEvents,
+  speakers,
+  sponsors,
+  team,
+  testimonials,
+  resources,
+};

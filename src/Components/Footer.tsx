@@ -56,7 +56,9 @@ const Footer = () => {
             <p>WC2A 2AE</p>
           </div>
           <p>Email: business-investment@lsesu.org</p>
-          <Socials />
+          <div className="w-full flex justify-center">
+            <Socials />
+          </div>
         </div>
       </div>
       <div className="mt-8 border-t border-gray-700 pt-4 text-center">

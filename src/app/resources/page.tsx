@@ -3,6 +3,8 @@ import { Footer, Navbar } from "@/Components";
 import Image from "next/image";
 import resourcesImage from "../../../public/resources.jpeg";
 import Resource from "./Resource";
+import { resources } from "../../Database";
+import { ResourceInterface } from "@/Types";
 
 const Resources = () => {
   return (
@@ -23,19 +25,18 @@ const Resources = () => {
           Find our industry-leading resource packs below ( More to come soon! )
         </p>
         <div className="w-full overflow-x-scroll sm:overflow-auto">
-          <div className="flex sm:grid sm:grid-cols-3 gap-4 sm:gap-0 whitespace-nowrap sm:whitespace-normal">
-            <Resource
-              link={
-                "https://utfs.io/f/2JsPsN0kG4dUOi59vnh5ZHjPUWw0N97KzyleQfmGRcCFEvXr"
+          <div className="flex flex-col items-center md:grid-cols-2 md:grid lg:grid-cols-3 md:gap-4 whitespace-nowrap sm:whitespace-normal">
+            {(resources as { resources: ResourceInterface[] }).resources.map(
+              (resource, index) => {
+                return (
+                  <Resource
+                    key={index}
+                    link={resource.link}
+                    thumbnail={resource.thumbnail}
+                  />
+                );
               }
-              thumbnail="https://utfs.io/f/2JsPsN0kG4dUNk99Rjoy9s7WdzcfkhqYZ6iSbgAPtL1FlMUa"
-            />
-            <Resource
-              link={
-                "https://drive.google.com/file/d/1JW-xAENoNT0THhmuP-SyW4CLAIi--is0/view"
-              }
-              thumbnail="https://utfs.io/f/2JsPsN0kG4dUE6WK3wR2ENeIDxX4bQRMCta3qGyfKuPJj09g"
-            />
+            )}
           </div>
         </div>
       </section>

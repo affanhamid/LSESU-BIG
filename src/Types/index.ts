@@ -46,6 +46,11 @@ export type CarouselProps<T> = {
   speed?: number;
 };
 
+export interface ResourceInterface {
+  link: string;
+  thumbnail: string;
+}
+
 export interface MentorInterface {
   name: string;
   imageLink: string;
