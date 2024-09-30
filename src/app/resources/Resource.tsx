@@ -15,11 +15,11 @@ const Resource = ({ link, thumbnail }: ResourceInterface) => {
             {thumbnail ? (
               <img
                 src={thumbnail}
-                className="w-[300px] ml:w-[400px] aspect-[4/5]"
+                className="w-[230px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"
                 alt="Resource Thumbnail"
               />
             ) : (
-              <div className="bg-gray-700 w-[300px] ml:w-[400px] aspect-[4/5]"></div>
+              <div className="bg-gray-700 w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"></div>
             )}
           </div>
         </div>
