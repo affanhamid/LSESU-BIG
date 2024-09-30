@@ -50,7 +50,7 @@ const Menu = ({
   return (
     <aside>
       <div
-        className={`absolute overflow-x-hidden overflow-y-scroll bg-background top-0 h-screen right-0 transition-all duration-200 py-32 ${
+        className={`absolute overflow-x-hidden overflow-y-scroll xl:overflow-y-hidden bg-background top-0 h-screen right-0 transition-all duration-200 py-32 ${
           openMenu ? "w-screen lg:w-[500px]" : "w-0"
         }`}
       >
