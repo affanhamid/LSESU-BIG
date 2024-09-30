@@ -24,8 +24,8 @@ const Resources = () => {
         <p className="text-2xl mb-10 px-4 sm:px-96 text-center">
           Find our industry-leading resource packs below (More to come soon!)
         </p>
-        <div className="w-full overflow-x-scroll sm:overflow-auto">
-          <div className="flex flex-col items-center md:grid-cols-2 md:grid lg:grid-cols-3 md:gap-4 whitespace-nowrap sm:whitespace-normal">
+        <div className="w-full px-4 max-w-7xl mx-auto"> {/* max-w-7xl added */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6"> {/* Reduced gap */}
             {(resources as { resources: ResourceInterface[] }).resources.map(
               (resource, index) => {
                 return (
