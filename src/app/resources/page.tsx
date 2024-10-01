@@ -22,7 +22,7 @@ const Resources = () => {
       </header>
       <section className="py-16 bg-white flex flex-col items-center justify-center">
         <p className="text-2xl mb-10 px-4 sm:px-96 text-center">
-          Find our industry-leading resource packs below (More to come soon!)
+          Find our industry-leading resource packs below (More to come soon!!)
         </p>
         <div className="w-full px-4 max-w-7xl mx-auto"> {/* max-w-7xl added */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6"> {/* Reduced gap */}
