@@ -49,6 +49,12 @@ export type CarouselProps<T> = {
 export interface ResourceInterface {
   link: string;
   thumbnail: string;
+  name: string;
+  category: string;
+}
+
+export interface ResourcesInterface {
+  resources: ResourceInterface[];
 }
 
 export interface MentorInterface {

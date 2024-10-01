@@ -2,7 +2,7 @@
 "use client";
 import { Sector } from "@/app/about/Sector";
 import { team } from "@/Database";
-import YearDropdown from "@/Components/YearDropdown";
+import Dropdown from "@/Components/Dropdown";
 import Football from "@/Components/Football";
 import { useState } from "react";
 import Image from "next/image";
@@ -32,7 +32,11 @@ const AboutUs = () => {
             Executive Committee
           </h2>
           <div className="">
-            <YearDropdown year={year} setYear={setYear} />
+            <Dropdown
+              state={year}
+              setState={setYear}
+              options={["2024/25", "2023/24", "2022/23", "2021/22"]}
+            />
           </div>
         </div>
 
