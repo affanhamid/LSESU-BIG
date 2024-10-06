@@ -4,17 +4,21 @@ import Image from "next/image";
 import logo from "../../../public/logo.png";
 import Link from "next/link";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { Navbar } from "@/Components";
 
 const Login = () => {
   const { data: session } = useSession();
 
   return (
     <main className="w-screen h-screen flex flex-col md:flex-row justify-between overlflow-hidden bg-background md:bg-[url('/login.svg')] bg-no-repeat bg-center bg-cover">
-      <section className="pb-20 md:h-full w-full md:w-[40vw] flex justify-center items-center bg-background">
+      <section className="hidden md:flex pb-20 md:h-full w-full md:w-[40vw] justify-center items-center bg-background">
         <div className="w-[200px] mm:w-[300px] h-max">
           <Image src={logo} alt="LSE BIG" />
         </div>
       </section>
+      <div className="block md:hidden">
+        <Navbar />
+      </div>
       <section className="h-full w-full md:w-[50vw] py-40 flex items-center justify-center bg-white md:bg-transparent">
         <div className="md:px-52">
           <h1 className="text-3xl">Welcome to LSE BIG</h1>
