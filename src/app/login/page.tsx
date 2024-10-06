@@ -10,7 +10,7 @@ const Login = () => {
 
   return (
     <main className="w-screen h-screen flex flex-col md:flex-row justify-between overlflow-hidden bg-background md:bg-[url('/login.svg')] bg-no-repeat bg-center bg-cover">
-      <section className=" pb-20 md:h-full w-full md:w-[40vw] flex justify-center items-center bg-background">
+      <section className="pb-20 md:h-full w-full md:w-[40vw] flex justify-center items-center bg-background">
         <div className="w-[200px] mm:w-[300px] h-max">
           <Image src={logo} alt="LSE BIG" />
         </div>
