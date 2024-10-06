@@ -14,6 +14,8 @@ import {
 } from "../../public";
 import Image from "next/image";
 
+import Profile from "./Profile";
+
 type MenuListProps = {
   href: string;
   name: string;
@@ -133,6 +135,9 @@ const HeaderNavbar = ({
         >
           Join Us
         </button>
+        <div>
+          <Profile />
+        </div>
         <Menu setScroll={setScroll} />
       </div>
     </div>
@@ -147,6 +152,7 @@ const Header = () => {
     if (divRef.current) {
       divRef.current.scrollTop = window.innerHeight * scroll;
     }
+    console.log(status);
   }, [scroll]);
 
   return (

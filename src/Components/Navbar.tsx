@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
+import Profile from "./Profile";
 
 type MenuListProps = {
   href: string;
@@ -108,6 +109,9 @@ const Navbar = () => {
             </a>
           </Link>
         </button>
+        <div>
+          <Profile />
+        </div>
         <Menu />
       </div>
     </div>
