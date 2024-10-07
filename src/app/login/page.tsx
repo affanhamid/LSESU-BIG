@@ -29,7 +29,7 @@ const Login = () => {
           </h2>
           <div className="flex flex-col text-center">
             <button
-              onClick={() => (session ? signOut() : signIn("azure-ad"))}
+              onClick={() => (session ? signOut() : signIn())}
               className="mb-2"
             >
               {session ? "Sign out" : "Sign in"}
@@ -38,6 +38,7 @@ const Login = () => {
               Return to home page
             </Link>
           </div>
+          <div></div>
         </div>
       </section>
     </main>

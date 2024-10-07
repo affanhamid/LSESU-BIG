@@ -1,19 +1,15 @@
 import type { NextAuthOptions } from "next-auth";
 import { getServerSession } from "next-auth";
-import AzureADProvider from "next-auth/providers/azure-ad";
+import Auth0Provider from "next-auth/providers/auth0";
 
 const authOptions: NextAuthOptions = {
   providers: [
-    AzureADProvider({
-      clientId: process.env.AZURE_ID as string,
-      clientSecret: process.env.AZURE_SECRET as string,
-      tenantId: process.env.AZURE_TENANT_ID as string,
+    Auth0Provider({
+      clientId: process.env.AUTH0_CLIENT_ID as string,
+      clientSecret: process.env.AUTH0_CLIENT_SECRET as string,
+      issuer: process.env.AUTH0_ISSUER,
     }),
   ],
-  pages: {
-    signIn: "/login",
-    signOut: "/login",
-  },
 };
 
 const getSession = () => getServerSession(authOptions);
