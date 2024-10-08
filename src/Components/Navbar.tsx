@@ -15,7 +15,7 @@ const MenuList = ({ href, name, setOpenMenu }: MenuListProps) => {
   return (
     <Link
       href={href}
-      className="px-20 py-7 md:py-10 hover:bg-white hover:text-background font-bold"
+      className="px-20 py-7 md:py-10 hover:bg-white hover:text-background font-bold flex items-center"
       onClick={() => setOpenMenu(false)}
     >
       {name}
