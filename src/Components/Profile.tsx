@@ -5,7 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import Link from "next/link";
 
 const Profile = () => {
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
 
   return (
     <div className="group relative">
@@ -37,7 +37,9 @@ const Profile = () => {
         {session ? (
           <span>
             Signed in as{" "}
-            <span className="text-base">{session?.user?.name}</span>
+            <span className="text-base">
+              {session?.user?.name?.split(" ")[0] || session?.user?.name}
+            </span>
           </span>
         ) : (
           <span>Not Signed in</span>

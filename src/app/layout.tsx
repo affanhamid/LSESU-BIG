@@ -19,7 +19,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className="w-screen overflow-x-hidden">
       <head>
-        <link rel="icon" href="/logo.jpeg" />
+        <link rel="icon" href="/logo_icon.jpeg" sizes="any" />
       </head>
       <body className="bg-background w-screen overflow-x-hidden font-textFont">
         <Providers session={session}>

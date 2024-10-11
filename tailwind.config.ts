@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: ["class"],
   content: ["./src/Components/*.tsx", "./src/app/**/*.tsx"],
   theme: {
     screens: {
@@ -27,12 +28,20 @@ const config: Config = {
       },
       keyframes: {
         scroll: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-100%)" },
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(-100%)",
+          },
         },
         fadeIn: {
-          from: { opacity: "0.5" },
-          to: { opacity: "1" },
+          from: {
+            opacity: "0.5",
+          },
+          to: {
+            opacity: "1",
+          },
         },
       },
       animation: {
@@ -40,20 +49,13 @@ const config: Config = {
         fade: "fadeIn 1s ease-in-out",
         fadeHome: "fadeIn 1.5s ease-in-out",
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
     },
   },
-  plugins: [
-    function ({ addUtilities }: { addUtilities: any }) {
-      const newUtilities = {
-        ".clip-hexagon": {
-          "-webkit-clip-path":
-            "polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)",
-          "clip-path":
-            "polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%)",
-        },
-      };
-      addUtilities(newUtilities, ["responsive", "hover"]);
-    },
-  ],
+  plugins: [],
 };
 export default config;

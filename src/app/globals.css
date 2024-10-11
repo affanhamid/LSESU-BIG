@@ -23,4 +23,7 @@
   section {
     @apply pt-20 md:pt-32;
   }
+  :root {
+    --radius: 0.5rem
+  }
 }

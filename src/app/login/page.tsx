@@ -27,16 +27,16 @@ const Login = () => {
               ? `Signed in as ${session?.user?.email}`
               : "Sign in to access to BIG resources"}
           </h2>
-          <p className="text-center mb-2 text-red-500">
-            Currently, log in is disabled for maintenance
-          </p>
           <div className="flex flex-col text-center">
             <button
-              // onClick={() => (session ? signOut() : signIn())}
+              onClick={() => (session ? signOut() : signIn())}
               className="mb-2"
             >
               {session ? "Sign out" : "Sign in"}
             </button>
+            <Link href="/signup" className=" text-background ">
+              Don't have an account with BIG?
+            </Link>
             <Link href="/" className=" text-background ">
               Return to home page
             </Link>
