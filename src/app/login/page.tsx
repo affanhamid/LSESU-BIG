@@ -29,7 +29,7 @@ const Login = () => {
           </h2>
           <div className="flex flex-col text-center">
             <button
-              onClick={() => (session ? signOut() : signIn())}
+              onClick={() => (session ? signOut() : signIn("azure-ad"))}
               className="mb-2"
             >
               {session ? "Sign out" : "Sign in"}
