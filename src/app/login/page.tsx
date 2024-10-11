@@ -19,7 +19,7 @@ const Login = () => {
       <div className="block md:hidden">
         <Navbar />
       </div>
-      <section className="h-full w-full md:w-[50vw] py-40 flex items-center justify-center bg-white md:bg-transparent">
+      <section className="h-full w-full md:w-[60vw] lg:w-[50vw] py-40 flex items-center justify-center bg-white md:bg-transparent">
         <div className="md:px-52">
           <h1 className="text-3xl">Welcome to LSE BIG</h1>
           <h2 className="whitespace-nowrap text-lg md:text-3xl text-center mb-4">
