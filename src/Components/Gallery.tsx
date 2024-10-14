@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { GalleryEventInterface, GalleryPhotoInterface } from "@/Types";
+import { GalleryEventInterface, GalleryPhotoInterface } from "../Types";
 
 const Photo = ({ imageLink, title, link }: GalleryPhotoInterface) => {
   return (
@@ -21,12 +21,18 @@ const Photo = ({ imageLink, title, link }: GalleryPhotoInterface) => {
   );
 };
 
-const Gallery = ({ events }: { events: GalleryEventInterface[] }) => {
+const Gallery = ({
+  events,
+  scrollToggle,
+}: {
+  events: GalleryEventInterface[];
+  scrollToggle: number;
+}) => {
   const [scrollable, setScrollable] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const scroll = window.scrollY;
-      if (scroll > 5200) {
+      if (scroll > scrollToggle) {
         setScrollable(true);
       } else {
         setScrollable(false);
@@ -34,28 +40,23 @@ const Gallery = ({ events }: { events: GalleryEventInterface[] }) => {
     });
   }, []);
   return (
-    <main className="">
-      <section className="bg-white text-black border-b border-white mb-10">
-        <h1>Gallery</h1>
-        <div className="flex justify-center">
-          <div
-            className={`relative h-[75vh] ${
-              scrollable ? "overflow-y-scroll" : "overflow-y-hidden"
-            } w-full flex flex-wrap justify-center my-20`}
-          >
-            {events.map((event: GalleryEventInterface, idx: number) => (
-              <div className="flex-initial" key={idx}>
-                <Photo
-                  imageLink={event.imageLink}
-                  link={event.postLink}
-                  title={event.title}
-                />
-              </div>
-            ))}
+    <div className="flex justify-center">
+      <div
+        className={`relative h-[75vh] ${
+          scrollable ? "overflow-y-scroll" : "overflow-y-hidden"
+        } w-full flex flex-wrap justify-center my-20`}
+      >
+        {events.map((event: GalleryEventInterface, idx: number) => (
+          <div className="flex-initial" key={idx}>
+            <Photo
+              imageLink={event.imageLink}
+              link={event.postLink}
+              title={event.title}
+            />
           </div>
-        </div>
-      </section>
-    </main>
+        ))}
+      </div>
+    </div>
   );
 };
 

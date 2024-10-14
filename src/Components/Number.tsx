@@ -1,7 +1,7 @@
 "use client";
 import React, { CSSProperties } from "react";
 import { motion, Variants } from "framer-motion";
-import { NumberInterface } from "@/Types";
+import { NumberInterface } from "../Types";
 
 const cardVariants: Variants = {
   offscreen: {

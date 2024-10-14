@@ -5,7 +5,7 @@ import {
   FaUniversity,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import { BenefitInterface } from "@/Types";
+import { BenefitInterface } from "../Types";
 import Link from "next/link";
 
 const Benefit = ({ title, description, icon }: BenefitInterface) => {
@@ -63,14 +63,18 @@ const MembershipBenefits = () => {
       </div>
       <div className="text-center mt-20">
         <p className="text-xl px-5 ml:px-0">
-          If you want to learn more about membership benefits, get in touch via our Instagram page!
+          If you want to learn more about membership benefits, get in touch via
+          our Instagram page!
         </p>
-        <Link href="https://www.instagram.com/lsesubig/" target="_blank" rel="noopener noreferrer">
+        <Link
+          href="https://www.instagram.com/lsesubig/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="mt-4 px-4 py-2 rounded border-2 border-white">
             Get In Touch
-            </button>
-            </Link>
-
+          </button>
+        </Link>
       </div>
     </section>
   );

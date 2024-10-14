@@ -10,25 +10,39 @@ type MenuListProps = {
   href: string;
   name: string;
   setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
+  setScroll?: React.Dispatch<React.SetStateAction<number>>;
+  idx?: number;
 };
-const MenuList = ({ href, name, setOpenMenu }: MenuListProps) => {
+
+const MenuList = ({
+  href,
+  name,
+  setOpenMenu,
+  setScroll,
+  idx,
+}: MenuListProps) => {
   return (
     <Link
       href={href}
       className="px-20 py-7 md:py-10 hover:bg-white hover:text-background font-bold flex items-center"
       onClick={() => setOpenMenu(false)}
+      onMouseEnter={() => setScroll && idx && setScroll(idx)}
     >
       {name}
     </Link>
   );
 };
 
-const Menu = () => {
+const Menu = ({
+  setScroll,
+}: {
+  setScroll?: React.Dispatch<React.SetStateAction<number>>;
+}) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <aside>
       <div
-        className={`absolute overflow-hidden bg-background top-0 h-screen right-0 transition-all duration-200 pt-32 ${
+        className={`absolute overflow-x-hidden overflow-y-scroll bg-background top-0 h-screen right-0 transition-all duration-200 pt-32 ${
           openMenu ? "w-screen lg:w-[500px]" : "w-0"
         }`}
       >
@@ -37,24 +51,24 @@ const Menu = () => {
           className="absolute right-20 top-16 text-5xl text-red-700 cursor-pointer"
         />
         <ul className="text-white grid grid-rows-6 w-full h-full duration-200 ">
-          <MenuList href="/" name="Home" setOpenMenu={setOpenMenu} />
-          <MenuList href="/about" name="About Us" setOpenMenu={setOpenMenu} />
-          <MenuList href="/events" name="Events" setOpenMenu={setOpenMenu} />
-          <MenuList
-            href="/mentorship"
-            name="Mentorship"
-            setOpenMenu={setOpenMenu}
-          />
-          <MenuList
-            href="/resources"
-            name="Resources"
-            setOpenMenu={setOpenMenu}
-          />
-          <MenuList
-            href="/tracker"
-            name="BIG Tracker"
-            setOpenMenu={setOpenMenu}
-          />
+          {[
+            ["/", "Home"],
+            ["/about", "About Us"],
+            ["/events", "Events"],
+            ["/mentorship", "Mentorship"],
+            ["/resources", "Resources"],
+            ["/gallery", "Gallery"],
+            ["/tracker", "BIG Tracker"],
+          ].map((item, idx) => (
+            <MenuList
+              href={item[0]}
+              name={item[1]}
+              setOpenMenu={setOpenMenu}
+              setScroll={setScroll}
+              idx={idx}
+              key={idx}
+            />
+          ))}
         </ul>
       </div>
       <IoMenu
@@ -64,16 +78,16 @@ const Menu = () => {
     </aside>
   );
 };
-
-const Navbar = () => {
+const Navbar = ({
+  setScroll,
+}: {
+  setScroll?: React.Dispatch<React.SetStateAction<number>>;
+}) => {
   const [navBackground, setNavBackground] = useState("transparent");
-
   useEffect(() => {
-    if (window.innerWidth < 500) {
-      setNavBackground("background");
-    }
     const toggleVisibility = () => {
       if (window.innerWidth < 500) {
+        setNavBackground("background");
       } else if (window.innerWidth < 700) {
         if (window.scrollY >= 200) {
           setNavBackground("background");
@@ -81,7 +95,7 @@ const Navbar = () => {
           setNavBackground("transparent");
         }
       } else {
-        if (window.scrollY >= 750) {
+        if (window.scrollY >= 650) {
           setNavBackground("background");
         } else {
           setNavBackground("transparent");
@@ -91,28 +105,30 @@ const Navbar = () => {
     window.addEventListener("scroll", toggleVisibility, { passive: true });
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
-
   return (
     <div
-      className={`w-full fixed justify-between top-0 text-fontColor ${`bg-${navBackground}`} flex flex-col md:flex-row py-10 px-20 items-center z-30`}
+      className={`w-full z-40 fixed justify-between top-0 text-fontColor bg-${navBackground} flex flex-col md:flex-row py-7 xl:py-10 px-20 items-center z-30`}
     >
       <Logo />
       <div className="flex gap-4 items-center text-4xl">
         <Socials />
-        <button className="px-3 py-2 text-base hidden md:block">
-          <Link
-            href="https://www.lsesu.com/communities/societies/group/big/"
-            legacyBehavior
-          >
-            <a target="_blank" rel="noopener noreferrer">
-              Join Us
-            </a>
-          </Link>
+
+        <button
+          className="px-3 py-2 text-base hidden md:block"
+          onClick={() =>
+            window.open(
+              "https://www.lsesu.com/communities/societies/group/big/",
+              "_blank",
+              "noopener,noreferrer"
+            )
+          }
+        >
+          Join Us
         </button>
         <div>
           <Profile />
         </div>
-        <Menu />
+        <Menu setScroll={setScroll} />
       </div>
     </div>
   );

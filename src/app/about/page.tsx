@@ -1,13 +1,13 @@
 // @ts-nocheck
 "use client";
 import { Sector } from "@/app/about/Sector";
-import { team } from "@/Database";
-import Dropdown from "@/Components/Dropdown";
-import Football from "@/Components/Football";
+import { team } from "../../Database";
+import Dropdown from "../../Components/Dropdown";
+import Football from "../../Components/Football";
 import { useState } from "react";
 import Image from "next/image";
 import aboutUsImage from "../../../public/about_us.jpeg";
-import { Footer, Navbar } from "@/Components";
+import { Footer, Navbar } from "../../Components";
 
 const AboutUs = () => {
   const [year, setYear] = useState("2024/25");

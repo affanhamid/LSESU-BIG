@@ -1,6 +1,5 @@
 import type { NextAuthOptions } from "next-auth";
 import { getServerSession } from "next-auth";
-import Auth0Provider from "next-auth/providers/auth0";
 import AzureADProvider from "next-auth/providers/azure-ad";
 
 const authOptions: NextAuthOptions = {

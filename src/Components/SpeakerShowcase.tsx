@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Carousel from "./Carousel";
-import { SpeakerInterface } from "@/Types";
+import { SpeakerInterface } from "../Types";
 
 const Speaker = ({ image }: { image: string }) => {
   return (

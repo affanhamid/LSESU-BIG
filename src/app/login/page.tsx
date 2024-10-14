@@ -4,7 +4,7 @@ import Image from "next/image";
 import logo from "../../../public/logo.png";
 import Link from "next/link";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { Navbar } from "@/Components";
+import { Navbar } from "../../Components";
 
 const Login = () => {
   const { data: session } = useSession();

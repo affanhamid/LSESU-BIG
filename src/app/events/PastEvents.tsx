@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { pastEvents } from "@/Database";
-import { PastEventInterface } from "@/Types";
+import { pastEvents } from "../../Database";
+import { PastEventInterface } from "../../Types";
 
 const Event = ({ event }: { event: PastEventInterface }) => {
   return (

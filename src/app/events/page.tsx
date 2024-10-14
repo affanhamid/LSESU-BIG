@@ -1,9 +1,9 @@
 import PastEvents from "@/app/events/PastEvents";
 import Link from "next/link";
-import { EventInterface } from "@/Types";
+import { EventInterface } from "../../Types";
 import Image from "next/image";
 import eventsImage from "../../../public/events.jpeg";
-import { Footer, Navbar } from "@/Components";
+import { Footer, Navbar } from "../../Components";
 
 const UpcomingEvent = ({ event }: { event: EventInterface }) => {
   return (

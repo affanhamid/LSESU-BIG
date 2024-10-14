@@ -1,6 +1,6 @@
 import React from "react";
 import { Member } from "./Member";
-import { MemberType } from "@/Types";
+import { MemberType } from "../Types";
 
 const Football = ({
   members,

@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import { Footer, Navbar } from "@/Components";
+import { Footer, Navbar } from "../../Components";
 import Image from "next/image";
 import resourcesImage from "../../../public/resources.jpeg";
 import Resource from "./Resource";
 import { resources } from "../../Database";
-import { ResourceInterface } from "@/Types";
-import Dropdown from "@/Components/Dropdown";
+import { ResourceInterface } from "../../Types";
+import Dropdown from "../../Components/Dropdown";
 
 const Resources = () => {
   const [category, setCategory] = useState("All");

@@ -1,10 +1,10 @@
 import TestimonialShowcase from "@/app/mentorship/TestimonialShowcase";
 import { FaChartLine, FaUsers, FaCalendarAlt } from "react-icons/fa";
-import { TestimonialInterface } from "@/Types";
-import { NumberInterface } from "@/Types";
+import { TestimonialInterface } from "../../Types";
+import { NumberInterface } from "../../Types";
 import mentorShipImage from "../../../public/mentorship.jpg";
 import Image from "next/image";
-import { Footer, Navbar } from "@/Components";
+import { Footer, Navbar } from "../../Components";
 import Link from "next/link";
 
 const Number = ({ text, icon, description }: NumberInterface) => {

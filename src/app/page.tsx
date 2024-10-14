@@ -1,12 +1,12 @@
 import "./globals.css";
-import { speakers, sponsors, gallery, logos } from "@/Database";
+import { speakers, sponsors, gallery, logos } from "../Database";
 import {
   FaUsers,
   FaCalendarAlt,
   FaUserFriends,
   FaHandshake,
 } from "react-icons/fa";
-import Header from "@/Components/Header";
+import Header from "../Components/Header";
 
 import {
   SpeakerShowcase,
@@ -17,7 +17,7 @@ import {
   Sponsors,
   MembershipBenefits,
   Footer,
-} from "@/Components";
+} from "../Components";
 
 export default function Home() {
   return (
@@ -81,7 +81,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Gallery events={gallery.events} />
+      <section className="bg-white text-black border-b border-white mb-10">
+        <h1>Gallery</h1>
+        <Gallery events={gallery.events} scrollToggle={5200} />
+      </section>
       <Footer />
     </main>
   );

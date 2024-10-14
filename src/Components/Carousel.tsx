@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { CarouselProps } from "@/Types";
+import { CarouselProps } from "../Types";
 
 const Carousel = <T,>({
   gap,

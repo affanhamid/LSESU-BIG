@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "@/Components/Navbar";
+import Navbar from "../../Components/Navbar";
 import Sheet from "./Sheet";
-import { Footer } from "@/Components";
+import { Footer } from "../../Components";
 
 const Tracker = async () => {
   return (
