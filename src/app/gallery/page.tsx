@@ -1,5 +1,6 @@
 import React from "react";
-import { Gallery } from "@/Components";
+import { GalleryEventInterface, GalleryPhotoInterface } from "@/Types";
+import { Photo } from "@/Components/Gallery";
 import { gallery } from "@/Database";
 import { Navbar } from "@/Components";
 import Image from "next/image";
@@ -20,7 +21,17 @@ const page = () => {
         </h1>
       </header>
       <section className="bg-white text-black border-b border-white m-0 py-0">
-        <Gallery events={gallery.events} scrollToggle={600} />
+        <div className="w-full flex flex-wrap justify-center my-20">
+          {gallery.events.map((event: GalleryEventInterface, idx: number) => (
+            <div className="flex-initial" key={idx}>
+              <Photo
+                imageLink={event.imageLink}
+                link={event.postLink}
+                title={event.title}
+              />
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );
