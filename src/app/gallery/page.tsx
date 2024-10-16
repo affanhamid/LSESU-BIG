@@ -7,6 +7,7 @@ import Image from "next/image";
 import { galleryImage } from "../../../public";
 
 const page = () => {
+  const events = gallery.homepage.concat(gallery.gallery);
   return (
     <main className="bg-white">
       <header className="relative pb-5">
@@ -22,7 +23,7 @@ const page = () => {
       </header>
       <section className="bg-white text-black border-b border-white m-0 py-0">
         <div className="w-full flex flex-wrap justify-center my-20">
-          {gallery.events.map((event: GalleryEventInterface, idx: number) => (
+          {events.map((event: GalleryEventInterface, idx: number) => (
             <div className="flex-initial" key={idx}>
               <Photo
                 imageLink={event.imageLink}

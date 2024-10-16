@@ -83,7 +83,7 @@ export default function Home() {
       </section>
       <section className="bg-white text-black border-b border-white mb-10">
         <h1>Gallery</h1>
-        <Gallery events={gallery.events} scrollToggle={5200} />
+        <Gallery events={gallery.homepage} scrollToggle={5200} />
       </section>
       <Footer />
     </main>
