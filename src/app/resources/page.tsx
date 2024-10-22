@@ -9,7 +9,7 @@ import { ResourceInterface } from "../../Types";
 import Dropdown from "../../Components/Dropdown";
 
 const Resources = () => {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("CV & Cover Letter");
   return (
     <main>
       <header className="relative">
@@ -34,12 +34,11 @@ const Resources = () => {
             state={category}
             setState={setCategory}
             options={[
-              "All",
-              "Cover Letter",
-              "CV",
+              "CV & Cover Letter",
+              "Interviews & AC",
               "Technicals",
               "Books",
-              "Consulting",
+              "First Year Applications",
               "General",
             ]}
           />
@@ -48,7 +47,7 @@ const Resources = () => {
           <div className="flex flex-col items-center ml:grid ml:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
             {(resources["resources"] as ResourceInterface[])
               .filter((resource) => {
-                return category === "All" || resource.category === category;
+                return resource.category === category;
               })
               .map((resource, index) => {
                 return (
