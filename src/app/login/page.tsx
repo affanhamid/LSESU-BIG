@@ -27,6 +27,11 @@ const Login = () => {
               ? `Signed in as ${session?.user?.email}`
               : "Sign in to access to BIG resources"}
           </h2>
+          <p className="text-red-700 text-center mb-3">
+            If you don't have your microsoft account linked to BIG, you will see
+            an error. Click on create new account to link your microsoft account
+            to BIG
+          </p>
           <div className="flex flex-col text-center">
             <button
               onClick={() => (session ? signOut() : signIn("azure-ad"))}
@@ -34,9 +39,7 @@ const Login = () => {
             >
               {session ? "Sign out" : "Sign in"}
             </button>
-            <Link href="/signup" className=" text-background ">
-              Don't have an account with BIG?
-            </Link>
+
             <Link href="/" className=" text-background ">
               Return to home page
             </Link>
