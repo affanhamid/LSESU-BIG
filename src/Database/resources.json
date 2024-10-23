@@ -109,11 +109,84 @@
       "category": "Books"
     },
     {
-      "link": "https://drive.google.com/drive/u/0/folders/1yai0KFoS_uS4hkcq7C-Bq28FoXL_soZ-",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUvXP8WEAwRUnV7IM5Wq9YxNftpyAX36QdlHzL",
-      "name": "Consulting Guides",
-      "category": "General"
+      "link": "https://drive.google.com/file/d/1CM8NJhvgvdxdnTdbGi9rbzi0TQ0xOIw2/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOfdXQ56jvrE6DOxRAd1WHhctjY78nIJQUf5ok",
+      "name": "BCG Online Case",
+      "category": "Consulting"
     },
+    {
+      "link": "https://drive.google.com/file/d/1OWaxIAWONXtlKacC0lZIfGmaLKRlkz1u/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOeYvq7K4sD4j8cb6gMHrZSqBewiPpVEtXzhU7",
+      "name": "Case Interview Framework",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1DfHEQy7TuhSsu62EnR2fNh2on8ucjmK9/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOh4zmmOQbai1p7Xs3RkMfwCB8Jx2rHno0m9A5",
+      "name": "Casebook Esade",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1__c2zzTY1V1qwFdz4PohnKqDOojptCXY/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOKWEgsHYvQ0G2kL96WlwIZ3qmFSTAJ1uVdxKD",
+      "name": "CaseCoach Case Study",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/13Zn5PtXwF_5E6ZUo6aeIkGjaFbX-g38b/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO8DigwvxcF7fmolIDbU4Viph1k2tEgvyRd3Sn",
+      "name": "HBS MCC Case Interview",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/10p1hi6pim636n86stt1F2z3Y6FQLR9Cq/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOhKqy0nbai1p7Xs3RkMfwCB8Jx2rHno0m9A5L",
+      "name": "IgotAnOffer",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/14PzKYQ_Gu98bmYFduVKHXd3L3rG2j33Q/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOXFFIGw6OMC5JqFHiSmfWRKG8p0eoBcDkOVvd",
+      "name": "Introduction to case interviews",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1yxare8HU-3jDVbguXClt82IbWvX9s_2t/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOKMF4htvQ0G2kL96WlwIZ3qmFSTAJ1uVdxKDy",
+      "name": "LBS Casebook",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/19a53qtsroSSNS-EKUxi4CnLpMKyvqJG2/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO1irzYSlNWot4aFuMXi6EYs3Gbw5SRrex8nK9",
+      "name": "MasterTheCase",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/19DTD6NGRKH_SYqPB0T0VMXXUZbIfQyP7/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOgUUHx0mw2zm6XKoMDqrQhZYJFkOuiUNn8EIe",
+      "name": "McKinsey Problem Solving",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1TEaA4VofvG4lRWbiJmTSpzriujNgNl66/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOdoG4luIBf9UYRZADzI2ikCu4qEb8MonNSXeJ",
+      "name": "Meat Processing",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/19u5y-ejhsGPKAzK02uKAYwhFn4xaSqXD/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bORt9avlHFlJQqg1xUPyBDm3aEeIYOfb8wiVjz",
+      "name": "Practice Case",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1THAB-aCKNanfT-mS-yGgmOW9YPIgLa4C/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOtiIMg8PX2k70YWZ1PTE5rsyiFaxIubVJpfjl",
+      "name": "WSO Case Interview",
+      "category": "Consulting"
+    },
+
     {
       "link": "https://utfs.io/f/2JsPsN0kG4dUOi59vnh5ZHjPUWw0N97KzyleQfmGRcCFEvXr",
       "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUNk99Rjoy9s7WdzcfkhqYZ6iSbgAPtL1FlMUa",

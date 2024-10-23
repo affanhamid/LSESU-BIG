@@ -38,6 +38,7 @@ const Resources = () => {
               "Interviews & AC",
               "Technicals",
               "Books",
+              "Consulting",
               "First Year Applications",
               "General",
             ]}
