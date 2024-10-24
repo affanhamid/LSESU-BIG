@@ -41,7 +41,6 @@ const Resources = () => {
               "Consulting",
               "M&A Group - Deal Snapshots",
               "First Year Applications",
-              "General",
             ]}
           />
         </div>
