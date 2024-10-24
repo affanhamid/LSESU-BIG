@@ -29,7 +29,7 @@ const Resources = () => {
           helped our members land roles across Europe at the most competitive
           firms.
         </p>
-        <div className="flex justify-end ml:w-3/4 ">
+        <div className="flex justify-end ml:w-3/4">
           <Dropdown
             state={category}
             setState={setCategory}

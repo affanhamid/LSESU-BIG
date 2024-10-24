@@ -9,24 +9,29 @@ interface ResourceInterface {
 
 const Resource = ({ link, thumbnail }: ResourceInterface) => {
   return (
-    <Link href={link} passHref legacyBehavior>
-      <a target="_blank" rel="noopener noreferrer">
-        <div className="flex flex-col items-center justify-center w-max rounded-xl overflow-hidden border-4 border-black gap-4 mx-10 my-10 hover:scale-105 transition-all duration-100">
-          <div>
-            {thumbnail ? (
-              <Image
-                src={thumbnail}
-                className="w-[230px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"
-                width={400}
-                height={500}
-                alt="Resource Thumbnail"
-              />
-            ) : (
-              <div className="bg-gray-700 w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"></div>
-            )}
-          </div>
+    <Link
+      href={link}
+      passHref
+      legacyBehavior
+      className="p-0 cursor-pointer"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="flex flex-col items-center justify-center w-max rounded-xl overflow-hidden border-4 border-black gap-4 mx-10 my-10 hover:scale-105 transition-all duration-100 cursor-pointer">
+        <div>
+          {thumbnail ? (
+            <Image
+              src={thumbnail}
+              className="w-[230px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"
+              width={400}
+              height={500}
+              alt="Resource Thumbnail"
+            />
+          ) : (
+            <div className="bg-gray-700 w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"></div>
+          )}
         </div>
-      </a>
+      </div>
     </Link>
   );
 };
