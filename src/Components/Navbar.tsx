@@ -26,7 +26,10 @@ const MenuList = ({
       href={href}
       className="px-20 py-7 md:py-10 hover:bg-white hover:text-background font-bold flex items-center"
       onClick={() => setOpenMenu(false)}
-      onMouseEnter={() => setScroll && idx && setScroll(idx)}
+      onMouseEnter={() =>
+        (setScroll && idx && setScroll(idx)) ||
+        (idx === 0 && setScroll && setScroll(0))
+      }
     >
       {name}
     </Link>

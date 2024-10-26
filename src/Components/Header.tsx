@@ -26,7 +26,7 @@ const Header = () => {
     <>
       <Navbar setScroll={setScroll} />
       <div
-        className="absolute pt-0 w-screen h-max md:h-screen overflow-y-hidden hidden break:flex flex-col transition-all duration-200 brightness-[70%]"
+        className="absolute pt-0 w-screen h-max md:h-screen overflow-y-scroll hidden break:flex flex-col transition-all duration-200 brightness-[70%]"
         ref={divRef}
         style={{ scrollBehavior: "smooth" }}
       >
