@@ -36,7 +36,7 @@ const Resources = () => {
             options={[
               "First Year Applications",
               "CV & Cover Letter Advice",
-              "Interviews & AC Advice",
+              "AC & Interview  Advice",
               "Consulting",
               "Technicals",
               "Books",
