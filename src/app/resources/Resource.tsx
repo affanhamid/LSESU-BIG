@@ -11,8 +11,6 @@ const Resource = ({ link, thumbnail }: ResourceInterface) => {
   return (
     <Link
       href={link}
-      passHref
-      legacyBehavior
       className="p-0 cursor-pointer"
       target="_blank"
       rel="noopener noreferrer"
