@@ -34,13 +34,13 @@ const Resources = () => {
             state={category}
             setState={setCategory}
             options={[
-              "CV & Cover Letter",
-              "Interviews & AC",
+              "First Year Applications",
+              "CV & Cover Letter Advice",
+              "Interviews & AC Advice",
+              "Consulting",
               "Technicals",
               "Books",
-              "Consulting",
               "M&A Group - Deal Snapshots",
-              "First Year Applications",
             ]}
           />
         </div>
