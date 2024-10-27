@@ -26,7 +26,7 @@ const Resource = ({ link, thumbnail }: ResourceInterface) => {
               alt="Resource Thumbnail"
             />
           ) : (
-            <div className="bg-gray-700 w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[4/5]"></div>
+            <div className="bg-gray-700 w-[300px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-[400px] aspect-[7/8]"></div>
           )}
         </div>
       </div>
