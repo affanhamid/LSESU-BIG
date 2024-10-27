@@ -9,7 +9,7 @@ import { ResourceInterface } from "../../Types";
 import Dropdown from "../../Components/Dropdown";
 
 const Resources = () => {
-  const [category, setCategory] = useState("CV & Cover Letter");
+  const [category, setCategory] = useState("First Year Applications");
   return (
     <main>
       <header className="relative">
@@ -36,7 +36,7 @@ const Resources = () => {
             options={[
               "First Year Applications",
               "CV & Cover Letter Advice",
-              "AC & Interview  Advice",
+              "AC & Interview Advice",
               "Consulting",
               "Technicals",
               "Books",
