@@ -10,7 +10,7 @@ export const Photo = ({ imageLink, title, link }: GalleryPhotoInterface) => {
         <img
           src={imageLink}
           alt={title}
-          className="object-cover group-hover:brightness-75 w-full h-auto max-h-60 rounded-lg"
+          className="object-cover group-hover:brightness-75 w-full h-auto max-h-60"
         />
         <p className="hidden group-hover:flex absolute top-0 left-0 right-0 bottom-0 items-center justify-center text-white p-10 text-center bg-black bg-opacity-50">
           <span>{title}</span>
@@ -19,7 +19,6 @@ export const Photo = ({ imageLink, title, link }: GalleryPhotoInterface) => {
     </Link>
   );
 };
-
 
 const Gallery = ({
   events,
