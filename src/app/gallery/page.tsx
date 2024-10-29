@@ -1,5 +1,5 @@
 import React from "react";
-import { GalleryEventInterface, GalleryPhotoInterface } from "@/Types";
+import { GalleryEventInterface } from "@/Types";
 import { Photo } from "@/Components/Gallery";
 import { gallery } from "@/Database";
 import { Navbar } from "@/Components";
