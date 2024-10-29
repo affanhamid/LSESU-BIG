@@ -38,7 +38,7 @@ const Resources = () => {
               "CV & Cover Letter Advice",
               "AC & Interview Advice",
               "Consulting",
-              "Technicals",
+              "Excel Models & PowerPoint Decks",
               "Books",
               "M&A Group - Deal Snapshots",
             ]}
