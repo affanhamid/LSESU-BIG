@@ -9,7 +9,7 @@ import { ResourceInterface } from "../../Types";
 import Dropdown from "../../Components/Dropdown";
 
 const Resources = () => {
-  const [category, setCategory] = useState("CV & Cover Letter");
+  const [category, setCategory] = useState("First Year Applications");
   return (
     <main>
       <header className="relative">
@@ -29,17 +29,18 @@ const Resources = () => {
           helped our members land roles across Europe at the most competitive
           firms.
         </p>
-        <div className="flex justify-end ml:w-3/4 ">
+        <div className="flex justify-end ml:w-3/4">
           <Dropdown
             state={category}
             setState={setCategory}
             options={[
-              "CV & Cover Letter",
-              "Interviews & AC",
-              "Technicals",
-              "Books",
               "First Year Applications",
-              "General",
+              "CV & Cover Letter Advice",
+              "AC & Interview Advice",
+              "Consulting",
+              "Excel Models & PowerPoint Decks",
+              "Books",
+              "M&A Group - Deal Snapshots",
             ]}
           />
         </div>

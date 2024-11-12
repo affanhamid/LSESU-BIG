@@ -1,28 +1,64 @@
 {
   "resources": [
     {
-      "link": "https://drive.google.com/drive/u/0/folders/1k827BGzw8kAmntVa4i-pHySQE4A37ame",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dU9Aq61n3W7i1mOzhEvuNlAg2w3qUxLCXodBac",
-      "name": "CV and Cover Letters",
-      "category": "CV & Cover Letter"
+      "link": "https://drive.google.com/drive/folders/1Qtgn9TSegvrHiTwzqDdLyc0GnyHwsVGl",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO1BfHBqlNWot4aFuMXi6EYs3Gbw5SRrex8nK9",
+      "name": "Cover Letter Exemplars",
+      "category": "CV & Cover Letter Advice"
     },
     {
-      "link": "https://drive.google.com/drive/u/0/folders/1k827BGzw8kAmntVa4i-pHySQE4A37ame",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dU9Aq61n3W7i1mOzhEvuNlAg2w3qUxLCXodBac",
-      "name": "CV and Cover Letters",
-      "category": "CV & Cover Letter"
+      "link": "https://drive.google.com/file/d/1QqJECOaEtH5VgarycjjDrc7vrPhB4Lyi/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOO05AVhSxHY34lzXkNIJDaoEqw6cpStLMr7VK",
+      "name": "CV Checklist",
+      "category": "CV & Cover Letter Advice"
     },
     {
-      "link": "https://drive.google.com/drive/u/0/folders/19rZzCPaYqSFRcPwGYJ1ELxnqIkVW5rnx",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dU7aMSNigKhxWlTdNZreR3ajLv2Gy8XBuoYQEc",
-      "name": "Models and Presentation Decks",
-      "category": "Technicals"
+      "link": "https://docs.google.com/document/d/1YA9t0AYs6zcaDCke1nhTZ6F7MFRq3Pfm/edit",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOUUFBS4nncWl0yFRQJYDkea9vBqKMxLV3izgX",
+      "name": "CV Templates",
+      "category": "CV & Cover Letter Advice"
     },
     {
-      "link": "https://drive.google.com/drive/u/0/folders/1EfMLOcCd0vwCToajHUpExl7hw2y-yM5L",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUGzYBo9wXOj2AsVogzTe4Bc0EHKJikZ79hr3F",
-      "name": "Microsoft Office Guides",
-      "category": "Technicals"
+      "link": "https://docs.google.com/document/d/1qMNBeGiMou-dOHyGSg8C2Sr7HCoAV27ZyTtrZCIO_Oo/edit?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOCNHBQ4iNbELgjvqKhxO7tnFkA9zPMZmlsayI",
+      "name": "Example Written Questions",
+      "category": "CV & Cover Letter Advice"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1voUlQ5rS6IWrzIgAUpZJI-i8uTEh4SkF/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO1J6rrZlNWot4aFuMXi6EYs3Gbw5SRrex8nK9",
+      "name": "harvard CV",
+      "category": "CV & Cover Letter Advice"
+    },
+    {
+      "link": "https://drive.google.com/file/d/173CS_1_JAG3bG3LHn6xSv0RvT1s1eRlw/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOejjeFi4sD4j8cb6gMHrZSqBewiPpVEtXzhU7",
+      "name": "Stanford CV",
+      "category": "CV & Cover Letter Advice"
+    },
+    {
+      "link": "https://drive.google.com/drive/folders/1srTN3AkRY2MI0JhI5QcHs3t54K7vxNaR",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO3f9D7CoheOFbH2VIlPCvytBx6p7ws1NzEDcn",
+      "name": "Buy-Side Models",
+      "category": "Excel Models & PowerPoint Decks"
+    },
+    {
+      "link": "https://drive.google.com/drive/folders/1uHYKIoezJc8JyVcPm01cOV76VUCPNR_9",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOSGHm9rFhANyE89sF37WrzQPRvtKicldmHDZw",
+      "name": "Examplar Presentation Deck",
+      "category": "Excel Models & PowerPoint Decks"
+    },
+    {
+      "link": "https://drive.google.com/drive/folders/1srTN3AkRY2MI0JhI5QcHs3t54K7vxNaR",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOeOU3Yg4sD4j8cb6gMHrZSqBewiPpVEtXzhU7",
+      "name": "Sell-Side Models",
+      "category": "Excel Models & PowerPoint Decks"
+    },
+    {
+      "link": "https://drive.google.com/drive/folders/1EfMLOcCd0vwCToajHUpExl7hw2y-yM5L",
+      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUzmrB3kuQda2Z7mgKGRUtkDiWX5sw6zqhAexp",
+      "name": "Microsoft Office Guide",
+      "category": "Excel Models & PowerPoint Decks"
     },
     {
       "link": "https://drive.google.com/drive/u/0/folders/1TSFysgGc4oGc-hrnyEK5ZiwcftMw9TYT",
@@ -109,34 +145,174 @@
       "category": "Books"
     },
     {
-      "link": "https://drive.google.com/drive/u/0/folders/1yai0KFoS_uS4hkcq7C-Bq28FoXL_soZ-",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUvXP8WEAwRUnV7IM5Wq9YxNftpyAX36QdlHzL",
-      "name": "Consulting Guides",
-      "category": "General"
+      "link": "https://drive.google.com/file/d/1CM8NJhvgvdxdnTdbGi9rbzi0TQ0xOIw2/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOfdXQ56jvrE6DOxRAd1WHhctjY78nIJQUf5ok",
+      "name": "BCG Online Case",
+      "category": "Consulting"
     },
     {
-      "link": "https://utfs.io/f/2JsPsN0kG4dUOi59vnh5ZHjPUWw0N97KzyleQfmGRcCFEvXr",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUNk99Rjoy9s7WdzcfkhqYZ6iSbgAPtL1FlMUa",
+      "link": "https://drive.google.com/file/d/1OWaxIAWONXtlKacC0lZIfGmaLKRlkz1u/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOeYvq7K4sD4j8cb6gMHrZSqBewiPpVEtXzhU7",
+      "name": "Case Interview Framework",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1DfHEQy7TuhSsu62EnR2fNh2on8ucjmK9/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOh4zmmOQbai1p7Xs3RkMfwCB8Jx2rHno0m9A5",
+      "name": "Casebook Esade",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1__c2zzTY1V1qwFdz4PohnKqDOojptCXY/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOKWEgsHYvQ0G2kL96WlwIZ3qmFSTAJ1uVdxKD",
+      "name": "CaseCoach Case Study",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/13Zn5PtXwF_5E6ZUo6aeIkGjaFbX-g38b/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO8DigwvxcF7fmolIDbU4Viph1k2tEgvyRd3Sn",
+      "name": "HBS MCC Case Interview",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/10p1hi6pim636n86stt1F2z3Y6FQLR9Cq/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOhKqy0nbai1p7Xs3RkMfwCB8Jx2rHno0m9A5L",
+      "name": "IgotAnOffer",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/14PzKYQ_Gu98bmYFduVKHXd3L3rG2j33Q/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOXFFIGw6OMC5JqFHiSmfWRKG8p0eoBcDkOVvd",
+      "name": "Introduction to case interviews",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1yxare8HU-3jDVbguXClt82IbWvX9s_2t/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOKMF4htvQ0G2kL96WlwIZ3qmFSTAJ1uVdxKDy",
+      "name": "LBS Casebook",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/19a53qtsroSSNS-EKUxi4CnLpMKyvqJG2/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO1irzYSlNWot4aFuMXi6EYs3Gbw5SRrex8nK9",
+      "name": "MasterTheCase",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/19DTD6NGRKH_SYqPB0T0VMXXUZbIfQyP7/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOgUUHx0mw2zm6XKoMDqrQhZYJFkOuiUNn8EIe",
+      "name": "McKinsey Problem Solving",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1TEaA4VofvG4lRWbiJmTSpzriujNgNl66/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOdoG4luIBf9UYRZADzI2ikCu4qEb8MonNSXeJ",
+      "name": "Meat Processing",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/19u5y-ejhsGPKAzK02uKAYwhFn4xaSqXD/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bORt9avlHFlJQqg1xUPyBDm3aEeIYOfb8wiVjz",
+      "name": "Practice Case",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1THAB-aCKNanfT-mS-yGgmOW9YPIgLa4C/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOtiIMg8PX2k70YWZ1PTE5rsyiFaxIubVJpfjl",
+      "name": "WSO Case Interview",
+      "category": "Consulting"
+    },
+    {
+      "link": "https://www.linkedin.com/posts/lsemergersandacquisitions_lse-ma-group-deal-snapshots-volume-1-activity-7159155747455463425-krqa?utm_source=share&utm_medium=member_desktop",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOgOCwE5mw2zm6XKoMDqrQhZYJFkOuiUNn8EIe",
+      "name": "2023 Cycle Report 1",
+      "category": "M&A Group - Deal Snapshots"
+    },
+    {
+      "link": "https://www.linkedin.com/posts/lsemergersandacquisitions_lse-ma-group-deal-snapshot-volume-2-activity-7163853428878753792-yVx8?utm_source=share&utm_medium=member_desktop",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bORvurlkrHFlJQqg1xUPyBDm3aEeIYOfb8wiVj",
+      "name": "2023 Cycle Report 2",
+      "category": "M&A Group - Deal Snapshots"
+    },
+    {
+      "link": "https://www.linkedin.com/posts/lsemergersandacquisitions_lse-ma-group-deal-snapshots-volume-3-activity-7166765709199421440-w47A?utm_source=share&utm_medium=member_desktop",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOlC108UXRST2pd9YfwZzgEcDomVOjJrhMbHku",
+      "name": "2023 Cycle Report 3",
+      "category": "M&A Group - Deal Snapshots"
+    },
+    {
+      "link": "https://www.linkedin.com/posts/lsemergersandacquisitions_lse-ma-group-deal-snapshots-volume-4-activity-7168557686937079808-AkSo?utm_source=share&utm_medium=member_desktop",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOUY6QKEnncWl0yFRQJYDkea9vBqKMxLV3izgX",
+      "name": "2023 Cycle Report 4",
+      "category": "M&A Group - Deal Snapshots"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1wYIsdlHGsGZlf9DhLuytnMA-bHrnX38J/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO1C1FYelNWot4aFuMXi6EYs3Gbw5SRrex8nK9",
       "name": "Spring Week Guide",
       "category": "First Year Applications"
     },
     {
-      "link": "https://drive.google.com/file/d/1JW-xAENoNT0THhmuP-SyW4CLAIi--is0/view",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUE6WK3wR2ENeIDxX4bQRMCta3qGyfKuPJj09g",
+      "link": "https://drive.google.com/file/d/1JW-xAENoNT0THhmuP-SyW4CLAIi--is0/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOr41GOHwUNoCes8KPRvQXOdAxagIk7nbHDpFZ",
       "name": "Speculative Summer Internship",
-      "category": "General"
+      "category": "First Year Applications"
+    },
+
+    {
+      "link": "https://drive.google.com/drive/folders/1fB2ht1adUVdxEWxI-9lA8KPVKIoc9mnS",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOHjFQ26KLQtaVlWG14EwdoePDx5Bkyhf0mFM3",
+      "name": "Networking Guide",
+      "category": "First Year Applications"
     },
     {
-      "link": "https://drive.google.com/drive/u/0/folders/1kBPy7CxsU5CzpZ1LWklaPBCLBIooU0wk",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUdKKXyOYSAMxN3oevJWcSbOlmsQ9y2fGFuVwi",
-      "name": "Interview Guides",
-      "category": "Interviews & AC"
+      "link": "https://docs.google.com/document/d/1IW_gBWKqLN7P7uGKjw1Xpd5t5CyKmtnoatcqEmWuSQI/edit?tab=t.0",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOmjEuVpGUeWY3daj8KSHr2iCNGzOVMvQou4LR",
+      "name": "Podcast and Newsletter",
+      "category": "First Year Applications"
     },
     {
-      "link": "https://drive.google.com/drive/u/0/folders/1gZsQk_EM47qulVRlPkfdGrFjSXmLiEM4",
-      "thumbnail": "https://utfs.io/f/2JsPsN0kG4dUgrNAO4GEU9ld3aSD6RsJ8wFrupQzi2KncbIA",
-      "name": "Misc",
-      "category": "General"
+      "link": "https://drive.google.com/file/d/1I7U-lS2WRqYLvlk8eJ1YgUx-FM1ZQGxo/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOXmNE6hOMC5JqFHiSmfWRKG8p0eoBcDkOVvdb",
+      "name": "Division Overview",
+      "category": "First Year Applications"
+    },
+
+    {
+      "link": "https://drive.google.com/file/d/1XGTPiJ92gvy1_vM3OVGNoh2hzEbWjG1o/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bODH8KVkEN3iD8LEYCHRVIqenXKdSh05QfNWOa",
+      "name": "BCG Recruitment Model",
+      "category": "First Year Applications"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1hATZqIUyT6HymEU1RAGdz-R1r1UNoNmu/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bO7p4PGWTJkpxTwWLZhuzCKAbBsH8MGPRoaD5S",
+      "name": "Behavioral Interview",
+      "category": "AC & Interview Advice"
+    },
+    {
+      "link": "https://docs.google.com/document/d/1KFHcnWcClPKONipdAzxB0Vpat83bvr7tNL5u0QBGji0/edit?tab=t.0",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOLXngSvi1lDYFkWGai2SvJq6MfdQXHjNPR9zB",
+      "name": "Interview Brain Teasers",
+      "category": "AC & Interview Advice"
+    },
+    {
+      "link": "https://drive.google.com/drive/folders/15oTHbrdpAdK7MLJxTdQLUdvWmf9WZJA2",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bODHx9jWZN3iD8LEYCHRVIqenXKdSh05QfNWOa",
+      "name": "Interview Breaking Into Wall Street",
+      "category": "AC & Interview Advice"
+    },
+    {
+      "link": "https://drive.google.com/drive/folders/19x_hxwJM9u8_yadq8J7Efn5-riKMv7M1",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOWOaEJw806h19RzOCyjwZSlGIpxkE8YFuoqBn",
+      "name": "Interview Non-Technical",
+      "category": "AC & Interview Advice"
+    },
+    {
+      "link": "https://drive.google.com/file/d/1mBAPvdMO9saXbzXbX9aQ8uhzkLyOxOmp/view?usp=drive_link",
+      "thumbnail": "https://utfs.io/f/P5zDMjQIG1bOiXazkrV7xtphfmWEJqD8XcyTORSIMlswN5YF",
+      "name": "Interview Vault",
+      "category": "AC & Interview Advice"
     }
   ]
 }

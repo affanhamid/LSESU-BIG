@@ -1,5 +1,5 @@
 import React from "react";
-import { GalleryEventInterface, GalleryPhotoInterface } from "@/Types";
+import { GalleryEventInterface } from "@/Types";
 import { Photo } from "@/Components/Gallery";
 import { gallery } from "@/Database";
 import { Navbar } from "@/Components";
@@ -7,7 +7,7 @@ import Image from "next/image";
 import { galleryImage } from "../../../public";
 
 const page = () => {
-  const events = gallery.homepage.concat(gallery.gallery);
+  const events = gallery.gallery.concat(gallery.homepage);
   return (
     <main className="bg-white">
       <header className="relative pb-5">
