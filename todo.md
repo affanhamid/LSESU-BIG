@@ -1,5 +1,7 @@
 # Todo
 
+## Create a function to convert docx into csv
+
 ## Create directory structure for the project
 
     - The folder structure, class definitions, function definitions
