@@ -1,15 +1,21 @@
 # Todo
 
-## Create directory structure for the project (Henish)
+## Create directory structure for the project
 
     - The folder structure, class definitions, function definitions
 
-## Setup the microsoft graph API library with python and create testing files (Henish, Affan)
+## Setup the microsoft graph API library with python
 
     - Setting up the API with credentials
     - Environment Files
+
+## Set up tests
+
     - Set up tests with pytest
 
-## Study Microsoft Graph API for users and create a plan (Alex, Summit)
+## Study Microsoft Graph API for users and create a plan
 
     - https://developer.microsoft.com/en-us/graph/graph-explorer
+    - Design the flowchart
+
+## Implement the algorithm
