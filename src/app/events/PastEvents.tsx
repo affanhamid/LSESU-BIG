@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { pastEvents } from "../../Database";
 import { PastEventInterface } from "../../Types";
+import { fetchPastEvents } from "@/Database/fetchPastEvents";
 
 const Event = ({ event }: { event: PastEventInterface }) => {
   return (
@@ -42,10 +42,10 @@ const YearButton = ({
   text,
   idx,
 }: {
-  index: string;
-  setIndex: React.Dispatch<React.SetStateAction<string>>;
+  index: number;
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
   text: string;
-  idx: string;
+  idx: number;
 }) => {
   return (
     <span
@@ -60,31 +60,36 @@ const YearButton = ({
 };
 
 const PastEvents = () => {
-  const [index, setIndex] = useState("2024");
+  const [index, setIndex] = useState(2023);
+  const [pastEvents, setPastEvents] = useState({});
+  useEffect(() => {
+    const setEventsData = async () => {
+      const result = await fetchPastEvents();
+      setPastEvents(result);
+    };
+    setEventsData();
+  }, []);
   return (
     <section className="bg-gray-50 py-32">
       <h1 className="text-3xl lg:text-4xl font-bold text-center mb-10 text-gray-900">
         Past Events
       </h1>
       <div className="flex justify-center text-xl mb-10 px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96">
-        <YearButton
-          index={index}
-          setIndex={setIndex}
-          text="2022-2023"
-          idx={"2023"}
-        />
-        <YearButton
-          index={index}
-          setIndex={setIndex}
-          text="2023-2024"
-          idx={"2024"}
-        />
+        {[2022, 2023].map((year, idx: number) => (
+          <YearButton
+            key={idx}
+            index={index}
+            setIndex={setIndex}
+            text={`${year}-${year + 1}`}
+            idx={year}
+          />
+        ))}
       </div>
       <div className="flex flex-col items-center px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96 gap-10">
-        {pastEvents[index as keyof typeof pastEvents].map(
-          (event: PastEventInterface) => (
-            <Event event={event} />
-          )
+        {pastEvents[index as keyof typeof pastEvents]?.map(
+          (event: PastEventInterface, index: number) => (
+            <Event key={index} event={event} />
+          ),
         )}
       </div>
     </section>

@@ -3,12 +3,16 @@ export interface TestimonialInterface {
 }
 
 export interface EventInterface {
-  imageLink: string;
-  name: string;
-  registrationLink: string;
-  month: string;
-  day: string;
-  venue: string;
+  ImageLink: string;
+  Title: string;
+  Link: string;
+  Month: string;
+  Day: string;
+  Speakers: string;
+  Firm: string;
+  Position: string;
+  "Industry/Field": string;
+  Venue: string;
 }
 
 export interface PastEventInterface {
@@ -19,8 +23,8 @@ export interface PastEventInterface {
   Link: string | null;
   ImageLink?: string;
   Month: string;
-  Day: number;
-  Year: number;
+  Day: string;
+  Year: string;
   "Industry/Field": string | null;
 }
 
