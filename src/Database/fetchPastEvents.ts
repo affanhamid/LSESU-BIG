@@ -45,15 +45,15 @@ const segregatePastEvents = (pastEvents: PastEventInterface[]) => {
     });
   });
 
-  return parsedEvents;
+  return { parsedEvents: parsedEvents, years: uniqueYears };
 };
 
 export const fetchPastEvents = async () => {
   const pastEventsURL =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vTI0Vg11rDHrZhy-jWTz4YCUlnwryU4Iu4bE6PM0x1x183iHh40AnlCJxhHEKEH6moZABZJprhoZaku/pub?gid=0&single=true&output=csv";
   const CSVData = await fetchCSVData(pastEventsURL);
-  const segregatedEvents = segregatePastEvents(CSVData.data);
-  return segregatedEvents;
+  const result = segregatePastEvents(CSVData.data);
+  return { segregatedEvents: result.parsedEvents, years: result.years };
 };
 
 export const fetchUpcomingEvents = async () => {

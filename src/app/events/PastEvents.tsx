@@ -62,10 +62,12 @@ const YearButton = ({
 const PastEvents = () => {
   const [index, setIndex] = useState(2023);
   const [pastEvents, setPastEvents] = useState({});
+  const [years, setYears] = useState<number[]>([]);
   useEffect(() => {
     const setEventsData = async () => {
       const result = await fetchPastEvents();
-      setPastEvents(result);
+      setPastEvents(result.segregatedEvents);
+      setYears(result.years);
     };
     setEventsData();
   }, []);
@@ -75,7 +77,7 @@ const PastEvents = () => {
         Past Events
       </h1>
       <div className="flex justify-center text-xl mb-10 px-10 md:px-20 lg:px-40 xl:px-60 2xl:px-96">
-        {[2022, 2023].map((year, idx: number) => (
+        {years.map((year, idx: number) => (
           <YearButton
             key={idx}
             index={index}
